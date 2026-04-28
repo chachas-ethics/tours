@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tours & Safaris</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body class="text-stone-100 overflow-x-hidden">
+
+    
+  <!-- Navbar -->
+   <nav class="fixed top-6 left-1/2 -translate-x-1/2 w-[92%] max-w-6xl z-[100] transition-[max-height,border-radius] duration-500 ease-in-out px-8 py-4 rounded-full border border-[#3d2b1f]/20 shadow-[0_20px_50px_rgba(0,0,0,0.3)] overflow-hidden" 
+     id="mainNav" 
+     style="background: linear-gradient(180deg, #2d1e14 0%, #1a120b 100%); max-height: 76px;">
+  
+  <!-- Subtle Wood Texture Overlay -->
+  <div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: url('https://transparenttextures.com');"></div>
+
+  <div class="flex justify-between items-center relative z-10">
+    <!-- Logo -->
+    <div class="flex items-center space-x-3 group/logo">
+      <div class="relative w-10 h-10 bg-transparent rounded-full flex items-center justify-center overflow-hidden transition-transform duration-500 group-hover/logo:rotate-[360deg]">
+        <img src="assets/ChatGPT Image Apr 14, 2026, 03_23_04 PM.png" alt="Logo" class="w-full h-full object-cover">
+      </div>
+      <span class="text-l font-bold tracking-widest text-[#d4a373] uppercase">
+        AFRICAN SCENERY
+      </span>
+    </div>
+
+    <!-- Desktop Menu -->
+    <div class="hidden md:flex items-center space-x-12 relative text-[11px] font-black uppercase tracking-[0.2em] text-stone-400">
+      <svg class="absolute top-1/2 left-0 w-full h-12 -translate-y-1/2 pointer-events-none z-0 opacity-40" viewBox="0 0 400 40">
+        <path d="M0,20 Q50,0 100,20 T200,20 T300,20 T400,20" fill="none" stroke="#d4a373" stroke-width="5" stroke-dasharray="10 5" class="animate-[snake-crawl_20s_linear_infinite]" />
+      </svg>
+      <a href="#home" class="relative z-10 hover:text-[#d4a373] transition-colors">Home</a>
+      <a href="#about" class="relative z-10 hover:text-[#d4a373] transition-colors">About</a>
+      <a href="#destinations" class="relative z-10 hover:text-[#d4a373] transition-colors">Destinations</a>
+      <a href="#packages" class="relative z-10 hover:text-[#d4a373] transition-colors">Packages</a>
+    </div>
+
+    <!-- CTA --><div class="hidden md:block">
+  <a href="https://wa.me/255788296274?text=Hello%2C%20I%27m%20interested%20in%20planning%20a%20safari.%20Could%20you%20share%20available%20packages%2C%20pricing%2C%20and%20the%20best%20travel%20dates%3F" 
+     target="_blank" 
+     rel="noopener noreferrer"
+     class="inline-block">
+    <button class="relative overflow-hidden group/btn px-8 py-3 rounded-full bg-[#d4a373] text-[10px] font-black uppercase tracking-[0.3em] text-white shadow-2xl transition-all hover:scale-105 active:scale-95">
+      <span class="relative z-10">Plan Safari</span>
+    </button>
+  </a>
+</div>
+
+
+    <!-- Animated Hamburger Button -->
+    <button id="menuBtn" class="md:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1.5 z-50 focus:outline-none">
+       <span id="line1" class="block w-6 h-0.5 bg-[#d4a373] transition-all duration-300 origin-center"></span>
+       <span id="line2" class="block w-6 h-0.5 bg-[#d4a373] transition-all duration-300"></span>
+       <span id="line3" class="block w-6 h-0.5 bg-[#d4a373] transition-all duration-300 origin-center"></span>
+    </button>
+  </div>
+
+  <!-- Mobile Dropdown -->
+  <div id="mobileMenu" class="md:hidden flex flex-col space-y-6 pt-10 pb-8 text-center text-[11px] font-black uppercase tracking-[0.3em] text-stone-400 border-t border-[#d4a373]/10 mt-6 relative z-10">
+      <a href="#home" class="mobile-link hover:text-[#d4a373] transition-colors">Home</a>
+      <a href="#about" class="mobile-link hover:text-[#d4a373] transition-colors">About</a>
+      <a href="#destinations" class="mobile-link hover:text-[#d4a373] transition-colors">Destinations</a>
+      <a href="#packages" class="mobile-link hover:text-[#d4a373] transition-colors">Packages</a>
+      <a href="#gallery" class="mobile-link hover:text-[#d4a373] transition-colors">Gallery</a>
+      <a href="#reviews" class="mobile-link hover:text-[#d4a373] transition-colors">Reviews</a>
+      <a href="https://wa.me/255788296274?text=Hello%2C%20I%27m%20interested%20in%20planning%20a%20safari.%20Could%20you%20share%20available%20packages%2C%20pricing%2C%20and%20the%20best%20travel%20dates%3F" 
+   target="_blank" 
+   rel="noopener noreferrer"
+   class="mobile-link bg-[#d4a373] text-white py-4 uppercase rounded-2xl mx-4">
+   Plan Safari
+</a>
+  </div>
+</nav>
+
+  <!-- Hero: Tactical Sector Entry -->
+  <header class="relative h-[100vh] flex items-center overflow-hidden">
+    <div class="absolute inset-0 z-0">
+      <!-- High-res background image -->
+      <img src="asset/BFNP.jpg" class="w-full h-full object-cover brightness-50" alt="Kenya Savanna">
+      <div class="absolute inset-0 bg-gradient-to-b from-[#0d0a07]/40 via-transparent to-[#0d0a07]"></div>
+    </div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-6 w-full">
+      <div class="inline-block bg-[#d4a373] text-[#0d0a07] px-4 py-5 font-black text-[10px] tracking-[0.4em] uppercase mb-6">
+        East Africa Sector 03
+      </div>
+      <h1 class="text-6xl md:text-9xl font-black uppercase tracking-tighter leading-none mb-4">
+        uganda
+      </h1>
+      <p class="text-xl italic font-serif text-[#a68a64] max-w-xl">
+        "The untamed heart of the continent, crafted for those who desire a deeper, more primal connection."
+      </p>
+    </div>
+  </header>
+
+  <!-- Expedition Intelligence (Long Text Section) -->
+      <main class="py-24 stipple relative">
+    <div class="max-w-4xl mx-auto px-6">
+      
+      <!-- Briefing Header -->
+      <div class="border-l-4 border-[#d4a373] pl-8 mb-12">
+        <h2 class="text-xs font-black uppercase tracking-[0.5em] text-[#d4a373] mb-4">Intelligence Briefing</h2>
+        <p class="text-2xl md:text-3xl font-medium text-stone-200 leading-tight">
+          "From the mist-shrouded peaks of Bwindi to the surging power of Murchison Falls, your mission is engineered for raw encounters and untamed discovery."
+        </p>
+      </div>
+
+      <!-- Progressive Disclosure Section -->
+      <div class="relative">
+        <p class="text-stone-400 leading-relaxed">
+          Uganda is the primal heart of the continent, a lush, high-stakes theater of biodiversity. We operate beyond the standard trails, securing face-to-face access to the world’s last mountain gorillas and the legendary tree-climbing lions of the Albertine Rift.
+        </p>
+
+        <!-- Hidden Long Text -->
+        <div id="intel-content" class="reveal-content">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 pt-8 border-t border-white/10 text-stone-500 text-sm leading-relaxed">
+            <div class="space-y-4">
+              <h4 class="text-[#d4a373] font-black uppercase tracking-widest text-[10px]">Territory Specs</h4>
+              <p>Strategic deep-entry into Bwindi Impenetrable Forest and Kibale’s primate corridors. Precision navigation through Queen Elizabeth National Park’s volcanic craters and the remote, rugged wilderness of Kidepo Valley.</p>
+            </div>
+            <div class="space-y-4">
+              <h4 class="text-[#d4a373] font-black uppercase tracking-widest text-[10px]">Field Equipment</h4>
+              <p>Specialized rainforest trekking gear and custom 4x4 safari cruisers optimized for jungle terrain. Led by expert UWA-certified trackers and elite guides with deep-ops knowledge of primate habituation and avian ecology.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Toggle Button -->
+        <button onclick="toggleIntel()" id="intel-btn" class="mt-10 group flex items-center gap-4 cursor-pointer">
+          <div class="w-10 h-10 border border-[#d4a373] rounded-full flex items-center justify-center transition-all group-hover:bg-[#d4a373]">
+            <svg id="intel-arrow" class="w-4 h-4 text-[#d4a373] group-hover:text-[#0d0a07] transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </div>
+          <span class="text-[10px] font-black uppercase tracking-[0.3em] text-[#d4a373]">Access Full Field Intel</span>
+        </button>
+      </div>
+    </div>
+  </main>
+
+
+
+  <!-- Destination Grid: Tactical Cards -->
+  <section class="py-24 bg-[#14110e]">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+       
+        <!-- Tarangire Card -->
+<div class="group relative aspect-[3/4] overflow-hidden border border-white/5">
+  <img src="assets/bwindi.jpg" class="w-full h-full object-cover transition-all duration-700 group-hover:grayscale-0 group-hover:scale-110" alt="Serengeti">
+  <div class="absolute inset-0 bg-gradient-to-t from-[#0d0a07] via-transparent to-transparent"></div>
+  <div class="absolute bottom-0 p-8 w-full">
+    <span class="text-[#d4a373] font-mono text-[10px] tracking-widest uppercase">Target 01</span>
+    <h3 class="text-3xl font-black uppercase mb-4">Bwindi Forest</h3>
+    <a href="#" class="inline-block border border-white/20 px-6 py-2 text-[10px] font-mono uppercase tracking-widest hover:bg-[#d4a373] hover:border-[#d4a373] hover:text-black transition-colors duration-300">View Details</a>
+  </div>
+</div>
+
+<!-- Materuni Card -->
+<div class="group relative aspect-[3/4] overflow-hidden border border-white/5">
+  <img src="asset/KFNP.jpg" class="w-full h-full object-cover transition-all duration-700 group-hover:grayscale-0 group-hover:scale-110" alt="Ngorongoro">
+  <div class="absolute inset-0 bg-gradient-to-t from-[#0d0a07] via-transparent to-transparent"></div>
+  <div class="absolute bottom-0 p-8 w-full">
+    <span class="text-[#d4a373] font-mono text-[10px] tracking-widest uppercase">Target 02</span>
+    <h3 class="text-3xl font-black uppercase mb-4">Kibale Forest National Park</h3>
+    <a href="#" class="inline-block border border-white/20 px-6 py-2 text-[10px] font-mono uppercase tracking-widest hover:bg-[#d4a373] hover:border-[#d4a373] hover:text-black transition-colors duration-300">View Details</a>
+  </div>
+</div>
+
+<!-- arusha np Card -->
+<div class="group relative aspect-[3/4] overflow-hidden border border-white/5">
+  <img src="asset/MFNP.jpg" class="w-full h-full object-cover transition-all duration-700 group-hover:grayscale-0 group-hover:scale-110" alt="Zanzibar">
+  <div class="absolute inset-0 bg-gradient-to-t from-[#0d0a07] via-transparent to-transparent"></div>
+  <div class="absolute bottom-0 p-8 w-full">
+    <span class="text-[#d4a373] font-mono text-[10px] tracking-widest uppercase">Target 03</span>
+    <h3 class="text-3xl font-black uppercase mb-4">Murchison Falls National Park</h3>
+    <a href="#" class="inline-block border border-white/20 px-6 py-2 text-[10px] font-mono uppercase tracking-widest hover:bg-[#d4a373] hover:border-[#d4a373] hover:text-black transition-colors duration-300">View Details</a>
+  </div>
+</div>
+
+<!-- oldonyo Card -->
+<div class="group relative aspect-[3/4] overflow-hidden border border-white/5">
+  <img src="asset/QENP.jpg" class="w-full h-full object-cover transition-all duration-700 group-hover:grayscale-0 group-hover:scale-110" alt="Serengeti">
+  <div class="absolute inset-0 bg-gradient-to-t from-[#0d0a07] via-transparent to-transparent"></div>
+  <div class="absolute bottom-0 p-8 w-full">
+    <span class="text-[#d4a373] font-mono text-[10px] tracking-widest uppercase">Target 04</span>
+    <h3 class="text-3xl font-black uppercase mb-4">Queen Elizabeth National Park</h3>
+    <a href="#" class="inline-block border border-white/20 px-6 py-2 text-[10px] font-mono uppercase tracking-widest hover:bg-[#d4a373] hover:border-[#d4a373] hover:text-black transition-colors duration-300">View Details</a>
+  </div>
+</div>
+
+       
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function toggleIntel() {
+      const content = document.getElementById('intel-content');
+      const arrow = document.getElementById('intel-arrow');
+      const btnText = document.querySelector('#intel-btn span');
+      
+      content.classList.toggle('active');
+      const isActive = content.classList.contains('active');
+      
+      arrow.style.transform = isActive ? 'rotate(180deg)' : 'rotate(0deg)';
+      btnText.innerText = isActive ? 'Collapse Field Intel' : 'Access Full Field Intel';
+    }
+  </script>
+</body>
+</html>
