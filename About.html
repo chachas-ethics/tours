@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tours & Safaris</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    /* Prevent flash of content before JS loads */
+#page-loader {
+    position: fixed;
+    inset: 0;
+    background: #0d0a07; /* Your brand black */
+    z-index: 9999;
+    transition: opacity 0.8s ease-out, visibility 0.8s;
+}
+
+#page-loader.fade-out {
+    opacity: 0;
+    visibility: hidden;
+}
+
+</style>
+</head>
+<body class="antialiased">
+    <div id="page-loader"></div>
+
+    
+  <!-- Navbar -->
+   <nav class="fixed top-6 left-1/2 -translate-x-1/2 w-[92%] max-w-6xl z-[100] transition-[max-height,border-radius] duration-500 ease-in-out px-8 py-4 rounded-full border border-[#3d2b1f]/20 shadow-[0_20px_50px_rgba(0,0,0,0.3)] overflow-hidden" 
+     id="mainNav" 
+     style="background: linear-gradient(180deg, #2d1e14 0%, #1a120b 100%); max-height: 76px;">
+  
+  <!-- Subtle Wood Texture Overlay -->
+  <div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: url('https://transparenttextures.com');"></div>
+
+  <div class="flex justify-between items-center relative z-10">
+    <!-- Logo -->
+<a href="index.html#home" class="inline-flex items-center space-x-3 group/logo cursor-pointer">
+  <div class="relative w-10 h-10 bg-transparent rounded-full flex items-center justify-center overflow-hidden transition-transform duration-500 group-hover/logo:rotate-[360deg]">
+    <img src="assets/AFRICA SCENERY LOG2.png" alt="Logo" class="w-full h-full object-cover">
+  </div>
+  <span class="text-l font-bold tracking-widest text-[#d4a373] uppercase">
+    AFRICA SCENERY
+  </span>
+</a>
+
+
+    <!-- Desktop Menu -->
+    <div class="hidden md:flex items-center space-x-12 relative text-[11px] font-black uppercase tracking-[0.2em] text-stone-400">
+      <svg class="absolute top-1/2 left-0 w-full h-12 -translate-y-1/2 pointer-events-none z-0 opacity-40" viewBox="0 0 400 40">
+        <path d="M0,20 Q50,0 100,20 T200,20 T300,20 T400,20" fill="none" stroke="#d4a373" stroke-width="5" stroke-dasharray="10 5" class="animate-[snake-crawl_20s_linear_infinite]" />
+      </svg>
+      <a href="index.html#home" class="relative z-10 hover:text-[#d4a373] transition-colors">Home</a>
+      <a href="About.html" class="relative z-10 hover:text-[#d4a373] transition-colors">About</a>
+      <a href="index.html#destinations" class="relative z-10 hover:text-[#d4a373] transition-colors">Destinations</a>
+      <a href="index.html#packages" class="relative z-10 hover:text-[#d4a373] transition-colors">Packages</a>
+    </div>
+
+    <!-- CTA --><div class="hidden md:block">
+  <a href="https://wa.me/255788296274?text=Hello%2C%20I%27m%20interested%20in%20planning%20a%20safari.%20Could%20you%20share%20available%20packages%2C%20pricing%2C%20and%20the%20best%20travel%20dates%3F" 
+     target="_blank" 
+     rel="noopener noreferrer"
+     class="inline-block">
+    <button class="relative overflow-hidden group/btn px-8 py-3 rounded-full bg-[#d4a373] text-[10px] font-black uppercase tracking-[0.3em]  shadow-2xl transition-all hover:scale-105 active:scale-95">
+      <span class="relative z-10">Plan Safari</span>
+    </button>
+  </a>
+</div>
+
+
+    <!-- Animated Hamburger Button -->
+    <button id="menuBtn" class="md:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1.5 z-50 focus:outline-none">
+       <span id="line1" class="block w-6 h-0.5 bg-[#d4a373] transition-all duration-300 origin-center"></span>
+       <span id="line2" class="block w-6 h-0.5 bg-[#d4a373] transition-all duration-300"></span>
+       <span id="line3" class="block w-6 h-0.5 bg-[#d4a373] transition-all duration-300 origin-center"></span>
+    </button>
+  </div>
+
+  <!-- Mobile Dropdown -->
+  <div id="mobileMenu" class="md:hidden flex flex-col space-y-6 pt-10 pb-8 text-center text-[11px] font-black uppercase tracking-[0.3em] text-stone-400 border-t border-[#d4a373]/10 mt-6 relative z-10">
+      <a href="index.html#home" class="mobile-link hover:text-[#d4a373] transition-colors">Home</a>
+      <a href="About.html" class="mobile-link hover:text-[#d4a373] transition-colors">About</a>
+      <a href="index.html#destinations" class="mobile-link hover:text-[#d4a373] transition-colors">Destinations</a>
+      <a href="index.html#packages" class="mobile-link hover:text-[#d4a373] transition-colors">Packages</a>
+      <a href="index.html#gallery" class="mobile-link hover:text-[#d4a373] transition-colors">Gallery</a>
+      <a href="index.html#reviews" class="mobile-link hover:text-[#d4a373] transition-colors">Reviews</a>
+      <a href="https://wa.me/255788296274?text=Hello%2C%20I%27m%20interested%20in%20planning%20a%20safari.%20Could%20you%20share%20available%20packages%2C%20pricing%2C%20and%20the%20best%20travel%20dates%3F" 
+   target="_blank" 
+   rel="noopener noreferrer"
+   class="mobile-link bg-[#d4a373] text-black py-4 uppercase rounded-2xl mx-4">
+   Plan Safari
+</a>
+  </div>
+</nav>
+
+  <!-- Hero: The Brand Brief -->
+  <header class="relative h-[100vh] flex items-center overflow-hidden border-b border-white/5">
+    <div class="absolute inset-0 z-0">
+      <img src="asset/TL.webp" class="w-full h-full object-cover brightness-[0.7]" alt="Tanzanian Landscape">
+      <div class="absolute inset-0 bg-gradient-to-b from-[#0d0a07]/20 via-[#0d0a07]/60 to-[#0d0a07]"></div>
+    </div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-6 w-full">
+      <div class="inline-block bg-[#d4a373] text-[#0d0a07] px-4 py-2 font-black text-[10px] tracking-[0.4em] uppercase mb-6">
+        Established Intelligence
+      </div>
+      <h1 class="text-7xl md:text-8xl text-white font-black uppercase tracking-tighter leading-none">
+        Africa Scenery <br/> <span class="italic font-serif text-[#a68a64] lowercase">Discovery Tanzania</span>
+      </h1>
+      <p class="mt-8 text-xl text-stone-400 max-w-2xl font-medium leading-relaxed">
+        Rewriting the code of East African exploration. From the dust of the Serengeti to the peaks of Uganda and the shores of Kenya.
+      </p>
+    </div>
+  </header>
+
+  <!-- Mission & Vision: Tactical Objectives -->
+  <main class="py-24 stipple relative">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-24 items-start">
+      
+      <!-- Left: The Narrative -->
+      <div class="space-y-12">
+        <div class="border-l-4 border-[#d4a373] pl-8">
+          <h2 class="text-xs font-black uppercase tracking-[0.5em] text-[#d4a373] mb-4">Our Objective</h2>
+          <p class="text-3xl font-bold text-stone-400 leading-tight uppercase">
+            To curate <span class="text-[#d4a373]">tailor-made tactical expeditions</span> that blend luxury with the raw pulse of the wild.
+          </p>
+        </div>
+
+        <div class="space-y-6 text-stone-400 leading-relaxed text-lg">
+          <p>
+            Africa Scenery Discovery Tanzania specializes in the unorthodox. We don’t just provide tours; we organize high-fidelity safaris designed to showcase the brutal beauty of Tanzania’s national parks and the rich traditions of the tribes that guard them.
+          </p>
+          <p>
+            Whether it’s a high-stakes trek up Kilimanjaro, a private immersion in the Ngorongoro Crater, or an offshore extraction to Zanzibar, our mission is seamless. We operate with a year-round schedule, calibrated to the rhythm of the Great Migration and seasonal wildlife movements across Kenya and Uganda.
+          </p>
+        </div>
+
+        <!-- Core Values Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 pt-12 border-t border-white/10">
+          <div class="group">
+            <h4 class="text-[#d4a373] font-black uppercase text-[20px] tracking-widest mb-2">Customer-Centric</h4>
+            <p class="text-stone-500 text-sm">Bespoke experiences tailored to your specific mission parameters.</p>
+          </div>
+          <div class="group">
+            <h4 class="text-[#d4a373] font-black uppercase text-[20px] tracking-widest mb-2">Sustainable Ops</h4>
+            <p class="text-stone-500 text-sm">Promoting tourism that benefits the land and the communities we serve.</p>
+          </div>
+          <div class="group">
+            <h4 class="text-[#d4a373] font-black uppercase text-[20px] tracking-widest mb-2">Integrity</h4>
+            <p class="text-stone-500 text-sm">Honest, transparent dealings with global partners and local tribes.</p>
+          </div>
+          <div class="group">
+            <h4 class="text-[#d4a373] font-black uppercase text-[20px] tracking-widest mb-2">Service Excellence</h4>
+            <p class="text-stone-500 text-sm">Elite 24/7 field support and emergency tactical plans.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Field Equipment & Personnel -->
+      <div class="space-y-12">
+        <div class="relative group aspect-[4/5] overflow-hidden border border-white/10 shadow-2xl">
+          <img src="assets/Screenshot 2026-04-27 030329.png" alt="Our Fleet" class="w-full h-full object-cover group-hover:grayscale-0 transition-all duration-700">
+          <div class="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-[#0d0a07] to-transparent">
+            <span class="text-[#d4a373] font-mono text-[10px] uppercase tracking-widest">Equipment Brief</span>
+            <h3 class="text-2xl font-black uppercase text-white mt-2">OUR FLEET</h3>
+          </div>
+        </div>
+
+        <div class="bg-white/5 p-8 border border-white/10">
+          <h4 class="text-[#d4a373] font-black uppercase text-[20px] tracking-widest mb-6">Logistical Standards</h4>
+          <ul class="space-y-4 text-sm text-stone-400">
+            <li class="flex items-center gap-4">
+              <div class="h-1 w-4 bg-[#d4a373]"></div>
+              <span>Custom-equipped 4x4 vehicles with medical kits and long-range connectivity.</span>
+            </li>
+            <li class="flex items-center gap-4">
+              <div class="h-1 w-4 bg-[#d4a373]"></div>
+              <span>Experienced guides well-versed in Tanzanian, Kenyan, and Ugandan sectors.</span>
+            </li>
+            <li class="flex items-center gap-4">
+              <div class="h-1 w-4 bg-[#d4a373]"></div>
+              <span>Adherence to international safety standards and emergency extraction plans.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Targets: Who we serve -->
+  <section class="py-24 bg-[#14110e] border-y border-white/5">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <span class="text-[#d4a373] font-mono text-sm tracking-[0.4em] uppercase font-bold">Target Profiles</span>
+      <h2 class="text-4xl md:text-5xl text-white font-black uppercase mt-4 mb-16">Curated for the <span class="italic font-serif text-[#d4a373] lowercase">Distinguished</span></h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div class="space-y-4">
+          <h3 class="text-xl font-bold uppercase text-[#d4a373]">Luxury Seekers</h3>
+          <p class="text-stone-500 text-sm">Exclusive, high-end accommodations with premium tactical comfort.</p>
+        </div>
+        <div class="space-y-4">
+          <h3 class="text-xl font-bold uppercase text-[#d4a373]">Elite Explorers</h3>
+          <p class="text-stone-500 text-sm">Solo and group travelers focused on wildlife, photography, and high-stakes hiking.</p>
+        </div>
+        <div class="space-y-4">
+          <h3 class="text-xl font-bold uppercase text-[#d4a373]">Cultural Scholars</h3>
+          <p class="text-stone-500 text-sm">Deep immersion into the traditions of Tanzanian tribes and East African heritage.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final Briefing -->
+  <footer class="py-24 text-center relative overflow-hidden">
+    <div class="max-w-3xl mx-auto px-6 relative z-10">
+      <h3 class="text-3xl font-black uppercase italic mb-8">Not just a safari. <br/> <span class="text-[#d4a373]">An Unforgettable Adventure.</span></h3>
+      <p class="text-stone-500 mb-12">Africa Scenery Discovery Tanzania is poised to lead the market through personalized service and innovative exploration.</p>
+      <a href="index.html#contact" class="inline-block bg-[#d4a373] text-[#0d0a07] px-12 py-6 font-black uppercase text-sm tracking-[0.3em] hover:bg-white transition-all">
+        Initiate Deployment
+      </a>
+    </div>
+  </footer>
+
+
+  
+<style>
+  @keyframes snake-crawl {
+    from { stroke-dashoffset: 100; }
+    to { stroke-dashoffset: 0; }
+  }
+</style>
+
+
+  <script>
+    window.addEventListener('load', () => {
+    const loader = document.getElementById('page-loader');
+    
+    // Optional: Add a tiny delay so the transition feels more intentional
+    setTimeout(() => {
+        loader.classList.add('fade-out');
+    }, 100); 
+});
+
+
+    const menuBtn = document.getElementById('menuBtn');
+    const nav = document.getElementById('mainNav');
+    const line1 = document.getElementById('line1');
+    const line2 = document.getElementById('line2');
+    const line3 = document.getElementById('line3');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+
+    function toggleMenu() {
+      // Check if it's currently at the base height
+      const isClosed = nav.style.maxHeight === '76px' || nav.style.maxHeight === '';
+      
+      if (isClosed) {
+        // OPENING: Switch to boxy corners immediately, then expand height
+        nav.classList.remove('rounded-full');
+        nav.classList.add('rounded-[2rem]');
+        nav.style.maxHeight = '600px'; 
+
+        // Hamburger -> X
+        line1.style.transform = 'translateY(7px) rotate(45deg)';
+        line3.style.transform = 'translateY(-7px) rotate(-45deg)';
+        line2.style.opacity = '0';
+      } else {
+        // CLOSING: Shrink height first
+        nav.style.maxHeight = '76px';
+        
+        // Wait for the height transition to finish before turning back into a pill
+        setTimeout(() => {
+          if(nav.style.maxHeight === '76px') {
+            nav.classList.remove('rounded-[2rem]');
+            nav.classList.add('rounded-full');
+          }
+        }, 400);
+
+        // X -> Hamburger
+        line1.style.transform = 'none';
+        line3.style.transform = 'none';
+        line2.style.opacity = '1';
+      }
+    }
+
+    menuBtn.addEventListener('click', toggleMenu);
+
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        if (nav.style.maxHeight !== '76px') toggleMenu();
+      });
+    });
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+
+ <section id="contact" class="py-32 bg-[#0d0a07] relative overflow-hidden">
+  
+  <!-- GPS Radar Overlay -->
+  <div class="absolute inset-0 opacity-30 pointer-events-none">
+     <div class="absolute inset-0 bg-[radial-gradient(#d4a373_1px,transparent_1px)] [background-size:40px_40px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)]"></div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-6 relative z-10">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+      
+      <!-- Left Column -->
+      <div class="border-l-8 border-[#d4a373] pl-10">
+        <span class="text-[#d4a373] font-mono text-[10px] uppercase tracking-[0.5em] font-black italic">Transmission Window Open</span>
+        <h2 class="text-5xl md:text-8xl font-black tracking-tighter text-white mt-4 uppercase leading-[0.85]">
+          Initiate <br/> <span class="italic font-serif text-[#a68a64] lowercase tracking-normal">Extraction</span>
+        </h2>
+        <p class="mt-8 text-stone-400 text-lg max-w-md leading-relaxed font-medium">
+          The trackers are at base. Submit your coordinates and objectives. Our senior expedition designers will respond via encrypted channel within 12 hours.
+        </p>
+
+        <!-- Keep your original contact link -->
+        <div class="mt-12">
+          <a href="https://wa.me/255788296274" target="_blank" class="inline-flex items-center gap-6 group bg-white/5 border border-white/10 p-6 hover:bg-[#d4a373] transition-all duration-500">
+            <div class="w-14 h-14 bg-[#d4a373] text-[#0d0a07] flex items-center justify-center group-hover:bg-[#1a120b] group-hover:text-[#d4a373] transition-colors">
+              <!-- SVG untouched -->
+            </div>
+            <div>
+              <p class="text-[10px] text-[#d4a373] group-hover:text-[#1a120b] uppercase tracking-[0.3em] font-black italic transition-colors">Priority Comms</p>
+              <p class="text-white group-hover:text-[#1a120b] font-black text-xl tracking-tighter transition-colors">+255 700 000 000</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- FORM -->
+      <div class="relative">
+        <div class="absolute -inset-10 bg-[#d4a373]/10 blur-[120px] rounded-full opacity-40"></div>
+        
+        <form id="safariForm" class="relative bg-[#1a120b] border border-white/10 p-12 shadow-2xl space-y-8">
+          
+          <div class="border-b border-white/5 pb-6 mb-8">
+             <h4 class="text-white font-black uppercase tracking-widest text-xs">Craft Your Adventure</h4>
+          </div>
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="space-y-3">
+              <label class="text-[9px] uppercase tracking-[0.4em] text-[#d4a373] font-black italic ml-1">Name</label>
+              <input id="name" type="text" placeholder="Paul Miller" class="w-full bg-white/5 border border-white/10 p-4 text-white placeholder:text-stone-700 focus:outline-none focus:border-[#d4a373] transition-all font-mono text-sm" />
+            </div>
+            <div class="space-y-3">
+              <label class="text-[9px] uppercase tracking-[0.4em] text-[#d4a373] font-black italic ml-1">Month of Visit</label>
+              <input id="month" type="text" placeholder="Target Month" class="w-full bg-white/5 border border-white/10 p-4 text-white placeholder:text-stone-700 focus:outline-none focus:border-[#d4a373] transition-all font-mono text-sm" />
+            </div>
+          </div>
+
+          <div class="space-y-3">
+            <label class="text-[9px] uppercase tracking-[0.4em] text-[#d4a373] font-black italic ml-1">Location</label>
+            <select id="location" class="w-full bg-white/5 border border-white/10 p-4 text-white appearance-none focus:outline-none focus:border-[#d4a373] transition-all cursor-pointer font-mono text-sm">
+              <option class="bg-[#1a120b]">Serengeti</option>
+              <option class="bg-[#1a120b]">Ngorongoro</option>
+              <option class="bg-[#1a120b]">Zanzibar</option>
+            </select>
+          </div>
+
+          <!-- Only change: added data-budget -->
+          <div class="space-y-4">
+            <label class="text-[9px] uppercase tracking-[0.4em] text-[#d4a373] font-black italic ml-1">Resource Allocation</label>
+            <div class="grid grid-cols-2 gap-4">
+              <button type="button" data-budget="Luxury" class="budget-btn py-4 border border-white/10 text-[10px] font-black uppercase tracking-widest text-stone-500 hover:border-[#d4a373] hover:text-[#d4a373] transition-all italic">Luxury</button>
+              <button type="button" data-budget="Elite" class="budget-btn py-4 border border-white/10 text-[10px] font-black uppercase tracking-widest text-stone-500 hover:border-[#d4a373] hover:text-[#d4a373] transition-all italic">Elite</button>
+            </div>
+          </div>
+
+          <button type="submit" class="w-full py-6 bg-[#d4a373] text-[#0d0a07] font-black uppercase text-[11px] tracking-[0.4em] shadow-xl shadow-black/50 transition-all hover:bg-white active:translate-y-1">
+            Authorize Expedition
+          </button>
+
+          <p class="text-center text-[9px] text-stone-600 uppercase tracking-[0.2em] font-bold">
+            Secure Data Handling
+          </p>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+/* Prevent flash of content before JS loads */
+#page-loader {
+    position: fixed;
+    inset: 0;
+    background: #0d0a07; /* Your brand black */
+    z-index: 9999;
+    transition: opacity 0.8s ease-out, visibility 0.8s;
+}
+
+#page-loader.fade-out {
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+<div id="page-loader"></div>
+
+
+window.addEventListener('load', () => {
+    const loader = document.getElementById('page-loader');
+    
+    // Optional: Add a tiny delay so the transition feels more intentional
+    setTimeout(() => {
+        loader.classList.add('fade-out');
+    }, 100); 
+});

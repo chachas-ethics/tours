@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+<head>
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,9 +9,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
-<body class="text-stone-100 overflow-x-hidden">
+<body class="antialiased">
 
-    
   <!-- Navbar -->
    <nav class="fixed top-6 left-1/2 -translate-x-1/2 w-[92%] max-w-6xl z-[100] transition-[max-height,border-radius] duration-500 ease-in-out px-8 py-4 rounded-full border border-[#3d2b1f]/20 shadow-[0_20px_50px_rgba(0,0,0,0.3)] overflow-hidden" 
      id="mainNav" 
@@ -80,117 +79,101 @@
   </div>
 </nav>
 
-  <!-- Hero: Tactical Sector Entry -->
+  <!-- Hero: Target Acquisition -->
+     <!-- Hero: Target Acquisition -->
   <header class="relative h-[100vh] flex items-center overflow-hidden">
     <div class="absolute inset-0 z-0">
-      <!-- High-res background image -->
-      <img src="asset/BFNP.jpg" class="w-full h-full object-cover brightness-50" alt="Kenya Savanna">
-      <div class="absolute inset-0 bg-gradient-to-b from-[#0d0a07]/40 via-transparent to-[#0d0a07]"></div>
+      <!-- Background Image -->
+      <img src="assets/LMNP.webp" class="w-full h-full object-cover brightness-50" alt="Lake Manyara National Park">
+      <div class="absolute inset-0 bg-gradient-to-b from-[#0d0a07]/60 via-transparent to-[#0d0a07]"></div>
     </div>
 
-    <div class="relative z-10 max-w-7xl mx-auto px-6 w-full">
+    <div class="relative z-10 mt-10 max-w-7xl mx-auto px-6 w-full">
       <div class="inline-block bg-[#d4a373] text-[#0d0a07] px-4 py-5 font-black text-[10px] tracking-[0.4em] uppercase mb-6">
-        East Africa Sector 03
+        Location Briefing: Lake Manyara
       </div>
-      <h1 class="text-7xl md:text-9xl font-black uppercase tracking-tighter leading-none mb-4">
-        uganda
+      <h1 class="text-6xl md:text-9xl text-white font-black uppercase tracking-tighter leading-[0.85] mb-6">
+        Liquid <br><span class="text-[#d4a373]">Labyrinth.</span>
       </h1>
       <p class="text-xl italic font-serif text-[#a68a64] max-w-xl">
-        "The untamed heart of the continent, crafted for those who desire a deeper, more primal connection."
+        A narrow strip of sanctuary squeezed between the Rift Valley Escarpment and a shimmering alkaline lake.
       </p>
     </div>
   </header>
 
-  <!-- Expedition Intelligence (Long Text Section) -->
-      <main class="py-24 stipple relative">
+  <!-- Expedition Intelligence -->
+  <main class="py-24 stipple relative">
     <div class="max-w-4xl mx-auto px-6">
       
-      <!-- Briefing Header -->
-      <div class="border-l-4 border-[#d4a373] pl-8 mb-12">
-        <h2 class="text-xs font-black uppercase tracking-[0.5em] text-[#d4a373] mb-4">Intelligence Briefing</h2>
-        <p class="text-2xl md:text-3xl font-medium text-stone-400 leading-tight">
-          "From the mist-shrouded peaks of Bwindi to the surging power of Murchison Falls, your mission is engineered for raw encounters and untamed discovery."
+      <!-- Deployment Stats Grid -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-24 border-b border-white/10 pb-12">
+        <div>
+          <h4 class="text-[#d4a373] font-black uppercase tracking-widest text-[9px] mb-2">Park Profile</h4>
+          <p class="text-stone-400 text-sm font-bold uppercase">Rift Valley Basin</p>
+        </div>
+        <div>
+          <h4 class="text-[#d4a373] font-black uppercase tracking-widest text-[9px] mb-2">Target Species</h4>
+          <p class="text-stone-400 text-sm font-bold uppercase">Tree-Climbing Lions</p>
+        </div>
+        <div>
+          <h4 class="text-[#d4a373] font-black uppercase tracking-widest text-[9px] mb-2">Environment</h4>
+          <p class="text-stone-400 text-sm font-bold uppercase">Groundwater Forest</p>
+        </div>
+        <div>
+          <h4 class="text-[#d4a373] font-black uppercase tracking-widest text-[9px] mb-2">Bird Life</h4>
+          <p class="text-stone-400 text-sm font-bold uppercase">400+ Species</p>
+        </div>
+      </div>
+
+      <!-- Core Intelligence -->
+      <div class="border-l-4 border-[#d4a373] pl-8 mb-16">
+        <h2 class="text-xs font-black uppercase tracking-[0.5em] text-[#d4a373] mb-4">Area Intel</h2>
+        <p class="text-3xl md:text-4xl font-medium text-stone-400 leading-tight">
+          "Ernest Hemingway called this the loveliest lake in Africa. Its dense jungles and pink-fringed shores offer a masterclass in biodiversity."
         </p>
       </div>
 
-      <!-- Progressive Disclosure Section -->
-      <div class="relative">
-        <p class="text-stone-400 leading-relaxed">
-          Uganda is the primal heart of the continent, a lush, high-stakes theater of biodiversity. We operate beyond the standard trails, securing face-to-face access to the world’s last mountain gorillas and the legendary tree-climbing lions of the Albertine Rift.
-        </p>
-
-        <!-- Hidden Long Text -->
-        <div id="intel-content" class="reveal-content">
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 pt-8 border-t border-white/10 text-stone-500 text-sm leading-relaxed">
-            <div class="space-y-4">
-              <h4 class="text-[#d4a373] font-black uppercase tracking-widest text-[10px]">Territory Specs</h4>
-              <p>Strategic deep-entry into Bwindi Impenetrable Forest and Kibale’s primate corridors. Precision navigation through Queen Elizabeth National Park’s volcanic craters and the remote, rugged wilderness of Kidepo Valley.</p>
-            </div>
-            <div class="space-y-4">
-              <h4 class="text-[#d4a373] font-black uppercase tracking-widest text-[10px]">Field Equipment</h4>
-              <p>Specialized rainforest trekking gear and custom 4x4 safari cruisers optimized for jungle terrain. Led by expert UWA-certified trackers and elite guides with deep-ops knowledge of primate habituation and avian ecology.</p>
-            </div>
-          </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-stone-400 text-sm leading-relaxed">
+        <div class="space-y-6">
+          <p>
+            Lake Manyara is a compact powerhouse of ecosystems. The mission begins in a dense groundwater forest where baboon troops dominate the canopy, before breaking out into the acacia woodlands and the vast, soda-crusted lake shore.
+          </p>
+          <p>
+            The sector's tactical highlight is the observation of its unique tree-climbing lions—an evolutionary quirk found in very few places on the continent. During the wet season, the lake expands to cover two-thirds of the park, drawing in massive clouds of flamingos and pelicans.
+          </p>
         </div>
-       
+        <div class="space-y-6">
+          <h4 class="text-[#d4a373] font-black uppercase tracking-widest text-[10px]">Strategic Notes</h4>
+          <ul class="space-y-4 border-t border-white/5 pt-4">
+            <li class="flex gap-4">
+              <span class="text-[#d4a373] font-bold">01</span>
+              <span>Vertical Recon: The Treetop Walkway allows for high-angle observation 18 meters above the forest floor.</span>
+            </li>
+            <li class="flex gap-4">
+              <span class="text-[#d4a373] font-bold">02</span>
+              <span>Thermal Zone: The Maji Moto hot springs at the southern end provide a glimpse into the Rift Valley's geothermal activity.</span>
+            </li>
+            <li class="flex gap-4">
+              <span class="text-[#d4a373] font-bold">03</span>
+              <span>Elephant Intel: Home to high densities of elephants that utilize the forest for cover and the lake for hydration.</span>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </main>
 
-  <!-- Destination Grid: Tactical Cards -->
-  <section class="py-24 bg-[#14110e]">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-       
-        <!-- Tarangire Card -->
-<div class="group relative aspect-[3/4] overflow-hidden border border-white/5">
-  <img src="assets/bwindi.jpg" class="w-full h-full object-cover transition-all duration-700 group-hover:grayscale-0 group-hover:scale-110" alt="Serengeti">
-  <div class="absolute inset-0 bg-gradient-to-t from-[#0d0a07] via-transparent to-transparent"></div>
-  <div class="absolute bottom-0 p-8 w-full">
-    <span class="text-[#d4a373] font-mono text-[10px] tracking-widest uppercase">Target 01</span>
-    <h3 class="text-3xl font-black uppercase mb-4">Bwindi Forest</h3>
-    <a href="Bwindi.html" class="inline-block border border-white/20 px-6 py-4 text-[10px] font-mono uppercase tracking-widest hover:bg-[#d4a373] hover:border-[#d4a373] hover:text-black transition-colors duration-300">View Details</a>
-  </div>
-</div>
-
-<!-- Materuni Card -->
-<div class="group relative aspect-[3/4] overflow-hidden border border-white/5">
-  <img src="asset/KFNP.jpg" class="w-full h-full object-cover transition-all duration-700 group-hover:grayscale-0 group-hover:scale-110" alt="Ngorongoro">
-  <div class="absolute inset-0 bg-gradient-to-t from-[#0d0a07] via-transparent to-transparent"></div>
-  <div class="absolute bottom-0 p-8 w-full">
-    <span class="text-[#d4a373] font-mono text-[10px] tracking-widest uppercase">Target 02</span>
-    <h3 class="text-3xl font-black uppercase mb-4">Kibale Forest National Park</h3>
-    <a href="Kibale.html" class="inline-block border border-white/20 px-6 py-4 text-[10px] font-mono uppercase tracking-widest hover:bg-[#d4a373] hover:border-[#d4a373] hover:text-black transition-colors duration-300">View Details</a>
-  </div>
-</div>
-
-<!-- arusha np Card -->
-<div class="group relative aspect-[3/4] overflow-hidden border border-white/5">
-  <img src="asset/MFNP.jpg" class="w-full h-full object-cover transition-all duration-700 group-hover:grayscale-0 group-hover:scale-110" alt="Zanzibar">
-  <div class="absolute inset-0 bg-gradient-to-t from-[#0d0a07] via-transparent to-transparent"></div>
-  <div class="absolute bottom-0 p-8 w-full">
-    <span class="text-[#d4a373] font-mono text-[10px] tracking-widest uppercase">Target 03</span>
-    <h3 class="text-3xl font-black uppercase mb-4">Murchison Falls National Park</h3>
-    <a href="Murchison.html" class="inline-block border border-white/20 px-6 py-4 text-[10px] font-mono uppercase tracking-widest hover:bg-[#d4a373] hover:border-[#d4a373] hover:text-black transition-colors duration-300">View Details</a>
-  </div>
-</div>
-
-<!-- oldonyo Card -->
-<div class="group relative aspect-[3/4] overflow-hidden border border-white/5">
-  <img src="asset/QENP.jpg" class="w-full h-full object-cover transition-all duration-700 group-hover:grayscale-0 group-hover:scale-110" alt="Serengeti">
-  <div class="absolute inset-0 bg-gradient-to-t from-[#0d0a07] via-transparent to-transparent"></div>
-  <div class="absolute bottom-0 p-8 w-full">
-    <span class="text-[#d4a373] font-mono text-[10px] tracking-widest uppercase">Target 04</span>
-    <h3 class="text-3xl font-black uppercase mb-4">Queen Elizabeth National Park</h3>
-    <a href="QueenElizabeth.html" class="inline-block border border-white/20 px-6 py-4 text-[10px] font-mono uppercase tracking-widest hover:bg-[#d4a373] hover:border-[#d4a373] hover:text-black transition-colors duration-300">View Details</a>
-  </div>
-</div>
-
-       
-      </div>
+  <!-- CTA Footer -->
+  <footer class="py-24 bg-[#14110e] border-t border-white/5 text-center">
+    <div class="max-w-2xl mx-auto px-6">
+      <h3 class="text-4xl font-black uppercase mb-8 italic">Ready to deploy?</h3>
+      <a href="#" class="inline-block bg-[#d4a373] text-[#0d0a07] font-black px-12 py-6 text-[10px] font-mono uppercase tracking-[0.3em] hover:bg-white transition-all duration-300">
+        Request Expedition Dates
+      </a>
     </div>
-  </section>
+  </footer>
 
+  
 <style>
   @keyframes snake-crawl {
     from { stroke-dashoffset: 100; }
@@ -263,5 +246,6 @@
  document.addEventListener("touchstart", function() {}, true);
 
   </script>
+
 </body>
 </html>
