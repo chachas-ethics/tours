@@ -24,7 +24,7 @@
     <!-- Logo -->
 <a href="index.html#home" class="inline-flex items-center space-x-3 group/logo cursor-pointer">
   <div class="relative w-10 h-10 bg-transparent rounded-full flex items-center justify-center overflow-hidden transition-transform duration-500 group-hover/logo:rotate-[360deg]">
-    <img src="assets/AFRICA SCENERY LOG2.png" alt="Logo" class="w-full h-full object-cover">
+    <img src="assets/AFRICA SCENERY LOG2.JPEG" alt="Logo" class="w-full h-full object-cover">
   </div>
   <span class="text-l font-bold tracking-widest text-[#d4a373] uppercase">
     AFRICA SCENERY
@@ -103,66 +103,92 @@
   </header>
 
   <!-- Expedition Intelligence -->
-  <main class="py-24 stipple relative">
-    <div class="max-w-4xl mx-auto px-6">
-      
-      <!-- Deployment Stats Grid -->
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-24 border-b border-white/10 pb-12">
-        <div>
-          <h4 class="text-[#d4a373] font-black uppercase tracking-widest text-[9px] mb-2">Territory</h4>
-          <p class="text-stone-400 text-sm font-bold uppercase">Kili Foothills</p>
-        </div>
-        <div>
-          <h4 class="text-[#d4a373] font-black uppercase tracking-widest text-[9px] mb-2">Primary Asset</h4>
-          <p class="text-stone-400 text-sm font-bold uppercase">Arabica Coffee</p>
-        </div>
-        <div>
-          <h4 class="text-[#d4a373] font-black uppercase tracking-widest text-[9px] mb-2">Engineering</h4>
-          <p class="text-stone-400 text-sm font-bold uppercase">Gravity Irrigation</p>
-        </div>
-        <div>
-          <h4 class="text-[#d4a373] font-black uppercase tracking-widest text-[9px] mb-2">Social Unit</h4>
-          <p class="text-stone-400 text-sm font-bold uppercase">Kihamba (Family Plot)</p>
-        </div>
+ <main class="py-24 stipple relative bg-stone-50 text-stone-700">
+  <div class="max-w-4xl mx-auto px-6">
+    
+    <!-- Deployment Stats Grid -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-24 border-b border-stone-200 pb-12">
+      <div>
+        <h4 class="text-[#d4a373] font-black uppercase tracking-widest text-[9px] mb-2">Territory</h4>
+        <p class="text-stone-500 text-sm font-bold uppercase">Kili Foothills</p>
       </div>
-
-      <!-- Core Intelligence -->
-      <div class="border-l-4 border-[#d4a373] pl-8 mb-16">
-        <h2 class="text-xs font-black uppercase tracking-[0.5em] text-[#d4a373] mb-4">Area Intel</h2>
-        <p class="text-3xl md:text-4xl font-medium text-stone-400 leading-tight">
-          "The Chagga have spent centuries domesticating the slopes of Africa's highest peak, creating a vertical paradise of coffee, bananas, and hidden history."
-        </p>
+      <div>
+        <h4 class="text-[#d4a373] font-black uppercase tracking-widest text-[9px] mb-2">Primary Asset</h4>
+        <p class="text-stone-500 text-sm font-bold uppercase">Arabica Coffee</p>
       </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-stone-400 text-sm leading-relaxed">
-        <div class="space-y-6">
-          <p>
-            The Chagga (Wachagga) are Bantu-speaking people known for their advanced agricultural systems and economic prowess. Living in the fertile "banana belt" of Mount Kilimanjaro, they developed sophisticated irrigation furrows that channel glacial meltwater to their small-scale family farms.
-          </p>
-          <p>
-            Our mission focuses on the "Shamba" experience. You will engage with local farmers to execute the full lifecycle of coffee production—from hand-picking organic beans to roasting over an open fire. Beyond agriculture, we explore the deep historical bunkers (Chagga Caves) used for defense during ancient inter-tribal conflicts.
-          </p>
-        </div>
-        <div class="space-y-6">
-          <h4 class="text-[#d4a373] font-black uppercase tracking-widest text-[10px]">Strategic Notes</h4>
-          <ul class="space-y-4 border-t border-white/5 pt-4">
-            <li class="flex gap-4">
-              <span class="text-[#d4a373] font-bold">01</span>
-              <span>Coffee Intel: The Chagga are responsible for some of the world's highest-quality volcanic Arabica coffee.</span>
-            </li>
-            <li class="flex gap-4">
-              <span class="text-[#d4a373] font-bold">02</span>
-              <span>Defense Recon: Visit the elaborate underground tunnels and bunkers carved into the volcanic rock to protect livestock and families.</span>
-            </li>
-            <li class="flex gap-4">
-              <span class="text-[#d4a373] font-bold">03</span>
-              <span>Culinary Ops: Sample 'Mtori'—a traditional Chagga soup made from bananas and meat, engineered for highland endurance.</span>
-            </li>
-          </ul>
-        </div>
+      <div>
+        <h4 class="text-[#d4a373] font-black uppercase tracking-widest text-[9px] mb-2">Engineering</h4>
+        <p class="text-stone-500 text-sm font-bold uppercase">Gravity Irrigation</p>
+      </div>
+      <div>
+        <h4 class="text-[#d4a373] font-black uppercase tracking-widest text-[9px] mb-2">Social Unit</h4>
+        <p class="text-stone-500 text-sm font-bold uppercase">Kihamba (Family Plot)</p>
       </div>
     </div>
-  </main>
+
+    <!-- ADDED: 3-Column Reference Photo Grid (Aligned to Page Width) -->
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-24">
+      <div class="relative overflow-hidden aspect-[4/3] bg-stone-200 rounded border border-stone-200">
+        <img src="images/coffee.jpg" alt="Organic Arabica Coffee Harvest" class="object-cover w-full h-full" />
+        <span class="absolute bottom-2 left-2 text-[8px] font-black uppercase tracking-widest bg-stone-900 text-white px-2 py-0.5">01. Coffee Lifecycle</span>
+      </div>
+      <div class="relative overflow-hidden aspect-[4/3] bg-stone-200 rounded border border-stone-200">
+        <img src="images/coffeeroast.webp" alt="Traditional Open Fire Coffee Roasting" class="object-cover w-full h-full" />
+        <span class="absolute bottom-2 left-2 text-[8px] font-black uppercase tracking-widest bg-stone-900 text-white px-2 py-0.5">02. Open Fire Roasting</span>
+      </div>
+      <div class="relative overflow-hidden aspect-[4/3] bg-stone-200 rounded border border-stone-200">
+        <img src="images/furrows.webp" alt="Traditional Chagga Gravity Irrigation Furrows" class="object-cover w-full h-full" />
+        <span class="absolute bottom-2 left-2 text-[8px] font-black uppercase tracking-widest bg-stone-900 text-white px-2 py-0.5">03. Gravity Furrows</span>
+      </div>
+    </div>
+
+    <!-- Core Intelligence -->
+    <div class="border-l-4 border-[#d4a373] pl-8 mb-16">
+      <h2 class="text-xs font-black uppercase tracking-[0.5em] text-[#d4a373] mb-4">Area Intel</h2>
+      <p class="text-3xl md:text-4xl font-medium text-stone-600 leading-tight">
+        "The Chagga have spent centuries domesticating the slopes of Africa's highest peak, creating a vertical paradise of coffee, bananas, and hidden history."
+      </p>
+    </div>
+
+    <!-- Two Column Layout (Original Text & Notes) -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-stone-600 text-sm leading-relaxed">
+      <div class="space-y-6">
+        <p>
+          The Chagga (Wachagga) are Bantu-speaking people known for their advanced agricultural systems and economic prowess. Living in the fertile "banana belt" of Mount Kilimanjaro, they developed sophisticated irrigation furrows that channel glacial meltwater to their small-scale family farms.
+        </p>
+        <p>
+          Our mission focuses on the "Shamba" experience. You will engage with local farmers to execute the full lifecycle of coffee production—from hand-picking organic beans to roasting over an open fire. Beyond agriculture, we explore the deep historical bunkers (Chagga Caves) used for defense during ancient inter-tribal conflicts.
+        </p>
+      </div>
+      
+      <div class="space-y-6">
+        <h4 class="text-[#d4a373] font-black uppercase tracking-widest text-[10px]">Strategic Notes</h4>
+        
+        <!-- ADDED: Inline contextual image inside Column 2 -->
+        <div class="relative overflow-hidden aspect-[16/7] bg-stone-200 rounded border border-stone-200 my-4">
+          <img src="images/marangu.webp" alt="Historical Underground Chagga Bunkers and Caves" class="object-cover w-full h-full" />
+          <span class="absolute bottom-2 left-2 text-[8px] font-black uppercase tracking-widest bg-stone-900 text-white px-2 py-0.5">04. Defense Caves Recon</span>
+        </div>
+
+        <ul class="space-y-4 border-t border-stone-200 pt-4">
+          <li class="flex gap-4">
+            <span class="text-[#d4a373] font-bold">01</span>
+            <span>Coffee Intel: The Chagga are responsible for some of the world's highest-quality volcanic Arabica coffee.</span>
+          </li>
+          <li class="flex gap-4">
+            <span class="text-[#d4a373] font-bold">02</span>
+            <span>Defense Recon: Visit the elaborate underground tunnels and bunkers carved into the volcanic rock to protect livestock and families.</span>
+          </li>
+          <li class="flex gap-4">
+            <span class="text-[#d4a373] font-bold">03</span>
+            <span>Culinary Ops: Sample 'Mtori'—a traditional Chagga soup made from bananas and meat, engineered for highland endurance.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</main>
+
 
   <!-- CTA Footer -->
   <footer class="py-24 bg-[#14110e] border-t border-white/5 text-center">

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tours & Safaris</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body class="antialiased">
+
+  <!-- Navbar -->
+   <nav class="fixed top-6 left-1/2 -translate-x-1/2 w-[92%] max-w-6xl z-[100] transition-[max-height,border-radius] duration-500 ease-in-out px-8 py-4 rounded-full border border-[#3d2b1f]/20 shadow-[0_20px_50px_rgba(0,0,0,0.3)] overflow-hidden" 
+     id="mainNav" 
+     style="background: linear-gradient(180deg, #2d1e14 0%, #1a120b 100%); max-height: 76px;">
+  
+  <!-- Subtle Wood Texture Overlay -->
+  <div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: url('https://transparenttextures.com');"></div>
+
+  <div class="flex justify-between items-center relative z-10">
+    <!-- Logo -->
+<a href="index.html#home" class="inline-flex items-center space-x-3 group/logo cursor-pointer">
+  <div class="relative w-10 h-10 bg-transparent rounded-full flex items-center justify-center overflow-hidden transition-transform duration-500 group-hover/logo:rotate-[360deg]">
+    <img src="assets/AFRICA SCENERY LOG2.JPEG" alt="Logo" class="w-full h-full object-cover">
+  </div>
+  <span class="text-l font-bold tracking-widest text-[#d4a373] uppercase">
+    AFRICA SCENERY
+  </span>
+</a>
+
+
+    <!-- Desktop Menu -->
+    <div class="hidden md:flex items-center space-x-12 relative text-[11px] font-black uppercase tracking-[0.2em] text-stone-400">
+      <svg class="absolute top-1/2 left-0 w-full h-12 -translate-y-1/2 pointer-events-none z-0 opacity-40" viewBox="0 0 400 40">
+        <path d="M0,20 Q50,0 100,20 T200,20 T300,20 T400,20" fill="none" stroke="#d4a373" stroke-width="5" stroke-dasharray="10 5" class="animate-[snake-crawl_20s_linear_infinite]" />
+      </svg>
+      <a href="index.html#home" class="relative z-10 hover:text-[#d4a373] transition-colors">Home</a>
+      <a href="About.html" class="relative z-10 hover:text-[#d4a373] transition-colors">About</a>
+      <a href="index.html#destinations" class="relative z-10 hover:text-[#d4a373] transition-colors">Destinations</a>
+      <a href="index.html#packages" class="relative z-10 hover:text-[#d4a373] transition-colors">Packages</a>
+    </div>
+
+    <!-- CTA --><div class="hidden md:block">
+  <a href="https://wa.me/255788296274?text=Hello%2C%20I%27m%20interested%20in%20planning%20a%20safari.%20Could%20you%20share%20available%20packages%2C%20pricing%2C%20and%20the%20best%20travel%20dates%3F" 
+     target="_blank" 
+     rel="noopener noreferrer"
+     class="inline-block">
+    <button class="relative overflow-hidden group/btn px-8 py-3 rounded-full bg-[#d4a373] text-[10px] font-black uppercase tracking-[0.3em]  shadow-2xl transition-all hover:scale-105 active:scale-95">
+      <span class="relative z-10">Plan Safari</span>
+    </button>
+  </a>
+</div>
+
+
+    <!-- Animated Hamburger Button -->
+    <button id="menuBtn" class="md:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1.5 z-50 focus:outline-none">
+       <span id="line1" class="block w-6 h-0.5 bg-[#d4a373] transition-all duration-300 origin-center"></span>
+       <span id="line2" class="block w-6 h-0.5 bg-[#d4a373] transition-all duration-300"></span>
+       <span id="line3" class="block w-6 h-0.5 bg-[#d4a373] transition-all duration-300 origin-center"></span>
+    </button>
+  </div>
+
+  <!-- Mobile Dropdown -->
+  <div id="mobileMenu" class="md:hidden flex flex-col space-y-6 pt-10 pb-8 text-center text-[11px] font-black uppercase tracking-[0.3em] text-stone-400 border-t border-[#d4a373]/10 mt-6 relative z-10">
+      <a href="index.html#home" class="mobile-link hover:text-[#d4a373] transition-colors">Home</a>
+      <a href="About.html" class="mobile-link hover:text-[#d4a373] transition-colors">About</a>
+      <a href="index.html#destinations" class="mobile-link hover:text-[#d4a373] transition-colors">Destinations</a>
+      <a href="index.html#packages" class="mobile-link hover:text-[#d4a373] transition-colors">Packages</a>
+      <a href="index.html#gallery" class="mobile-link hover:text-[#d4a373] transition-colors">Gallery</a>
+      <a href="index.html#reviews" class="mobile-link hover:text-[#d4a373] transition-colors">Reviews</a>
+      <a href="https://wa.me/255788296274?text=Hello%2C%20I%27m%20interested%20in%20planning%20a%20safari.%20Could%20you%20share%20available%20packages%2C%20pricing%2C%20and%20the%20best%20travel%20dates%3F" 
+   target="_blank" 
+   rel="noopener noreferrer"
+   class="mobile-link bg-[#d4a373] text-black py-4 uppercase rounded-2xl mx-4">
+   Plan Safari
+</a>
+  </div>
+</nav>
+
+ <!-- Hero: Target Acquisition -->
+<header class="relative h-[100vh] flex items-center overflow-hidden bg-[#0d0a07]">
+  <div class="absolute inset-0 z-0">
+    <!-- Background Image -->
+    <img src="asset/zenji.jpg" class="w-full h-full object-cover brightness-50" alt="Zanzibar Coastline">
+    <div class="absolute inset-0 bg-gradient-to-b from-[#0d0a07]/60 via-transparent to-[#0d0a07]"></div>
+  </div>
+
+  <div class="relative z-10 mt-10 max-w-7xl mx-auto px-6 w-full">
+    <div class="inline-block bg-[#d4a373] text-[#0d0a07] px-4 py-1.5 font-black text-[10px] tracking-[0.4em] uppercase mb-6">
+      Location Briefing: Zanzibar Archipelago
+    </div>
+    <h1 class="text-7xl md:text-9xl text-white font-black uppercase tracking-tighter leading-[0.85] mb-6">
+      Spice <br><span class="text-[#d4a373]">Island.</span>
+    </h1>
+    <p class="text-xl italic font-serif text-[#a68a64] max-w-xl">
+      An ancient maritime crossroads in the Indian Ocean, where carved Swahili history meets endless horizons of turquoise water.
+    </p>
+  </div>
+</header>
+
+
+  <!-- Expedition Intelligence -->
+ <main class="py-24 stipple relative bg-stone-50 text-stone-700">
+  <div class="max-w-4xl mx-auto px-6">
+    
+    <!-- Deployment Stats Grid -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-24 border-b border-stone-200 pb-12">
+      <div>
+        <h4 class="text-[#d4a373] font-black uppercase tracking-widest text-[9px] mb-2">Primary Hub</h4>
+        <p class="text-stone-500 text-sm font-bold uppercase">Stone Town / Nungwi</p>
+      </div>
+      <div>
+        <h4 class="text-[#d4a373] font-black uppercase tracking-widest text-[9px] mb-2">Tactical Mode</h4>
+        <p class="text-stone-500 text-sm font-bold uppercase">Dhow Sail / Walking</p>
+      </div>
+      <div>
+        <h4 class="text-[#d4a373] font-black uppercase tracking-widest text-[9px] mb-2">Environment</h4>
+        <p class="text-stone-500 text-sm font-bold uppercase">Coral Reef / Coast</p>
+      </div>
+      <div>
+        <h4 class="text-[#d4a373] font-black uppercase tracking-widest text-[9px] mb-2">Mission Type</h4>
+        <p class="text-stone-500 text-sm font-bold uppercase">Cultural / R&R</p>
+      </div>
+    </div>
+
+    <!-- 3-Column Reference Photo Grid (Aligned to Page Width) -->
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-24">
+      <div class="relative overflow-hidden aspect-[4/3] bg-stone-200 rounded border border-stone-200">
+        <img src="images/alleys.jpg" alt="Stone Town Narrow Alleys" class="object-cover w-full h-full" />
+        <span class="absolute bottom-2 left-2 text-[8px] font-black uppercase tracking-widest bg-stone-900 text-white px-2 py-0.5">01. Stone Town Alleys</span>
+      </div>
+      <div class="relative overflow-hidden aspect-[4/3] bg-stone-200 rounded border border-stone-200">
+        <img src="images/dhows.jpg" alt="Traditional Dhow Sailing at Sunset" class="object-cover w-full h-full" />
+        <span class="absolute bottom-2 left-2 text-[8px] font-black uppercase tracking-widest bg-stone-900 text-white px-2 py-0.5">02. Dhow Cruise</span>
+      </div>
+      <div class="relative overflow-hidden aspect-[4/3] bg-stone-200 rounded border border-stone-200">
+        <img src="images/nungwi.webp" alt="White Sand Beaches of Nungwi" class="object-cover w-full h-full" />
+        <span class="absolute bottom-2 left-2 text-[8px] font-black uppercase tracking-widest bg-stone-900 text-white px-2 py-0.5">03. Nungwi Coastline</span>
+      </div>
+    </div>
+
+    <!-- Core Intelligence -->
+    <div class="border-l-4 border-[#d4a373] pl-8 mb-16">
+      <h2 class="text-xs font-black uppercase tracking-[0.5em] text-[#d4a373] mb-4">Area Intel</h2>
+      <p class="text-3xl md:text-4xl font-medium text-stone-600 leading-tight">
+        "Steeped in centuries of Swahili culture, Zanzibar is the Spice Island—a convergence of turquoise waters, carved wooden doors, and aromatic history."
+      </p>
+    </div>
+
+    <!-- Two Column Layout (Original Text & Notes) -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-stone-600 text-sm leading-relaxed">
+      <div class="space-y-6">
+        <p>
+          Zanzibar is a premier archipelago in the Indian Ocean, serving as a high-value destination for global travelers. The exploration begins in Stone Town, a UNESCO World Heritage site defined by an intricate labyrinth of coral-rag alleys, bustling spice bazaars, and historic Arabic-style architecture.
+        </p>
+        <p>
+          Moving beyond the urban grid, operations transition to the coastlines. Northern sectors like Nungwi and Kendwa offer tideless, powdery white beaches, while the eastern barrier reefs invite high-precision marine reconnaissance, showcasing exceptional visibility for diving among pristine coral reefs.
+        </p>
+      </div>
+      
+      <div class="space-y-6">
+        <h4 class="text-[#d4a373] font-black uppercase tracking-widest text-[10px]">Strategic Notes</h4>
+        
+        <!-- Inline contextual image inside Column 2 -->
+        <div class="relative overflow-hidden aspect-[16/7] bg-stone-200 rounded border border-stone-200 my-4">
+          <img src="images/spice tour.jpg" alt="Zanzibar Spice Plantation Tour" class="object-cover w-full h-full" />
+          <span class="absolute bottom-2 left-2 text-[8px] font-black uppercase tracking-widest bg-stone-900 text-white px-2 py-0.5">04. Spice Farm Recon</span>
+        </div>
+
+        <ul class="space-y-4 border-t border-stone-200 pt-4">
+          <li class="flex gap-4">
+            <span class="text-[#d4a373] font-bold">01</span>
+            <span>Spice Recon: Execute a deep-dive tour into local plantations to harvest cloves, nutmeg, and vanilla fresh from the vine.</span>
+          </li>
+          <li class="flex gap-4">
+            <span class="text-[#d4a373] font-bold">02</span>
+            <span>Marine Intel: Mnemba Atoll serves as a critical marine reserve, offering premier tracking of wild dolphins and green sea turtles.</span>
+          </li>
+          <li class="flex gap-4">
+            <span class="text-[#d4a373] font-bold">03</span>
+            <span>Fauna Asset: Jozani Forest is the exclusive stronghold of the rare, endemic Red Colobus monkey population.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</main>
+
+
+
+  <!-- CTA Footer -->
+  <footer class="py-24 bg-[#14110e] border-t border-white/5 text-center">
+    <div class="max-w-2xl mx-auto px-6">
+      <h3 class="text-4xl font-black uppercase mb-8 italic">Ready to deploy?</h3>
+      <a href="#" class="inline-block bg-[#d4a373] text-[#0d0a07] font-black px-12 py-6 text-[10px] font-mono uppercase tracking-[0.3em] hover:bg-white transition-all duration-300">
+        Request Expedition Dates
+      </a>
+    </div>
+  </footer>
+
+  
+<style>
+  @keyframes snake-crawl {
+    from { stroke-dashoffset: 100; }
+    to { stroke-dashoffset: 0; }
+  }
+</style>
+
+
+  <script>
+    window.addEventListener('load', () => {
+    const loader = document.getElementById('page-loader');
+    
+    // Optional: Add a tiny delay so the transition feels more intentional
+    setTimeout(() => {
+        loader.classList.add('fade-out');
+    }, 100); 
+});
+
+
+    const menuBtn = document.getElementById('menuBtn');
+    const nav = document.getElementById('mainNav');
+    const line1 = document.getElementById('line1');
+    const line2 = document.getElementById('line2');
+    const line3 = document.getElementById('line3');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+
+    function toggleMenu() {
+      // Check if it's currently at the base height
+      const isClosed = nav.style.maxHeight === '76px' || nav.style.maxHeight === '';
+      
+      if (isClosed) {
+        // OPENING: Switch to boxy corners immediately, then expand height
+        nav.classList.remove('rounded-full');
+        nav.classList.add('rounded-[2rem]');
+        nav.style.maxHeight = '600px'; 
+
+        // Hamburger -> X
+        line1.style.transform = 'translateY(7px) rotate(45deg)';
+        line3.style.transform = 'translateY(-7px) rotate(-45deg)';
+        line2.style.opacity = '0';
+      } else {
+        // CLOSING: Shrink height first
+        nav.style.maxHeight = '76px';
+        
+        // Wait for the height transition to finish before turning back into a pill
+        setTimeout(() => {
+          if(nav.style.maxHeight === '76px') {
+            nav.classList.remove('rounded-[2rem]');
+            nav.classList.add('rounded-full');
+          }
+        }, 400);
+
+        // X -> Hamburger
+        line1.style.transform = 'none';
+        line3.style.transform = 'none';
+        line2.style.opacity = '1';
+      }
+    }
+
+    menuBtn.addEventListener('click', toggleMenu);
+
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        if (nav.style.maxHeight !== '76px') toggleMenu();
+      });
+    });
+
+     
+/* ios hover */
+ document.addEventListener("touchstart", function() {}, true);
+
+  </script>
+
+</body>
+</html>
