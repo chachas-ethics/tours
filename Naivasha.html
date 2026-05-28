@@ -102,7 +102,7 @@
   </header>
 
   <!-- Expedition Intelligence -->
-  <main class="py-24 stipple relative">
+   <main class="py-24 stipple relative">
     <div class="max-w-4xl mx-auto px-6">
       
       <!-- Deployment Stats Grid -->
@@ -125,6 +125,22 @@
         </div>
       </div>
 
+      <!-- ADDED: 3-Column Reference Photo Grid (Aligned to Page Width) -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-24">
+        <div class="relative overflow-hidden aspect-[4/3] bg-stone-200 rounded border border-stone-200">
+          <img src="pictures/acacia.webp" alt="Lake Naivasha Acacia Shoreline" class="object-cover w-full h-full" />
+          <span class="absolute bottom-2 left-2 text-[8px] font-black uppercase tracking-widest bg-stone-900 text-white px-2 py-0.5">01. ECOSYSTEM</span>
+        </div>
+        <div class="relative overflow-hidden aspect-[4/3] bg-stone-200 rounded border border-stone-200">
+          <img src="pictures/ponds.webp" alt="Hippo Pods Lake Naivasha" class="object-cover w-full h-full" />
+          <span class="absolute bottom-2 left-2 text-[8px] font-black uppercase tracking-widest bg-stone-900 text-white px-2 py-0.5">02. RECON</span>
+        </div>
+        <div class="relative overflow-hidden aspect-[4/3] bg-stone-200 rounded border border-stone-200">
+          <img src="pictures/crescent.jpg" alt="Crescent Island Walking Safari" class="object-cover w-full h-full" />
+          <span class="absolute bottom-2 left-2 text-[8px] font-black uppercase tracking-widest bg-stone-900 text-white px-2 py-0.5">03. WALK-OP</span>
+        </div>
+      </div>
+
       <!-- Core Intelligence -->
       <div class="border-l-4 border-[#d4a373] pl-8 mb-16">
         <h2 class="text-xs font-black uppercase tracking-[0.5em] text-[#d4a373] mb-4">Area Intel</h2>
@@ -133,6 +149,7 @@
         </p>
       </div>
 
+      <!-- Two Column Layout (Original Structure Kept intact) -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-stone-400 text-sm leading-relaxed">
         <div class="space-y-6">
           <p>
@@ -142,8 +159,16 @@
             The mission profile features boat-based reconnaissance to observe the massive hippo pods and a transition to Crescent Island for a walking safari. On the island, you can track giraffes, zebras, and wildebeests on foot, moving through the landscape with zero barriers.
           </p>
         </div>
+        
         <div class="space-y-6">
           <h4 class="text-[#d4a373] font-black uppercase tracking-widest text-[10px]">Strategic Notes</h4>
+          
+          <!-- ADDED: Inline contextual image inside column 2 -->
+          <div class="relative overflow-hidden aspect-[16/7] bg-stone-200 rounded border border-stone-200 my-4">
+            <img src="pictures/eagle.jpg" alt="African Fish Eagle Hunting" class="object-cover w-full h-full" />
+            <span class="absolute bottom-2 left-2 text-[8px] font-black uppercase tracking-widest bg-stone-900 text-white px-2 py-0.5">04. Aerial Target</span>
+          </div>
+
           <ul class="space-y-4 border-t border-white/5 pt-4">
             <li class="flex gap-4">
               <span class="text-[#d4a373] font-bold">01</span>
@@ -161,7 +186,8 @@
         </div>
       </div>
     </div>
-  </main>
+</main>
+
 
   <!-- CTA Footer -->
   <footer class="py-24 bg-[#14110e] border-t border-white/5 text-center">
