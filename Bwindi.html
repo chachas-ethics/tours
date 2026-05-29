@@ -103,7 +103,7 @@
   </header>
 
   <!-- Expedition Intelligence -->
-  <main class="py-24 stipple relative">
+   <main class="py-24 stipple relative">
     <div class="max-w-4xl mx-auto px-6">
       
       <!-- Deployment Stats Grid -->
@@ -126,6 +126,22 @@
         </div>
       </div>
 
+      <!-- ADDED: 3-Column Reference Photo Grid (Aligned to Page Width) -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-24">
+        <div class="relative overflow-hidden aspect-[4/3] bg-stone-200 rounded border border-stone-200">
+          <img src="pictures/mist.webp" alt="Misty Bwindi Ridges" class="object-cover w-full h-full" />
+          <span class="absolute bottom-2 left-2 text-[8px] font-black uppercase tracking-widest bg-stone-900 text-white px-2 py-0.5">01. CANOPY</span>
+        </div>
+        <div class="relative overflow-hidden aspect-[4/3] bg-stone-200 rounded border border-stone-200">
+          <img src="pictures/gfamily.jpg" alt="Mountain Gorilla Family" class="object-cover w-full h-full" />
+          <span class="absolute bottom-2 left-2 text-[8px] font-black uppercase tracking-widest bg-stone-900 text-white px-2 py-0.5">02. APEX ENCOUNTER</span>
+        </div>
+        <div class="relative overflow-hidden aspect-[4/3] bg-stone-200 rounded border border-stone-200">
+          <img src="pictures/endemic.webp" alt="Albertine Rift Endemic Birds" class="object-cover w-full h-full" />
+          <span class="absolute bottom-2 left-2 text-[8px] font-black uppercase tracking-widest bg-stone-900 text-white px-2 py-0.5">03. AVIAN ASSET</span>
+        </div>
+      </div>
+
       <!-- Core Intelligence -->
       <div class="border-l-4 border-[#d4a373] pl-8 mb-16">
         <h2 class="text-xs font-black uppercase tracking-[0.5em] text-[#d4a373] mb-4">Area Intel</h2>
@@ -134,6 +150,7 @@
         </p>
       </div>
 
+      <!-- Two Column Layout (Original Structure Kept intact) -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-stone-400 text-sm leading-relaxed">
         <div class="space-y-6">
           <p>
@@ -143,8 +160,16 @@
             The primary mission objective is Gorilla Trekking. Habituation teams lead you into the steep, mist-covered ridges to locate one of the 20 habituated family groups. It is a high-stakes, high-reward encounter that requires physical endurance and a deep respect for the proximity of these gentle giants.
           </p>
         </div>
+        
         <div class="space-y-6">
           <h4 class="text-[#d4a373] font-black uppercase tracking-widest text-[10px]">Strategic Notes</h4>
+          
+          <!-- ADDED: Inline contextual image inside column 2 -->
+          <div class="relative overflow-hidden aspect-[16/7] bg-stone-200 rounded border border-stone-200 my-4">
+            <img src="pictures/gclose.jpg" alt="Close quarters gorilla photography" class="object-cover w-full h-full" />
+            <span class="absolute bottom-2 left-2 text-[8px] font-black uppercase tracking-widest bg-stone-900 text-white px-2 py-0.5">04. Visual Range</span>
+          </div>
+
           <ul class="space-y-4 border-t border-white/5 pt-4">
             <li class="flex gap-4">
               <span class="text-[#d4a373] font-bold">01</span>
@@ -162,7 +187,8 @@
         </div>
       </div>
     </div>
-  </main>
+</main>
+
 
   <!-- CTA Footer -->
   <footer class="py-24 bg-[#14110e] border-t border-white/5 text-center">
