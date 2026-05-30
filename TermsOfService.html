@@ -1,34 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
+  
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy | Africa Scenery Discovery</title>
+  <title>Tours & Safaris</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <style>
-    #page-loader {
-      position: fixed;
-      inset: 0;
-      background: #0d0a07;
-      z-index: 9999;
-      transition: opacity 0.8s ease-out, visibility 0.8s;
-    }
-    #page-loader.fade-out {
-      opacity: 0;
-      visibility: hidden;
-    }
-    .stipple {
-      background-image: radial-gradient(#2a2a2a 1px, transparent 1px);
-      background-size: 20px 20px;
-    }
-    body { background-color: #0d0a07; color: white; }
-  </style>
+
 </head>
 <body class="antialiased">
+  <!-- Page Loader Asset -->
   <div id="page-loader"></div>
 
-  
   <!-- Navbar -->
    <nav class="fixed top-6 left-1/2 -translate-x-1/2 w-[92%] max-w-6xl z-[100] transition-[max-height,border-radius] duration-500 ease-in-out px-8 py-4 rounded-full border border-[#3d2b1f]/20 shadow-[0_20px_50px_rgba(0,0,0,0.3)] overflow-hidden" 
      id="mainNav" 
@@ -55,7 +39,7 @@
         <path d="M0,20 Q50,0 100,20 T200,20 T300,20 T400,20" fill="none" stroke="#d4a373" stroke-width="5" stroke-dasharray="10 5" class="animate-[snake-crawl_20s_linear_infinite]" />
       </svg>
       <a href="index.html#home" class="relative z-10 hover:text-[#d4a373] transition-colors">Home</a>
-      <a href="About.html" class="relative z-10 hover:text-[#d4a373] transition-colors">About</a>
+      <a href="About.html" class="relative z-10 hover:text-[#d4a373] transition-colors">About us</a>
       <a href="index.html#destinations" class="relative z-10 hover:text-[#d4a373] transition-colors">Destinations</a>
       <a href="index.html#packages" class="relative z-10 hover:text-[#d4a373] transition-colors">Packages</a>
     </div>
@@ -83,7 +67,7 @@
   <!-- Mobile Dropdown -->
   <div id="mobileMenu" class="md:hidden flex flex-col space-y-6 pt-10 pb-8 text-center text-[11px] font-black uppercase tracking-[0.3em] text-stone-400 border-t border-[#d4a373]/10 mt-6 relative z-10">
       <a href="index.html#home" class="mobile-link hover:text-[#d4a373] transition-colors">Home</a>
-      <a href="About.html" class="mobile-link hover:text-[#d4a373] transition-colors">About</a>
+      <a href="About.html" class="mobile-link hover:text-[#d4a373] transition-colors">About us</a>
       <a href="index.html#destinations" class="mobile-link hover:text-[#d4a373] transition-colors">Destinations</a>
       <a href="index.html#packages" class="mobile-link hover:text-[#d4a373] transition-colors">Packages</a>
       <a href="index.html#gallery" class="mobile-link hover:text-[#d4a373] transition-colors">Gallery</a>
@@ -108,99 +92,168 @@
       <div class="inline-block bg-[#d4a373] mt-20 text-[#0d0a07] px-4 py-2 font-black text-[10px] tracking-[0.4em] uppercase mb-6">
         Operational Agreement
       </div>
-      <h1 class="text-6xl md:text-7xl text-white font-black uppercase tracking-tighter leading-none">
+      <h1 class="text-5xl md:text-7xl text-white font-black uppercase tracking-tighter leading-none">
         Terms of <br/> <span class="italic font-serif text-[#a68a64] lowercase">Service & Engagement</span>
       </h1>
-      <p class="mt-8 text-xl text-stone-400 max-w-2xl font-medium leading-relaxed">
-        By initiating a booking with Africa Scenery Discovery Tanzania, you agree to the following tactical parameters and logistical protocols.
+      <p class="mt-8 text-lg md:text-xl text-stone-400 max-w-2xl font-medium leading-relaxed">
+        By confirming a booking with Africa Scenery Discovery, you explicitly agree to the following operational terms, tactical regulations, and deployment protocols.
       </p>
     </div>
   </header>
 
   <!-- Content: Tactical Terms -->
-  <main class="py-24 relative">
-    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-3 gap-24">
+  <main class="py-24 relative z-10">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-3 gap-16 lg:gap-24">
       
-      <!-- Sidebar Info -->
+      <!-- Sidebar Info Layout Node -->
       <div class="lg:col-span-1">
-        <div class="sticky top-12 space-y-8">
+        <div class="sticky top-32 space-y-8">
           <div class="border-l-4 border-[#d4a373] pl-6">
-            <h2 class="text-xs font-black uppercase tracking-[0.5em] text-[#d4a373] mb-4">Command Center</h2>
-            <nav class="flex flex-col gap-4 text-stone-400 font-bold uppercase text-sm">
-              <a href="#bookings" class="hover:text-white transition-colors">01. Booking Protocols</a>
-              <a href="#cancellation" class="hover:text-white transition-colors">02. Mission Abort Policy</a>
-              <a href="#liability" class="hover:text-white transition-colors">03. Liability & Risk</a>
-              <a href="#conduct" class="hover:text-white transition-colors">04. Field Conduct</a>
+            <h2 class="text-xs font-black uppercase tracking-[0.5em] text-[#d4a373] mb-6">Command Center</h2>
+            <nav class="flex flex-col gap-4 text-stone-400 font-bold uppercase text-xs tracking-wider">
+              <a href="#bookings" class="hover:text-white transition-all">01. Booking & Payments</a>
+              <a href="#cancellation" class="hover:text-white transition-all">02. Mission Abort Policy</a>
+              <a href="#itinerary" class="hover:text-white transition-all">03. Route & Logistics Adjustments</a>
+              <a href="#clearance" class="hover:text-white transition-all">04. Clearances & Health Safety</a>
+              <a href="#liability" class="hover:text-white transition-all">05. Liability Framework</a>
+              <a href="#conduct" class="hover:text-white transition-all">06. Field Conduct & Wildlife</a>
             </nav>
           </div>
         </div>
       </div>
 
-      <!-- Main Content -->
+      <!-- Main Content Block -->
       <div class="lg:col-span-2 space-y-20">
         
-        <!-- Section 1 -->
-        <section id="bookings" class="space-y-6">
-          <h3 class="text-3xl font-black uppercase text-white">01. Booking Protocols</h3>
-          <p class="text-stone-400 leading-relaxed text-lg">
-            All expeditions require a confirmed deposit to secure permits and logistics. Final mission funding must be completed 60 days prior to deployment.
-          </p>
-          <div class="bg-white/5 p-6 border border-white/10">
-            <p class="text-sm text-stone-500 italic">"Late payments may result in the forfeiture of specific trekking permits or luxury accommodation slots."</p>
+        <!-- Section 1: Booking & Payments -->
+        <section id="bookings" class="space-y-6 scroll-mt-32">
+          <h3 class="text-3xl font-black uppercase text-white tracking-tight">01. Booking & Payments</h3>
+          
+          <div class="space-y-4">
+            <h4 class="text-xs font-mono uppercase text-[#d4a373] tracking-widest font-black">1.1 Booking & Confirmation Blueprint</h4>
+            <p class="text-stone-400 leading-relaxed text-base">
+              A safari booking is confirmed only after receipt of the required deposit payment. The remaining balance must be paid before the safari start date unless otherwise agreed in writing.
+            </p>
+          </div>
+
+          <div class="space-y-4 pt-4">
+            <h4 class="text-xs font-mono uppercase text-[#d4a373] tracking-widest font-black">1.2 Payment Pipeline Channels</h4>
+            <p class="text-stone-400 leading-relaxed text-base">
+              Payments can be made via bank transfer, online payment, or other approved methods provided by Africa Scenery Discovery. Any bank charges or transaction fees are the responsibility of the client.
+            </p>
           </div>
         </section>
 
-        <!-- Section 2 -->
-        <section id="cancellation" class="space-y-6">
-          <h3 class="text-3xl font-black uppercase text-white">02. Mission Abort Policy</h3>
-          <p class="text-stone-400 leading-relaxed text-lg">
-            Cancellations are subject to tiered recovery fees based on the proximity to the departure date.
-          </p>
-          <ul class="space-y-4 text-sm text-stone-500">
-            <li class="flex items-center gap-4">
-              <div class="h-1 w-4 bg-[#d4a373]"></div>
-              <span>90+ Days: Full refund minus administrative and permit costs.</span>
-            </li>
-            <li class="flex items-center gap-4">
-              <div class="h-1 w-4 bg-[#d4a373]"></div>
-              <span>30-60 Days: 50% recovery of total mission costs.</span>
-            </li>
-            <li class="flex items-center gap-4">
-              <div class="h-1 w-4 bg-[#d4a373]"></div>
-              <span>Under 30 Days: No refund due to committed field logistics.</span>
-            </li>
-          </ul>
+        <!-- Section 2: Cancellation Policy -->
+        <section id="cancellation" class="space-y-6 scroll-mt-32">
+          <h3 class="text-3xl font-black uppercase text-white tracking-tight">02. Mission Abort Policy</h3>
+          
+          <div class="space-y-4">
+            <h4 class="text-xs font-mono uppercase text-[#d4a373] tracking-widest font-black">2.1 Cancellation Protocol</h4>
+            <p class="text-stone-400 leading-relaxed text-base">
+              In the event that operational parameters require deployment cancellation, the following terms dictate asset return options:
+            </p>
+            <ul class="space-y-3 font-medium text-stone-400 text-sm pl-4 list-disc marker:text-[#d4a373]">
+              <li>Cancellations made 30 days before arrival may receive a partial refund.</li>
+              <li>Cancellations made less than 30 days before arrival may be subject to cancellation fees.</li>
+              <li>Some lodges, camps, and flights may have separate non-refundable policies.</li>
+            </ul>
+          </div>
         </section>
 
-        <!-- Section 3 -->
-        <section id="liability" class="space-y-6">
-          <h3 class="text-3xl font-black uppercase text-white">03. Liability & Risk</h3>
-          <p class="text-stone-400 leading-relaxed text-lg">
-            Adventure travel involves inherent tactical risks. Africa Scenery Discovery Tanzania is not liable for delays caused by weather, geopolitical shifts, or wildlife movements. Comprehensive travel insurance is mandatory for all personnel.
-          </p>
+                <!-- Section 3: Changes to Itinerary -->
+        <section id="itinerary" class="space-y-6 scroll-mt-32">
+          <h3 class="text-3xl font-black uppercase text-white tracking-tight">03. Route & Logistics Adjustments</h3>
+          
+          <div class="space-y-4">
+            <h4 class="text-xs font-mono uppercase text-[#d4a373] tracking-widest font-black">3.1 Itinerary Modifications</h4>
+            <p class="text-stone-400 leading-relaxed text-base">
+              Africa Scenery Discovery reserves the right to adjust itineraries, accommodations, or routes due to weather conditions, park regulations, safety concerns, or unforeseen circumstances while maintaining the quality of the safari experience.
+            </p>
+          </div>
+
+          <div class="space-y-4 pt-4">
+            <h4 class="text-xs font-mono uppercase text-[#d4a373] tracking-widest font-black">3.2 Accommodation & Meals</h4>
+            <p class="text-stone-400 leading-relaxed text-base">
+              Accommodation is subject to availability at the time of booking. Similar-standard alternatives may be provided if necessary.
+            </p>
+          </div>
         </section>
 
-        <!-- Section 4 -->
-        <section id="conduct" class="space-y-6 pb-12 border-b border-white/10">
-          <h3 class="text-3xl font-black uppercase text-white">04. Field Conduct</h3>
-          <p class="text-stone-400 leading-relaxed text-lg">
-            Clients must adhere to the directives of the Lead Guide at all times. We reserve the right to extract any individual from the mission whose conduct endangers the group or violates Tanzanian wildlife laws.
-          </p>
+        <!-- Section 4: Travel Documents, Health & Safety -->
+        <section id="clearance" class="space-y-6 scroll-mt-32">
+          <h3 class="text-3xl font-black uppercase text-white tracking-tight">04. Clearances & Health Safety</h3>
+          
+          <div class="space-y-4">
+            <h4 class="text-xs font-mono uppercase text-[#d4a373] tracking-widest font-black">4.1 Travel Documents</h4>
+            <p class="text-stone-400 leading-relaxed text-base">
+              Clients are responsible for ensuring they have valid passports, visas, vaccination certificates, and travel insurance before arrival.
+            </p>
+          </div>
+
+          <div class="space-y-4 pt-4">
+            <h4 class="text-xs font-mono uppercase text-[#d4a373] tracking-widest font-black">4.2 Health & Safety</h4>
+            <p class="text-stone-400 leading-relaxed text-base">
+              Clients participate in safari activities at their own risk. Guests are expected to follow the instructions of guides and lodge staff at all times for safety purposes.
+            </p>
+          </div>
+
+          <div class="space-y-4 pt-4">
+            <h4 class="text-xs font-mono uppercase text-[#d4a373] tracking-widest font-black">4.3 Travel Insurance</h4>
+            <p class="text-stone-400 leading-relaxed text-base">
+              Comprehensive travel insurance covering medical emergencies, trip cancellation, personal belongings, and evacuation is strongly recommended.
+            </p>
+          </div>
+        </section>
+
+        <!-- Section 5: Liability Framework -->
+        <section id="liability" class="space-y-6 scroll-mt-32">
+          <h3 class="text-3xl font-black uppercase text-white tracking-tight">05. Liability Framework</h3>
+          
+          <div class="space-y-4">
+            <h4 class="text-xs font-mono uppercase text-[#d4a373] tracking-widest font-black">5.1 Agency Liability Limitations</h4>
+            <p class="text-stone-400 leading-relaxed text-base">
+              Africa Scenery Discovery acts only as an agent for hotels, airlines, transport providers, and other service suppliers. We are not liable for delays, injuries, losses, accidents, natural disasters, political events, or circumstances beyond our control.
+            </p>
+          </div>
+        </section>
+
+        <!-- Section 6: Field Conduct & Wildlife -->
+        <section id="conduct" class="space-y-6 scroll-mt-32">
+          <h3 class="text-3xl font-black uppercase text-white tracking-tight">06. Field Conduct & Wildlife</h3>
+          
+          <div class="space-y-4">
+            <h4 class="text-xs font-mono uppercase text-[#d4a373] tracking-widest font-black">6.1 Wildlife Viewing Parameters</h4>
+            <p class="text-stone-400 leading-relaxed text-base">
+              Wildlife sightings cannot be guaranteed as animals move freely in their natural habitat.
+            </p>
+          </div>
+
+          <div class="space-y-4 pt-4">
+            <h4 class="text-xs font-mono uppercase text-[#d4a373] tracking-widest font-black">6.2 Client Responsibility</h4>
+            <p class="text-stone-400 leading-relaxed text-base">
+              Clients are expected to respect local cultures, wildlife regulations, and environmental conservation practices during the safari.
+            </p>
+          </div>
+
+          <div class="mt-12 p-8 bg-[#1a120b] border border-[#d4a373]/20 relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-24 h-24 bg-[#d4a373]/5 rounded-bl-full flex items-center justify-center pointer-events-none">
+              <i class="fa-solid fa-file-signature text-stone-800 text-xl"></i>
+            </div>
+            <h4 class="font-mono text-xs uppercase text-[#d4a373] tracking-widest font-black mb-2">12. Acceptance of Terms</h4>
+            <p class="text-xs text-stone-400 leading-relaxed uppercase tracking-wider font-mono">
+              By confirming a booking with Africa Scenery Discovery, the client agrees to these Terms & Conditions.
+            </p>
+          </div>
         </section>
 
       </div>
     </div>
   </main>
 
-  <!-- Footer -->
-  <footer class="py-24 text-center bg-[#14110e]">
-    <div class="max-w-3xl mx-auto px-6">
-      <h3 class="text-2xl font-black uppercase italic mb-8">Acknowledged. <br/> <span class="text-[#d4a373]">Ready for Deployment.</span></h3>
-      <p class="text-stone-500 mb-12 text-sm">Agreement to these terms is finalized upon receipt of initial deposit.</p>
-      <a href="index.html" class="inline-block bg-[#d4a373] text-[#0d0a07] px-12 py-6 font-black uppercase text-sm tracking-[0.3em] hover:bg-white transition-all">
-        Back to Briefing
-      </a>
-    </div>
+  <!-- Global Design Footer Nodes -->
+  <footer class="border-t border-white/5 py-12 text-center text-stone-600 text-[10px] font-mono uppercase tracking-[0.2em] relative z-10 bg-[#0d0a07]">
+    &copy; 2026 Africa Scenery Discovery. Logistical Systems Node. All Rights Reserved.
   </footer>
 
   
@@ -211,18 +264,9 @@
   }
 </style>
 
-
+  <!-- Scripts: Nav Toggle & Loader Systems -->
   <script>
-    window.addEventListener('load', () => {
-    const loader = document.getElementById('page-loader');
     
-    // Optional: Add a tiny delay so the transition feels more intentional
-    setTimeout(() => {
-        loader.classList.add('fade-out');
-    }, 100); 
-});
-
-
     const menuBtn = document.getElementById('menuBtn');
     const nav = document.getElementById('mainNav');
     const line1 = document.getElementById('line1');
@@ -270,10 +314,6 @@
         if (nav.style.maxHeight !== '76px') toggleMenu();
       });
     });
-
-     
-/* ios hover */
- document.addEventListener("touchstart", function() {}, true);
 
   </script>
 </body>

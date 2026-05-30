@@ -1,156 +1,152 @@
-
- <section id="contact" class="py-32 bg-[#0d0a07] relative overflow-hidden">
-  
-  <!-- GPS Radar Overlay -->
-  <div class="absolute inset-0 opacity-30 pointer-events-none">
-     <div class="absolute inset-0 bg-[radial-gradient(#d4a373_1px,transparent_1px)] [background-size:40px_40px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)]"></div>
-  </div>
-
-  <div class="max-w-7xl mx-auto px-6 relative z-10">
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-      
-      <!-- Left Column -->
-      <div class="border-l-8 border-[#d4a373] pl-10">
-        <span class="text-[#d4a373] font-mono text-[10px] uppercase tracking-[0.5em] font-black italic">Transmission Window Open</span>
-        <h2 class="text-5xl md:text-8xl font-black tracking-tighter text-white mt-4 uppercase leading-[0.85]">
-          Initiate <br/> <span class="italic font-serif text-[#a68a64] lowercase tracking-normal">Extraction</span>
-        </h2>
-        <p class="mt-8 text-stone-400 text-lg max-w-md leading-relaxed font-medium">
-          The trackers are at base. Submit your coordinates and objectives. Our senior expedition designers will respond via encrypted channel within 12 hours.
-        </p>
-
-        <!-- Keep your original contact link -->
-        <div class="mt-12">
-          <a href="https://wa.me/255788296274" target="_blank" class="inline-flex items-center gap-6 group bg-white/5 border border-white/10 p-6 hover:bg-[#d4a373] transition-all duration-500">
-            <div class="w-14 h-14 bg-[#d4a373] text-[#0d0a07] flex items-center justify-center group-hover:bg-[#1a120b] group-hover:text-[#d4a373] transition-colors">
-              <!-- SVG untouched -->
-            </div>
-            <div>
-              <p class="text-[10px] text-[#d4a373] group-hover:text-[#1a120b] uppercase tracking-[0.3em] font-black italic transition-colors">Priority Comms</p>
-              <p class="text-white group-hover:text-[#1a120b] font-black text-xl tracking-tighter transition-colors">+255 700 000 000</p>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <!-- FORM -->
-      <div class="relative">
-        <div class="absolute -inset-10 bg-[#d4a373]/10 blur-[120px] rounded-full opacity-40"></div>
-        
-        <form id="safariForm" class="relative bg-[#1a120b] border border-white/10 p-12 shadow-2xl space-y-8">
-          
-          <div class="border-b border-white/5 pb-6 mb-8">
-             <h4 class="text-white font-black uppercase tracking-widest text-xs">Craft Your Adventure</h4>
-          </div>
-          
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div class="space-y-3">
-              <label class="text-[9px] uppercase tracking-[0.4em] text-[#d4a373] font-black italic ml-1">Name</label>
-              <input id="name" type="text" placeholder="Paul Miller" class="w-full bg-white/5 border border-white/10 p-4 text-white placeholder:text-stone-700 focus:outline-none focus:border-[#d4a373] transition-all font-mono text-sm" />
-            </div>
-            <div class="space-y-3">
-              <label class="text-[9px] uppercase tracking-[0.4em] text-[#d4a373] font-black italic ml-1">Month of Visit</label>
-              <input id="month" type="text" placeholder="Target Month" class="w-full bg-white/5 border border-white/10 p-4 text-white placeholder:text-stone-700 focus:outline-none focus:border-[#d4a373] transition-all font-mono text-sm" />
-            </div>
-          </div>
-
-          <div class="space-y-3">
-            <label class="text-[9px] uppercase tracking-[0.4em] text-[#d4a373] font-black italic ml-1">Location</label>
-            <select id="location" class="w-full bg-white/5 border border-white/10 p-4 text-white appearance-none focus:outline-none focus:border-[#d4a373] transition-all cursor-pointer font-mono text-sm">
-              <option class="bg-[#1a120b]">Serengeti</option>
-              <option class="bg-[#1a120b]">Ngorongoro</option>
-              <option class="bg-[#1a120b]">Zanzibar</option>
-            </select>
-          </div>
-
-          <!-- Only change: added data-budget -->
-          <div class="space-y-4">
-            <label class="text-[9px] uppercase tracking-[0.4em] text-[#d4a373] font-black italic ml-1">Resource Allocation</label>
-            <div class="grid grid-cols-2 gap-4">
-              <button type="button" data-budget="Luxury" class="budget-btn py-4 border border-white/10 text-[10px] font-black uppercase tracking-widest text-stone-500 hover:border-[#d4a373] hover:text-[#d4a373] transition-all italic">Luxury</button>
-              <button type="button" data-budget="Elite" class="budget-btn py-4 border border-white/10 text-[10px] font-black uppercase tracking-widest text-stone-500 hover:border-[#d4a373] hover:text-[#d4a373] transition-all italic">Elite</button>
-            </div>
-          </div>
-
-          <button type="submit" class="w-full py-6 bg-[#d4a373] text-[#0d0a07] font-black uppercase text-[11px] tracking-[0.4em] shadow-xl shadow-black/50 transition-all hover:bg-white active:translate-y-1">
-            Authorize Expedition
-          </button>
-
-          <p class="text-center text-[9px] text-stone-600 uppercase tracking-[0.2em] font-bold">
-            Secure Data Handling
-          </p>
-        </form>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-
-/* Prevent flash of content before JS loads */
-#page-loader {
-    position: fixed;
-    inset: 0;
-    background: #0d0a07; /* Your brand black */
-    z-index: 9999;
-    transition: opacity 0.8s ease-out, visibility 0.8s;
-}
-
-#page-loader.fade-out {
-    opacity: 0;
-    visibility: hidden;
-}
-
-
-<div id="page-loader"></div>
-
-
-window.addEventListener('load', () => {
-    const loader = document.getElementById('page-loader');
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
     
-    // Optional: Add a tiny delay so the transition feels more intentional
-    setTimeout(() => {
-        loader.classList.add('fade-out');
-    }, 100); 
-});
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tours & Safaris</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body class="bg-[#0d0a07] text-stone-100 antialiased px-2 font-sans selection:bg-[#d4a373] selection:text-[#0d0a07]">
+
+     <!-- Navbar -->
+   <nav class="fixed top-6 left-1/2 -translate-x-1/2 w-[92%] max-w-6xl z-[100] transition-[max-height,border-radius] duration-500 ease-in-out px-8 py-4 rounded-full border border-[#3d2b1f]/20 shadow-[0_20px_50px_rgba(0,0,0,0.3)] overflow-hidden" 
+     id="mainNav" 
+     style="background: linear-gradient(180deg, #2d1e14 0%, #1a120b 100%); max-height: 76px;">
+  
+  <!-- Subtle Wood Texture Overlay -->
+  <div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: url('https://transparenttextures.com');"></div>
+
+  <div class="flex justify-between items-center relative z-10">
+    <!-- Logo -->
+<a href="index.html#home" class="inline-flex items-center space-x-3 group/logo cursor-pointer">
+  <div class="relative w-10 h-10 bg-transparent rounded-full flex items-center justify-center overflow-hidden transition-transform duration-500 group-hover/logo:rotate-[360deg]">
+    <img src="assets/AFRICA SCENERY LOG2.jpeg" alt="Logo" class="w-full h-full object-cover">
+  </div>
+  <span class="text-l font-bold tracking-widest text-[#d4a373] uppercase">
+    AFRICA SCENERY
+  </span>
+</a>
 
 
+    <!-- Desktop Menu -->
+    <div class="hidden md:flex items-center space-x-12 relative text-[11px] font-black uppercase tracking-[0.2em] text-stone-400">
+      <svg class="absolute top-1/2 left-0 w-full h-12 -translate-y-1/2 pointer-events-none z-0 opacity-40" viewBox="0 0 400 40">
+        <path d="M0,20 Q50,0 100,20 T200,20 T300,20 T400,20" fill="none" stroke="#d4a373" stroke-width="5" stroke-dasharray="10 5" class="animate-[snake-crawl_20s_linear_infinite]" />
+      </svg>
+      <a href="index.html#home" class="relative z-10 hover:text-[#d4a373] transition-colors">Home</a>
+      <a href="About.html" class="relative z-10 hover:text-[#d4a373] transition-colors">About us</a>
+      <a href="index.html#destinations" class="relative z-10 hover:text-[#d4a373] transition-colors">Destinations</a>
+      <a href="index.html#packages" class="relative z-10 hover:text-[#d4a373] transition-colors">Packages</a>
+    </div>
 
+    <!-- CTA --><div class="hidden md:block">
+  <a href="https://wa.me/255788296274?text=Hello%2C%20I%27m%20interested%20in%20planning%20a%20safari.%20Could%20you%20share%20available%20packages%2C%20pricing%2C%20and%20the%20best%20travel%20dates%3F" 
+     target="_blank" 
+     rel="noopener noreferrer"
+     class="inline-block">
+    <button class="relative overflow-hidden group/btn px-8 py-3 rounded-full bg-[#d4a373] text-[10px] font-black uppercase tracking-[0.3em]  shadow-2xl transition-all hover:scale-105 active:scale-95">
+      <span class="relative z-10">Plan Safari</span>
+    </button>
+  </a>
+</div>
+
+
+    <!-- Animated Hamburger Button -->
+    <button id="menuBtn" class="md:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1.5 z-50 focus:outline-none">
+       <span id="line1" class="block w-6 h-0.5 bg-[#d4a373] transition-all duration-300 origin-center"></span>
+       <span id="line2" class="block w-6 h-0.5 bg-[#d4a373] transition-all duration-300"></span>
+       <span id="line3" class="block w-6 h-0.5 bg-[#d4a373] transition-all duration-300 origin-center"></span>
+    </button>
+  </div>
+
+  <!-- Mobile Dropdown -->
+  <div id="mobileMenu" class="md:hidden flex flex-col space-y-6 pt-10 pb-8 text-center text-[11px] font-black uppercase tracking-[0.3em] text-stone-400 border-t border-[#d4a373]/10 mt-6 relative z-10">
+      <a href="index.html#home" class="mobile-link hover:text-[#d4a373] transition-colors">Home</a>
+      <a href="About.html" class="mobile-link hover:text-[#d4a373] transition-colors">About us</a>
+      <a href="index.html#destinations" class="mobile-link hover:text-[#d4a373] transition-colors">Destinations</a>
+      <a href="index.html#packages" class="mobile-link hover:text-[#d4a373] transition-colors">Packages</a>
+      <a href="index.html#gallery" class="mobile-link hover:text-[#d4a373] transition-colors">Gallery</a>
+      <a href="index.html#reviews" class="mobile-link hover:text-[#d4a373] transition-colors">Reviews</a>
+      <a href="https://wa.me/255788296274?text=Hello%2C%20I%27m%20interested%20in%20planning%20a%20safari.%20Could%20you%20share%20available%20packages%2C%20pricing%2C%20and%20the%20best%20travel%20dates%3F" 
+   target="_blank" 
+   rel="noopener noreferrer"
+   class="mobile-link bg-[#d4a373] text-black py-4 uppercase rounded-2xl mx-4">
+   Plan Safari
+</a>
+  </div>
+</nav>
+
+
+  <!-- Main Structural Wrapper -->
+  <main class="min-h-screen relative overflow-hidden pt-32 pb-24 px-6">
+    <div class="max-w-4xl mx-auto">
+      
+     
+      <!-- Target Master Accordion Target Loop -->
+      <div class="space-y-4" id="faqAccordionContainer">
+        
+       
 <section id="faq" class="py-32 bg-[#0d0a07] relative overflow-hidden">
   
   <!-- Subtle Topographic Scanline Overlay -->
-  <div class="absolute inset-0 opacity-[0.03] pointer-events-none bg-[url('https://transparenttextures.com')]"></div>
+<div class="absolute inset-0 opacity-[0.03] pointer-events-none bg-[url('https://transparenttextures.com')] z-0"></div>
 
-  <div class="max-w-7xl mx-auto px-6 relative z-10">
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+<!-- Container Layout -->
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+  
+  <!-- Outer Layout Box: Switches from single column stack into a standard top-to-bottom flow on desktops -->
+  <div class="flex flex-col gap-10 md:gap-16">
+    
+    <!-- Header Block: Becomes a full-width horizontal row layout on desktop viewports -->
+    <div class="border-l-4 sm:border-l-8 border-[#d4a373] pl-6 sm:pl-10 lg:flex lg:items-center lg:justify-between lg:gap-12">
       
-      <!-- Left Column: Command Hub (Sticky) -->
-      <div class="lg:col-span-4 lg:sticky lg:top-32 h-fit border-l-8 border-[#d4a373] pl-10">
-        <span class="text-[#d4a373] font-mono text-[10px] uppercase tracking-[0.5em] font-black italic">Intel Query</span>
-        <h2 class="text-5xl md:text-5xl font-black tracking-tighter text-white mt-4 uppercase leading-[0.85]">
-         on & off  Field <br/> <span class="italic font-serif text-[#a68a64] lowercase tracking-normal">Intelligence</span>
+      <!-- Left Side: Title & Typography Sub-elements -->
+      <div class="max-w-2xl">
+        <!-- Meta Label -->
+        
+        <!-- Responsive Heading: Displays elegantly across all viewport widths -->
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-black tracking-tighter text-white mt-4 uppercase leading-[0.9] sm:leading-[0.85]">
+          frequently asked <br class="hidden sm:inline lg:hidden"/> 
+          <span class="mt-2 font-serif font-black text-[#a68a64] uppercase tracking-normal block sm:inline">questions</span>
         </h2>
-        <p class="mt-8 text-stone-400 text-sm leading-relaxed font-medium">
+        
+        <!-- Description -->
+        <p class="mt-6 text-stone-400 text-sm leading-relaxed font-medium">
           Critical data for those entering the sector. If your query isn't listed, initiate a direct comms link.
         </p>
-        
-        <!-- Tactical Support Card -->
-        <div class="mt-12 p-8 bg-[#1a120b] border border-white/10 group cursor-pointer overflow-hidden relative">
-          <div class="relative z-10">
-            <h4 class="font-black text-white uppercase tracking-widest text-xs">Direct Comms Link</h4>
-            <p class="text-[#d4a373] text-[10px] uppercase font-black tracking-widest mt-2 italic">Bandwidth: 24/7 Priority</p>
-            <button class="mt-8 w-full text-[10px] font-black uppercase tracking-[0.3em] bg-[#d4a373] text-[#0d0a07] px-6 py-4 transition-all hover:bg-white">
-              Open Comms
-            </button>
-          </div>
-          <!-- Scanning Animation -->
-          <div class="absolute top-0 left-0 w-full h-1 bg-[#d4a373]/20 animate-bounce"></div>
+      </div>
+
+      <!-- Right Side: Tactical Support Card (Stacks below on mobile, sits parallel on desktop screens) -->
+      <div class="mt-8 lg:mt-0 p-6 sm:p-8 bg-[#1a120b] border border-white/10 group cursor-pointer overflow-hidden relative w-full lg:max-w-xs shrink-0">
+        <div class="relative z-10">
+          <h4 class="font-black text-white uppercase tracking-widest text-xs">
+            Direct Comms Link
+          </h4>
+          <p class="text-[#d4a373] text-[10px] uppercase font-black tracking-widest mt-2 italic">
+            Bandwidth: 24/7 Priority
+          </p>
+          <button class="mt-6 w-full text-[10px] font-black uppercase tracking-[0.3em] bg-[#d4a373] text-[#0d0a07] px-6 py-4 transition-all hover:bg-white">
+            Open Comms
+          </button>
         </div>
       </div>
 
+    </div>
+
+    <!-- Bottom Block: Accordion Space Blueprint -->
+    <div class="space-y-4 w-full">
+      <!-- Insert your FAQ Items / Accordion Loop directly inside this block -->
+    </div>
+
+  </div>
+</div>
+      </div>
+
       <!-- Right Column: The "Slate" Accordions -->
-      <div class="lg:col-span-8 space-y-6">
+      <div class="lg:col-span-8 space-y-4">
 
        <!-- FAQ Item 01 -->
 <div class="faq-item group bg-[#1a120b] border border-white/5 transition-all duration-500 hover:border-[#d4a373]/30 overflow-hidden">
@@ -198,7 +194,7 @@ window.addEventListener('load', () => {
 <div class="faq-item group bg-[#1a120b] border border-white/5 transition-all duration-500 hover:border-[#d4a373]/30 overflow-hidden">
   <button class="faq-trigger w-full flex items-center justify-between p-8 cursor-pointer text-left focus:outline-none">
     <div class="flex items-center gap-8">
-      <span class="font-mono text-xs text-[#d4a373] font-black italic opacity-40 group-hover:opacity-100 transition-opacity uppercase">REF // 03</span>
+      <span class="font-mono text-xs text-[#d4a373] font-black italic opacity-40 group-hover:opacity-100 transition-opacity uppercase">03.</span>
       <h3 class="text-xl font-black text-stone-100 uppercase tracking-tighter group-hover:text-[#d4a373] transition-colors">Primary Regional Sectors?</h3>
     </div>
     <div class="w-12 h-12 bg-white/5 border border-white/10 flex items-center justify-center group-hover:border-[#d4a373] transition-all">
@@ -219,7 +215,7 @@ window.addEventListener('load', () => {
 <div class="faq-item group bg-[#1a120b] border border-white/5 transition-all duration-500 hover:border-[#d4a373]/30 overflow-hidden">
   <button class="faq-trigger w-full flex items-center justify-between p-8 cursor-pointer text-left focus:outline-none">
     <div class="flex items-center gap-8">
-      <span class="font-mono text-xs text-[#d4a373] font-black italic opacity-40 group-hover:opacity-100 transition-opacity uppercase">REF // 04</span>
+      <span class="font-mono text-xs text-[#d4a373] font-black italic opacity-40 group-hover:opacity-100 transition-opacity uppercase">04.</span>
       <h3 class="text-xl font-black text-stone-100 uppercase tracking-tighter group-hover:text-[#d4a373] transition-colors">Optimal Mission Duration?</h3>
     </div>
     <div class="w-12 h-12 bg-white/5 border border-white/10 flex items-center justify-center group-hover:border-[#d4a373] transition-all">
@@ -240,7 +236,7 @@ window.addEventListener('load', () => {
 <div class="faq-item group bg-[#1a120b] border border-white/5 transition-all duration-500 hover:border-[#d4a373]/30 overflow-hidden">
   <button class="faq-trigger w-full flex items-center justify-between p-8 cursor-pointer text-left focus:outline-none">
     <div class="flex items-center gap-8">
-      <span class="font-mono text-xs text-[#d4a373] font-black italic opacity-40 group-hover:opacity-100 transition-opacity uppercase">REF // 05</span>
+      <span class="font-mono text-xs text-[#d4a373] font-black italic opacity-40 group-hover:opacity-100 transition-opacity uppercase">05.</span>
       <h3 class="text-xl font-black text-stone-100 uppercase tracking-tighter group-hover:text-[#d4a373] transition-colors">Target Intercept Probabilities?</h3>
     </div>
     <div class="w-12 h-12 bg-white/5 border border-white/10 flex items-center justify-center group-hover:border-[#d4a373] transition-all">
@@ -261,7 +257,7 @@ window.addEventListener('load', () => {
 <div class="faq-item group bg-[#1a120b] border border-white/5 transition-all duration-500 hover:border-[#d4a373]/30 overflow-hidden">
   <button class="faq-trigger w-full flex items-center justify-between p-8 cursor-pointer text-left focus:outline-none">
     <div class="flex items-center gap-8">
-      <span class="font-mono text-xs text-[#d4a373] font-black italic opacity-40 group-hover:opacity-100 transition-opacity uppercase">REF // 06</span>
+      <span class="font-mono text-xs text-[#d4a373] font-black italic opacity-40 group-hover:opacity-100 transition-opacity uppercase">06.</span>
       <h3 class="text-xl font-black text-stone-100 uppercase tracking-tighter group-hover:text-[#d4a373] transition-colors">Sector Safety Protocols?</h3>
     </div>
     <div class="w-12 h-12 bg-white/5 border border-white/10 flex items-center justify-center group-hover:border-[#d4a373] transition-all">
@@ -282,7 +278,7 @@ window.addEventListener('load', () => {
 <div class="faq-item group bg-[#1a120b] border border-white/5 transition-all duration-500 hover:border-[#d4a373]/30 overflow-hidden">
   <button class="faq-trigger w-full flex items-center justify-between p-8 cursor-pointer text-left focus:outline-none">
     <div class="flex items-center gap-8">
-      <span class="font-mono text-xs text-[#d4a373] font-black italic opacity-40 group-hover:opacity-100 transition-opacity uppercase">REF // 07</span>
+      <span class="font-mono text-xs text-[#d4a373] font-black italic opacity-40 group-hover:opacity-100 transition-opacity uppercase">07.</span>
       <h3 class="text-xl font-black text-stone-100 uppercase tracking-tighter group-hover:text-[#d4a373] transition-colors">Required Field Kit?</h3>
     </div>
     <div class="w-12 h-12 bg-white/5 border border-white/10 flex items-center justify-center group-hover:border-[#d4a373] transition-all">
@@ -302,7 +298,7 @@ window.addEventListener('load', () => {
 <div class="faq-item group bg-[#1a120b] border border-white/5 transition-all duration-500 hover:border-[#d4a373]/30 overflow-hidden">
   <button class="faq-trigger w-full flex items-center justify-between p-8 cursor-pointer text-left focus:outline-none">
     <div class="flex items-center gap-8">
-      <span class="font-mono text-xs text-[#d4a373] font-black italic opacity-40 group-hover:opacity-100 transition-opacity uppercase">REF // 08</span>
+      <span class="font-mono text-xs text-[#d4a373] font-black italic opacity-40 group-hover:opacity-100 transition-opacity uppercase">08.</span>
       <h3 class="text-xl font-black text-stone-100 uppercase tracking-tighter group-hover:text-[#d4a373] transition-colors">Mission Customization?</h3>
     </div>
     <div class="w-12 h-12 bg-white/5 border border-white/10 flex items-center justify-center group-hover:border-[#d4a373] transition-all">
@@ -322,7 +318,7 @@ window.addEventListener('load', () => {
 <div class="faq-item group bg-[#1a120b] border border-white/5 transition-all duration-500 hover:border-[#d4a373]/30 overflow-hidden">
   <button class="faq-trigger w-full flex items-center justify-between p-8 cursor-pointer text-left focus:outline-none">
     <div class="flex items-center gap-8">
-      <span class="font-mono text-xs text-[#d4a373] font-black italic opacity-40 group-hover:opacity-100 transition-opacity uppercase">REF // 09</span>
+      <span class="font-mono text-xs text-[#d4a373] font-black italic opacity-40 group-hover:opacity-100 transition-opacity uppercase">09.</span>
       <h3 class="text-xl font-black text-stone-100 uppercase tracking-tighter group-hover:text-[#d4a373] transition-colors">Base Camp Classifications?</h3>
     </div>
     <div class="w-12 h-12 bg-white/5 border border-white/10 flex items-center justify-center group-hover:border-[#d4a373] transition-all">
@@ -342,7 +338,7 @@ window.addEventListener('load', () => {
 <div class="faq-item group bg-[#1a120b] border border-white/5 transition-all duration-500 hover:border-[#d4a373]/30 overflow-hidden">
   <button class="faq-trigger w-full flex items-center justify-between p-8 cursor-pointer text-left focus:outline-none">
     <div class="flex items-center gap-8">
-      <span class="font-mono text-xs text-[#d4a373] font-black italic opacity-40 group-hover:opacity-100 transition-opacity uppercase">REF // 10</span>
+      <span class="font-mono text-xs text-[#d4a373] font-black italic opacity-40 group-hover:opacity-100 transition-opacity uppercase">10.</span>
       <h3 class="text-xl font-black text-stone-100 uppercase tracking-tighter group-hover:text-[#d4a373] transition-colors">Clearance & Bio-Status?</h3>
     </div>
     <div class="w-12 h-12 bg-white/5 border border-white/10 flex items-center justify-center group-hover:border-[#d4a373] transition-all">
@@ -366,3 +362,87 @@ window.addEventListener('load', () => {
   </div>
 </section>
 
+  </main>
+
+  <style>
+  @keyframes snake-crawl {
+    from { stroke-dashoffset: 100; }
+    to { stroke-dashoffset: 0; }
+  }
+</style>
+
+  <!-- Interactive JavaScript Pipeline Engine -->
+  <script>
+   
+
+     const menuBtn = document.getElementById('menuBtn');
+    const nav = document.getElementById('mainNav');
+    const line1 = document.getElementById('line1');
+    const line2 = document.getElementById('line2');
+    const line3 = document.getElementById('line3');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+
+    function toggleMenu() {
+      // Check if it's currently at the base height
+      const isClosed = nav.style.maxHeight === '76px' || nav.style.maxHeight === '';
+      
+      if (isClosed) {
+        // OPENING: Switch to boxy corners immediately, then expand height
+        nav.classList.remove('rounded-full');
+        nav.classList.add('rounded-[2rem]');
+        nav.style.maxHeight = '600px'; 
+
+        // Hamburger -> X
+        line1.style.transform = 'translateY(7px) rotate(45deg)';
+        line3.style.transform = 'translateY(-7px) rotate(-45deg)';
+        line2.style.opacity = '0';
+      } else {
+        // CLOSING: Shrink height first
+        nav.style.maxHeight = '76px';
+        
+        // Wait for the height transition to finish before turning back into a pill
+        setTimeout(() => {
+          if(nav.style.maxHeight === '76px') {
+            nav.classList.remove('rounded-[2rem]');
+            nav.classList.add('rounded-full');
+          }
+        }, 400);
+
+        // X -> Hamburger
+        line1.style.transform = 'none';
+        line3.style.transform = 'none';
+        line2.style.opacity = '1';
+      }
+    }
+
+    menuBtn.addEventListener('click', toggleMenu);
+
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        if (nav.style.maxHeight !== '76px') toggleMenu();
+      });
+    });
+
+    // Logic for smooth heavy-mechanical transition
+    document.querySelectorAll('.faq-trigger').forEach(trigger => {
+      trigger.addEventListener('click', () => {
+        const content = trigger.nextElementSibling;
+        const icon = trigger.querySelector('svg');
+        const isOpen = content.style.maxHeight && content.style.maxHeight !== '0px';
+
+        // Close all other items first (Accordion behavior)
+        document.querySelectorAll('.faq-content').forEach(c => c.style.maxHeight = '0px');
+        document.querySelectorAll('.faq-trigger svg').forEach(s => s.style.transform = 'rotate(0deg)');
+
+        if (!isOpen) {
+          content.style.maxHeight = content.scrollHeight + 'px';
+          icon.style.transform = 'rotate(45deg)';
+        } else {
+          content.style.maxHeight = '0px';
+          icon.style.transform = 'rotate(0deg)';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
