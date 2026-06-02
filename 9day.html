@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tours & Safaris</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body class="bg-[#0d0a07] text-stone-100 antialiased selection:bg-[#d4a373] selection:text-[#0d0a07]">
+
+    
+   <nav class="fixed top-6 left-1/2 -translate-x-1/2 w-[92%] max-w-6xl z-[100] transition-[max-height,border-radius] duration-500 ease-in-out px-8 py-4 rounded-full border border-[#3d2b1f]/20 shadow-[0_20px_50px_rgba(0,0,0,0.3)] overflow-hidden" 
+     id="mainNav" 
+     style="background: linear-gradient(180deg, #2d1e14 0%, #1a120b 100%); max-height: 76px;">
+  
+  <!-- Subtle Wood Texture Overlay -->
+  <div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: url('https://transparenttextures.com');"></div>
+
+  <div class="flex justify-between items-center relative z-10">
+    <!-- Logo -->
+<a href="index.html#home" class="inline-flex items-center space-x-3 group/logo cursor-pointer">
+  <div class="relative w-10 h-10 bg-transparent rounded-full flex items-center justify-center overflow-hidden transition-transform duration-500 group-hover/logo:rotate-[360deg]">
+    <img src="assets/AFRICA SCENERY LOG2.jpeg" alt="Logo" class="w-full h-full object-cover">
+  </div>
+  <span class="text-l font-bold tracking-widest text-[#d4a373] uppercase">
+    AFRICA SCENERY
+  </span>
+</a>
+
+
+    <!-- Desktop Menu -->
+    <div class="hidden md:flex items-center space-x-12 relative text-[11px] font-black uppercase tracking-[0.2em] text-stone-400">
+      <svg class="absolute top-1/2 left-0 w-full h-12 -translate-y-1/2 pointer-events-none z-0 opacity-40" viewBox="0 0 400 40">
+        <path d="M0,20 Q50,0 100,20 T200,20 T300,20 T400,20" fill="none" stroke="#d4a373" stroke-width="5" stroke-dasharray="10 5" class="animate-[snake-crawl_20s_linear_infinite]" />
+      </svg>
+      <a href="index.html#home" class="relative z-10 hover:text-[#d4a373] transition-colors">Home</a>
+      <a href="About.html" class="relative z-10 hover:text-[#d4a373] transition-colors">About us</a>
+      <a href="index.html#destinations" class="relative z-10 hover:text-[#d4a373] transition-colors">Destinations</a>
+      <a href="index.html#packages" class="relative z-10 hover:text-[#d4a373] transition-colors">Packages</a>
+    </div>
+
+    <!-- CTA --><div class="hidden md:block">
+  <a href="https://wa.me/255788296274?text=Hello%2C%20I%27m%20interested%20in%20planning%20a%20safari.%20Could%20you%20share%20available%20packages%2C%20pricing%2C%20and%20the%20best%20travel%20dates%3F" 
+     target="_blank" 
+     rel="noopener noreferrer"
+     class="inline-block">
+    <button class="relative overflow-hidden group/btn px-8 py-3 rounded-full bg-[#d4a373] text-[10px] font-black uppercase tracking-[0.3em]  shadow-2xl transition-all hover:scale-105 active:scale-95">
+      <span class="relative z-10">Plan Safari</span>
+    </button>
+  </a>
+</div>
+
+
+    <!-- Animated Hamburger Button -->
+    <button id="menuBtn" class="md:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1.5 z-50 focus:outline-none">
+       <span id="line1" class="block w-6 h-0.5 bg-[#d4a373] transition-all duration-300 origin-center"></span>
+       <span id="line2" class="block w-6 h-0.5 bg-[#d4a373] transition-all duration-300"></span>
+       <span id="line3" class="block w-6 h-0.5 bg-[#d4a373] transition-all duration-300 origin-center"></span>
+    </button>
+  </div>
+
+  <!-- Mobile Dropdown -->
+  <div id="mobileMenu" class="md:hidden flex flex-col space-y-6 pt-10 pb-8 text-center text-[11px] font-black uppercase tracking-[0.3em] text-stone-400 border-t border-[#d4a373]/10 mt-6 relative z-10">
+      <a href="index.html#home" class="mobile-link hover:text-[#d4a373] transition-colors">Home</a>
+      <a href="About.html" class="mobile-link hover:text-[#d4a373] transition-colors">About us</a>
+      <a href="index.html#destinations" class="mobile-link hover:text-[#d4a373] transition-colors">Destinations</a>
+      <a href="index.html#packages" class="mobile-link hover:text-[#d4a373] transition-colors">Packages</a>
+      <a href="index.html#gallery" class="mobile-link hover:text-[#d4a373] transition-colors">Gallery</a>
+      <a href="index.html#reviews" class="mobile-link hover:text-[#d4a373] transition-colors">Reviews</a>
+      <a href="https://wa.me/255788296274?text=Hello%2C%20I%27m%20interested%20in%20planning%20a%20safari.%20Could%20you%20share%20available%20packages%2C%20pricing%2C%20and%20the%20best%20travel%20dates%3F" 
+   target="_blank" 
+   rel="noopener noreferrer"
+   class="mobile-link bg-[#d4a373] text-black py-4 uppercase rounded-2xl mx-4">
+   Plan Safari
+</a>
+  </div>
+</nav>
+
+
+
+  <!-- Main Profile Header Section -->
+  <header class="relative pt-32 pb-20 border-b border-stone-900 overflow-hidden">
+    <!-- Subtle Background Grid/Glow Texture -->
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(212,163,115,0.08),transparent_50%)]"></div>
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <!-- Section Tag -->
+      <div class="flex items-center gap-3 mb-6 border-l-2 border-[#d4a373] pl-4">
+        <span class="text-[#d4a373] font-mono text-xs uppercase tracking-[0.4em] font-bold block">Live Expedition Briefing // Sector: TZ-NORTH</span>
+      </div>
+
+      <!-- Main Headline Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+        <div class="lg:col-span-2">
+          <h1 class="text-4xl sm:text-6xl font-black tracking-tight uppercase leading-[0.95] text-stone-100">
+            The Ultimate Northern <br class="hidden sm:block"/>
+            <span class="italic font-serif text-[#a68a64] lowercase tracking-normal font-normal">Wildlife & Cultural Odyssey</span>
+          </h1>
+          <p class="mt-6 text-stone-400 font-mono text-xs sm:text-sm tracking-wide max-w-2xl leading-relaxed">
+            Experience Tanzania's most iconic wildlife destinations, breathtaking landscapes, authentic cultural encounters, and unforgettable safari adventures. Designed perfectly for travelers seeking pure wilderness immersion balanced with precise comfort.
+          </p>
+        </div>
+
+        <!-- Quick Summary HUD Metadata Box -->
+        <div class="border border-stone-800 bg-stone-900/10 p-6 font-mono text-xs tracking-wider space-y-3">
+          <div class="text-[#d4a373] uppercase font-bold border-b border-stone-900 pb-2">// METRICS Matrix</div>
+          <div class="flex justify-between"><span class="text-stone-500">DURATION:</span> <span class="text-stone-200">09 Days / 08 Nights</span></div>
+          <div class="flex justify-between"><span class="text-stone-500">DEPLOYMENT:</span> <span class="text-stone-200">02 Travelers</span></div>
+          <div class="flex justify-between"><span class="text-stone-500">OPERATIONAL REGIONS:</span> <span class="text-[#a68a64]">Arusha, Tarangire, Ngorongoro, Serengeti</span></div>
+          <div class="flex justify-between"><span class="text-stone-500">STATUS:</span> <span class="text-green-500 font-bold">READY TO BOOK</span></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Breakdown Layout -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
+      
+      <!-- Left & Center Columns: Chronological Deployment Timeline -->
+      <div class="lg:col-span-2 space-y-12 relative border-l border-stone-800/80 pl-6 ml-3 sm:pl-8 sm:ml-4">
+        
+        <!-- Day 1 -->
+        <div class="relative group">
+          <!-- Timeline Node Point Indicator -->
+          <div class="absolute -left-[31px] sm:-left-[39px] top-1.5 w-4 h-4 bg-[#0d0a07] border-2 border-[#d4a373] rounded-none group-hover:bg-[#d4a373] transition-colors duration-300"></div>
+          
+          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 mb-3">
+            <span class="font-mono text-xs text-[#d4a373] tracking-widest uppercase font-bold">Phase 01 // Arrival</span>
+            <span class="font-mono text-[10px] text-stone-500">BASE CAMP: TULIA LODGE</span>
+          </div>
+          <h3 class="text-xl sm:text-2xl font-black uppercase text-stone-100 tracking-tight mb-3">Day 1: Arrival in Arusha</h3>
+          <p class="text-stone-400 font-mono text-xs leading-relaxed tracking-wide">
+            Upon arrival at Kilimanjaro International Airport, you will be warmly welcomed by your safari representative and transferred to Arusha. Relax and recover from your journey while enjoying the peaceful surroundings of your lodge.
+          </p>
+        </div>
+
+        <!-- Day 2 -->
+        <div class="relative group">
+          <div class="absolute -left-[31px] sm:-left-[39px] top-1.5 w-4 h-4 bg-[#0d0a07] border-2 border-[#a68a64] rounded-none group-hover:bg-[#d4a373] transition-colors duration-300"></div>
+          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 mb-3">
+            <span class="font-mono text-xs text-[#d4a373] tracking-widest uppercase font-bold">Phase 02 // Conservation Intel</span>
+            <span class="font-mono text-[10px] text-stone-500">BASE CAMP: PAZURI INN</span>
+          </div>
+          <h3 class="text-xl sm:text-2xl font-black uppercase text-stone-100 tracking-tight mb-3">Day 2: Serval Wildlife Experience</h3>
+          <p class="text-stone-400 font-mono text-xs leading-relaxed tracking-wide">
+            After breakfast, enjoy a unique wildlife experience at the Serval Wildlife Sanctuary. Get up close to giraffes, zebras, elands, ostriches, and other animals while learning about conservation efforts. This exclusive encounter offers fantastic photography opportunities and memorable wildlife interactions. Return to Arusha in the afternoon and spend the rest of the day at leisure.
+          </p>
+        </div>
+
+        <!-- Day 3 -->
+        <div class="relative group">
+          <div class="absolute -left-[31px] sm:-left-[39px] top-1.5 w-4 h-4 bg-[#0d0a07] border-2 border-[#a68a64] rounded-none group-hover:bg-[#d4a373] transition-colors duration-300"></div>
+          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 mb-3">
+            <span class="font-mono text-xs text-[#d4a373] tracking-widest uppercase font-bold">Phase 03 // Elephant Sanctuary Sector</span>
+            <span class="font-mono text-[10px] text-stone-500">BASE CAMP: MARERA VALLEY LODGE</span>
+          </div>
+          <h3 class="text-xl sm:text-2xl font-black uppercase text-stone-100 tracking-tight mb-3">Day 3: Arusha – Tarangire National Park</h3>
+          <p class="text-stone-400 font-mono text-xs leading-relaxed tracking-wide">
+            After breakfast, depart for Tarangire National Park, renowned for its large elephant herds and iconic baobab trees. Enjoy a full-day game drive searching for lions, giraffes, zebras, wildebeests, and a variety of bird species. Later, proceed to Karatu for dinner and overnight.
+          </p>
+        </div>
+
+        <!-- Day 4 -->
+        <div class="relative group">
+          <div class="absolute -left-[31px] sm:-left-[39px] top-1.5 w-4 h-4 bg-[#0d0a07] border-2 border-[#a68a64] rounded-none group-hover:bg-[#d4a373] transition-colors duration-300"></div>
+          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 mb-3">
+            <span class="font-mono text-xs text-[#d4a373] tracking-widest uppercase font-bold">Phase 04 // Caldera Descent</span>
+            <span class="font-mono text-[10px] text-stone-500">BASE CAMP: MBUNI TENTED LODGE</span>
+          </div>
+          <h3 class="text-xl sm:text-2xl font-black uppercase text-stone-100 tracking-tight mb-3">Day 4: Ngorongoro Crater Safari</h3>
+          <p class="text-stone-400 font-mono text-xs leading-relaxed tracking-wide">
+            Today descend into the spectacular Ngorongoro Crater, a UNESCO World Heritage Site and one of Africa's most remarkable wildlife destinations. Enjoy a game drive on the crater floor where you may spot the endangered black rhino, lions, elephants, buffaloes, hippos, and many other species. In the afternoon, continue to Central Serengeti.
+          </p>
+        </div>
+
+        <!-- Day 5 -->
+        <div class="relative group">
+          <div class="absolute -left-[31px] sm:-left-[39px] top-1.5 w-4 h-4 bg-[#0d0a07] border-2 border-[#a68a64] rounded-none group-hover:bg-[#d4a373] transition-colors duration-300"></div>
+          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 mb-3">
+            <span class="font-mono text-xs text-[#d4a373] tracking-widest uppercase font-bold">Phase 05 // Deep Plains Overwatch</span>
+            <span class="font-mono text-[10px] text-stone-500">BASE CAMP: MBUNI TENTED LODGE</span>
+          </div>
+          <h3 class="text-xl sm:text-2xl font-black uppercase text-stone-100 tracking-tight mb-3">Day 5: Full-Day Central Serengeti Safari</h3>
+          <p class="text-stone-400 font-mono text-xs leading-relaxed tracking-wide">
+            Spend the entire day exploring the endless plains of the world-famous Serengeti National Park. Search for predators including lions, leopards, and cheetahs while witnessing the incredible diversity of wildlife that calls the Serengeti home. Enjoy a picnic lunch in the bush before continuing your game drive.
+          </p>
+        </div>
+
+        <!-- Day 6 -->
+<div class="relative group">
+  <div class="absolute -left-[31px] sm:-left-[39px] top-1.5 w-4 h-4 bg-[#0d0a07] border-2 border-[#a68a64] rounded-none group-hover:bg-[#d4a373] transition-colors duration-300"></div>
+  <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 mb-3">
+    <span class="font-mono text-xs text-[#d4a373] tracking-widest uppercase font-bold">Phase 06 // Migration Entry Corridor</span>
+    <span class="font-mono text-[10px] text-stone-500">BASE CAMP: FRIENDS CAMP</span>
+  </div>
+  <h3 class="text-xl sm:text-2xl font-black uppercase text-stone-100 tracking-tight mb-3">Day 6: Central Serengeti to Northern Serengeti</h3>
+  <p class="text-stone-400 font-mono text-xs leading-relaxed tracking-wide">
+    After breakfast, enjoy a scenic game drive as you travel toward Northern Serengeti. This region is famous for its dramatic landscapes and seasonal Great Migration crossings along the Mara River. Arrive at camp in the afternoon and enjoy the stunning wilderness surroundings.
+  </p>
+</div>
+
+<!-- Day 7 -->
+<div class="relative group">
+  <div class="absolute -left-[31px] sm:-left-[39px] top-1.5 w-4 h-4 bg-[#0d0a07] border-2 border-[#a68a64] rounded-none group-hover:bg-[#d4a373] transition-colors duration-300"></div>
+  <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 mb-3">
+    <span class="font-mono text-xs text-[#d4a373] tracking-widest uppercase font-bold">Phase 07 // Mara River Crossing Overwatch</span>
+    <span class="font-mono text-[10px] text-stone-500">BASE CAMP: FRIENDS CAMP</span>
+  </div>
+  <h3 class="text-xl sm:text-2xl font-black uppercase text-stone-100 tracking-tight mb-3">Day 7: Full-Day Northern Serengeti Safari</h3>
+  <p class="text-stone-400 font-mono text-xs leading-relaxed tracking-wide">
+    Spend a full day exploring Northern Serengeti. Depending on the season, witness thousands of wildebeests and zebras navigating the Mara River while crocodiles lie in wait. The area also offers excellent opportunities to spot lions, leopards, elephants, and other wildlife.
+  </p>
+</div>
+
+<!-- Day 8 -->
+<div class="relative group">
+  <div class="absolute -left-[31px] sm:-left-[39px] top-1.5 w-4 h-4 bg-[#0d0a07] border-2 border-[#a68a64] rounded-none group-hover:bg-[#d4a373] transition-colors duration-300"></div>
+  <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 mb-3">
+    <span class="font-mono text-xs text-[#d4a373] tracking-widest uppercase font-bold">Phase 08 // Ecosystem Return</span>
+    <span class="font-mono text-[10px] text-stone-500">BASE CAMP: MBUNI CAMP</span>
+  </div>
+  <h3 class="text-xl sm:text-2xl font-black uppercase text-stone-100 tracking-tight mb-3">Day 8: Northern Serengeti – Central Serengeti</h3>
+  <p class="text-stone-400 font-mono text-xs leading-relaxed tracking-wide">
+    Enjoy the game drive en route as journey south through the Serengeti ecosystem, with opportunities to spot resident wildlife and admire the spectacular scenery before arriving, diverse landscapes that make Serengeti one of Africa premier destinations.
+  </p>
+</div>
+
+<!-- Day 9 -->
+<div class="relative group">
+  <div class="absolute -left-[31px] sm:-left-[39px] top-1.5 w-4 h-4 bg-[#0d0a07] border-2 border-[#d4a373] rounded-none group-hover:bg-[#d4a373] transition-colors duration-300"></div>
+  <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 mb-3">
+    <span class="font-mono text-xs text-[#d4a373] tracking-widest uppercase font-bold">Phase 09 // Extraction</span>
+    <span class="font-mono text-[10px] text-stone-500">STRIP: SERONERA AIRSTRIP</span>
+  </div>
+  <h3 class="text-xl sm:text-2xl font-black uppercase text-stone-100 tracking-tight mb-3">Day 9: DEPARTURE</h3>
+  <p class="text-stone-400 font-mono text-xs leading-relaxed tracking-wide">
+    After breakfast, collect all the luggage ready to be at SERONERA AIRSTRIP for departure, end of unforgettable experience in Serengeti.
+  </p>
+</div>

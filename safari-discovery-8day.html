@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tours & Safaris</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body class="bg-[#0d0a07] text-stone-200 antialiased font-sans selection:bg-[#d4a373] selection:text-[#0d0a07]">
+
+  <!-- MINIMAL NAVIGATION -->
+  <!-- Navbar -->
+   <nav class="fixed top-6 left-1/2 -translate-x-1/2 w-[92%] max-w-6xl z-[100] transition-[max-height,border-radius] duration-500 ease-in-out px-8 py-4 rounded-full border border-[#3d2b1f]/20 shadow-[0_20px_50px_rgba(0,0,0,0.3)] overflow-hidden" 
+     id="mainNav" 
+     style="background: linear-gradient(180deg, #2d1e14 0%, #1a120b 100%); max-height: 76px;">
+  
+  <!-- Subtle Wood Texture Overlay -->
+  <div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: url('https://transparenttextures.com');"></div>
+
+  <div class="flex justify-between items-center relative z-10">
+    <!-- Logo -->
+<a href="index.html#home" class="inline-flex items-center space-x-3 group/logo cursor-pointer">
+  <div class="relative w-10 h-10 bg-transparent rounded-full flex items-center justify-center overflow-hidden transition-transform duration-500 group-hover/logo:rotate-[360deg]">
+    <img src="assets/AFRICA SCENERY LOG2.jpeg" alt="Logo" class="w-full h-full object-cover">
+  </div>
+  <span class="text-l font-bold tracking-widest text-[#d4a373] uppercase">
+    AFRICA SCENERY
+  </span>
+</a>
+
+
+    <!-- Desktop Menu -->
+    <div class="hidden md:flex items-center space-x-12 relative text-[11px] font-black uppercase tracking-[0.2em] text-stone-400">
+      <svg class="absolute top-1/2 left-0 w-full h-12 -translate-y-1/2 pointer-events-none z-0 opacity-40" viewBox="0 0 400 40">
+        <path d="M0,20 Q50,0 100,20 T200,20 T300,20 T400,20" fill="none" stroke="#d4a373" stroke-width="5" stroke-dasharray="10 5" class="animate-[snake-crawl_20s_linear_infinite]" />
+      </svg>
+      <a href="index.html#home" class="relative z-10 hover:text-[#d4a373] transition-colors">Home</a>
+      <a href="About.html" class="relative z-10 hover:text-[#d4a373] transition-colors">About us</a>
+      <a href="index.html#destinations" class="relative z-10 hover:text-[#d4a373] transition-colors">Destinations</a>
+      <a href="index.html#packages" class="relative z-10 hover:text-[#d4a373] transition-colors">Packages</a>
+    </div>
+
+    <!-- CTA --><div class="hidden md:block">
+  <a href="https://wa.me/255788296274?text=Hello%2C%20I%27m%20interested%20in%20planning%20a%20safari.%20Could%20you%20share%20available%20packages%2C%20pricing%2C%20and%20the%20best%20travel%20dates%3F" 
+     target="_blank" 
+     rel="noopener noreferrer"
+     class="inline-block">
+    <button class="relative overflow-hidden group/btn px-8 py-3 rounded-full bg-[#d4a373] text-[10px] font-black uppercase tracking-[0.3em]  shadow-2xl transition-all hover:scale-105 active:scale-95">
+      <span class="relative z-10">Plan Safari</span>
+    </button>
+  </a>
+</div>
+
+
+    <!-- Animated Hamburger Button -->
+    <button id="menuBtn" class="md:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1.5 z-50 focus:outline-none">
+       <span id="line1" class="block w-6 h-0.5 bg-[#d4a373] transition-all duration-300 origin-center"></span>
+       <span id="line2" class="block w-6 h-0.5 bg-[#d4a373] transition-all duration-300"></span>
+       <span id="line3" class="block w-6 h-0.5 bg-[#d4a373] transition-all duration-300 origin-center"></span>
+    </button>
+  </div>
+
+  <!-- Mobile Dropdown -->
+  <div id="mobileMenu" class="md:hidden flex flex-col space-y-6 pt-10 pb-8 text-center text-[11px] font-black uppercase tracking-[0.3em] text-stone-400 border-t border-[#d4a373]/10 mt-6 relative z-10">
+      <a href="index.html#home" class="mobile-link hover:text-[#d4a373] transition-colors">Home</a>
+      <a href="About.html" class="mobile-link hover:text-[#d4a373] transition-colors">About us</a>
+      <a href="index.html#destinations" class="mobile-link hover:text-[#d4a373] transition-colors">Destinations</a>
+      <a href="index.html#packages" class="mobile-link hover:text-[#d4a373] transition-colors">Packages</a>
+      <a href="index.html#gallery" class="mobile-link hover:text-[#d4a373] transition-colors">Gallery</a>
+      <a href="index.html#reviews" class="mobile-link hover:text-[#d4a373] transition-colors">Reviews</a>
+      <a href="https://wa.me/255788296274?text=Hello%2C%20I%27m%20interested%20in%20planning%20a%20safari.%20Could%20you%20share%20available%20packages%2C%20pricing%2C%20and%20the%20best%20travel%20dates%3F" 
+   target="_blank" 
+   rel="noopener noreferrer"
+   class="mobile-link bg-[#d4a373] text-black py-4 uppercase rounded-2xl mx-4">
+   Plan Safari
+</a>
+  </div>
+</nav>
+
+  <!-- CLEAN HEADER SECTION -->
+  <header class="py-16 border-b mt-20 border-stone-900">
+    <div class="max-w-4xl mx-auto px-6">
+      <span class="text-[#d4a373] text-xs uppercase font-bold tracking-widest block mb-2">Tanzania Safari Manifest</span>
+      <h1 class="text-3xl sm:text-5xl font-black text-white uppercase tracking-tight mb-4">
+        The Ultimate Tanzania Wildlife Discovery
+      </h1>
+      <p class="text-stone-400 text-sm tracking-wide mb-6">8 Days / 7 Nights</p>
+      
+      <!-- Quick Route Tags -->
+      <div class="flex flex-wrap gap-2 text-xs text-stone-300">
+        <span class="bg-stone-900 px-3 py-1.5 border border-stone-800">Route: JRO — Serval Wildlife — Tarangire — Lake Manyara — Olmoti & Empakaai — Serengeti — Ngorongoro — Arusha</span>
+        <span class="bg-stone-900 px-3 py-1.5 border border-stone-800">Lodges: Pazuri Inn, Eileen's Trees, Marera Valley, Mbuni Lodge / Tented Camp</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ITINERARY BODY -->
+  <main class="max-w-4xl mx-auto px-6 py-12">
+    <div class="space-y-16">
+
+      <!-- DAY 1 -->
+      <div class="space-y-6">
+        <!-- Visual Anchor Image -->
+        <div class="w-full h-64 sm:h-96 overflow-hidden bg-stone-900 border border-stone-800/60">
+          <img src="images/serval.webp" class="w-full h-full object-cover transition-transform duration-[2s] hover:scale-105" alt="Serval Wildlife Eco-Tourism Sanctuary">
+        </div>
+        
+        <!-- Text Content -->
+        <div class="border-l-2 border-[#d4a373] pl-6 py-1">
+          <div class="flex flex-wrap items-baseline justify-between gap-2 mb-3">
+            <h2 class="text-xl sm:text-2xl font-black uppercase text-white tracking-tight">
+              Day 1: Pick Up From JRO to Serval Wildlife
+            </h2>
+            <span class="text-xs font-mono bg-stone-900 text-[#a68a64] px-2.5 py-1 border border-stone-800">Accommodation: Pazuri Inn</span>
+          </div>
+          <p class="text-stone-300 text-sm sm:text-base leading-relaxed tracking-wide">
+            Upon arrival, you will be warmly welcomed by our professional safari guide and transferred direct to Serval wildlife. This is a unique eco-tourism sanctuary nestled between the slopes of mountain Meru and mount Kilimanjaro, offering visitors an extraordinary chance to connect with Tanzania’s wildlife in a natural and scenic environment. The sanctuary is home to a variety of animals, including lions, giraffes, zebras, elands, monkeys, and ostriches. Enjoy a rare opportunity to get up close with some of Africa’s most iconic animals. You can feed selected animals, interact with them, take memorable photographs, and observe wildlife from an exceptionally close distance, creating an unforgettable experience while learning about wildlife conservation and protection efforts.
+          </p>
+        </div>
+      </div>
+
+      <!-- DAY 2 -->
+      <div class="space-y-6">
+        <!-- Visual Anchor Image -->
+        <div class="w-full h-64 sm:h-96 overflow-hidden bg-stone-900 border border-stone-800/60">
+          <img src="potraits/herds.jpg" class="w-full h-full object-cover transition-transform duration-[2s] hover:scale-105" alt="Tarangire National Park Elephant Herds">
+        </div>
+
+        <!-- Text Content -->
+        <div class="border-l-2 border-[#d4a373] pl-6 py-1">
+          <div class="flex flex-wrap items-baseline justify-between gap-2 mb-3">
+            <h2 class="text-xl sm:text-2xl font-black uppercase text-white tracking-tight">
+              Day 2: Tarangire National Park
+            </h2>
+            <span class="text-xs font-mono bg-stone-900 text-[#a68a64] px-2.5 py-1 border border-stone-800">Accommodation: Eileen's Trees Lodge</span>
+          </div>
+          <p class="text-stone-300 text-sm sm:text-base leading-relaxed tracking-wide">
+            Start your journey with an early pick-up from Arusha and head to Tarangire National Park. Home of the giants—large elephant herds, baobab trees, and stunning wildlife along the Tarangire River. Enjoy a full-day game drive as your guide explores the best wildlife spots.
+          </p>
+        </div>
+      </div>
+
+      <!-- DAY 3 -->
+      <div class="space-y-6">
+        <!-- Visual Anchor Image -->
+        <div class="w-full h-64 sm:h-96 overflow-hidden bg-stone-900 border border-stone-800/60">
+          <img src="potraits/manyara.jpg" class="w-full h-full object-cover transition-transform duration-[2s] hover:scale-105" alt="Lake Manyara Flamingos and Wildlife">
+        </div>
+
+        <!-- Text Content -->
+        <div class="border-l-2 border-[#d4a373] pl-6 py-1">
+          <div class="flex flex-wrap items-baseline justify-between gap-2 mb-3">
+            <h2 class="text-xl sm:text-2xl font-black uppercase text-white tracking-tight">
+              Day 3: Lake Manyara National Park
+            </h2>
+            <span class="text-xs font-mono bg-stone-900 text-[#a68a64] px-2.5 py-1 border border-stone-800">Accommodation: Marera Valley Lodge</span>
+          </div>
+          <p class="text-stone-300 text-sm sm:text-base leading-relaxed tracking-wide">
+            The park is famous for its tree-climbing lions, large troops of baboons, and thousands of pink flamingos that gather along the lake’s shores during certain seasons. You can also spot elephants, giraffes, zebras, hippos, and numerous bird species, making Lake Manyara a perfect destination for wildlife viewing and photography. Its unique landscapes and rich biodiversity provide a memorable safari experience in northern Tanzania.
+          </p>
+        </div>
+      </div>
+
+      <!-- DAY 4 -->
+      <div class="space-y-6">
+        <!-- Visual Anchor Image -->
+        <div class="w-full h-64 sm:h-96 overflow-hidden bg-stone-900 border border-stone-800/60">
+          <img src="potraits/oe.jpg" class="w-full h-full object-cover transition-transform duration-[2s] hover:scale-105" alt="Olmoti and Empakaai Crater Highlands Excursion">
+        </div>
+
+        <!-- Text Content -->
+        <div class="border-l-2 border-[#d4a373] pl-6 py-1">
+          <div class="flex flex-wrap items-baseline justify-between gap-2 mb-3">
+            <h2 class="text-xl sm:text-2xl font-black uppercase text-white tracking-tight">
+              Day 4: Olmoti and Empakaai Crater Excursion
+            </h2>
+            <span class="text-xs font-mono bg-stone-900 text-[#a68a64] px-2.5 py-1 border border-stone-800">Accommodation: Marera Valley Lodge</span>
+          </div>
+          <p class="text-stone-300 text-sm sm:text-base leading-relaxed tracking-wide">
+            After breakfast depart from the lodge and discover two hidden gems of the Ngorongoro highlands on a scenic walking adventure. Olmoti crater offers spectacular views of lush highland landscapes and the beautiful Munge waterfall, the main water source feeding the Ngorongoro ecosystem. Then continue to Empakaai crater, a breathtaking volcanic caldera with a deep alkaline lake covering much of its floor. The crater is renowned for its stunning panoramic views, abundant birdlife including flamingos, and the possibility of spotting buffaloes, bushbucks, and blue monkeys along the trail. This off-the-beaten-path experience provides a unique combination of nature, hiking, and cultural encounters with the local Maasai communities.
+          </p>
+        </div>
+      </div>
+
+      <!-- DAY 5 -->
+      <div class="space-y-6">
+        <!-- Visual Anchor Image -->
+        <div class="w-full h-64 sm:h-96 overflow-hidden bg-stone-900 border border-stone-800/60">
+          <img src="potraits/horizon.jpg" class="w-full h-full object-cover transition-transform duration-[2s] hover:scale-105" alt="Ngorongoro Crater Floor Horizon">
+        </div>
+
+        <!-- Text Content -->
+        <div class="border-l-2 border-[#d4a373] pl-6 py-1">
+          <div class="flex flex-wrap items-baseline justify-between gap-2 mb-3">
+            <h2 class="text-xl sm:text-2xl font-black uppercase text-white tracking-tight">
+              Day 5: Ngorongoro Crater
+            </h2>
+            <span class="text-xs font-mono bg-stone-900 text-[#a68a64] px-2.5 py-1 border border-stone-800">Accommodation: Mbuni Lodge</span>
+          </div>
+          <p class="text-stone-300 text-sm sm:text-base leading-relaxed tracking-wide">
+            After breakfast, enjoy one of the most breathtaking panoramas in Africa. From the rim, you get a clear, wide view of the world’s largest unbroken caldera—stretching over 260 sq km of wildlife-rich plains, featuring stunning sunrise and sunset scenery. This offers a perfect bird’s eye view of the entire crater floor and an exceptional chance to spot animals from above. This is an excellent photo opportunity inside a cool, refreshing highland climate.
+          </p>
+        </div>
+      </div>
+
+      <!-- DAY 6 -->
+      <div class="space-y-6">
+        <!-- Visual Anchor Image -->
+        <div class="w-full h-64 sm:h-96 overflow-hidden bg-stone-900 border border-stone-800/60">
+          <img src="potraits/preds.jpg" class="w-full h-full object-cover transition-transform duration-[2s] hover:scale-105" alt="Central Serengeti National Park Predators">
+        </div>
+
+        <!-- Text Content -->
+        <div class="border-l-2 border-[#d4a373] pl-6 py-1">
+          <div class="flex flex-wrap items-baseline justify-between gap-2 mb-3">
+            <h2 class="text-xl sm:text-2xl font-black uppercase text-white tracking-tight">
+              Day 6: Central Serengeti National Park
+            </h2>
+            <span class="text-xs font-mono bg-stone-900 text-[#a68a64] px-2.5 py-1 border border-stone-800">Accommodation: Mbuni Tented Camp</span>
+          </div>
+          <p class="text-stone-300 text-sm sm:text-base leading-relaxed tracking-wide">
+            Begin your day with an early drive through the Ngorongoro highlands as you head into the legendary Serengeti National Park. You will see big cats (lions, cheetahs, leopards), large herds of wildebeests and zebras, and endless golden plains. Enjoy game drive viewing en route and an afternoon game drive in Central Serengeti, famous for its year-round wildlife.
+          </p>
+        </div>
+      </div>
+
+      <!-- DAY 7 -->
+      <div class="space-y-6">
+        <!-- Visual Anchor Image -->
+        <div class="w-full h-64 sm:h-96 overflow-hidden bg-stone-900 border border-stone-800/60">
+          <img src="potraits/seplains.jpg" class="w-full h-full object-cover transition-transform duration-[2s] hover:scale-105" alt="Serengeti Great Migration Plains">
+        </div>
+
+        <!-- Text Content -->
+        <div class="border-l-2 border-[#d4a373] pl-6 py-1">
+          <div class="flex flex-wrap items-baseline justify-between gap-2 mb-3">
+            <h2 class="text-xl sm:text-2xl font-black uppercase text-white tracking-tight">
+              Day 7: Central Serengeti National Park
+            </h2>
+            <span class="text-xs font-mono bg-stone-900 text-[#a68a64] px-2.5 py-1 border border-stone-800">Accommodation: Mbuni Tented Camp</span>
+          </div>
+          <p class="text-stone-300 text-sm sm:text-base leading-relaxed tracking-wide">
+            Enjoy a sunrise game drive in Serengeti when predators are most active. This is the home of the world-famous Great Migration where over 2 million wildebeests, zebras, and gazelles move across the golden plains in a dramatic circle of life. Africa’s most iconic safari destination, land of the big cats, endless savannah experiences, and a photographer’s paradise where nature comes alive. After lunch, drive toward Ngorongoro as wildlife accompanies your journey. Arrive in the evening at the Ngorongoro safari lodge.
+          </p>
+        </div>
+      </div>
+
+      <!-- DAY 8 -->
+      <div class="space-y-6">
+        <!-- Visual Anchor Image -->
+        <div class="w-full h-64 sm:h-96 overflow-hidden bg-stone-900 border border-stone-800/60">
+          <img src="potraits/kia.png" class="w-full h-full object-cover transition-transform duration-[2s] hover:scale-105" alt="Serengeti to Arusha Flight Extraction">
+        </div>
+
+        <!-- Text Content -->
+        <div class="border-l-2 border-[#d4a373] pl-6 py-1">
+          <div class="flex flex-wrap items-baseline justify-between gap-2 mb-3">
+            <h2 class="text-xl sm:text-2xl font-black uppercase text-white tracking-tight">
+              Day 8: Serengeti to Arusha
+            </h2>
+            <span class="text-xs font-mono bg-stone-900 text-stone-400 px-2.5 py-1 border border-stone-800">End of Program</span>
+          </div>
+          <p class="text-stone-300 text-sm sm:text-base leading-relaxed tracking-wide">
+            Enjoy an early morning game drive on the way to the airstrip to fly back to Arusha. Upon arrival, your meeting transfer driver will take you to a local lunch spot, followed by an immediate transfer to Kilimanjaro International Airport (JRO) for your evening flight out.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- CALL TO ACTION / FOOTER NOTES -->
+    <div class="mt-20 pt-8 border-t border-stone-900 text-center">
+      <p class="font-serif italic text-stone-400 text-sm mb-6">"Thank you for choosing our company"</p>
+      
+      <!-- Conversion Buttons -->
+      <div class="flex flex-col sm:flex-row justify-center gap-4 max-w-md mx-auto">
+        <a href="mailto:info@://arenaafricasafaris.com: 8-Day Ultimate Tanzania Wildlife Discovery" class="flex-1 py-3.5 bg-[#d4a373] hover:bg-white text-[#0d0a07] text-xs uppercase font-bold tracking-widest transition-colors duration-300 text-center">
+          Inquire via Email
+        </a>
+        <a href="https://wa.me." target="_blank" class="flex-1 py-3.5 bg-transparent border border-stone-800 hover:border-[#d4a373] text-stone-300 hover:text-white text-xs uppercase font-bold tracking-widest transition-colors duration-300 text-center">
+          Chat on WhatsApp
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <!-- OFFICIAL SITE FOOTER -->
+  <footer class="py-12 bg-stone-950/40 border-t border-stone-900/60 font-mono text-[10px] text-stone-500 tracking-widest text-center">
+    <div>ARENA AFRICA SAFARIS LTD</div>
+    <div class="mt-1 flex justify-center gap-4 text-stone-600 text-[9px]">
+      <a href="mailto:info@arenaafricasafaris.com" class="hover:text-stone-400">INFO@ARENAAFRICASAFARIS.COM</a>
+      <span>•</span>
+      <a href="https://arenaafricasafaris.com" target="_blank" class="hover:text-stone-400">://arenaafricasafaris.com</a>
+    </div>
+  </footer>
+
+  <style>
+  @keyframes snake-crawl {
+    from { stroke-dashoffset: 100; }
+    to { stroke-dashoffset: 0; }
+  }
+</style>
+
+ <script>
+  
+    const menuBtn = document.getElementById('menuBtn');
+    const nav = document.getElementById('mainNav');
+    const line1 = document.getElementById('line1');
+    const line2 = document.getElementById('line2');
+    const line3 = document.getElementById('line3');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+
+    function toggleMenu() {
+      // Check if it's currently at the base height
+      const isClosed = nav.style.maxHeight === '76px' || nav.style.maxHeight === '';
+      
+      if (isClosed) {
+        // OPENING: Switch to boxy corners immediately, then expand height
+        nav.classList.remove('rounded-full');
+        nav.classList.add('rounded-[2rem]');
+        nav.style.maxHeight = '600px'; 
+
+        // Hamburger -> X
+        line1.style.transform = 'translateY(7px) rotate(45deg)';
+        line3.style.transform = 'translateY(-7px) rotate(-45deg)';
+        line2.style.opacity = '0';
+      } else {
+        // CLOSING: Shrink height first
+        nav.style.maxHeight = '76px';
+        
+        // Wait for the height transition to finish before turning back into a pill
+        setTimeout(() => {
+          if(nav.style.maxHeight === '76px') {
+            nav.classList.remove('rounded-[2rem]');
+            nav.classList.add('rounded-full');
+          }
+        }, 400);
+
+        // X -> Hamburger
+        line1.style.transform = 'none';
+        line3.style.transform = 'none';
+        line2.style.opacity = '1';
+      }
+    }
+
+    menuBtn.addEventListener('click', toggleMenu);
+
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        if (nav.style.maxHeight !== '76px') toggleMenu();
+      });
+    });
+
+</script>
+
+</body>
+</html>

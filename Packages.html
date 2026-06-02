@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tours & Safaris</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body class="bg-[#0d0a07] text-stone-100 antialiased selection:bg-[#d4a373] selection:text-[#0d0a07]">
+
+     <!-- Navbar -->
+   <nav class="fixed top-6 left-1/2 -translate-x-1/2 w-[92%] max-w-6xl z-[100] transition-[max-height,border-radius] duration-500 ease-in-out px-8 py-4 rounded-full border border-[#3d2b1f]/20 shadow-[0_20px_50px_rgba(0,0,0,0.3)] overflow-hidden" 
+     id="mainNav" 
+     style="background: linear-gradient(180deg, #2d1e14 0%, #1a120b 100%); max-height: 76px;">
+  
+  <!-- Subtle Wood Texture Overlay -->
+  <div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: url('https://transparenttextures.com');"></div>
+
+  <div class="flex justify-between items-center relative z-10">
+    <!-- Logo -->
+<a href="index.html#home" class="inline-flex items-center space-x-3 group/logo cursor-pointer">
+  <div class="relative w-10 h-10 bg-transparent rounded-full flex items-center justify-center overflow-hidden transition-transform duration-500 group-hover/logo:rotate-[360deg]">
+    <img src="assets/AFRICA SCENERY LOG2.jpeg" alt="Logo" class="w-full h-full object-cover">
+  </div>
+  <span class="text-l font-bold tracking-widest text-[#d4a373] uppercase">
+    AFRICA SCENERY
+  </span>
+</a>
+
+
+    <!-- Desktop Menu -->
+    <div class="hidden md:flex items-center space-x-12 relative text-[11px] font-black uppercase tracking-[0.2em] text-stone-400">
+      <svg class="absolute top-1/2 left-0 w-full h-12 -translate-y-1/2 pointer-events-none z-0 opacity-40" viewBox="0 0 400 40">
+        <path d="M0,20 Q50,0 100,20 T200,20 T300,20 T400,20" fill="none" stroke="#d4a373" stroke-width="5" stroke-dasharray="10 5" class="animate-[snake-crawl_20s_linear_infinite]" />
+      </svg>
+      <a href="index.html#home" class="relative z-10 hover:text-[#d4a373] transition-colors">Home</a>
+      <a href="About.html" class="relative z-10 hover:text-[#d4a373] transition-colors">About us</a>
+      <a href="index.html#destinations" class="relative z-10 hover:text-[#d4a373] transition-colors">Destinations</a>
+      <a href="index.html#packages" class="relative z-10 hover:text-[#d4a373] transition-colors">Packages</a>
+    </div>
+
+    <!-- CTA --><div class="hidden md:block">
+  <a href="https://wa.me/255788296274?text=Hello%2C%20I%27m%20interested%20in%20planning%20a%20safari.%20Could%20you%20share%20available%20packages%2C%20pricing%2C%20and%20the%20best%20travel%20dates%3F" 
+     target="_blank" 
+     rel="noopener noreferrer"
+     class="inline-block">
+    <button class="relative overflow-hidden group/btn px-8 py-3 rounded-full bg-[#d4a373] text-[10px] font-black uppercase tracking-[0.3em]  shadow-2xl transition-all hover:scale-105 active:scale-95">
+      <span class="relative z-10">Plan Safari</span>
+    </button>
+  </a>
+</div>
+
+
+    <!-- Animated Hamburger Button -->
+    <button id="menuBtn" class="md:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1.5 z-50 focus:outline-none">
+       <span id="line1" class="block w-6 h-0.5 bg-[#d4a373] transition-all duration-300 origin-center"></span>
+       <span id="line2" class="block w-6 h-0.5 bg-[#d4a373] transition-all duration-300"></span>
+       <span id="line3" class="block w-6 h-0.5 bg-[#d4a373] transition-all duration-300 origin-center"></span>
+    </button>
+  </div>
+
+  <!-- Mobile Dropdown -->
+  <div id="mobileMenu" class="md:hidden flex flex-col space-y-6 pt-10 pb-8 text-center text-[11px] font-black uppercase tracking-[0.3em] text-stone-400 border-t border-[#d4a373]/10 mt-6 relative z-10">
+      <a href="index.html#home" class="mobile-link hover:text-[#d4a373] transition-colors">Home</a>
+      <a href="About.html" class="mobile-link hover:text-[#d4a373] transition-colors">About us</a>
+      <a href="index.html#destinations" class="mobile-link hover:text-[#d4a373] transition-colors">Destinations</a>
+      <a href="index.html#packages" class="mobile-link hover:text-[#d4a373] transition-colors">Packages</a>
+      <a href="index.html#gallery" class="mobile-link hover:text-[#d4a373] transition-colors">Gallery</a>
+      <a href="index.html#reviews" class="mobile-link hover:text-[#d4a373] transition-colors">Reviews</a>
+      <a href="https://wa.me/255788296274?text=Hello%2C%20I%27m%20interested%20in%20planning%20a%20safari.%20Could%20you%20share%20available%20packages%2C%20pricing%2C%20and%20the%20best%20travel%20dates%3F" 
+   target="_blank" 
+   rel="noopener noreferrer"
+   class="mobile-link bg-[#d4a373] text-black py-4 uppercase rounded-2xl mx-4">
+   Plan Safari
+</a>
+  </div>
+</nav>
+
+  <!-- TOP DEPLOYMENT HEADER -->
+  <header class="pt-24 pb-12 border-b mt-20 border-stone-900/80">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="border-l-4 border-[#d4a373] pl-6">
+        <span class="text-[#d4a373] font-mono text-[10px] uppercase tracking-[0.5em] font-black block mb-2">
+        Tanzania Destinations Packages
+        </span>
+        <h1 class="text-6xl md:text-6xl font-black tracking-tighter uppercase text-white leading-none">
+          Expedition <span class="italic font-serif text-[#a68a64] lowercase tracking-normal font-normal">Packages</span>
+        </h1>
+       
+      </div>
+    </div>
+  </header>
+
+  <!-- ITINERARY PLANS MANIFEST GRID -->
+  <main class="max-w-7xl mx-auto px-6 py-16">
+    <div id="plans-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+     <!-- Plan: 2 Days -->
+<div data-days="2" class="plan-card border border-stone-800 bg-stone-900/10 group flex flex-col justify-between hover:border-[#d4a373]/50 transition-all duration-500">
+  <div>
+    <!-- Tactical Visual Framework -->
+    <div class="h-48 relative overflow-hidden border-b border-stone-900">
+      <img src="assets/tarangirelandscape.jpg" class="w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-105 filter brightness-[0.65] contrast-[1.1]" alt="Tarangire & Ngorongoro Crater">
+      <div class="absolute inset-0 bg-gradient-to-t from-[#0d0a07] via-transparent to-transparent opacity-90"></div>
+      
+      <!-- Top Badges Matrix -->
+      <span class="absolute top-3 left-3 font-mono text-[9px] text-[#d4a373] font-bold tracking-[0.2em] bg-[#0d0a07]/90 px-2 py-0.5 border border-stone-800/80 uppercase">
+        02 Days & 01 Night
+      </span>
+    </div>
+
+    <!-- Core Content Architecture -->
+    <div class="p-6">
+      <div class="flex items-center justify-between mb-1.5">
+        <span class="text-[#a68a64] font-mono text-[9px] uppercase tracking-widest font-semibold">
+         Route: Tarangire - Ngorongoro
+        </span>
+      </div>
+
+      <h3 class="text-xl font-black text-stone-100 uppercase tracking-tight mb-2 group-hover:text-[#d4a373] transition-colors duration-300">
+        Short Wildlife Escape
+      </h3>
+
+      <p class="text-stone-400  text-xs leading-relaxed mb-6">
+        A rapid, high-impact deployment tracking the giants of Tarangire National Park followed by a tactical descent into the prime wildlife hunting grids of the Ngorongoro Crater floor.
+      </p>
+      
+      <!-- Sector Intelligence Sub-Checklist -->
+      <div class="space-y-1.5 text-[10px] text-stone-500 border-t border-stone-900 pt-4 mb-2">
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D1: Arusha — Tarangire Big Game Drive</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D2: Crater Descent Floor Exploration</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Command Output Footer Element -->
+  <div class="p-6 pt-0">
+    <div class="grid grid-cols-1 gap-2">
+      <a href="safari-escape-2day.html" class="w-full py-3 bg-stone-950 border border-stone-800 hover:border-[#d4a373] hover:bg-[#d4a373] text-stone-300 hover:text-[#0d0a07] font-mono text-[10px] uppercase font-bold tracking-widest text-center block transition-all">
+        Explore Deployment →
+      </a>
+      
+    </div>
+  </div>
+</div>
+
+
+     <!-- Plan: 3 Days -->
+<div data-days="3" class="plan-card border border-stone-800 bg-stone-900/10 group flex flex-col justify-between hover:border-[#d4a373]/50 transition-all duration-500">
+  <div>
+    <!-- Tactical Visual Framework -->
+    <div class="h-48 relative overflow-hidden border-b border-stone-900">
+      <img src="assets/crater.jpg" class="w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-105 filter brightness-[0.65] contrast-[1.1]" alt="Ngorongoro Caldera Rim">
+      <div class="absolute inset-0 bg-gradient-to-t from-[#0d0a07] via-transparent to-transparent opacity-90"></div>
+      
+      <!-- Top Badges Matrix -->
+      <span class="absolute top-3 left-3 text-[9px] text-[#d4a373] font-bold tracking-[0.2em] bg-[#0d0a07]/90 px-2 py-0.5 border border-stone-800/80 uppercase">
+        03 Days & 02 Nights
+      </span>
+    </div>
+
+    <!-- Core Content Architecture -->
+    <div class="p-6">
+      <div class="flex items-center justify-between mb-1.5">
+        <span class="text-[#a68a64] font-mono text-[9px] uppercase tracking-widest font-semibold">
+        Route: Arusha - Tarangire - Crater
+        </span>
+      </div>
+
+      <h3 class="text-xl font-black text-stone-100 uppercase tracking-tight mb-2 group-hover:text-[#d4a373] transition-colors duration-300">
+        Tanzania Highlights Safari
+      </h3>
+
+      <p class="text-stone-400 text-xs leading-relaxed mb-6">
+        An immersive multi-sector circuit targeting massive elephant parameters across Tarangire River sectors, paired with dramatic panoramic bird's eye overwatches from the rim of the Ngorongoro Caldera.
+      </p>
+      
+      <!-- Sector Intelligence Sub-Checklist -->
+      <div class="space-y-1.5 text-[10px] text-stone-500 border-t border-stone-900 pt-4 mb-2">
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D1: Arrival & Settle at Pazuri Inn Base</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D2: Tarangire Giants Deep Game Drive</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D3: Ngorongoro Rim Caldera Overwatch</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Command Output Footer Element -->
+  <div class="p-6 pt-0">
+    <div class="grid grid-cols-1 gap-2">
+      <a href="safari-highlights-3day.html" class="w-full py-3 bg-stone-950 border border-stone-800 hover:border-[#d4a373] hover:bg-[#d4a373] text-stone-300 hover:text-[#0d0a07] font-mono text-[10px] uppercase font-bold tracking-widest text-center block transition-all">
+        Explore Deployment →
+      </a>
+      
+    </div>
+  </div>
+</div>
+
+<!-- Plan: 4 Days -->
+<div data-days="4" class="plan-card border border-stone-800 bg-stone-900/10 group flex flex-col justify-between hover:border-[#d4a373]/50 transition-all duration-500">
+  <div>
+    <!-- Tactical Visual Framework -->
+    <div class="h-48 relative overflow-hidden border-b border-stone-900">
+      <img src="asset/hadzabe.webp" class="w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-105 filter brightness-[0.65] contrast-[1.1]" alt="Lake Eyasi Hadzabe Tribe Culture">
+      <div class="absolute inset-0 bg-gradient-to-t from-[#0d0a07] via-transparent to-transparent opacity-90"></div>
+      
+      <!-- Top Badges Matrix -->
+      <span class="absolute top-3 left-3 font-mono text-[9px] text-[#d4a373] font-bold tracking-[0.2em] bg-[#0d0a07]/90 px-2 py-0.5 border border-stone-800/80 uppercase">
+        04 Days & 03 Nights
+      </span>
+    </div>
+
+    <!-- Core Content Architecture -->
+    <div class="p-6">
+      <div class="flex items-center justify-between mb-1.5">
+        <span class="text-[#a68a64] font-mono text-[9px] uppercase tracking-widest font-semibold">
+         Route: Arusha - Eyasi - Crater Circuit
+        </span>
+      </div>
+
+      <h3 class="text-xl font-black text-stone-100 uppercase tracking-tight mb-2 group-hover:text-[#d4a373] transition-colors duration-300">
+        Classic Safari Adventure
+      </h3>
+
+      <p class="text-stone-400 text-xs leading-relaxed mb-6">
+        A masterfully balanced itinerary blending high-density big game tracking across Tarangire with profound cultural immersion among the ancient bush tribes of Lake Eyasi, concluding with panoramic crater overviews.
+      </p>
+      
+      <!-- Sector Intelligence Sub-Checklist -->
+      <div class="space-y-1.5 text-[10px] text-stone-500 border-t border-stone-900 pt-4 mb-2">
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D1: Tarangire Elephant & Baobab Deployment</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D2: Hadzabe & Datoga Tribal Intercepts</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D3: Ngorongoro Caldera Rim Horizon Scan</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D4: Mto wa Mbu Farming Sector to Arusha</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Command Output Footer Element -->
+  <div class="p-6 pt-0">
+    <div class="grid grid-cols-1 gap-2">
+      <a href="safari-classic-4day.html" class="w-full py-3 bg-stone-950 border border-stone-800 hover:border-[#d4a373] hover:bg-[#d4a373] text-stone-300 hover:text-[#0d0a07] font-mono text-[10px] uppercase font-bold tracking-widest text-center block transition-all">
+        Explore Deployment →
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Plan: 5 Days -->
+<div data-days="5" class="plan-card border border-stone-800 bg-stone-900/10 group flex flex-col justify-between hover:border-[#d4a373]/50 transition-all duration-500">
+  <div>
+    <!-- Tactical Visual Framework -->
+    <div class="h-48 relative overflow-hidden border-b border-stone-900">
+      <img src="assets/serengeti.jpg" class="w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-105 filter brightness-[0.65] contrast-[1.1]" alt="Central Serengeti Migration Plains">
+      <div class="absolute inset-0 bg-gradient-to-t from-[#0d0a07] via-transparent to-transparent opacity-90"></div>
+      
+      <!-- Top Badges Matrix -->
+      <span class="absolute top-3 left-3 font-mono text-[9px] text-[#d4a373] font-bold tracking-[0.2em] bg-[#0d0a07]/90 px-2 py-0.5 border border-stone-800/80 uppercase">
+        05 Days & 04 Nights
+      </span>
+    </div>
+
+    <!-- Core Content Architecture -->
+    <div class="p-6">
+      <div class="flex items-center justify-between mb-1.5">
+        <span class="text-[#a68a64] font-mono text-[9px] uppercase tracking-widest font-semibold">
+        Route: Arusha - Tarangire - Serengeti - Crater
+        </span>
+      </div>
+
+      <h3 class="text-xl font-black text-stone-100 uppercase tracking-tight mb-2 group-hover:text-[#d4a373] transition-colors duration-300">
+        The Great Migration Core
+      </h3>
+
+      <p class="text-stone-400 text-xs leading-relaxed mb-6">
+        A flagship photographic safari tracking active predators across the endless golden plains of the Serengeti, combined with high-density elephant encounters in Tarangire and a deep caldera rim overwatch.
+      </p>
+      
+      <!-- Sector Intelligence Sub-Checklist -->
+      <div class="space-y-1.5 text-[10px] text-stone-500 border-t border-stone-900 pt-4 mb-2">
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D1: Arrival Briefing & Pazuri Inn Base Settle</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D2: Tarangire Giants River Sector Patrol</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D3: Ngorongoro Highlands Transit to Central Serengeti</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D4: Sunrise Serengeti Big Cat & Migration Tracking</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D5: Ngorongoro Caldera Rim Panoramic Scan to Karatu</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Command Output Footer Element -->
+  <div class="p-6 pt-0">
+    <div class="grid grid-cols-1 gap-2">
+      <a href="safari-migration-5day.html" class="w-full py-3 bg-stone-950 border border-stone-800 hover:border-[#d4a373] hover:bg-[#d4a373] text-stone-300 hover:text-[#0d0a07] font-mono text-[10px] uppercase font-bold tracking-widest text-center block transition-all">
+        Explore Deployment →
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Plan: 6 Days -->
+<div data-days="6" class="plan-card border border-stone-800 bg-stone-900/10 group flex flex-col justify-between hover:border-[#d4a373]/50 transition-all duration-500">
+  <div>
+    <!-- Tactical Visual Framework -->
+    <div class="h-48 relative overflow-hidden border-b border-stone-900">
+      <img src="images/serval.webp" class="w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-105 filter brightness-[0.65] contrast-[1.1]" alt="Serval Wildlife Interaction Sanctuary">
+      <div class="absolute inset-0 bg-gradient-to-t from-[#0d0a07] via-transparent to-transparent opacity-90"></div>
+      
+      <!-- Top Badges Matrix -->
+      <span class="absolute top-3 left-3 font-mono text-[9px] text-[#d4a373] font-bold tracking-[0.2em] bg-[#0d0a07]/90 px-2 py-0.5 border border-stone-800/80 uppercase">
+        06 Days & 05 Nights
+      </span>
+      <span class="absolute top-3 right-3 font-mono text-[8px] text-stone-500 tracking-widest hidden sm:inline">
+        REF: TZ-06C
+      </span>
+    </div>
+
+    <!-- Core Content Architecture -->
+    <div class="p-6">
+      <div class="flex items-center justify-between mb-1.5">
+        <span class="text-[#a68a64] font-mono text-[9px] uppercase tracking-widest font-semibold">
+         Route: Serval - Tarangire - Serengeti - Crater
+        </span>
+      </div>
+
+      <h3 class="text-xl font-black text-stone-100 uppercase tracking-tight mb-2 group-hover:text-[#d4a373] transition-colors duration-300">
+        Big Five & Calving Season Migration Safari
+      </h3>
+
+      <p class="text-stone-400 text-xs leading-relaxed mb-6">
+        An elite multi-destination circuit featuring rare close-quarter interactions at the Serval Wildlife eco-sanctuary, elephant tracking in Tarangire, and high-density big cat surveillance on the endless Serengeti plains.
+      </p>
+      
+      <!-- Sector Intelligence Sub-Checklist -->
+      <div class="space-y-1.5 text-[10px] text-stone-500 border-t border-stone-900 pt-4 mb-2">
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D1: Arrival Briefing & Settle at Tulia Lodge Base</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D2: Serval Wildlife Eco-Sanctuary Close Interaction</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D3: Tarangire River Elephant Corridor Game Drive</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D4-D5: Central Serengeti Migration Tracker (Mbuni Camp)</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D6: Ngorongoro Caldera Rim Panoramic Closeout</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Command Output Footer Element -->
+  <div class="p-6 pt-0">
+    <div class="grid grid-cols-1 gap-2">
+      <a href="safari-migration-6day.html" class="w-full py-3 bg-stone-950 border border-stone-800 hover:border-[#d4a373] hover:bg-[#d4a373] text-stone-300 hover:text-[#0d0a07] font-mono text-[10px] uppercase font-bold tracking-widest text-center block transition-all">
+        Explore Deployment →
+      </a>
+    </div>
+  </div>
+</div>
+
+
+     <!-- Plan: 6 Days (Alternative Circuit) -->
+<div data-days="6" class="plan-card border border-stone-800 bg-stone-900/10 group flex flex-col justify-between hover:border-[#d4a373]/50 transition-all duration-500">
+  <div>
+    <!-- Tactical Visual Framework -->
+    <div class="h-48 relative overflow-hidden border-b border-stone-900">
+      <img src="assets/MWF.jpg" class="w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-105 filter brightness-[0.65] contrast-[1.1]" alt="Materuni Waterfalls Kilimanjaro Foothills">
+      <div class="absolute inset-0 bg-gradient-to-t from-[#0d0a07] via-transparent to-transparent opacity-90"></div>
+      
+      <!-- Top Badges Matrix -->
+      <span class="absolute top-3 left-3 font-mono text-[9px] text-[#d4a373] font-bold tracking-[0.2em] bg-[#0d0a07]/90 px-2 py-0.5 border border-stone-800/80 uppercase">
+        06 Days & 05 Nights
+      </span>
+    </div>
+
+    <!-- Core Content Architecture -->
+    <div class="p-6">
+      <div class="flex items-center justify-between mb-1.5">
+        <span class="text-[#a68a64] font-mono text-[9px] uppercase tracking-widest font-semibold">
+        Route: Materuni - Tarangire - Serengeti - Crater
+        </span>
+      </div>
+
+      <h3 class="text-xl font-black text-stone-100 uppercase tracking-tight mb-2 group-hover:text-[#d4a373] transition-colors duration-300">
+        Wildlife & Cultural Exploration
+      </h3>
+
+      <p class="text-stone-400 text-xs leading-relaxed mb-6">
+        An exceptional multi-destination manifest balancing active trekking to Kilimanjaro's massive Materuni Waterfalls with standard Big Five safari tracking parameters across the Serengeti and Ngorongoro ecosystems.
+      </p>
+      
+      <!-- Sector Intelligence Sub-Checklist -->
+      <div class="space-y-1.5 text-[10px] text-stone-500 border-t border-stone-900 pt-4 mb-2">
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D1: Arrival & Tactical Settle at Bru Bru Lodge Base</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D2: Materuni Waterfalls Trek & Chagga Coffee Experience</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D3: Tarangire National Park Elephant Corridor Patrol</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D4-D5: Central Serengeti Migration Tracking (Mbuni Camp)</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D6: Ngorongoro Caldera Rim Extrapolated Extraction</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Command Output Footer Element -->
+  <div class="p-6 pt-0">
+    <div class="grid grid-cols-1 gap-2">
+      <a href="safari-cultural-6day.html" class="w-full py-3 bg-stone-950 border border-stone-800 hover:border-[#d4a373] hover:bg-[#d4a373] text-stone-300 hover:text-[#0d0a07] font-mono text-[10px] uppercase font-bold tracking-widest text-center block transition-all">
+        Explore Deployment →
+      </a>
+      
+    </div>
+  </div>
+</div>
+
+
+      <!-- Plan: 6 Days (Midrange Big Five & Calving Season / Village Cycling Circuit) -->
+<div data-days="6" class="plan-card border border-stone-800 bg-stone-900/10 group flex flex-col justify-between hover:border-[#d4a373]/50 transition-all duration-500">
+  <div>
+    <!-- Tactical Visual Framework -->
+    <div class="h-48 relative overflow-hidden border-b border-stone-900">
+      <img src="asset/MWM.jpg" class="w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-105 filter brightness-[0.65] contrast-[1.1]" alt="Mto wa Mbu Cycling Safari and Lake Manyara Shores">
+      <div class="absolute inset-0 bg-gradient-to-t from-[#0d0a07] via-transparent to-transparent opacity-90"></div>
+      
+      <!-- Top Badges Matrix -->
+      <span class="absolute top-3 left-3 font-mono text-[9px] text-[#d4a373] font-bold tracking-[0.2em] bg-[#0d0a07]/90 px-2 py-0.5 border border-stone-800/80 uppercase">
+        06 Days & 05 Nights
+      </span>
+    </div>
+
+    <!-- Core Content Architecture -->
+    <div class="p-6">
+      <div class="flex items-center justify-between mb-1.5">
+        <span class="text-[#a68a64] font-mono text-[9px] uppercase tracking-widest font-semibold">
+        Route: Arusha - Serengeti - Crater - Mto wa Mbu
+        </span>
+      </div>
+
+      <h3 class="text-xl font-black text-stone-100 uppercase tracking-tight mb-2 group-hover:text-[#d4a373] transition-colors duration-300">
+        Midrange Big Five & Calving Season Migration
+      </h3>
+
+      <p class="text-stone-400 text-xs leading-relaxed mb-6">
+        A premier multi-park deployment executing deep predator tracking sweeps across the Serengeti grasslands, expanding into a final-phase tactical cycling and walking reconnaissance run along the Lake Manyara shoreline.
+      </p>
+      
+      <!-- Sector Intelligence Sub-Checklist -->
+      <div class="space-y-1.5 text-[10px] text-stone-500 border-t border-stone-900 pt-4 mb-2">
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D1: Arrival Briefing & Settle at Pazuri Inn Base</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D2: Tarangire National Park Heavy Elephant Sector Drive</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D3-D4: Central Serengeti Migration Tracker (Mbuni Camp)</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D5: Ngorongoro Crater Caldera Floor Descent Operations</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D6: Mto wa Mbu Cycling & Local Farm Lunch to JRO Airport</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Command Output Footer Element -->
+  <div class="p-6 pt-0">
+    <div class="grid grid-cols-1 gap-2">
+      <a href="safari-cycling-6day.html" class="w-full py-3 bg-stone-950 border border-stone-800 hover:border-[#d4a373] hover:bg-[#d4a373] text-stone-300 hover:text-[#0d0a07] font-mono text-[10px] uppercase font-bold tracking-widest text-center block transition-all">
+        Explore Deployment →
+      </a>
+    </div>
+  </div>
+</div>
+
+
+     <!-- Plan: 7 Days (Northern Circuit & Remote Kogatende Airstrip Extraction) -->
+<div data-days="7" class="plan-card border border-stone-800 bg-stone-900/10 group flex flex-col justify-between hover:border-[#d4a373]/50 transition-all duration-500">
+  <div>
+    <!-- Tactical Visual Framework -->
+    <div class="h-48 relative overflow-hidden border-b border-stone-900">
+      <img src="assets/serengeti2.jpg" class="w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-105 filter brightness-[0.65] contrast-[1.1]" alt="Northern Serengeti Mara River Migration Track">
+      <div class="absolute inset-0 bg-gradient-to-t from-[#0d0a07] via-transparent to-transparent opacity-90"></div>
+      
+      <!-- Top Badges Matrix -->
+      <span class="absolute top-3 left-3 font-mono text-[9px] text-[#d4a373] font-bold tracking-[0.2em] bg-[#0d0a07]/90 px-2 py-0.5 border border-stone-800/80 uppercase">
+        07 Days & 06 Nights
+      </span>
+    </div>
+
+    <!-- Core Content Architecture -->
+    <div class="p-6">
+      <div class="flex items-center justify-between mb-1.5">
+        <span class="text-[#a68a64] font-mono text-[9px] uppercase tracking-widest font-semibold">
+        Route: Eyasi - Crater - Northern Serengeti
+        </span>
+      </div>
+
+      <h3 class="text-xl font-black text-stone-100 uppercase tracking-tight mb-2 group-hover:text-[#d4a373] transition-colors duration-300">
+        Tanzania Wildlife & Tribal Expedition
+      </h3>
+
+      <p class="text-stone-400 text-xs leading-relaxed mb-6">
+        An extensive, non-backtracking fly-out manifest tracing the ancient hunter-gatherer customs of the Hadzabe tribe, expanding into deep central cat territories and seasonal Mara River migration crossings.
+      </p>
+      
+      <!-- Sector Intelligence Sub-Checklist -->
+      <div class="space-y-1.5 text-[10px] text-stone-500 border-t border-stone-900 pt-4 mb-2">
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D1: JRO Arrival Terminal Greeting to Mvuli Hotel Base</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D2: Tarangire National Park Heavy Elephant Sector Drive</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D3: Lake Eyasi Hadzabe Hunter-Gatherer Cultural Intercept</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D4: Ngorongoro Crater Floor Descent to Central Serengeti</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D5-D6: Deep Northern Serengeti & Mara River Migration Patrol</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D7: Morning Drive Extraction via Kogatende Airstrip Terminal</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Command Output Footer Element -->
+  <div class="p-6 pt-0">
+    <div class="grid grid-cols-1 gap-2">
+      <a href="safari-expedition-7day.html" class="w-full py-3 bg-stone-950 border border-stone-800 hover:border-[#d4a373] hover:bg-[#d4a373] text-stone-300 hover:text-[#0d0a07] font-mono text-[10px] uppercase font-bold tracking-widest text-center block transition-all">
+        Explore Deployment →
+      </a>
+    </div>
+  </div>
+</div>
+
+
+     <!-- Plan: 8 Days (Ultimate Wildlife Discovery & Crater Highlands Trekking Circuit) -->
+<div data-days="8" class="plan-card border border-stone-800 bg-stone-900/10 group flex flex-col justify-between hover:border-[#d4a373]/50 transition-all duration-500">
+  <div>
+    <!-- Tactical Visual Framework -->
+    <div class="h-48 relative overflow-hidden border-b border-stone-900">
+      <img src="asset/EC.jpg" class="w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-105 filter brightness-[0.65] contrast-[1.1]" alt="Empakaai Volcanic Caldera Lake Trekking Ngorongoro Highlands">
+      <div class="absolute inset-0 bg-gradient-to-t from-[#0d0a07] via-transparent to-transparent opacity-90"></div>
+      
+      <!-- Top Badges Matrix -->
+      <span class="absolute top-3 left-3 font-mono text-[9px] text-[#d4a373] font-bold tracking-[0.2em] bg-[#0d0a07]/90 px-2 py-0.5 border border-stone-800/80 uppercase">
+        08 Days & 07 Nights
+      </span>
+    </div>
+
+    <!-- Core Content Architecture -->
+    <div class="p-6">
+      <div class="flex items-center justify-between mb-1.5">
+        <span class="text-[#a68a64] font-mono text-[9px] uppercase tracking-widest font-semibold">
+        Route: Serval - Manyara - Olmoti - Empakaai - Serengeti
+        </span>
+      </div>
+
+      <h3 class="text-xl font-black text-stone-100 uppercase tracking-tight mb-2 group-hover:text-[#d4a373] transition-colors duration-300">
+        Ultimate Wildlife Discovery
+      </h3>
+
+      <p class="text-stone-400 text-xs leading-relaxed mb-6">
+        The ultimate northern manifest. Blends early eco-sanctuary contacts and traditional big game drives with high-elevation hiking routes down the volcanic walls of Olmoti and Empakaai craters alongside local Maasai guides.
+      </p>
+      
+      <!-- Sector Intelligence Sub-Checklist -->
+      <div class="space-y-1.5 text-[10px] text-stone-500 border-t border-stone-900 pt-4 mb-2">
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D1: JRO Air Welcome Direct to Serval Wildlife Eco-Sanctuary</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D2: Tarangire National Park Heavy Elephant River Sector Drive</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D3: Lake Manyara Canopy Forest & Flamingo Shore Patrol</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D4: Olmoti Waterfall Trek & Empakaai Caldera Lake Hiking</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D5: Complete Ngorongoro Crater Caldera Floor Descent Operations</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D6-D7: Central Serengeti Sunrise Predator Tracker (Mbuni Camp)</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D8: Serengeti Bush Runway Fly-Back & Arusha Transfer to JRO</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Command Output Footer Element -->
+  <div class="p-6 pt-0">
+    <div class="grid grid-cols-1 gap-2">
+      <a href="safari-discovery-8day.html" class="w-full py-3 bg-stone-950 border border-stone-800 hover:border-[#d4a373] hover:bg-[#d4a373] text-stone-300 hover:text-[#0d0a07] font-mono text-[10px] uppercase font-bold tracking-widest text-center block transition-all">
+        Explore Deployment →
+      </a>
+    </div>
+  </div>
+</div>
+
+
+     <!-- Plan: 9 Days -->
+<div data-days="9" class="plan-card border border-stone-800 bg-stone-900/10 group flex flex-col justify-between hover:border-[#d4a373]/50 transition-all duration-500">
+  <div>
+    <!-- Tactical Visual Framework -->
+    <div class="h-48 relative overflow-hidden border-b border-stone-900">
+      <img src="potraits/northerncircuit.jpg" class="w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-105 filter brightness-[0.65] contrast-[1.1]" alt="Tanzania Northern Circuit Wildlife Odyssey">
+      <div class="absolute inset-0 bg-gradient-to-t from-[#0d0a07] via-transparent to-transparent opacity-90"></div>
+      
+      <!-- Top Badges Matrix -->
+      <span class="absolute top-3 left-3 font-mono text-[9px] text-[#d4a373] font-bold tracking-[0.2em] bg-[#0d0a07]/90 px-2 py-0.5 border border-stone-800/80 uppercase">
+        09 Days & 08 Nights
+      </span>
+    </div>
+
+    <!-- Core Content Architecture -->
+    <div class="p-6">
+      <div class="flex items-center justify-between mb-1.5">
+        <span class="text-[#a68a64] font-mono text-[9px] uppercase tracking-widest font-semibold">
+        Deployment: 02 Travelers Private Profile
+        </span>
+      </div>
+
+      <h3 class="text-xl font-black text-stone-100 uppercase tracking-tight mb-2 group-hover:text-[#d4a373] transition-colors duration-300">
+        Northern Wildlife & Cultural Odyssey
+      </h3>
+
+      <p class="text-stone-400 text-xs leading-relaxed mb-6">
+        The definitive, high-end flagship run balancing close-quarter eco-sanctuary wildlife encounters with deep tracking sweeps across the Central and Northern Serengeti migration corridors.
+      </p>
+      
+      <!-- Sector Intelligence Sub-Checklist -->
+      <div class="space-y-1.5 text-[10px] text-stone-500 border-t border-stone-900 pt-4 mb-2">
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D1-D2: JRO Airport Transfer & Serval Wildlife Close Interaction</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D3: Tarangire Elephant Core Drive & Transit to Karatu</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D4: Ngorongoro Caldera Floor Descent to Central Serengeti</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D5: Full Day Central Serengeti Predator Surveillance Deep Sweep</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D6-D7: Northern Serengeti Shift & Mara River Crossing Overwatch</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D8-D9: Ecosystem Return Loop to Seronera Airstrip Fly-Out</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Command Output Footer Element -->
+  <div class="p-6 pt-0">
+    <div class="grid grid-cols-1 gap-2">
+      <a href="safari-odyssey-9day.html" class="w-full py-3 bg-stone-950 border border-stone-800 hover:border-[#d4a373] hover:bg-[#d4a373] text-stone-300 hover:text-[#0d0a07] font-mono text-[10px] uppercase font-bold tracking-widest text-center block transition-all">
+        Explore Deployment →
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Plan: 10 Days -->
+<div data-days="10" class="plan-card border border-stone-800 bg-stone-900/10 group flex flex-col justify-between hover:border-[#d4a373]/50 transition-all duration-500">
+  <div>
+    <!-- Tactical Visual Framework -->
+    <div class="h-48 relative overflow-hidden border-b border-stone-900">
+      <img src="potraits/complete.jpg" class="w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-105 filter brightness-[0.65] contrast-[1.1]" alt="Exploring Tanzania Complete Circuit">
+      <div class="absolute inset-0 bg-gradient-to-t from-[#0d0a07] via-transparent to-transparent opacity-90"></div>
+      
+      <!-- Top Badges Matrix -->
+      <span class="absolute top-3 left-3 font-mono text-[9px] text-[#d4a373] font-bold tracking-[0.2em] bg-[#0d0a07]/90 px-2 py-0.5 border border-stone-800/80 uppercase">
+        10 Days & 09 Nights
+      </span>
+    </div>
+
+    <!-- Core Content Architecture -->
+    <div class="p-6">
+      <div class="flex items-center justify-between mb-1.5">
+        <span class="text-[#a68a64] font-mono text-[9px] uppercase tracking-widest font-semibold">
+        Route: Materuni - Eyasi - Serengeti Deep Circuit
+        </span>
+      </div>
+
+      <h3 class="text-xl font-black text-stone-100 uppercase tracking-tight mb-2 group-hover:text-[#d4a373] transition-colors duration-300">
+        10-Day Exploring Tanzania
+      </h3>
+
+      <p class="text-stone-400 text-xs leading-relaxed mb-6">
+        The ultimate grand manifest. Seamlessly stitches together active Kilimanjaro slope hiking, indigenous bush tribe interactions, and an expansive multi-sector tactical sweep tracking the Big Five and the Great Migration loops.
+      </p>
+      
+      <!-- Sector Intelligence Sub-Checklist -->
+      <div class="space-y-1.5 text-[10px] text-stone-500 border-t border-stone-900 pt-4 mb-2">
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D1-D2: JRO Airport Transfer & Materuni Waterfalls Coffee Hike</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D3-D4: Tarangire Elephant Core & Lake Eyasi Tribal Intercepts</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D5-D6: Ngorongoro Highlands Transit to Central & Northern Serengeti</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D7: Full Day Mara River Crossing & Migration Tracking Patrol</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D8-D9: Central Serengeti Return to Ngorongoro Conservation Area</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D10: Ngorongoro Crater Caldera Floor Descent to Arusha Exit</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Command Output Footer Element -->
+  <div class="p-6 pt-0">
+    <div class="grid grid-cols-1 gap-2">
+      <a href="safari-exploration-10day.html" class="w-full py-3 bg-stone-950 border border-stone-800 hover:border-[#d4a373] hover:bg-[#d4a373] text-stone-300 hover:text-[#0d0a07] font-mono text-[10px] uppercase font-bold tracking-widest text-center block transition-all">
+        Explore Deployment →
+      </a>
+    </div>
+  </div>
+</div>
+
+<style>
+  @keyframes snake-crawl {
+    from { stroke-dashoffset: 100; }
+    to { stroke-dashoffset: 0; }
+  }
+</style>
+
+ <script>
+  
+    const menuBtn = document.getElementById('menuBtn');
+    const nav = document.getElementById('mainNav');
+    const line1 = document.getElementById('line1');
+    const line2 = document.getElementById('line2');
+    const line3 = document.getElementById('line3');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+
+    function toggleMenu() {
+      // Check if it's currently at the base height
+      const isClosed = nav.style.maxHeight === '76px' || nav.style.maxHeight === '';
+      
+      if (isClosed) {
+        // OPENING: Switch to boxy corners immediately, then expand height
+        nav.classList.remove('rounded-full');
+        nav.classList.add('rounded-[2rem]');
+        nav.style.maxHeight = '600px'; 
+
+        // Hamburger -> X
+        line1.style.transform = 'translateY(7px) rotate(45deg)';
+        line3.style.transform = 'translateY(-7px) rotate(-45deg)';
+        line2.style.opacity = '0';
+      } else {
+        // CLOSING: Shrink height first
+        nav.style.maxHeight = '76px';
+        
+        // Wait for the height transition to finish before turning back into a pill
+        setTimeout(() => {
+          if(nav.style.maxHeight === '76px') {
+            nav.classList.remove('rounded-[2rem]');
+            nav.classList.add('rounded-full');
+          }
+        }, 400);
+
+        // X -> Hamburger
+        line1.style.transform = 'none';
+        line3.style.transform = 'none';
+        line2.style.opacity = '1';
+      }
+    }
+
+    menuBtn.addEventListener('click', toggleMenu);
+
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        if (nav.style.maxHeight !== '76px') toggleMenu();
+      });
+    });
+
+</script>
+</body>
+</html>
+
