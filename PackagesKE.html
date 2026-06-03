@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+    
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tours & Safaris</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body class="bg-[#0d0a07] text-stone-100 antialiased selection:bg-[#d4a373] selection:text-[#0d0a07]">
+
+    
+  <!-- Navbar -->
+   <nav class="fixed top-6 left-1/2 -translate-x-1/2 w-[92%] max-w-6xl z-[100] transition-[max-height,border-radius] duration-500 ease-in-out px-8 py-4 rounded-full border border-[#3d2b1f]/20 shadow-[0_20px_50px_rgba(0,0,0,0.3)] overflow-hidden" 
+     id="mainNav" 
+     style="background: linear-gradient(180deg, #2d1e14 0%, #1a120b 100%); max-height: 76px;">
+  
+  <!-- Subtle Wood Texture Overlay -->
+  <div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: url('https://transparenttextures.com');"></div>
+
+  <div class="flex justify-between items-center relative z-10">
+    <!-- Logo -->
+<a href="index.html#home" class="inline-flex items-center space-x-3 group/logo cursor-pointer">
+  <div class="relative w-10 h-10 bg-transparent rounded-full flex items-center justify-center overflow-hidden transition-transform duration-500 group-hover/logo:rotate-[360deg]">
+    <img src="assets/AFRICA SCENERY LOG2.jpeg" alt="Logo" class="w-full h-full object-cover">
+  </div>
+  <span class="text-l font-bold tracking-widest text-[#d4a373] uppercase">
+    AFRICA SCENERY
+  </span>
+</a>
+
+
+    <!-- Desktop Menu -->
+    <div class="hidden md:flex items-center space-x-12 relative text-[11px] font-black uppercase tracking-[0.2em] text-stone-400">
+      <svg class="absolute top-1/2 left-0 w-full h-12 -translate-y-1/2 pointer-events-none z-0 opacity-40" viewBox="0 0 400 40">
+        <path d="M0,20 Q50,0 100,20 T200,20 T300,20 T400,20" fill="none" stroke="#d4a373" stroke-width="5" stroke-dasharray="10 5" class="animate-[snake-crawl_20s_linear_infinite]" />
+      </svg>
+      <a href="index.html#home" class="relative z-10 hover:text-[#d4a373] transition-colors">Home</a>
+      <a href="About.html" class="relative z-10 hover:text-[#d4a373] transition-colors">About us</a>
+      <a href="index.html#destinations" class="relative z-10 hover:text-[#d4a373] transition-colors">Destinations</a>
+      <a href="index.html#packages" class="relative z-10 hover:text-[#d4a373] transition-colors">Packages</a>
+    </div>
+
+    <!-- CTA --><div class="hidden md:block">
+  <a href="https://wa.me/255788296274?text=Hello%2C%20I%27m%20interested%20in%20planning%20a%20safari.%20Could%20you%20share%20available%20packages%2C%20pricing%2C%20and%20the%20best%20travel%20dates%3F" 
+     target="_blank" 
+     rel="noopener noreferrer"
+     class="inline-block">
+    <button class="relative overflow-hidden group/btn px-8 py-3 rounded-full bg-[#d4a373] text-[10px] font-black uppercase tracking-[0.3em]  shadow-2xl transition-all hover:scale-105 active:scale-95">
+      <span class="relative z-10">Plan Safari</span>
+    </button>
+  </a>
+</div>
+
+
+    <!-- Animated Hamburger Button -->
+    <button id="menuBtn" class="md:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1.5 z-50 focus:outline-none">
+       <span id="line1" class="block w-6 h-0.5 bg-[#d4a373] transition-all duration-300 origin-center"></span>
+       <span id="line2" class="block w-6 h-0.5 bg-[#d4a373] transition-all duration-300"></span>
+       <span id="line3" class="block w-6 h-0.5 bg-[#d4a373] transition-all duration-300 origin-center"></span>
+    </button>
+  </div>
+
+  <!-- Mobile Dropdown -->
+  <div id="mobileMenu" class="md:hidden flex flex-col space-y-6 pt-10 pb-8 text-center text-[11px] font-black uppercase tracking-[0.3em] text-stone-400 border-t border-[#d4a373]/10 mt-6 relative z-10">
+      <a href="index.html#home" class="mobile-link hover:text-[#d4a373] transition-colors">Home</a>
+      <a href="About.html" class="mobile-link hover:text-[#d4a373] transition-colors">About us</a>
+      <a href="index.html#destinations" class="mobile-link hover:text-[#d4a373] transition-colors">Destinations</a>
+      <a href="index.html#packages" class="mobile-link hover:text-[#d4a373] transition-colors">Packages</a>
+      <a href="index.html#gallery" class="mobile-link hover:text-[#d4a373] transition-colors">Gallery</a>
+      <a href="index.html#reviews" class="mobile-link hover:text-[#d4a373] transition-colors">Reviews</a>
+      <a href="https://wa.me/255788296274?text=Hello%2C%20I%27m%20interested%20in%20planning%20a%20safari.%20Could%20you%20share%20available%20packages%2C%20pricing%2C%20and%20the%20best%20travel%20dates%3F" 
+   target="_blank" 
+   rel="noopener noreferrer"
+   class="mobile-link bg-[#d4a373] text-black py-4 uppercase rounded-2xl mx-4">
+   Plan Safari
+</a>
+  </div>
+</nav>
+
+  <!-- TOP DEPLOYMENT HEADER -->
+  <header class="pt-24 pb-12 border-b mt-20 border-stone-900/80">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="border-l-4 border-[#d4a373] pl-6">
+        <span class="text-[#d4a373] font-mono text-[10px] uppercase tracking-[0.5em] font-black block mb-2">
+          Kenya Destinations Packages
+        </span>
+        <h1 class="text-6xl md:text-6xl font-black tracking-tighter uppercase text-white leading-none">
+          Expedition <span class="italic font-serif text-[#a68a64] lowercase tracking-normal font-normal">Packages</span>
+        </h1>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- ITINERARY PLANS MANIFEST GRID -->
+  <main class="max-w-7xl mx-auto px-6 py-16">
+    <div id="plans-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+     <!-- Plan: 8 Days (Classic Kenya Luxury Expedition) -->
+<div data-days="8" class="plan-card border border-stone-800 bg-stone-900/10 group flex flex-col justify-between hover:border-[#d4a373]/50 transition-all duration-500">
+  <div>
+    <!-- Tactical Visual Framework -->
+    <div class="h-48 relative overflow-hidden border-b border-stone-900">
+      <img src="picha/flyin.webp" class="w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-105 filter brightness-[0.65] contrast-[1.1]" alt="Amboseli Giants with Kilimanjaro Backdrop">
+      <div class="absolute inset-0 bg-gradient-to-t from-[#0d0a07] via-transparent to-transparent opacity-90"></div>
+      
+      <!-- Top Badges Matrix -->
+      <span class="absolute top-3 left-3 font-mono text-[9px] text-[#d4a373] font-bold tracking-[0.2em] bg-[#0d0a07]/90 px-2 py-0.5 border border-stone-800/80 uppercase">
+        08 Days & 07 Nights
+      </span>
+    </div>
+
+    <!-- Core Content Architecture -->
+    <div class="p-6">
+      <div class="flex items-center justify-between mb-1.5">
+        <span class="text-[#a68a64] font-mono text-[9px] uppercase tracking-widest font-semibold">
+          Route: Nairobi - Amboseli - Lake Nakuru - Maasai Mara
+        </span>
+      </div>
+
+      <h3 class="text-xl font-black text-stone-100 uppercase tracking-tight mb-2 group-hover:text-[#d4a373] transition-colors duration-300">
+        The Classic Kenya Safari
+      </h3>
+
+      <p class="text-stone-400 text-xs leading-relaxed mb-6">
+        A luxury overland expedition traversing Kenya’s iconic wilderness blocks. Blends giant elephant track encounters under Mt. Kilimanjaro with high-security rhinos at Lake Nakuru and apex predator fields in the Maasai Mara.
+      </p>
+      
+      <!-- Sector Intelligence Sub-Checklist -->
+      <div class="space-y-1.5 text-[10px] text-stone-500 border-t border-stone-900 pt-4 mb-2">
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D1: Arrival in Nairobi & Road Transfer to Amboseli National Park</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D2: Amboseli National Park — Elephant Encounters & Kilimanjaro Views</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D3: Amboseli to Lake Nakuru National Park</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D4: Lake Nakuru National Park — Birdlife & Rhino Sanctuary</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D5: Lake Nakuru to Maasai Mara National Reserve</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D6: Maasai Mara National Reserve — The Heart of Safari</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D7: Maasai Mara National Reserve — Cultural Immersion & Final Safaris</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D8: Departure from Maasai Mara & Road Transfer to Nairobi</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Command Output Footer Element -->
+  <div class="p-6 pt-0">
+    <div class="grid grid-cols-1 gap-2">
+      <a href="KE8.html" class="w-full py-3 bg-stone-950 border border-stone-800 hover:border-[#d4a373] hover:bg-[#d4a373] text-stone-300 hover:text-[#0d0a07] font-mono text-[10px] uppercase font-bold tracking-widest text-center block transition-all">
+        Explore Deployment →
+      </a>
+    </div>
+  </div>
+</div>
+
+ <!-- Plan: 8 Days (Classic Kenya Luxury Expedition) -->
+<div data-days="8" class="plan-card border border-stone-800 bg-stone-900/10 group flex flex-col justify-between hover:border-[#d4a373]/50 transition-all duration-500">
+  <div>
+    <!-- Tactical Visual Framework -->
+    <div class="h-48 relative overflow-hidden border-b border-stone-900">
+      <img src="assets/amboseli.jpg" class="w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-105 filter brightness-[0.65] contrast-[1.1]" alt="Amboseli Giants with Kilimanjaro Backdrop">
+      <div class="absolute inset-0 bg-gradient-to-t from-[#0d0a07] via-transparent to-transparent opacity-90"></div>
+      
+      <!-- Top Badges Matrix -->
+      <span class="absolute top-3 left-3 font-mono text-[9px] text-[#d4a373] font-bold tracking-[0.2em] bg-[#0d0a07]/90 px-2 py-0.5 border border-stone-800/80 uppercase">
+        09 Days & 08 Nights
+      </span>
+    </div>
+
+    <!-- Core Content Architecture -->
+    <div class="p-6">
+      <div class="flex items-center justify-between mb-1.5">
+        <span class="text-[#a68a64] font-mono text-[9px] uppercase tracking-widest font-semibold">
+          Route: Nairobi - Samburu - Lake Nakuru - Maasai Mara
+        </span>
+      </div>
+
+      <h3 class="text-xl font-black text-stone-100 uppercase tracking-tight mb-2 group-hover:text-[#d4a373] transition-colors duration-300">
+        Kenya Wilderness & Wildlife Discovery
+      </h3>
+
+      <p class="text-stone-400 text-xs leading-relaxed mb-6">
+        This journey combines the unique landscapes and wildlife of northern Kenya with the classic safari experiences of the south. Travel by comfortable 4×4 Landcruiser to explore Samburu’s arid beauty, Lake Nakuru’s birdlife, and the legendary Maasai Mara.
+      </p>
+
+      
+      <!-- Sector Intelligence Sub-Checklist -->
+     <div class="space-y-1.5 text-[10px] text-stone-500 border-t border-stone-900 pt-4 mb-2">
+  <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D1: Arrival in Nairobi & Journey to Samburu National Reserve (3 Nights)</div>
+  <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D2 & D3: Exploring Samburu's Unique Wildlife</div>
+  <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D4: Samburu to Lake Nakuru National Park (2 Nights)</div>
+  <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D5: Lake Nakuru's Flamingos & Rhinos</div>
+  <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D6: Lake Nakuru to Maasai Mara National Reserve (3 Nights)</div>
+  <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D7 & D8: Exploring the Legendary Maasai Mara</div>
+  <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D9: Departure from Maasai Mara & Road Transfer to Nairobi</div>
+</div>
+
+    </div>
+  </div>
+
+  <!-- Command Output Footer Element -->
+  <div class="p-6 pt-0">
+    <div class="grid grid-cols-1 gap-2">
+      <a href="KE9.html" class="w-full py-3 bg-stone-950 border border-stone-800 hover:border-[#d4a373] hover:bg-[#d4a373] text-stone-300 hover:text-[#0d0a07] font-mono text-[10px] uppercase font-bold tracking-widest text-center block transition-all">
+        Explore Deployment →
+      </a>
+    </div>
+  </div>
+</div>
+
+
+<style>
+  @keyframes snake-crawl {
+    from { stroke-dashoffset: 100; }
+    to { stroke-dashoffset: 0; }
+  }
+</style>
+
+ <script>
+  
+    const menuBtn = document.getElementById('menuBtn');
+    const nav = document.getElementById('mainNav');
+    const line1 = document.getElementById('line1');
+    const line2 = document.getElementById('line2');
+    const line3 = document.getElementById('line3');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+
+    function toggleMenu() {
+      // Check if it's currently at the base height
+      const isClosed = nav.style.maxHeight === '76px' || nav.style.maxHeight === '';
+      
+      if (isClosed) {
+        // OPENING: Switch to boxy corners immediately, then expand height
+        nav.classList.remove('rounded-full');
+        nav.classList.add('rounded-[2rem]');
+        nav.style.maxHeight = '600px'; 
+
+        // Hamburger -> X
+        line1.style.transform = 'translateY(7px) rotate(45deg)';
+        line3.style.transform = 'translateY(-7px) rotate(-45deg)';
+        line2.style.opacity = '0';
+      } else {
+        // CLOSING: Shrink height first
+        nav.style.maxHeight = '76px';
+        
+        // Wait for the height transition to finish before turning back into a pill
+        setTimeout(() => {
+          if(nav.style.maxHeight === '76px') {
+            nav.classList.remove('rounded-[2rem]');
+            nav.classList.add('rounded-full');
+          }
+        }, 400);
+
+        // X -> Hamburger
+        line1.style.transform = 'none';
+        line3.style.transform = 'none';
+        line2.style.opacity = '1';
+      }
+    }
+
+    menuBtn.addEventListener('click', toggleMenu);
+
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        if (nav.style.maxHeight !== '76px') toggleMenu();
+      });
+    });
+
+    
+/* ios hover */
+ document.addEventListener("touchstart", function() {}, true);
+    </script>
+    </body>
+    </html>
