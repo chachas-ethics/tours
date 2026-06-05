@@ -1,0 +1,1227 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+    
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tours & Safaris</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body class="bg-[#0d0a07] text-stone-100 antialiased selection:bg-[#d4a373] selection:text-[#0d0a07]">
+
+    
+  <!-- Navbar -->
+   <nav class="fixed top-6 left-1/2 -translate-x-1/2 w-[92%] max-w-6xl z-[100] transition-[max-height,border-radius] duration-500 ease-in-out px-8 py-4 rounded-full border border-[#3d2b1f]/20 shadow-[0_20px_50px_rgba(0,0,0,0.3)] overflow-hidden" 
+     id="mainNav" 
+     style="background: linear-gradient(180deg, #2d1e14 0%, #1a120b 100%); max-height: 76px;">
+  
+  <!-- Subtle Wood Texture Overlay -->
+  <div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: url('https://transparenttextures.com');"></div>
+
+  <div class="flex justify-between items-center relative z-10">
+    <!-- Logo -->
+<a href="index.html#home" class="inline-flex items-center space-x-3 group/logo cursor-pointer">
+  <div class="relative w-10 h-10 bg-transparent rounded-full flex items-center justify-center overflow-hidden transition-transform duration-500 group-hover/logo:rotate-[360deg]">
+    <img src="assets/AFRICA SCENERY LOG2.jpeg" alt="Logo" class="w-full h-full object-cover">
+  </div>
+  <span class="text-l font-bold tracking-widest text-[#d4a373] uppercase">
+    AFRICA SCENERY
+  </span>
+</a>
+
+
+    <!-- Desktop Menu -->
+    <div class="hidden md:flex items-center space-x-12 relative text-[11px] font-black uppercase tracking-[0.2em] text-stone-400">
+      <svg class="absolute top-1/2 left-0 w-full h-12 -translate-y-1/2 pointer-events-none z-0 opacity-40" viewBox="0 0 400 40">
+        <path d="M0,20 Q50,0 100,20 T200,20 T300,20 T400,20" fill="none" stroke="#d4a373" stroke-width="5" stroke-dasharray="10 5" class="animate-[snake-crawl_20s_linear_infinite]" />
+      </svg>
+      <a href="index.html#home" class="relative z-10 hover:text-[#d4a373] transition-colors">Home</a>
+      <a href="About.html" class="relative z-10 hover:text-[#d4a373] transition-colors">About us</a>
+      <a href="index.html#destinations" class="relative z-10 hover:text-[#d4a373] transition-colors">Destinations</a>
+      <a href="index.html#packages" class="relative z-10 hover:text-[#d4a373] transition-colors">Packages</a>
+    </div>
+
+    <!-- CTA --><div class="hidden md:block">
+  <a href="https://wa.me/255788296274?text=Hello%2C%20I%27m%20interested%20in%20planning%20a%20safari.%20Could%20you%20share%20available%20packages%2C%20pricing%2C%20and%20the%20best%20travel%20dates%3F" 
+     target="_blank" 
+     rel="noopener noreferrer"
+     class="inline-block">
+    <button class="relative overflow-hidden group/btn px-8 py-3 rounded-full bg-[#d4a373] text-[10px] font-black uppercase tracking-[0.3em]  shadow-2xl transition-all hover:scale-105 active:scale-95">
+      <span class="relative z-10">Plan Safari</span>
+    </button>
+  </a>
+</div>
+
+
+    <!-- Animated Hamburger Button -->
+    <button id="menuBtn" class="md:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1.5 z-50 focus:outline-none">
+       <span id="line1" class="block w-6 h-0.5 bg-[#d4a373] transition-all duration-300 origin-center"></span>
+       <span id="line2" class="block w-6 h-0.5 bg-[#d4a373] transition-all duration-300"></span>
+       <span id="line3" class="block w-6 h-0.5 bg-[#d4a373] transition-all duration-300 origin-center"></span>
+    </button>
+  </div>
+
+  <!-- Mobile Dropdown -->
+  <div id="mobileMenu" class="md:hidden flex flex-col space-y-6 pt-10 pb-8 text-center text-[11px] font-black uppercase tracking-[0.3em] text-stone-400 border-t border-[#d4a373]/10 mt-6 relative z-10">
+      <a href="index.html#home" class="mobile-link hover:text-[#d4a373] transition-colors">Home</a>
+      <a href="About.html" class="mobile-link hover:text-[#d4a373] transition-colors">About us</a>
+      <a href="index.html#destinations" class="mobile-link hover:text-[#d4a373] transition-colors">Destinations</a>
+      <a href="index.html#packages" class="mobile-link hover:text-[#d4a373] transition-colors">Packages</a>
+      <a href="index.html#gallery" class="mobile-link hover:text-[#d4a373] transition-colors">Gallery</a>
+      <a href="index.html#reviews" class="mobile-link hover:text-[#d4a373] transition-colors">Reviews</a>
+      <a href="https://wa.me/255788296274?text=Hello%2C%20I%27m%20interested%20in%20planning%20a%20safari.%20Could%20you%20share%20available%20packages%2C%20pricing%2C%20and%20the%20best%20travel%20dates%3F" 
+   target="_blank" 
+   rel="noopener noreferrer"
+   class="mobile-link bg-[#d4a373] text-black py-4 uppercase rounded-2xl mx-4">
+   Plan Safari
+</a>
+  </div>
+</nav>
+
+  <!-- TOP DEPLOYMENT HEADER -->
+  <header class="pt-24 pb-12 border-b mt-20 border-stone-900/80">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="border-l-4 border-[#d4a373] pl-6">
+        <span class="text-[#d4a373] font-mono text-[10px] uppercase tracking-[0.5em] font-black block mb-2">
+          Uganda Destinations Packages
+        </span>
+        <h1 class="text-6xl md:text-6xl font-black tracking-tighter uppercase text-white leading-none">
+          Expedition <span class="italic font-serif text-[#a68a64] lowercase tracking-normal font-normal">Packages</span>
+        </h1>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- ITINERARY PLANS MANIFEST GRID -->
+  <main class="max-w-7xl mx-auto px-6 py-16">
+    <div id="plans-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+    <!-- Plan: 3 Days (Mount Rwenzori Hiking Safari) -->
+<div data-days="3" class="plan-card border border-stone-800 bg-stone-900/10 group flex flex-col justify-between hover:border-[#d4a373]/50 transition-all duration-500">
+  <div>
+    <!-- Tactical Visual Framework -->
+    <div class="h-48 relative overflow-hidden border-b border-stone-900">
+      <img src="picha/rwenzori.jpg" class="w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-105 filter brightness-[0.65] contrast-[1.1]" alt="Mount Rwenzori Peak and Ridges">
+      <div class="absolute inset-0 bg-gradient-to-t from-[#0d0a07] via-transparent to-transparent opacity-90"></div>
+      
+      <!-- Top Badges Matrix -->
+      <span class="absolute top-3 left-3 font-mono text-[9px] text-[#d4a373] font-bold tracking-[0.2em] bg-[#0d0a07]/90 px-2 py-0.5 border border-stone-800/80 uppercase">
+        03 Days & 02 Nights
+      </span>
+    </div>
+
+    <!-- Core Content Architecture -->
+    <div class="p-6">
+      <div class="flex items-center justify-between mb-1.5">
+        <span class="text-[#a68a64] font-mono text-[9px] uppercase tracking-widest font-semibold">
+          Route: Kasese - Nyabitaba - John Matte - Return
+        </span>
+      </div>
+
+      <h3 class="text-xl font-black text-stone-100 uppercase tracking-tight mb-2 group-hover:text-[#d4a373] transition-colors duration-300">
+        Mount Rwenzori Hiking Safari
+      </h3>
+
+      <p class="text-stone-400 text-xs leading-relaxed mb-6">
+        A fast-paced mountain expedition focused on quickly accessing the lower and mid-altitude sections of the Rwenzori Mountains. Ideal for experiencing unique Afro-alpine vegetation, rivers, and dramatic valley views.
+      </p>
+      
+      <!-- Sector Intelligence Sub-Checklist -->
+           <!-- Sector Intelligence Sub-Checklist -->
+      <div class="space-y-1.5 text-[10px] text-stone-500 border-t border-stone-900 pt-4 mb-2">
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D1: Arrival & Initial Mountain Trek to Sine Hut (2,596m)</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D2: Steep Ascent to Mutinda Camp (3,588m) & High-Altitude Valley Descent</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D3: Final Ridge Descent to Base & Outbound Departure Transfer</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Command Output Footer Element -->
+  <div class="p-6 pt-0">
+    <div class="grid grid-cols-1 gap-2">
+      <a href="UG3.html" class="w-full py-3 bg-stone-950 border border-stone-800 hover:border-[#d4a373] hover:bg-[#d4a373] text-stone-300 hover:text-[#0d0a07] font-mono text-[10px] uppercase font-bold tracking-widest text-center block transition-all">
+        Explore Deployment →
+      </a>
+    </div>
+  </div>
+</div>
+
+
+ <!-- Plan: 6 Days (Kibale Forest & Mount Rwenzori Hiking Safari) -->
+<div data-days="6" class="plan-card border border-stone-800 bg-stone-900/10 group flex flex-col justify-between hover:border-[#d4a373]/50 transition-all duration-500">
+  <div>
+    <!-- Tactical Visual Framework -->
+    <div class="h-48 relative overflow-hidden border-b border-stone-900">
+      <img src="picha/foothills.webp" class="w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-105 filter brightness-[0.65] contrast-[1.1]" alt="Kibale Forest Canopy and Rwenzori Mountains Foothills">
+      <div class="absolute inset-0 bg-gradient-to-t from-[#0d0a07] via-transparent to-transparent opacity-90"></div>
+      
+      <!-- Top Badges Matrix -->
+      <span class="absolute top-3 left-3 font-mono text-[9px] text-[#d4a373] font-bold tracking-[0.2em] bg-[#0d0a07]/90 px-2 py-0.5 border border-stone-800/80 uppercase">
+        06 Days & 05 Nights
+      </span>
+    </div>
+
+    <!-- Core Content Architecture -->
+    <div class="p-6">
+      <div class="flex items-center justify-between mb-1.5">
+        <span class="text-[#a68a64] font-mono text-[9px] uppercase tracking-widest font-semibold">
+          Route: Entebbe - Kibale Forest - Rwenzori Trek - Kasese
+        </span>
+      </div>
+
+      <h3 class="text-xl font-black text-stone-100 uppercase tracking-tight mb-2 group-hover:text-[#d4a373] transition-colors duration-300">
+        Kibale & Mount Rwenzori Safari
+      </h3>
+
+      <p class="text-stone-400 text-xs leading-relaxed mb-6">
+        This 6 Days Kibale Forest and Mount Rwenzori hiking Safari is specially tailored for those travelers seeking primate tracking and alpine climbs. Combines wild chimpanzee encounters with an introductory expedition into the high ridges.
+      </p>
+      
+      <!-- Sector Intelligence Sub-Checklist -->
+           <!-- Sector Intelligence Sub-Checklist -->
+      <div class="space-y-1.5 text-[10px] text-stone-500 border-t border-stone-900 pt-4 mb-2">
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D1: Arrival in Entebbe / Fort Portal & Transfer to Kibale Forest Base</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D2: Premium Chimpanzee Tracking Field Operations (Highlight Day)</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D3: Chimpanzee Habituation Program or Crater Lakes Terrain Exploration</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D4: Sector Road Drive & Initiation of Rwenzori Foothills Trek Phase</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D5: High-Altitude Alpine Ridgeline Views & Descending Mountain Track</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D6: Outbound Terminal Departure Transfer & Final Operations Wrap</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Command Output Footer Element -->
+  <div class="p-6 pt-0">
+    <div class="grid grid-cols-1 gap-2">
+      <a href="UG6.html" class="w-full py-3 bg-stone-950 border border-stone-800 hover:border-[#d4a373] hover:bg-[#d4a373] text-stone-300 hover:text-[#0d0a07] font-mono text-[10px] uppercase font-bold tracking-widest text-center block transition-all">
+        Explore Deployment →
+      </a>
+    </div>
+  </div>
+</div>
+
+
+<!-- Plan: 6 Days (Queen Elizabeth & Mount Rwenzori Safari) -->
+<div data-days="6" class="plan-card border border-stone-800 bg-stone-900/10 group flex flex-col justify-between hover:border-[#d4a373]/50 transition-all duration-500">
+  <div>
+    <!-- Tactical Visual Framework -->
+    <div class="h-48 relative overflow-hidden border-b border-stone-900">
+      <img src="picha/qer.jpg" class="w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-105 filter brightness-[0.65] contrast-[1.1]" alt="Queen Elizabeth Savannah and Rwenzori Mountain Peaks">
+      <div class="absolute inset-0 bg-gradient-to-t from-[#0d0a07] via-transparent to-transparent opacity-90"></div>
+      
+      <!-- Top Badges Matrix -->
+      <span class="absolute top-3 left-3 font-mono text-[9px] text-[#d4a373] font-bold tracking-[0.2em] bg-[#0d0a07]/90 px-2 py-0.5 border border-stone-800/80 uppercase">
+        06 Days & 05 Nights
+      </span>
+    </div>
+
+    <!-- Core Content Architecture -->
+    <div class="p-6">
+      <div class="flex items-center justify-between mb-1.5">
+        <span class="text-[#a68a64] font-mono text-[9px] uppercase tracking-widest font-semibold">
+          Route: Entebbe - Queen Elizabeth - Kazinga Channel - Rwenzori Trek
+        </span>
+      </div>
+
+      <h3 class="text-xl font-black text-stone-100 uppercase tracking-tight mb-2 group-hover:text-[#d4a373] transition-colors duration-300">
+        Queen Elizabeth & Rwenzori Safari
+      </h3>
+
+      <p class="text-stone-400 text-xs leading-relaxed mb-6">
+        This 6 Days Queen Elizabeth and Mount Rwenzori Safari itinerary is designed to merge classic big game tracking with high-altitude alpine exploration. Experience the savannah wildlife of Kazinga Channel before ascending the scenic ridges of the Rwenzori massif.
+      </p>
+      
+      <!-- Sector Intelligence Sub-Checklist -->
+           <!-- Sector Intelligence Sub-Checklist -->
+      <div class="space-y-1.5 text-[10px] text-stone-500 border-t border-stone-900 pt-4 mb-2">
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D1: Arrival in Entebbe / Kasese Base & Sector Transfer to Queen Elizabeth</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D2: Savannah Game Drives & Kazinga Channel Marine Safari Cruise</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D3: Chimpanzee Tracking in Kyambura Gorge & Move to Rwenzori Base</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D4: Mountain Sector Drive & Initiation of Rwenzori Foothills Trek</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D5: High-Altitude Alpine Ridge Hiking & Valley Descent (Highlight Day)</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D6: Outbound Terminal Departure Transfer & Final Operations Wrap</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Command Output Footer Element -->
+  <div class="p-6 pt-0">
+    <div class="grid grid-cols-1 gap-2">
+      <a href="UG6-QE.html" class="w-full py-3 bg-stone-950 border border-stone-800 hover:border-[#d4a373] hover:bg-[#d4a373] text-stone-300 hover:text-[#0d0a07] font-mono text-[10px] uppercase font-bold tracking-widest text-center block transition-all">
+        Explore Deployment →
+      </a>
+    </div>
+  </div>
+</div>
+
+
+<!-- Plan: 11 Days (Rwenzori Mountains Trekking Safari) -->
+<div data-days="11" class="plan-card border border-stone-800 bg-stone-900/10 group flex flex-col justify-between hover:border-[#d4a373]/50 transition-all duration-500">
+  <div>
+    <!-- Tactical Visual Framework -->
+    <div class="h-48 relative overflow-hidden border-b border-stone-900">
+      <img src="picha/glaciered.png" class="w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-105 filter brightness-[0.65] contrast-[1.1]" alt="Glaciated Peaks of Mount Rwenzori">
+      <div class="absolute inset-0 bg-gradient-to-t from-[#0d0a07] via-transparent to-transparent opacity-90"></div>
+      
+      <!-- Top Badges Matrix -->
+      <span class="absolute top-3 left-3 font-mono text-[9px] text-[#d4a373] font-bold tracking-[0.2em] bg-[#0d0a07]/90 px-2 py-0.5 border border-stone-800/80 uppercase">
+        11 Days & 10 Nights
+      </span>
+    </div>
+
+    <!-- Core Content Architecture -->
+    <div class="p-6">
+      <div class="flex items-center justify-between mb-1.5">
+        <span class="text-[#a68a64] font-mono text-[9px] uppercase tracking-widest font-semibold">
+          Route: Entebbe - Kasese - Central Circuit / Kilembe Trail - Margherita Peak - Return
+        </span>
+      </div>
+
+      <h3 class="text-xl font-black text-stone-100 uppercase tracking-tight mb-2 group-hover:text-[#d4a373] transition-colors duration-300">
+        Rwenzori Mountains Trekking Safari
+      </h3>
+
+      <p class="text-stone-400 text-xs leading-relaxed mb-6">
+        Bestriding the border between Uganda and the D.R. Congo, the underrated, isolated, little-known and less frequently climbed Rwenzori Mountains is a top-notch hiking destination. Offers an elite, multi-day high-altitude glaciated expedition through otherworldly giant lobelia fields and sheer bog terrains.
+      </p>
+
+      <!-- Sector Intelligence Sub-Checklist -->
+           <!-- Sector Intelligence Sub-Checklist -->
+      <div class="space-y-1.5 text-[10px] text-stone-500 border-t border-stone-900 pt-4 mb-2">
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D1 & D2: Terminal Arrival & Strategic Logistic Transfer to Kibale Forest Sector (2 Nights)</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D3 & D4: Kilembe Base Entry — Ascent Tracking Through Sine Hut (2,580m) to Mutinda Camp (3,680m)</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D5 & D6: Alpine Bog & Ridge Crossings via Bugata Camp (4,065m) to Butawu Camp (3,975m)</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D7 & D8: Margherita Camp (4,460m) High Assault Base to Margherita Peak Peak Summit (5,109m)</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D9 & D10: High-Altitude Downward Descent Loop via Bugata Camp back to Trekkers Hostel Base (2 Nights)</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D11: Outbound Ground Sector Transfer to Entebbe Airport & Final Flight Departure</div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <!-- Command Output Footer Element -->
+  <div class="p-6 pt-0">
+    <div class="grid grid-cols-1 gap-2">
+      <a href="UG11.html" class="w-full py-3 bg-stone-950 border border-stone-800 hover:border-[#d4a373] hover:bg-[#d4a373] text-stone-300 hover:text-[#0d0a07] font-mono text-[10px] uppercase font-bold tracking-widest text-center block transition-all">
+        Explore Deployment →
+      </a>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Plan: 10 Days (Best of Uganda Gorilla & Wildlife Safari) -->
+<div data-days="10" class="plan-card border border-stone-800 bg-stone-900/10 group flex flex-col justify-between hover:border-[#d4a373]/50 transition-all duration-500">
+  <div>
+    <!-- Tactical Visual Framework -->
+    <div class="h-48 relative overflow-hidden border-b border-stone-900">
+      <img src="picha/mountaingorilla.jpg" class="w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-105 filter brightness-[0.65] contrast-[1.1]" alt="Mountain Gorillas and Savanna Wildlife in Uganda">
+      <div class="absolute inset-0 bg-gradient-to-t from-[#0d0a07] via-transparent to-transparent opacity-90"></div>
+      
+      <!-- Top Badges Matrix -->
+      <span class="absolute top-3 left-3 font-mono text-[9px] text-[#d4a373] font-bold tracking-[0.2em] bg-[#0d0a07]/90 px-2 py-0.5 border border-stone-800/80 uppercase">
+        10 Days & 09 Nights
+      </span>
+    </div>
+
+    <!-- Core Content Architecture -->
+    <div class="p-6">
+      <div class="flex items-center justify-between mb-1.5">
+        <span class="text-[#a68a64] font-mono text-[9px] uppercase tracking-widest font-semibold">
+          Route: Entebbe - Murchison Falls - Kibale - Queen Elizabeth - Bwindi - Return
+        </span>
+      </div>
+
+      <h3 class="text-xl font-black text-stone-100 uppercase tracking-tight mb-2 group-hover:text-[#d4a373] transition-colors duration-300">
+        Best of Uganda Gorilla & Wildlife Safari
+      </h3>
+
+      <p class="text-stone-400 text-xs leading-relaxed mb-6">
+        On this premium 10 Days Uganda Gorilla Wildlife Safari, you will transfer to Murchison Falls National Park by road via Ziwa Rhino Sanctuary to track rhinos. Seamlessly blends big game savanna safaris, chimpanzee trekking, and a rare encounter with mountain gorillas.
+      </p>
+
+      <!-- Sector Intelligence Sub-Checklist -->
+           <!-- Sector Intelligence Sub-Checklist -->
+      <div class="space-y-1.5 text-[10px] text-stone-500 border-t border-stone-900 pt-4 mb-2">
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D1 & D2: Entebbe Arrival & Overland Transit via Ziwa Rhino Tracking to Murchison Falls</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D3 & D4: Guided Savannah Game Drive, Nile Delta Cruise & Kibale Bigodi Community Visit</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D5 & D6: Crater Lakes Exploration & Kazinga Channel Marine Boat Safari (Queen Elizabeth)</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D7 & D8: Ishasha Tree-Climbing Lion Audit & Sector Plains Transfer to Bwindi Impenetrable Forest</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D9: Premium Mountain Gorilla Trekking Operations within Bwindi Deep Sanctuary</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D10: Long-Range Return Ground Sector Drive to Kampala / Entebbe Terminal for Departure</div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <!-- Command Output Footer Element -->
+  <div class="p-6 pt-0">
+    <div class="grid grid-cols-1 gap-2">
+      <a href="UG10.html" class="w-full py-3 bg-stone-950 border border-stone-800 hover:border-[#d4a373] hover:bg-[#d4a373] text-stone-300 hover:text-[#0d0a07] font-mono text-[10px] uppercase font-bold tracking-widest text-center block transition-all">
+        Explore Deployment →
+      </a>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Plan: 14 Days (Uganda Primates & Big 5 Spirit of Discovery Adventure) -->
+<div data-days="14" class="plan-card border border-stone-800 bg-stone-900/10 group flex flex-col justify-between hover:border-[#d4a373]/50 transition-all duration-500">
+  <div>
+    <!-- Tactical Visual Framework -->
+    <div class="h-48 relative overflow-hidden border-b border-stone-900">
+      <img src="picha/big5.jpg" class="w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-105 filter brightness-[0.65] contrast-[1.1]" alt="Uganda Primates and Big Five Wildlife Landscape">
+      <div class="absolute inset-0 bg-gradient-to-t from-[#0d0a07] via-transparent to-transparent opacity-90"></div>
+      
+      <!-- Top Badges Matrix -->
+      <span class="absolute top-3 left-3 font-mono text-[9px] text-[#d4a373] font-bold tracking-[0.2em] bg-[#0d0a07]/90 px-2 py-0.5 border border-stone-800/80 uppercase">
+        14 Days & 13 Nights
+      </span>
+    </div>
+
+    <!-- Core Content Architecture -->
+    <div class="p-6">
+      <div class="flex items-center justify-between mb-1.5">
+        <span class="text-[#a68a64] font-mono text-[9px] uppercase tracking-widest font-semibold">
+          Route: Entebbe - Murchison Falls - Kibale - Queen Elizabeth - Bwindi - Mburo - Return
+        </span>
+      </div>
+
+      <h3 class="text-xl font-black text-stone-100 uppercase tracking-tight mb-2 group-hover:text-[#d4a373] transition-colors duration-300">
+        Uganda Primates & Big 5 Adventure
+      </h3>
+
+      <p class="text-stone-400 text-xs leading-relaxed mb-6">
+        Embark on our small group Journeys that bring you up-close in person with Nature! From magical encounters with the wild mountain gorillas and chimpanzees—our closest cousins—to tracking the legendary savannah Big Five across diverse landscapes.
+      </p>
+
+      <!-- Sector Intelligence Sub-Checklist -->
+           <!-- Sector Intelligence Sub-Checklist -->
+      <div class="space-y-1.5 text-[10px] text-stone-500 border-t border-stone-900 pt-4 mb-2">
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D1 & D2: Entebbe Arrival & Ziwa Sanctuary Rhino Tracking to Murchison Falls Base</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D3 & D4: Savannah Game Drives, Nile Delta Cruise & Sector Transfer to Kibale Forest</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D5 & D6: Chimpanzee Trekking, Bigodi Community Visit & Ndali-Kasenda Crater Valley Drive</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D7 & D8: Queen Elizabeth Kasenyi Tracking, Kazinga Boat Cruise & Ishasha Lion Sector</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D9 & D10: Bwindi Entry, Premium Mountain Gorilla Trekking & Batwa Cultural Immersion</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D11 & D12: Lake Bunyonyi Ridge Relaxation, Wilderness Canoeing & Lake Mburo Eco-System Transit</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D13 & D14: Lake Mburo Walking Safari, Mabamba Swamp Shoebill Stork Tracking & Entebbe Departure</div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <!-- Command Output Footer Element -->
+  <div class="p-6 pt-0">
+    <div class="grid grid-cols-1 gap-2">
+      <a href="UG14-discovery.html" class="w-full py-3 bg-stone-950 border border-stone-800 hover:border-[#d4a373] hover:bg-[#d4a373] text-stone-300 hover:text-[#0d0a07] font-mono text-[10px] uppercase font-bold tracking-widest text-center block transition-all">
+        Explore Deployment →
+      </a>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Plan: 16 Days (Into the Wild Heart of Uganda: Gorillas, Big Cats & the Nile Experience) -->
+<div data-days="16" class="plan-card border border-stone-800 bg-stone-900/10 group flex flex-col justify-between hover:border-[#d4a373]/50 transition-all duration-500">
+  <div>
+    <!-- Tactical Visual Framework -->
+    <div class="h-48 relative overflow-hidden border-b border-stone-900">
+      <img src="picha/heart.webp" class="w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-105 filter brightness-[0.65] contrast-[1.1]" alt="Into the Wild Heart of Uganda">
+      <div class="absolute inset-0 bg-gradient-to-t from-[#0d0a07] via-transparent to-transparent opacity-90"></div>
+      
+      <!-- Top Badges Matrix -->
+      <span class="absolute top-3 left-3 font-mono text-[9px] text-[#d4a373] font-bold tracking-[0.2em] bg-[#0d0a07]/90 px-2 py-0.5 border border-stone-800/80 uppercase">
+        16 Days & 15 Nights
+      </span>
+    </div>
+
+    <!-- Core Content Architecture -->
+    <div class="p-6">
+      <div class="flex items-center justify-between mb-1.5">
+        <span class="text-[#a68a64] font-mono text-[9px] uppercase tracking-widest font-semibold">
+          Route: Entebbe - Murchison Falls - Kibale - Queen Elizabeth - Bwindi - Bunyonyi - Mburo - Return
+        </span>
+      </div>
+
+      <h3 class="text-xl font-black text-stone-100 uppercase tracking-tight mb-2 group-hover:text-[#d4a373] transition-colors duration-300">
+        Into the Wild Heart of Uganda
+      </h3>
+
+      <p class="text-stone-400 text-xs leading-relaxed mb-6">
+        Our incredible 16 days into the wild Heart of Uganda, Gorillas, Big Cats & the Nile Experience Luxury Safari offers the ultimate exploration of the pearl of Africa. Seamlessly blends glaciated mountain foothills, apex predators, ancient river systems, and close-up primate encounters.
+      </p>
+
+      <!-- Sector Intelligence Sub-Checklist -->
+      <div class="space-y-1.5 text-[10px] text-stone-500 border-t border-stone-900 pt-4 mb-2">
+             <!-- Sector Intelligence Sub-Checklist -->
+      <div class="space-y-1.5 text-[10px] text-stone-500 border-t border-stone-900 pt-4 mb-2">
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D1-D3: Entebbe Arrival, Ziwa Rhino Tracking, Murchison Game Drives & Nile Delta Cruise</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D4-D5: Fly-In Transit to Kasese, Kibale Chimpanzee Trekking & Bigodi Community Walk</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D6-D7: Semuliki Scenic Drive, Sempaya Hot Springs & Lake Albert Shoebill Boat Cruise</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D8-D9: Equator Crossing, Queen Elizabeth Kasenyi Tracking & Kazinga Channel Sunset Cruise</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D10-D11: Ishasha Tree-Climbing Lions, Bush Breakfast & Bwindi Forest Nkuringo Entry Walk</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D12-D14: Bwindi Double Gorilla Trekking Phase, Kisoro Flight Connect & Entebbe Return</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D15-D16: Nile River Leisure Exploration & Outbound Entebbe International Airport Departure</div>
+      </div>
+</div>
+
+    </div>
+  </div>
+
+  <!-- Command Output Footer Element -->
+  <div class="p-6 pt-0">
+    <div class="grid grid-cols-1 gap-2">
+      <a href="UG16-luxury.html" class="w-full py-3 bg-stone-950 border border-stone-800 hover:border-[#d4a373] hover:bg-[#d4a373] text-stone-300 hover:text-[#0d0a07] font-mono text-[10px] uppercase font-bold tracking-widest text-center block transition-all">
+        Explore Deployment →
+      </a>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Plan: 20 Days (Classic Uganda Primates & Rafting Wild Photo Adventure) -->
+<div data-days="20" class="plan-card border border-stone-800 bg-stone-900/10 group flex flex-col justify-between hover:border-[#d4a373]/50 transition-all duration-500">
+  <div>
+    <!-- Tactical Visual Framework -->
+    <div class="h-48 relative overflow-hidden border-b border-stone-900">
+      <img src="picha/rafting.jpg" class="w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-105 filter brightness-[0.65] contrast-[1.1]" alt="Mountain Gorilla Trekking and Nile River Rafting Adventure">
+      <div class="absolute inset-0 bg-gradient-to-t from-[#0d0a07] via-transparent to-transparent opacity-90"></div>
+      
+      <!-- Top Badges Matrix -->
+      <span class="absolute top-3 left-3 font-mono text-[9px] text-[#d4a373] font-bold tracking-[0.2em] bg-[#0d0a07]/90 px-2 py-0.5 border border-stone-800/80 uppercase">
+        20 Days & 19 Nights
+      </span>
+    </div>
+
+    <!-- Core Content Architecture -->
+    <div class="p-6">
+      <div class="flex items-center justify-between mb-1.5">
+        <span class="text-[#a68a64] font-mono text-[9px] uppercase tracking-widest font-semibold">
+          Route: Entebbe - Jinja Nile Rafting - Murchison Falls - Kibale - Queen Elizabeth - Bwindi - Mburo - Return
+        </span>
+      </div>
+
+      <h3 class="text-xl font-black text-stone-100 uppercase tracking-tight mb-2 group-hover:text-[#d4a373] transition-colors duration-300">
+        Classic Uganda Primates & Rafting Wild Photo Adventure
+      </h3>
+
+      <p class="text-stone-400 text-xs leading-relaxed mb-6">
+        Mountain gorilla trekking in Uganda is one of the greatest safari experiences and a true "once in a lifetime trip." Have the most thrilling adventure blending white-water Nile rafting, heavy photographic big-game safaris, and legendary multi-sector primate tracking expeditions.
+      </p>
+
+      <!-- Sector Intelligence Sub-Checklist -->
+           <!-- Sector Intelligence Sub-Checklist -->
+      <div class="space-y-1.5 text-[10px] text-stone-500 border-t border-stone-900 pt-4 mb-2">
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D1-D3: Entebbe Arrival, Source of the Nile Ground Sector Move & Jinja Grade 5 White-Water Rafting</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D4-D5: Sipi Falls Mountain Ridge Hiking & High-Utility Transit to Murchison Falls National Park</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D6-D7: Murchison Savannah Game Tracks, Top of the Falls Audit & Albert Nile Delta Boat Cruise</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D8-D9: Kibale Forest Entry, Premium Chimpanzee Trekking Operations & Bigodi Wetland Sanctuary Walk</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D10-D12: Sempaya Hot Springs, Ndali-Kasenda Crater Valley Drives & Queen Elizabeth Kazinga Channel Cruise</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D13-D15: Kyambura Gorge Primates, Ishasha Tree-Climbing Lions & Deep Bwindi Mountain Gorilla Trekking</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D16-D17: Lake Mutanda Canoeing, Mgahinga Golden Monkey Tracking Phase & Lake Bunyonyi Ridge Transit</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D18-D20: Lake Mburo Eco-System Horseback Riding, Wilderness Walking Safari & Entebbe Departure Flight</div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <!-- Command Output Footer Element -->
+  <div class="p-6 pt-0">
+    <div class="grid grid-cols-1 gap-2">
+      <a href="UG20-photo.html" class="w-full py-3 bg-stone-950 border border-stone-800 hover:border-[#d4a373] hover:bg-[#d4a373] text-stone-300 hover:text-[#0d0a07] font-mono text-[10px] uppercase font-bold tracking-widest text-center block transition-all">
+        Explore Deployment →
+      </a>
+    </div>
+  </div>
+</div>
+
+
+<!-- Plan: 06 Days (Kidepo Valley & Murchison Falls Big Five Uganda Adventure) -->
+<div data-days="6" class="plan-card border border-stone-800 bg-stone-900/10 group flex flex-col justify-between hover:border-[#d4a373]/50 transition-all duration-500">
+  <div>
+    <!-- Tactical Visual Framework -->
+    <div class="h-48 relative overflow-hidden border-b border-stone-900">
+      <img src="picha/kidepo.webp" class="w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-105 filter brightness-[0.65] contrast-[1.1]" alt="Kidepo Valley Savannah and Murchison Falls Wilderness">
+      <div class="absolute inset-0 bg-gradient-to-t from-[#0d0a07] via-transparent to-transparent opacity-90"></div>
+      
+      <!-- Top Badges Matrix -->
+      <span class="absolute top-3 left-3 font-mono text-[9px] text-[#d4a373] font-bold tracking-[0.2em] bg-[#0d0a07]/90 px-2 py-0.5 border border-stone-800/80 uppercase">
+        06 Days & 05 Nights
+      </span>
+    </div>
+
+    <!-- Core Content Architecture -->
+    <div class="p-6">
+      <div class="flex items-center justify-between mb-1.5">
+        <span class="text-[#a68a64] font-mono text-[9px] uppercase tracking-widest font-semibold">
+          Route: Entebbe - Kidepo Valley - Murchison Falls - Ziwa - Return
+        </span>
+      </div>
+
+      <h3 class="text-xl font-black text-stone-100 uppercase tracking-tight mb-2 group-hover:text-[#d4a373] transition-colors duration-300">
+        Kidepo Valley & Murchison Falls Big Five Uganda Adventure
+      </h3>
+
+      <p class="text-stone-400 text-xs leading-relaxed mb-6">
+        Our 6 days Kidepo Valley and Murchison falls national park safari is one of the best safaris in Uganda. This safari will take you to the remote, rugged wilderness of the north to audit isolated apex predators before charting classic riverine big game networks down the Nile.
+      </p>
+
+      <!-- Sector Intelligence Sub-Checklist -->
+            <!-- Sector Intelligence Sub-Checklist -->
+      <div class="space-y-1.5 text-[10px] text-stone-500 border-t border-stone-900 pt-4 mb-2">
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D1 & D2: Long-Range Ground Sector Move via Kitgum to Kidepo Valley National Park & Sunset Safari</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D3: Narus Valley Deep Wilderness Tracking & Afternoon Karamoja Cultural Community Tour</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D4: Trans-Northern Frontier Overland Transfer to Murchison Falls National Park Sector</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D5: Guided Savannah Big Game Tracking & Afternoon Victoria Nile Launch Cruise to Bottom of Falls</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D6: Budongo Forest Chimpanzee Tracking Operations & Return Sector Drive to Kampala / Entebbe</div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <!-- Command Output Footer Element -->
+  <div class="p-6 pt-0">
+    <div class="grid grid-cols-1 gap-2">
+      <a href="UG6-kidepo.html" class="w-full py-3 bg-stone-950 border border-stone-800 hover:border-[#d4a373] hover:bg-[#d4a373] text-stone-300 hover:text-[#0d0a07] font-mono text-[10px] uppercase font-bold tracking-widest text-center block transition-all">
+        Explore Deployment →
+      </a>
+    </div>
+  </div>
+</div>
+
+
+
+ <!-- Plan: 05 Days (Uganda Chimpanzee Wildlife Adventure Safari) -->
+<div data-days="5" class="plan-card border border-stone-800 bg-stone-900/10 group flex flex-col justify-between hover:border-[#d4a373]/50 transition-all duration-500">
+  <div>
+    <!-- Tactical Visual Framework -->
+    <div class="h-48 relative overflow-hidden border-b border-stone-900">
+      <img src="picha/chimp.jpg" class="w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-105 filter brightness-[0.65] contrast-[1.1]" alt="Kibale Forest Chimpanzees and Queen Elizabeth Savannah Landscapes">
+      <div class="absolute inset-0 bg-gradient-to-t from-[#0d0a07] via-transparent to-transparent opacity-90"></div>
+      
+      <!-- Top Badges Matrix -->
+      <span class="absolute top-3 left-3 font-mono text-[9px] text-[#d4a373] font-bold tracking-[0.2em] bg-[#0d0a07]/90 px-2 py-0.5 border border-stone-800/80 uppercase">
+        05 Days & 04 Nights
+      </span>
+    </div>
+
+    <!-- Core Content Architecture -->
+    <div class="p-6">
+      <div class="flex items-center justify-between mb-1.5">
+        <span class="text-[#a68a64] font-mono text-[9px] uppercase tracking-widest font-semibold">
+          Route: Entebbe - Kibale Forest - Queen Elizabeth National Park - Return
+        </span>
+      </div>
+
+      <h3 class="text-xl font-black text-stone-100 uppercase tracking-tight mb-2 group-hover:text-[#d4a373] transition-colors duration-300">
+        Uganda Chimpanzee Wildlife Adventure Safari
+      </h3>
+
+      <p class="text-stone-400 text-xs leading-relaxed mb-6">
+        Our 5 days Queen Elizabeth and Kibale Forest safari takes you to the best two Uganda safari destinations. It involves high-utility activities such as deep tropical chimpanzee tracking, classic savannah big game viewing, and pristine riverine marine boat cruises.
+      </p>
+
+      <!-- Sector Intelligence Sub-Checklist -->
+           <!-- Sector Intelligence Sub-Checklist -->
+      <div class="space-y-1.5 text-[10px] text-stone-500 border-t border-stone-900 pt-4 mb-2">
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D1: Terminal Arrival & Strategic Ground Logistics Transfer to Urban Base Hotel</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D2: Long-Range Overland Sector Transit to Kibale Forest National Park Primate Capital</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D3: Premium Chimpanzee Tracking Field Operations & Sector Move to Queen Elizabeth National Park</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D4: Kasenyi Plains Guided Savannah Game Tracking & Kazinga Channel Marine Launch Boat Trip</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D5: Outbound Ground Sector Transfer back to Entebbe Terminal for Outbound Flight Departure</div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <!-- Command Output Footer Element -->
+  <div class="p-6 pt-0">
+    <div class="grid grid-cols-1 gap-2">
+      <a href="UG5-chimp.html" class="w-full py-3 bg-stone-950 border border-stone-800 hover:border-[#d4a373] hover:bg-[#d4a373] text-stone-300 hover:text-[#0d0a07] font-mono text-[10px] uppercase font-bold tracking-widest text-center block transition-all">
+        Explore Deployment →
+      </a>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Plan: 04 Days (Uganda Luxury Gorilla & Golden Monkey Trekking Safari) -->
+<div data-days="4" class="plan-card border border-stone-800 bg-stone-900/10 group flex flex-col justify-between hover:border-[#d4a373]/50 transition-all duration-500">
+  <div>
+    <!-- Tactical Visual Framework -->
+    <div class="h-48 relative overflow-hidden border-b border-stone-900">
+      <img src="picha/golden.jpg" class="w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-105 filter brightness-[0.65] contrast-[1.1]" alt="Mountain Gorilla and Golden Monkey Primate Trekking Uganda">
+      <div class="absolute inset-0 bg-gradient-to-t from-[#0d0a07] via-transparent to-transparent opacity-90"></div>
+      
+      <!-- Top Badges Matrix -->
+      <span class="absolute top-3 left-3 font-mono text-[9px] text-[#d4a373] font-bold tracking-[0.2em] bg-[#0d0a07]/90 px-2 py-0.5 border border-stone-800/80 uppercase">
+        04 Days & 03 Nights
+      </span>
+    </div>
+
+    <!-- Core Content Architecture -->
+    <div class="p-6">
+      <div class="flex items-center justify-between mb-1.5">
+        <span class="text-[#a68a64] font-mono text-[9px] uppercase tracking-widest font-semibold">
+          Route: Entebbe - Mgahinga Gorilla National Park - Bwindi Impenetrable - Return
+        </span>
+      </div>
+
+      <h3 class="text-xl font-black text-stone-100 uppercase tracking-tight mb-2 group-hover:text-[#d4a373] transition-colors duration-300">
+        Luxury Gorilla & Golden Monkey Trekking Safari
+      </h3>
+
+      <p class="text-stone-400 text-xs leading-relaxed mb-6">
+        You will visit Mgahinga Gorilla National Park for an endangered golden monkey trekking tour and get up close and personal with endangered mountain gorillas of Bwindi. An elite primate expedition designed for premium comfort and unmatched wildlife intimacy.
+      </p>
+
+      <!-- Sector Intelligence Sub-Checklist -->
+           <!-- Sector Intelligence Sub-Checklist -->
+      <div class="space-y-1.5 text-[10px] text-stone-500 border-t border-stone-900 pt-4 mb-2">
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D1: Kigali International Airport Arrival & Cross-Border Logistics Transfer to Mgahinga Base (3 Nights)</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D2: Premium Mountain Gorilla Trekking Operations & Batwa Cultural Village Immersion</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D3: Endangered Golden Monkey Trekking Field Audit & Afternoon Volcanic Ridge Relaxation</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D4: Outbound Cross-Border Sector Drive to Kigali Terminal for Flight Departure</div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <!-- Command Output Footer Element -->
+  <div class="p-6 pt-0">
+    <div class="grid grid-cols-1 gap-2">
+      <a href="UG4-primate.html" class="w-full py-3 bg-stone-950 border border-stone-800 hover:border-[#d4a373] hover:bg-[#d4a373] text-stone-300 hover:text-[#0d0a07] font-mono text-[10px] uppercase font-bold tracking-widest text-center block transition-all">
+        Explore Deployment →
+      </a>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Plan: 12 Days (Rwenzori Mountain Hiking Adventure & Gorilla Trekking Safari) -->
+<div data-days="12" class="plan-card border border-stone-800 bg-stone-900/10 group flex flex-col justify-between hover:border-[#d4a373]/50 transition-all duration-500">
+  <div>
+    <!-- Tactical Visual Framework -->
+    <div class="h-48 relative overflow-hidden border-b border-stone-900">
+      <img src="picha/bwindiG.jpg" class="w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-105 filter brightness-[0.65] contrast-[1.1]" alt="Mount Rwenzori Glacial Ridges and Bwindi Mountain Gorillas">
+      <div class="absolute inset-0 bg-gradient-to-t from-[#0d0a07] via-transparent to-transparent opacity-90"></div>
+      
+      <!-- Top Badges Matrix -->
+      <span class="absolute top-3 left-3 font-mono text-[9px] text-[#d4a373] font-bold tracking-[0.2em] bg-[#0d0a07]/90 px-2 py-0.5 border border-stone-800/80 uppercase">
+        12 Days & 11 Nights
+      </span>
+    </div>
+
+    <!-- Core Content Architecture -->
+    <div class="p-6">
+      <div class="flex items-center justify-between mb-1.5">
+        <span class="text-[#a68a64] font-mono text-[9px] uppercase tracking-widest font-semibold">
+          Route: Entebbe - Kasese - Rwenzori Mountaineering - Queen Elizabeth - Bwindi - Return
+        </span>
+      </div>
+
+      <h3 class="text-xl font-black text-stone-100 uppercase tracking-tight mb-2 group-hover:text-[#d4a373] transition-colors duration-300">
+        Rwenzori Hiking & Gorilla Trekking Safari
+      </h3>
+
+      <p class="text-stone-400 text-xs leading-relaxed mb-6">
+        The 12 days Rwenzori hiking and gorilla trekking safari explores two legendary UNESCO World Heritage sites—Rwenzori Mountains National Park and Bwindi Impenetrable National Park. Mount Rwenzori’s glaciated summits perfectly complement the deep jungle primate tracking.
+      </p>
+
+      <!-- Sector Intelligence Sub-Checklist -->
+            <!-- Sector Intelligence Sub-Checklist -->
+      <div class="space-y-1.5 text-[10px] text-stone-500 border-t border-stone-900 pt-4 mb-2">
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D1 & D2: Logistics Move to Rwenzori National Park & Initial Trek from Nyakalengija to Nyabitaba (2,651m)</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D3 & D4: Bamboo Zone Ascent to John Matte Camp (3,505m) & Bog Crossings to Bujuku Camp (3,962m)</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D5 & D6: Elena Camp (4,541m) Glacier Base Ascent, Margherita Peak Summit (5,109m) & Kitandara (4,430m)</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D7 & D8: Vertical Wall Descent via Guy Yeoman Camp (3,261m) back down to Nyabitaba Forest Ridges</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D9 & D10: Mountain Exit Track to Nyakalengija Base & Sector Transfer to Bwindi Impenetrable Forest</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D11 & D12: Premium Mountain Gorilla Trekking Operations & Inbound Sector Return to Kampala / Departure</div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <!-- Command Output Footer Element -->
+  <div class="p-6 pt-0">
+    <div class="grid grid-cols-1 gap-2">
+      <a href="UG12-trek.html" class="w-full py-3 bg-stone-950 border border-stone-800 hover:border-[#d4a373] hover:bg-[#d4a373] text-stone-300 hover:text-[#0d0a07] font-mono text-[10px] uppercase font-bold tracking-widest text-center block transition-all">
+        Explore Deployment →
+      </a>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Plan: 03 Days (Queen Elizabeth National Park & Chimp Trekking Safari) -->
+<div data-days="3" class="plan-card border border-stone-800 bg-stone-900/10 group flex flex-col justify-between hover:border-[#d4a373]/50 transition-all duration-500">
+  <div>
+    <!-- Tactical Visual Framework -->
+    <div class="h-48 relative overflow-hidden border-b border-stone-900">
+      <img src="picha/kyamburaG.jpg" class="w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-105 filter brightness-[0.65] contrast-[1.1]" alt="Queen Elizabeth Savannah Landscapes and Kyambura Gorge Chimpanzees">
+      <div class="absolute inset-0 bg-gradient-to-t from-[#0d0a07] via-transparent to-transparent opacity-90"></div>
+      
+      <!-- Top Badges Matrix -->
+      <span class="absolute top-3 left-3 font-mono text-[9px] text-[#d4a373] font-bold tracking-[0.2em] bg-[#0d0a07]/90 px-2 py-0.5 border border-stone-800/80 uppercase">
+        03 Days & 02 Nights
+      </span>
+    </div>
+
+    <!-- Core Content Architecture -->
+    <div class="p-6">
+      <div class="flex items-center justify-between mb-1.5">
+        <span class="text-[#a68a64] font-mono text-[9px] uppercase tracking-widest font-semibold">
+          Route: Entebbe - Queen Elizabeth National Park - Kyambura Gorge - Return
+        </span>
+      </div>
+
+      <h3 class="text-xl font-black text-stone-100 uppercase tracking-tight mb-2 group-hover:text-[#d4a373] transition-colors duration-300">
+        3 Days Queen Elizabeth & Chimp Trekking
+      </h3>
+
+      <p class="text-stone-400 text-xs leading-relaxed mb-6">
+        From sprawling savannah to humid forest, sparkling lakes and fertile wetlands, it's little wonder that Queen Elizabeth National Park is indeed a Medley of Wonders. This focused itinerary balances classic big-game tracking across volcanic plains with deep, sunken-forest chimpanzee trekking operations.
+      </p>
+
+      <!-- Sector Intelligence Sub-Checklist -->
+            <!-- Sector Intelligence Sub-Checklist -->
+      <div class="space-y-1.5 text-[10px] text-stone-500 border-t border-stone-900 pt-4 mb-2">
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D1: Strategic Ground Sector Transfer to Queen Elizabeth National Park Base (2 Nights)</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D2: Kyambura Gorge Chimpanzee Trekking Operations & Kazinga Channel Marine Boat Cruise</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D3: Final Sunrise Savannah Safari Track & Outbound Ground Sector Transfer for Departure</div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <!-- Command Output Footer Element -->
+  <div class="p-6 pt-0">
+    <div class="grid grid-cols-1 gap-2">
+      <a href="UG3-queen-chimp.html" class="w-full py-3 bg-stone-950 border border-stone-800 hover:border-[#d4a373] hover:bg-[#d4a373] text-stone-300 hover:text-[#0d0a07] font-mono text-[10px] uppercase font-bold tracking-widest text-center block transition-all">
+        Explore Deployment →
+      </a>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Plan: 10 Days (Best of Wild Uganda Gorillas, Chimps & Wildlife - Only Women Tour) -->
+<div data-days="10" class="plan-card border border-stone-800 bg-stone-900/10 group flex flex-col justify-between hover:border-[#d4a373]/50 transition-all duration-500">
+  <div>
+    <!-- Tactical Visual Framework -->
+    <div class="h-48 relative overflow-hidden border-b border-stone-900">
+      <img src="picha/women.webp" class="w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-105 filter brightness-[0.65] contrast-[1.1]" alt="Women travelers on safari tracking gorillas in Uganda">
+      <div class="absolute inset-0 bg-gradient-to-t from-[#0d0a07] via-transparent to-transparent opacity-90"></div>
+      
+      <!-- Top Badges Matrix -->
+      <span class="absolute top-3 left-3 font-mono text-[9px] text-[#d4a373] font-bold tracking-[0.2em] bg-[#0d0a07]/90 px-2 py-0.5 border border-stone-800/80 uppercase">
+        10 Days & 09 Nights
+      </span>
+    </div>
+
+    <!-- Core Content Architecture -->
+    <div class="p-6">
+      <div class="flex items-center justify-between mb-1.5">
+        <span class="text-[#a68a64] font-mono text-[9px] uppercase tracking-widest font-semibold">
+          Route: Entebbe - Murchison Falls - Kibale Forest - Queen Elizabeth - Bwindi - Return
+        </span>
+      </div>
+
+      <h3 class="text-xl font-black text-stone-100 uppercase tracking-tight mb-2 group-hover:text-[#d4a373] transition-colors duration-300">
+        Best of Wild Uganda Gorillas, Chimps & Wildlife - Only Women Tour
+      </h3>
+
+      <p class="text-stone-400 text-xs leading-relaxed mb-6">
+        Our uniquely hand-crafted Ugandan Odyssey safari combines primate trekking and classic safari encounters all packaged as one to offer an exceptional experience. This female-exclusive expedition provides empoweringly intimate, up-close moments with nature and local communities.
+      </p>
+
+      <!-- Sector Intelligence Sub-Checklist -->
+           <!-- Sector Intelligence Sub-Checklist -->
+      <div class="space-y-1.5 text-[10px] text-stone-500 border-t border-stone-900 pt-4 mb-2">
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D1 & D2: Entebbe International Arrival & Guided Foot Tracking of Southern White Rhinos at Ziwa</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D3 & D4: Murchison Savannah Game Tracks, Nile Delta Cruise & Evening Bigodi Community Walk</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D5 & D6: Morning Kibale Chimpanzee Tracking Field Operations & Kazinga Channel Boat Cruise</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D7 & D8: Ishasha Plains Sector Tracking, Bwindi Entry, Mountain Gorilla Trekking & Community Visit</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D9: Deep Afro-Alpine Birding Expedition & Scenic Sector Transfer to Lake Mburo National Park</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D10: Morning Guided Wilderness Nature Walk & Outbound Ground Sector Transfer to Entebbe Terminal</div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <!-- Command Output Footer Element -->
+  <div class="p-6 pt-0">
+    <div class="grid grid-cols-1 gap-2">
+      <a href="UG10-women.html" class="w-full py-3 bg-stone-950 border border-stone-800 hover:border-[#d4a373] hover:bg-[#d4a373] text-stone-300 hover:text-[#0d0a07] font-mono text-[10px] uppercase font-bold tracking-widest text-center block transition-all">
+        Explore Deployment →
+      </a>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Plan: 09 Days (Uganda Luxury Best of Gorillas & Chimps, Wildlife Adventure) -->
+<div data-days="9" class="plan-card border border-stone-800 bg-stone-900/10 group flex flex-col justify-between hover:border-[#d4a373]/50 transition-all duration-500">
+  <div>
+    <!-- Tactical Visual Framework -->
+    <div class="h-48 relative overflow-hidden border-b border-stone-900">
+      <img src="picha/luxury.avif" class="w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-105 filter brightness-[0.65] contrast-[1.1]" alt="Uganda Luxury Best of Gorillas Chimps and Savannah Wildlife">
+      <div class="absolute inset-0 bg-gradient-to-t from-[#0d0a07] via-transparent to-transparent opacity-90"></div>
+      
+      <!-- Top Badges Matrix -->
+      <span class="absolute top-3 left-3 font-mono text-[9px] text-[#d4a373] font-bold tracking-[0.2em] bg-[#0d0a07]/90 px-2 py-0.5 border border-stone-800/80 uppercase">
+        09 Days & 08 Nights
+      </span>
+    </div>
+
+    <!-- Core Content Architecture -->
+    <div class="p-6">
+      <div class="flex items-center justify-between mb-1.5">
+        <span class="text-[#a68a64] font-mono text-[9px] uppercase tracking-widest font-semibold">
+          Route: Entebbe - Kibale Forest - Queen Elizabeth - Bwindi Impenetrable - Return
+        </span>
+      </div>
+
+      <h3 class="text-xl font-black text-stone-100 uppercase tracking-tight mb-2 group-hover:text-[#d4a373] transition-colors duration-300">
+        Uganda Luxury Best of Gorillas & Chimps
+      </h3>
+
+      <p class="text-stone-400 text-xs leading-relaxed mb-6">
+        From mountain gorillas to tree-climbing lions, this lesser-explored African country offers intimate animal encounters that go far beyond traditional safaris. Our 9 days best of Uganda luxury expedition delivers deep wilderness refinements along premium primate and big-game blocks.
+      </p>
+
+      <!-- Sector Intelligence Sub-Checklist -->
+           <!-- Sector Intelligence Sub-Checklist -->
+      <div class="space-y-1.5 text-[10px] text-stone-500 border-t border-stone-900 pt-4 mb-2">
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D1 & D2: Entebbe Flight Entry & Long-Range Sector Drive to Kibale Forest for Bigodi Community Walk</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D3 & D4: Kibale Chimpanzee Tracking Field Operations, Queen Elizabeth Savannah Safari & Kazinga Cruise</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D5 & D6: Ishasha Sector Tree-Climbing Lion Safari, Bwindi Entry, Gorilla Trekking & Batwa Village Immersion</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D7: Sector Transfer to Lake Mburo National Park & Evening Wilderness Sunset Game Drive</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D8 & D9: Guided Lake Mburo Bush Nature Walk, Long-Range Return to Entebbe & Outbound Terminal Drop-Off</div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <!-- Command Output Footer Element -->
+  <div class="p-6 pt-0">
+    <div class="grid grid-cols-1 gap-2">
+      <a href="UG9-luxury.html" class="w-full py-3 bg-stone-950 border border-stone-800 hover:border-[#d4a373] hover:bg-[#d4a373] text-stone-300 hover:text-[#0d0a07] font-mono text-[10px] uppercase font-bold tracking-widest text-center block transition-all">
+        Explore Deployment →
+      </a>
+    </div>
+  </div>
+</div>
+
+
+
+ <!-- Plan: 09 Days (Uganda Double Gorilla Trek & Wildlife Photo Safari) -->
+<div data-days="9" class="plan-card border border-stone-800 bg-stone-900/10 group flex flex-col justify-between hover:border-[#d4a373]/50 transition-all duration-500">
+  <div>
+    <!-- Tactical Visual Framework -->
+    <div class="h-48 relative overflow-hidden border-b border-stone-900">
+      <img src="picha/Gphoto.jpg" class="w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-105 filter brightness-[0.65] contrast-[1.1]" alt="Mountain Gorillas and Wildlife Photography in Uganda">
+      <div class="absolute inset-0 bg-gradient-to-t from-[#0d0a07] via-transparent to-transparent opacity-90"></div>
+      
+      <!-- Top Badges Matrix -->
+      <span class="absolute top-3 left-3 font-mono text-[9px] text-[#d4a373] font-bold tracking-[0.2em] bg-[#0d0a07]/90 px-2 py-0.5 border border-stone-800/80 uppercase">
+        09 Days & 08 Nights
+      </span>
+    </div>
+
+    <!-- Core Content Architecture -->
+    <div class="p-6">
+      <div class="flex items-center justify-between mb-1.5">
+        <span class="text-[#a68a64] font-mono text-[9px] uppercase tracking-widest font-semibold">
+          Route: Entebbe - Murchison Falls - Queen Elizabeth - Bwindi Double Trek - Return
+        </span>
+      </div>
+
+      <h3 class="text-xl font-black text-stone-100 uppercase tracking-tight mb-2 group-hover:text-[#d4a373] transition-colors duration-300">
+        Uganda Double Gorilla Trek & Wildlife Photo Safari
+      </h3>
+
+      <p class="text-stone-400 text-xs leading-relaxed mb-6">
+        Embark on a once-in-a-lifetime adventure through Uganda's most iconic wildlife destinations! Spend 9 days immersed in the breathtaking landscapes and diverse ecosystems of this incredible country, capturing heavy photographic records of tree-climbing lions, savanna game, and an elite double mountain gorilla trek.
+      </p>
+
+      <!-- Sector Intelligence Sub-Checklist -->
+            <!-- Sector Intelligence Sub-Checklist -->
+      <div class="space-y-1.5 text-[10px] text-stone-500 border-t border-stone-900 pt-4 mb-2">
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D1 & D2: Entebbe International Entry, Long-Range Sector Drive to Kibale Forest & Bigodi Community Walk</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D3 & D4: Kibale Chimpanzee Tracking Field Operations, Queen Elizabeth Savannah Safari & Kazinga Cruise</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D5 & D6: Ishasha Sector Tree-Climbing Lion Safari, Scenic Plains Transit & Bwindi Impenetrable Jungle Entry</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D7 & D8: Premium Phase 1 Mountain Gorilla Trekking Operations & Phase 2 Double Gorilla Tracking Session</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D9: Lake Bunyonyi Extraction, Long-Range Return Ground Sector Drive & Entebbe Airport Departure</div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <!-- Command Output Footer Element -->
+  <div class="p-6 pt-0">
+    <div class="grid grid-cols-1 gap-2">
+      <a href="UG9-photo.html" class="w-full py-3 bg-stone-950 border border-stone-800 hover:border-[#d4a373] hover:bg-[#d4a373] text-stone-300 hover:text-[#0d0a07] font-mono text-[10px] uppercase font-bold tracking-widest text-center block transition-all">
+        Explore Deployment →
+      </a>
+    </div>
+  </div>
+</div>
+
+
+<!-- Plan: 08 Days (Classic Uganda Primates & Big 5 Private Tour) -->
+<div data-days="8" class="plan-card border border-stone-800 bg-stone-900/10 group flex flex-col justify-between hover:border-[#d4a373]/50 transition-all duration-500">
+  <div>
+    <!-- Tactical Visual Framework -->
+    <div class="h-48 relative overflow-hidden border-b border-stone-900">
+      <img src="picha/G.jpg" class="w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-105 filter brightness-[0.65] contrast-[1.1]" alt="Classic Uganda Mountain Gorillas and Big Five Private Safari">
+      <div class="absolute inset-0 bg-gradient-to-t from-[#0d0a07] via-transparent to-transparent opacity-90"></div>
+      
+      <!-- Top Badges Matrix -->
+      <span class="absolute top-3 left-3 font-mono text-[9px] text-[#d4a373] font-bold tracking-[0.2em] bg-[#0d0a07]/90 px-2 py-0.5 border border-stone-800/80 uppercase">
+        08 Days & 07 Nights
+      </span>
+    </div>
+
+    <!-- Core Content Architecture -->
+    <div class="p-6">
+      <div class="flex items-center justify-between mb-1.5">
+        <span class="text-[#a68a64] font-mono text-[9px] uppercase tracking-widest font-semibold">
+          Route: Entebbe - Ziwa Rhino Sanctuary - Murchison Falls - Kibale Forest - Queen Elizabeth - Bwindi - Return
+        </span>
+      </div>
+
+      <h3 class="text-xl font-black text-stone-100 uppercase tracking-tight mb-2 group-hover:text-[#d4a373] transition-colors duration-300">
+        Classic Uganda Primates & Big 5 Private Tour
+      </h3>
+
+      <p class="text-stone-400 text-xs leading-relaxed mb-6">
+        Our 8 Days Uganda Adventure Safari takes you to western and southwestern Uganda, regions richly endowed with various primates, wildlife, and rare bird species. Seamlessly tracks rhinos on foot, captures savanna big cat action, and drops you deep into untamed chimpanzee and gorilla territories.
+      </p>
+
+      <!-- Sector Intelligence Sub-Checklist -->
+          <!-- Sector Intelligence Sub-Checklist -->
+      <div class="space-y-1.5 text-[10px] text-stone-500 border-t border-stone-900 pt-4 mb-2">
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D1 & D2: Entebbe International Terminal Entry & Long-Range Sector Drive to Kibale Forest Primate Capital</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D3 & D4: Kibale Chimpanzee Tracking Field Operations, Queen Elizabeth Savannah Safari & Kazinga Channel Cruise</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D5 & D6: Ishasha Tree-Climbing Lion Safari, Bwindi Impenetrable Jungle Entry & Mountain Gorilla Trekking Phase</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D7 & D8: Sector Move to Lake Mburo National Park, Morning Game Tracking & Inbound Return Drive to Entebbe</div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <!-- Command Output Footer Element -->
+  <div class="p-6 pt-0">
+    <div class="grid grid-cols-1 gap-2">
+      <a href="UG8-classic.html" class="w-full py-3 bg-stone-950 border border-stone-800 hover:border-[#d4a373] hover:bg-[#d4a373] text-stone-300 hover:text-[#0d0a07] font-mono text-[10px] uppercase font-bold tracking-widest text-center block transition-all">
+        Explore Deployment →
+      </a>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Plan: 07 Days (Uganda's Primates & Wildlife Adventure) -->
+<div data-days="7" class="plan-card border border-stone-800 bg-stone-900/10 group flex flex-col justify-between hover:border-[#d4a373]/50 transition-all duration-500">
+  <div>
+    <!-- Tactical Visual Framework -->
+    <div class="h-48 relative overflow-hidden border-b border-stone-900">
+      <img src="picha/kibaleG.jpg" class="w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-105 filter brightness-[0.65] contrast-[1.1]" alt="Kibale Forest Chimpanzees and Uganda Wildlife Safari Profile">
+      <div class="absolute inset-0 bg-gradient-to-t from-[#0d0a07] via-transparent to-transparent opacity-90"></div>
+      
+      <!-- Top Badges Matrix -->
+      <span class="absolute top-3 left-3 font-mono text-[9px] text-[#d4a373] font-bold tracking-[0.2em] bg-[#0d0a07]/90 px-2 py-0.5 border border-stone-800/80 uppercase">
+        07 Days & 06 Nights
+      </span>
+    </div>
+
+    <!-- Core Content Architecture -->
+    <div class="p-6">
+      <div class="flex items-center justify-between mb-1.5">
+        <span class="text-[#a68a64] font-mono text-[9px] uppercase tracking-widest font-semibold">
+          Route: Entebbe - Kibale Forest - Queen Elizabeth - Bwindi / Sector Hubs - Return
+        </span>
+      </div>
+
+      <h3 class="text-xl font-black text-stone-100 uppercase tracking-tight mb-2 group-hover:text-[#d4a373] transition-colors duration-300">
+        Uganda's Primates & Wildlife Adventure
+      </h3>
+
+      <p class="text-stone-400 text-xs leading-relaxed mb-6">
+        Our Journey starts and ends in Entebbe. On this 7-day safari we are particularly interested in primate lovers who will be able to visit Kibale Forest National Park and adjacent tracking sectors. Seamlessly blends dense tropical canopy wildlife with epic savannah big-game explorations.
+      </p>
+
+      <!-- Sector Intelligence Sub-Checklist -->
+            <!-- Sector Intelligence Sub-Checklist -->
+      <div class="space-y-1.5 text-[10px] text-stone-500 border-t border-stone-900 pt-4 mb-2">
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D1 & D2: Entebbe Terminal Landing, Urban Hotel Check-In & Transfer to the Edge of Kibale National Park</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D3 & D4: Premium Kibale Chimpanzee Tracking, Bigodi Wetland Excursion & Kazinga Channel Boat Cruise</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D5: Queen Elizabeth Sector Exit, Guided Savannah Game Drive & Move to Bwindi Impenetrable Forest</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D6 & D7: Mountain Gorilla Trekking, Batwa Cultural Experience & Equator Route Transit to Entebbe</div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <!-- Command Output Footer Element -->
+  <div class="p-6 pt-0">
+    <div class="grid grid-cols-1 gap-2">
+      <a href="UG7-primates.html" class="w-full py-3 bg-stone-950 border border-stone-800 hover:border-[#d4a373] hover:bg-[#d4a373] text-stone-300 hover:text-[#0d0a07] font-mono text-[10px] uppercase font-bold tracking-widest text-center block transition-all">
+        Explore Deployment →
+      </a>
+    </div>
+  </div>
+</div>
+
+
+<!-- Plan: 13 Days (Best of Uganda Gorilla Trekking & Wildlife Safari) -->
+<div data-days="13" class="plan-card border border-stone-800 bg-stone-900/10 group flex flex-col justify-between hover:border-[#d4a373]/50 transition-all duration-500">
+  <div>
+    <!-- Tactical Visual Framework -->
+    <div class="h-48 relative overflow-hidden border-b border-stone-900">
+      <img src="picha/Glandscape.webp" class="w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-105 filter brightness-[0.65] contrast-[1.1]" alt="Mountain Gorillas and Lush Landscapes of Uganda">
+      <div class="absolute inset-0 bg-gradient-to-t from-[#0d0a07] via-transparent to-transparent opacity-90"></div>
+      
+      <!-- Top Badges Matrix -->
+      <span class="absolute top-3 left-3 font-mono text-[9px] text-[#d4a373] font-bold tracking-[0.2em] bg-[#0d0a07]/90 px-2 py-0.5 border border-stone-800/80 uppercase">
+        13 Days & 12 Nights
+      </span>
+    </div>
+
+    <!-- Core Content Architecture -->
+    <div class="p-6">
+      <div class="flex items-center justify-between mb-1.5">
+        <span class="text-[#a68a64] font-mono text-[9px] uppercase tracking-widest font-semibold">
+          Route: Entebbe - Murchison Falls - Kibale - Queen Elizabeth - Bwindi Impenetrable - Bunyonyi - Return
+        </span>
+      </div>
+
+      <h3 class="text-xl font-black text-stone-100 uppercase tracking-tight mb-2 group-hover:text-[#d4a373] transition-colors duration-300">
+        Best of Uganda Gorilla Trekking & Wildlife Safari
+      </h3>
+
+      <p class="text-stone-400 text-xs leading-relaxed mb-6">
+        Welcome to Uganda—The Pearl of Africa, Reimagined, a land where nature tells her stories in whispers of mist and the rhythm of the wild. This comprehensive 13-day flagship expedition balances elite mountain gorilla encounters, deep rainforest primate tracking, and premier riverine big game safaris.
+      </p>
+
+           <!-- Sector Intelligence Sub-Checklist -->
+      <div class="space-y-1.5 text-[10px] text-stone-500 border-t border-stone-900 pt-4 mb-2">
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D1 & D2: Entebbe International Terminal Entry & Strategic Ground Sector Transfer to Lake Mburo National Park</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D3 & D4: Lake Mburo Horseback & Boat Marine Safaris, Transfer via Misty Highlands to Bwindi Impenetrable Forest</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D5 & D6: Premium Mountain Gorilla Trekking Operations & Rushaga Trailhead Intensive Gorilla Habituation Phase</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D7 & D8: Queen Elizabeth National Park Entry, Ishasha Tree-Climbing Lion Audits & Kazinga Channel Boat Safari</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D9 & D10: Mountains of the Moon Scenic Transit, Kibale Forest Entry & Exclusive Chimpanzee Tracking Operations</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D11 & D12: Ziwa Rhino Sanctuary Foot Tracking, Murchison Falls Savannah Game Audits & Victoria Nile Delta Cruise</div>
+        <div class="flex items-center gap-2"><span class="text-[#d4a373]/60">▸</span> D13: Domestic Transit Flight to Entebbe Terminal & Final Outbound International Airport Departure</div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <!-- Command Output Footer Element -->
+  <div class="p-6 pt-0">
+    <div class="grid grid-cols-1 gap-2">
+      <a href="UG13-best.html" class="w-full py-3 bg-stone-950 border border-stone-800 hover:border-[#d4a373] hover:bg-[#d4a373] text-stone-300 hover:text-[#0d0a07] font-mono text-[10px] uppercase font-bold tracking-widest text-center block transition-all">
+        Explore Deployment →
+      </a>
+    </div>
+  </div>
+</div>
+
+
+
+<style>
+  @keyframes snake-crawl {
+    from { stroke-dashoffset: 100; }
+    to { stroke-dashoffset: 0; }
+  }
+</style>
+
+ <script>
+  
+    const menuBtn = document.getElementById('menuBtn');
+    const nav = document.getElementById('mainNav');
+    const line1 = document.getElementById('line1');
+    const line2 = document.getElementById('line2');
+    const line3 = document.getElementById('line3');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+
+    function toggleMenu() {
+      // Check if it's currently at the base height
+      const isClosed = nav.style.maxHeight === '76px' || nav.style.maxHeight === '';
+      
+      if (isClosed) {
+        // OPENING: Switch to boxy corners immediately, then expand height
+        nav.classList.remove('rounded-full');
+        nav.classList.add('rounded-[2rem]');
+        nav.style.maxHeight = '600px'; 
+
+        // Hamburger -> X
+        line1.style.transform = 'translateY(7px) rotate(45deg)';
+        line3.style.transform = 'translateY(-7px) rotate(-45deg)';
+        line2.style.opacity = '0';
+      } else {
+        // CLOSING: Shrink height first
+        nav.style.maxHeight = '76px';
+        
+        // Wait for the height transition to finish before turning back into a pill
+        setTimeout(() => {
+          if(nav.style.maxHeight === '76px') {
+            nav.classList.remove('rounded-[2rem]');
+            nav.classList.add('rounded-full');
+          }
+        }, 400);
+
+        // X -> Hamburger
+        line1.style.transform = 'none';
+        line3.style.transform = 'none';
+        line2.style.opacity = '1';
+      }
+    }
+
+    menuBtn.addEventListener('click', toggleMenu);
+
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        if (nav.style.maxHeight !== '76px') toggleMenu();
+      });
+    });
+
+    
+/* ios hover */
+ document.addEventListener("touchstart", function() {}, true);
+    </script>
+    </body>
+    </html>
