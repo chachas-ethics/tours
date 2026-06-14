@@ -11,21 +11,25 @@
 </head>
 <body class="bg-[#0d0a07] text-stone-200 antialiased font-sans selection:bg-[#d4a373] selection:text-[#0d0a07]">
 
- <nav class="fixed top-6 left-1/2 -translate-x-1/2 w-[92%] max-w-6xl z-[100] transition-[max-height,border-radius] duration-500 ease-in-out px-8 py-4 rounded-full border border-[#3d2b1f]/20 shadow-[0_20px_50px_rgba(0,0,0,0.3)] overflow-hidden" 
+
+  
+  <!-- Navbar -->
+   <nav class="fixed top-6 left-1/2 -translate-x-1/2 w-[92%] max-w-6xl z-[100] transition-[max-height,border-radius] duration-500 ease-in-out px-8 py-4 rounded-full border border-[#3d2b1f]/20 shadow-[0_20px_50px_rgba(0,0,0,0.3)] overflow-hidden" 
      id="mainNav" 
-     style="background: linear-gradient(180deg, #2d1e14 0%, #1a120b 100%); max-height: 76px;">
+     style="background: linear-gradient(180deg, #2d1e14 0%, #1a120b 100%); max-height: 76px;"
+     aria-label="Main navigation">
   
   <!-- Subtle Wood Texture Overlay -->
   <div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: url('https://transparenttextures.com');"></div>
 
   <div class="flex justify-between items-center relative z-10">
     <!-- Logo -->
-<a href="index.html#home" class="inline-flex items-center space-x-3 group/logo cursor-pointer">
+<a href="#home" class="inline-flex items-center space-x-3 group/logo cursor-pointer" aria-label="Africa Scenery Discovery - Home">
   <div class="relative w-10 h-10 bg-transparent rounded-full flex items-center justify-center overflow-hidden transition-transform duration-500 group-hover/logo:rotate-[360deg]">
-    <img src="assets/AFRICA SCENERY LOG2.jpeg" alt="Logo" class="w-full h-full object-cover">
+    <img src="assets/AFRICA SCENERY LOG2.jpeg" alt="Africa Scenery Discovery Logo" class="w-full h-full object-cover">
   </div>
-  <span class="text-l font-bold tracking-widest text-[#d4a373] uppercase">
-    AFRICA SCENERY
+  <span class="text-xs font-bold tracking-widest text-[#d4a373] uppercase">
+    AFRICA SCENERY DISCOVERY
   </span>
 </a>
 
@@ -42,7 +46,7 @@
     </div>
 
     <!-- CTA --><div class="hidden md:block">
-  <a href="https://wa.me/255788296274?text=Hello%2C%20I%27m%20interested%20in%20planning%20a%20safari.%20Could%20you%20share%20available%20packages%2C%20pricing%2C%20and%20the%20best%20travel%20dates%3F" 
+  <a href="https://wa.me/255724196842?text=Hello%2C%20I%27m%20interested%20in%20planning%20a%20safari.%20Could%20you%20share%20available%20packages%2C%20pricing%2C%20and%20the%20best%20travel%20dates%3F" 
      target="_blank" 
      rel="noopener noreferrer"
      class="inline-block">
@@ -54,7 +58,7 @@
 
 
     <!-- Animated Hamburger Button -->
-    <button id="menuBtn" class="md:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1.5 z-50 focus:outline-none">
+    <button id="menuBtn" class="md:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1.5 z-50 focus:outline-none" aria-label="Toggle navigation menu" aria-expanded="false">
        <span id="line1" class="block w-6 h-0.5 bg-[#d4a373] transition-all duration-300 origin-center"></span>
        <span id="line2" class="block w-6 h-0.5 bg-[#d4a373] transition-all duration-300"></span>
        <span id="line3" class="block w-6 h-0.5 bg-[#d4a373] transition-all duration-300 origin-center"></span>
@@ -69,7 +73,7 @@
       <a href="index.html#packages" class="mobile-link hover:text-[#d4a373] transition-colors">Packages</a>
       <a href="index.html#gallery" class="mobile-link hover:text-[#d4a373] transition-colors">Gallery</a>
       <a href="index.html#reviews" class="mobile-link hover:text-[#d4a373] transition-colors">Reviews</a>
-      <a href="https://wa.me/255788296274?text=Hello%2C%20I%27m%20interested%20in%20planning%20a%20safari.%20Could%20you%20share%20available%20packages%2C%20pricing%2C%20and%20the%20best%20travel%20dates%3F" 
+      <a href="https://wa.me/255724196842?text=Hello%2C%20I%27m%20interested%20in%20planning%20a%20safari.%20Could%20you%20share%20available%20packages%2C%20pricing%2C%20and%20the%20best%20travel%20dates%3F" 
    target="_blank" 
    rel="noopener noreferrer"
    class="mobile-link bg-[#d4a373] text-black py-4 uppercase rounded-2xl mx-4">
@@ -159,15 +163,181 @@
     </div>
   </main>
 
-  <!-- LOGO FOOTER -->
-  <footer class="py-12 bg-stone-950/40 border-t border-stone-900/60 font-mono text-[10px] text-stone-500 tracking-widest text-center">
-    <div>ARENA AFRICA SAFARIS LTD</div>
-    <div class="mt-1 flex justify-center gap-4 text-stone-600 text-[9px]">
-      <a href="mailto:info@Arenaafricasafaris.com" class="hover:text-stone-400">INFO@ARENAAFRICASAFARIS.COM</a>
-      <span>•</span>
-      <a href="https://arenaafricasafaris.com" target="_blank" class="hover:text-stone-400">://arenaafricasafaris.com</a>
+  <!-- Footer -->
+   <footer class="bg-[#0d0a07] text-stone-500 py-24 relative overflow-hidden border-t border-white/5">
+  
+  <!-- Massive Background Wordmark (Full Width & Height) -->
+  <div class="absolute inset-0 z-0">
+    <img 
+      src="assets/AFRICA SCENERY LOG2.jpeg" 
+      alt="Watermark" 
+      class="w-full h-full object-cover opacity-[0.03] select-none pointer-events-none grayscale"
+    >
+  </div>
+
+  <div class="max-w-7xl mx-auto px-6 relative z-10">
+    <!-- Balanced 4-Column Grid Layout (3-3-3-3 structure) -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 lg:gap-12 pb-20">
+
+      <!-- Column 1: Brand Essence -->
+      <div>
+        <div class="flex items-center space-x-3 mb-8">
+          <div class="w-12 h-12 bg-transparent flex items-center justify-center shadow-2xl rounded-full overflow-hidden">
+            <img src="assets/AFRICA SCENERY LOG2.jpeg" alt="Logo" class="w-full h-full object-cover">
+          </div>
+          <span class="text-xl font-black tracking-tighter text-[#d4a373] uppercase">
+            AFRICA SCENERY
+          </span>
+        </div>
+
+        <p class="text-sm leading-relaxed max-w-xs mb-8 font-medium italic">
+          "The pinnacle of bespoke African expeditions. Bridging the gap between the wilderness and luxury."
+        </p>
+        
+        <!-- Social Channels -->
+        <div class="flex gap-7 items-center">
+          <!-- Facebook -->
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="transition-transform hover:scale-110 inline-block" style="text-decoration: none;">
+            <i class="fa fa-facebook" style="font-size:36px; color:#1877F2;"></i>
+          </a>
+
+          <!-- Instagram -->
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="transition-transform hover:scale-110" style="text-decoration: none;">
+            <i class="fa fa-instagram bg-gradient-to-tr from-[#f9ce71] via-[#ee2a7b] to-[#6228d7] bg-clip-text text-transparent inline-block" style="font-size:36px;"></i>
+          </a>
+
+          <!-- TripAdvisor -->
+          <a href="https://tripadvisor.com" target="_blank" rel="noopener noreferrer" class="transition-transform hover:scale-110 inline-block" style="text-decoration: none;">
+            <i class="fa fa-tripadvisor" style="font-size:36px; color:#00aa6c;"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Column 2 (Middle Right): The Navigation -->
+      <div>
+        <h4 class="text-[#d4a373] font-black uppercase tracking-[0.3em] text-[10px] mb-8">NAVIGATION</h4>
+        <ul class="space-y-4 text-sm font-bold uppercase tracking-tighter">
+          <li><a href="#home" class="text-stone-300 hover:text-[#d4a373] transition-all hover:translate-x-1 inline-block">Home</a></li>
+          <li><a href="#packages" class="text-stone-300 hover:text-[#d4a373] transition-all hover:translate-x-1 inline-block">About Us</a></li>
+          <li><a href="#gallery" class="text-stone-300 hover:text-[#d4a373] transition-all hover:translate-x-1 inline-block">Destinations</a></li>
+          <li><a href="#contact" class="text-stone-300 hover:text-[#d4a373] transition-all hover:translate-x-1 inline-block">Packages</a></li>
+        </ul>
+      </div>
+
+    <!-- Column 3 (Middle Left): Trusted Memberships & Accreditations Block -->
+<!-- Added md:-ml-4 to shift the entire block to the left on larger screens -->
+<div class="flex flex-col justify-start md:-ml-4">
+  <h4 class="text-[#d4a373] font-black uppercase tracking-[0.3em] text-[10px] mb-8">PROUD MEMBER OF</h4>
+  <div class="flex flex-wrap md:flex-nowrap items-center gap-6">
+    <!-- Organization Logo 1 -->
+    <div class="transition-all duration-300">
+      <img 
+        src="img/ATTA.jpg" 
+        alt="Organization Membership Badge 1" 
+        class="h-14 w-auto object-contain rounded-full"
+      >
     </div>
-  </footer>
+    <!-- Organization Logo 2 -->
+    <div class="transition-all duration-300">
+      <img 
+        src="img/TATO.png" 
+        alt="Organization Membership Badge 2" 
+        class="h-14 w-auto object-contain rounded-full"
+      >
+    </div>
+    <!-- Organization Logo 3 -->
+    <div class="transition-all duration-300">
+      <img 
+        src="img/partner.jpeg" 
+        alt="Organization Membership Badge 3" 
+        class="h-14 w-auto object-contain rounded-full"
+      >
+    </div>
+  </div>
+</div>
+
+
+
+
+
+      <!-- Column 4: Newsletter & Access Combined -->
+      <div>
+        <h4 class="text-[#d4a373] font-black uppercase tracking-[0.3em] text-[10px] mb-8">SUBSCRIBE TO OUR NEWSLETTER</h4>
+        <p class="text-xs mb-6 text-stone-500 leading-relaxed font-medium italic">Join the inner circle for exclusive migration forecasts and updates.</p>
+        <form class="relative group mb-8">
+          <input type="email" placeholder="EMAIL" class="w-full bg-white/5 border border-white/10 p-4 pr-12 text-[10px] font-black text-white focus:outline-none focus:border-[#d4a373] transition-all placeholder:text-stone-700" />
+          <button class="absolute right-2 top-2 bottom-2 px-4 bg-[#d4a373] text-[#0d0a07] font-black hover:bg-white transition-colors">→</button>
+        </form>
+        
+        <!-- Access Coordinates Sub-links -->
+        <div class="grid grid-cols-2 gap-4 text-xs">
+          <div class="flex flex-col">
+            <span class="text-[8px] uppercase text-stone-600 font-black tracking-widest mb-0.5">HEADQUATERS </span>
+            <span class="text-white font-bold tracking-tighter text-[11px]">ARUSHA, TANZANIA</span>
+          </div>
+          <div class="flex flex-col">
+            <span class="text-[8px] uppercase text-stone-600 font-black tracking-widest mb-0.5">Email Contact</span>
+            <span class="text-white font-bold tracking-tighter text-[11px] truncate">concierge@safarilux.com</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom Bar: The Synlotech Signature & Payment Options -->
+    <div class="pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8">
+      <div class="flex flex-col md:flex-row items-center gap-4 md:gap-8">
+        <p class="text-[9px] font-black uppercase tracking-[0.3em] text-stone-600 italic">
+          © 2026 AFRICA SCENERY
+        </p>
+
+        <div class="flex gap-8 text-[9px] font-black uppercase tracking-[0.3em] text-stone-600">
+          <a href="Privacy.html" class="hover:text-white transition-colors">Privacy Policy</a>
+          <a href="TermsOfService.html" class="hover:text-white transition-colors">Terms of Service</a>
+        </div>
+      </div>
+
+      <!-- Combined Payment Options & Developer Credit Row -->
+     <div class="flex flex-col items-center sm:items-start gap-3">
+  <!-- Heading -->
+  <span class="text-xs font-semibold uppercase tracking-wider text-white/60 select-none">
+    We Accept
+  </span>
+
+  <div class="flex flex-col sm:flex-row items-center gap-6 md:gap-8">
+    <!-- Payment Gateways Container -->
+    <div class="flex items-center gap-5 text-4xl select-none">
+      <!-- Visa -->
+      <i class="fa fa-cc-visa transition-transform hover:scale-115" style="color: white;" title="Visa"></i>
+      
+      <!-- Mastercard -->
+      <i class="fa fa-cc-mastercard transition-transform hover:scale-115 bg-gradient-to-r from-[#eb001b] via-[#ff5f00] to-[#f79e1b] bg-clip-text text-transparent" title="Mastercard"></i>
+
+      <!-- American Express -->
+      <i class="fa fa-cc-amex transition-transform hover:scale-115" style="color: white;" title="American Express"></i>
+      
+      <!-- Custom High-Fidelity Pesapal Logo Badge -->
+      <div class="flex items-center h-8 px-3 bg-white border border-white/20 rounded-[4px] transition-transform hover:scale-115 shadow-md" title="Pesapal">
+        <span class="text-[12px] font-black uppercase tracking-tighter" style="color: #00a79d;">pesa</span>
+        <span class="text-[12px] font-black uppercase tracking-tighter" style="color: #f7941d;">pal</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+        <!-- SYNLOTECH CREDIT -->
+        <div class="flex items-center gap-3 px-4 py-2 bg-white/5 border border-white/10 skew-x-[-10deg] group cursor-pointer hover:border-[#d4a373] transition-all">
+          <a href="https://synlotech.com" target="_blank" class="text-[8px] font-black text-stone-500 uppercase tracking-widest leading-none">Designed and Developed By 
+            <span class="text-[10px] font-black text-white uppercase tracking-tighter leading-none group-hover:text-[#d4a373] transition-colors">Synlotech Technologies</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</footer>
+
 
   
 <style>
