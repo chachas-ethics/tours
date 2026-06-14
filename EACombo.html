@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en" class="scroll-smooth">
+    
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,9 +9,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
-<body class="antialiased">
+<body class="bg-[#0d0a07] bg-[linear-gradient(rgba(13,10,7,1),rgba(13,10,7,0.9)),url('img/eacombo.avif')] bg-cover bg-center bg-no-repeat bg-fixed min-h-screen text-stone-100 antialiased selection:bg-[#d4a373] selection:text-[#0d0a07]">
 
-
+    
+  
   <!-- Navbar -->
    <nav class="fixed top-6 left-1/2 -translate-x-1/2 w-[92%] max-w-6xl z-[100] transition-[max-height,border-radius] duration-500 ease-in-out px-8 py-4 rounded-full border border-[#3d2b1f]/20 shadow-[0_20px_50px_rgba(0,0,0,0.3)] overflow-hidden" 
      id="mainNav" 
@@ -81,124 +82,86 @@
   </div>
 </nav>
 
-     <!-- Hero: Target Acquisition -->
-  <header class="relative h-[100vh] flex items-center overflow-hidden">
-    <div class="absolute inset-0 z-0">
-      <!-- Background Image -->
-      <img src="asset/EC.jpg" class="w-full h-full object-cover brightness-50" alt="Empakaai Crater Lake">
-      <div class="absolute inset-0 bg-gradient-to-b from-[#0d0a07]/60 via-transparent to-[#0d0a07]"></div>
-    </div>
-
-    <div class="relative z-10 mt-10 max-w-7xl mx-auto px-6 w-full">
-      <div class="inline-block bg-[#d4a373] text-[#0d0a07] px-4 py-5 font-black text-[10px] tracking-[0.4em] uppercase mb-6">
-        Location Briefing: Empakaai Crater
+  <!-- TOP DEPLOYMENT HEADER -->
+  <header class="pt-24 pb-12 border-b mt-20 border-stone-900/80">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="border-l-4 border-[#d4a373] pl-6">
+        <span class="text-[#d4a373] font-mono text-[10px] uppercase tracking-[0.5em] font-black block mb-2">
+          EAST AFRICA COMBO
+        </span>
+        <h1 class="text-6xl md:text-6xl font-black tracking-tighter uppercase text-white leading-none">
+          EAST AFRICA <span class="italic font-serif text-[#a68a64] lowercase tracking-normal font-normal">Packages</span>
+        </h1>
       </div>
-      <h1 class="text-7xl md:text-9xl text-white font-black uppercase tracking-tighter leading-[0.85] mb-6">
-        Emerald <br><span class="text-[#d4a373]">Abyss.</span>
-      </h1>
-      <p class="text-xl italic font-serif text-[#a68a64] max-w-xl">
-        A collapsed volcanic cone cradling a deep alkaline lake, where the silence is broken only by the sound of pink wings.
-      </p>
     </div>
   </header>
 
-  <!-- Expedition Intelligence -->
- <main class="py-24 stipple relative bg-stone-50 text-stone-700">
-  <div class="max-w-4xl mx-auto px-6">
-    
-    <!-- Deployment Stats Grid -->
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-24 border-b border-stone-200 pb-12">
-      <div>
-        <h4 class="text-[#d4a373] font-black uppercase tracking-widest text-[9px] mb-2">Crater Depth</h4>
-        <p class="text-stone-500 text-sm font-bold uppercase">300 Meters</p>
-      </div>
-      <div>
-        <h4 class="text-[#d4a373] font-black uppercase tracking-widest text-[9px] mb-2">Tactical Mode</h4>
-        <p class="text-stone-500 text-sm font-bold uppercase">Boots On Ground</p>
-      </div>
-      <div>
-        <h4 class="text-[#d4a373] font-black uppercase tracking-widest text-[9px] mb-2">Environment</h4>
-        <p class="text-stone-500 text-sm font-bold uppercase">Cloud Forest</p>
-      </div>
-      <div>
-        <h4 class="text-[#d4a373] font-black uppercase tracking-widest text-[9px] mb-2">Visual Range</h4>
-        <p class="text-stone-500 text-sm font-bold uppercase">High Visibility</p>
-      </div>
-    </div>
 
-    <!-- ADDED: 3-Column Reference Photo Grid (Aligned to Page Width) -->
-    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-24">
-      <div class="relative overflow-hidden aspect-[4/3] bg-stone-200 rounded border border-stone-200">
-        <img src="images/empakai.jpg" alt="Empakaai Caldera Deep Soda Lake" class="object-cover w-full h-full" />
-        <span class="absolute bottom-2 left-2 text-[8px] font-black uppercase tracking-widest bg-stone-900 text-white px-2 py-0.5">01. Deep Soda Lake</span>
-      </div>
-      <div class="relative overflow-hidden aspect-[4/3] bg-stone-200 rounded border border-stone-200">
-        <img src="images/moss.jpg" alt="Moss-draped Cloud Forest Descent" class="object-cover w-full h-full" />
-        <span class="absolute bottom-2 left-2 text-[8px] font-black uppercase tracking-widest bg-stone-900 text-white px-2 py-0.5">02. Cloud Forest Trail</span>
-      </div>
-      <div class="relative overflow-hidden aspect-[4/3] bg-stone-200 rounded border border-stone-200">
-        <img src="images/redflamingo.jpeg" alt="Flamingo Colonies on Crater Shore" class="object-cover w-full h-full" />
-        <span class="absolute bottom-2 left-2 text-[8px] font-black uppercase tracking-widest bg-stone-900 text-white px-2 py-0.5">03. Flamingo Basin</span>
-      </div>
-    </div>
+  <!-- ITINERARY PLANS MANIFEST GRID -->
+  <main class="max-w-7xl mx-auto px-6 py-16">
+    <div id="plans-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-    <!-- Core Intelligence -->
-    <div class="border-l-4 border-[#d4a373] pl-8 mb-16">
-      <h2 class="text-xs font-black uppercase tracking-[0.5em] text-[#d4a373] mb-4">Area Intel</h2>
-      <p class="text-3xl md:text-4xl font-medium text-stone-600 leading-tight">
-        "One of the most spectacular sights in the Ngorongoro Highlands. Half of the crater floor is covered by a deep soda lake, home to thousands of flamingos."
-      </p>
-    </div>
-
-    <!-- Two Column Layout (Original Text & Notes) -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-stone-600 text-sm leading-relaxed">
-      <div class="space-y-6">
-        <p>
-          Empakaai is a high-altitude sanctuary accessible only by foot. The mission begins at the rim, which sits at approximately 3,200 meters, offering panoramic views of Oldonyo Lengai and Lake Natron to the north. 
-        </p>
-        <p>
-          The descent into the caldera takes you through a thick, moss-draped cloud forest where blue monkeys and diverse birdlife thrive. Upon reaching the shore, the alkaline lake provides a high-contrast visual landscape where the pink of flamingos meets the deep emerald of the crater walls.
-        </p>
-      </div>
+    <!-- Plan: 12 Days (Ramesh Rajappa 2026 — Great Migration Kenya & Tanzania Combo) -->
+<div data-days="12" class="plan-card border border-stone-800 bg-black/70 group flex flex-col justify-between hover:border-[#d4a373]/50 transition-all duration-500 max-w-xl mx-auto">
+  <div>
+    <!-- Tactical Visual Framework -->
+    <div class="h-52 relative overflow-hidden border-b border-stone-900">
+      <img src="picha/flyin.webp" class="w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-105 filter brightness-[0.65] contrast-[1.1]" alt="Great Migration Crossings and Serengeti Plains">
+      <div class="absolute inset-0 bg-gradient-to-t from-[#0d0a07] via-transparent to-transparent opacity-90"></div>
       
-      <div class="space-y-6">
-        <h4 class="text-[#d4a373] font-black uppercase tracking-widest text-[10px]">Strategic Notes</h4>
-        
-        <!-- ADDED: Inline contextual image inside Column 2 -->
-        <div class="relative overflow-hidden aspect-[16/7] bg-stone-200 rounded border border-stone-200 my-4">
-          <img src="images/vista.jpeg" alt="Oldonyo Lengai Vista from Rim" class="object-cover w-full h-full" />
-          <span class="absolute bottom-2 left-2 text-[8px] font-black uppercase tracking-widest bg-stone-900 text-white px-2 py-0.5">REF_04 // Oldonyo Lengai View</span>
-        </div>
+      <!-- Top Badges Matrix -->
+      <span class="absolute top-3 left-3 font-mono text-[9px] text-[#d4a373] font-bold tracking-[0.2em] bg-[#0d0a07]/90 px-2 py-0.5 border border-stone-800/80 uppercase">
+        12 Days & 11 Nights
+      </span>
+    
+    </div>
 
-        <ul class="space-y-4 border-t border-stone-200 pt-4">
-          <li class="flex gap-4">
-            <span class="text-[#d4a373] font-bold">01</span>
-            <span>Acoustic Intel: The crater acts as a natural amphitheater; the calls of flamingos echo off the walls with startling clarity.</span>
-          </li>
-          <li class="flex gap-4">
-            <span class="text-[#d4a373] font-bold">02</span>
-            <span>Visual Sweep: On clear days, the active volcano Oldonyo Lengai is perfectly framed by the northern rim of the crater.</span>
-          </li>
-          <li class="flex gap-4">
-            <span class="text-[#d4a373] font-bold">03</span>
-            <span>Safety Protocol: Due to the steep descent and presence of buffalo on the crater floor, an armed ranger is mandatory.</span>
-          </li>
-        </ul>
+    <!-- Core Content Architecture -->
+    <div class="p-6">
+      
+
+      <h3 class="text-xl font-black text-stone-100 uppercase tracking-tight mb-2 group-hover:text-[#d4a373] transition-colors duration-300">
+        KENYA AND TANZANIA MIGRATION SAFARI
+      </h3>
+
+      <p class="text-stone-400 text-xs leading-relaxed mb-6">
+        An elite dual-nation expedition charting the legendary East African migration corridor. Seamlessly pairs Kenya's premium lodges and Mara predator theaters with Tanzania's iconic crater floors and premium Mara River crossing stations.
+      </p>
+      
+      <!-- Sector Intelligence Sub-Checklist -->
+      <div class="space-y-1.5 text-[10px] text-stone-500 border-t border-stone-900 pt-4 mb-2">
+        <!-- Kenya Segment -->
+        <div class="text-[#a68a64] font-mono text-[9px] uppercase tracking-wider mb-2 font-bold">Kenya Wilderness Block</div>
+        <div class="flex items-start gap-2"><span class="text-[#d4a373]/60">▸</span> <p><strong>D1:</strong> Arrival Nairobi — Transfer to Emara Ole Sereni Hotel</p></div>
+        <div class="flex items-start gap-2"><span class="text-[#d4a373]/60">▸</span> <p><strong>D2:</strong> Nairobi to Masai Mara — Afternoon Game Drive (Ashnil Mara)</p></div>
+        <div class="flex items-start gap-2"><span class="text-[#d4a373]/60">▸</span> <p><strong>D3:</strong> Masai Mara National Reserve — Full Day Tracking & Epic Landscapes</p></div>
+        <div class="flex items-start gap-2"><span class="text-[#d4a373]/60">▸</span> <p><strong>D4:</strong> Mara to Lake Naivasha — Boat Cruise to Crescent Island Sanctuary</p></div>
+        <div class="flex items-start gap-2"><span class="text-[#d4a373]/60">▸</span> <p><strong>D5:</strong> Naivasha to Amboseli National Park — Big Tuskers & Mountain Views</p></div>
+        
+        <!-- Tanzania Segment -->
+        <div class="text-[#a68a64] font-mono text-[9px] uppercase tracking-wider pt-2 mb-2 font-bold">Tanzania Migration Block</div>
+        <div class="flex items-start gap-2"><span class="text-[#d4a373]/60">▸</span> <p><strong>D6:</strong> Namanga Border — Serval Wildlife Leisure Day to Arusha Lodge</p></div>
+        <div class="flex items-start gap-2"><span class="text-[#d4a373]/60">▸</span> <p><strong>D7:</strong> Tarangire National Park — Full Day Elephant Paradise Safari</p></div>
+        <div class="flex items-start gap-2"><span class="text-[#d4a373]/60">▸</span> <p><strong>D8:</strong> Ngorongoro Crater Floor — Exploration of the Ancient Caldera</p></div>
+        <div class="flex items-start gap-2"><span class="text-[#d4a373]/60">▸</span> <p><strong>D9:</strong> Central Serengeti Endless Plains — Big 5 Tracking & Mega Herds</p></div>
+        <div class="flex items-start gap-2"><span class="text-[#d4a373]/60">▸</span> <p><strong>D10:</strong> Northern Serengeti — Mara River Crossing Camps & Bush Picnic</p></div>
+        <div class="flex items-start gap-2"><span class="text-[#d4a373]/60">▸</span> <p><strong>D11:</strong> Northern Serengeti — Advanced Tracking Matrix & Predator Fields</p></div>
+        <div class="flex items-start gap-2"><span class="text-[#d4a373]/60">▸</span> <p><strong>D12:</strong> Kogatende Airstrip Flight out to JRO International Departure</p></div>
+
+       
       </div>
     </div>
   </div>
-</main>
 
-
-  <!-- CTA Footer -->
-  <footer class="py-24 bg-[#14110e] border-t border-white/5 text-center">
-    <div class="max-w-2xl mx-auto px-6">
-      <h3 class="text-4xl font-black uppercase mb-8 italic">Ready to deploy?</h3>
-      <a href="#" class="inline-block bg-[#d4a373] text-[#0d0a07] font-black px-12 py-6 text-[10px] font-mono uppercase tracking-[0.3em] hover:bg-white transition-all duration-300">
-        Request Expedition Dates
+  <!-- Command Output Footer Element -->
+  <div class="p-6 pt-0">
+    <div class="flex justify-center w-full">
+       <a href="KE&TZ.html" class="w-full py-3 bg-stone-950 border border-stone-800 hover:border-[#d4a373] hover:bg-[#d4a373] text-stone-300 hover:text-[#0d0a07] font-mono text-[10px] uppercase font-bold tracking-widest text-center block transition-all">
+        Explore Package →
       </a>
     </div>
-  </footer>
+  </div>
+</div>
 
 
 <style>
@@ -208,18 +171,8 @@
   }
 </style>
 
-
-  <script>
-    window.addEventListener('load', () => {
-    const loader = document.getElementById('page-loader');
-    
-    // Optional: Add a tiny delay so the transition feels more intentional
-    setTimeout(() => {
-        loader.classList.add('fade-out');
-    }, 100); 
-});
-
-
+ <script>
+  
     const menuBtn = document.getElementById('menuBtn');
     const nav = document.getElementById('mainNav');
     const line1 = document.getElementById('line1');
@@ -268,13 +221,9 @@
       });
     });
 
-     
+    
 /* ios hover */
  document.addEventListener("touchstart", function() {}, true);
-
-  </script>
-
-  
-</body>
-</html>
-
+    </script>
+    </body>
+    </html>

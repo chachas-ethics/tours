@@ -6,23 +6,24 @@
   <title>Tours & Safaris</title>
   <script src="https://cdn.tailwindcss.com"></script>
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></head>
-<body class="bg-white text-gray-900">
+<body class="bg-white text-gray-900" id="home">
 
   <!-- Navbar -->
    <nav class="fixed top-6 left-1/2 -translate-x-1/2 w-[92%] max-w-6xl z-[100] transition-[max-height,border-radius] duration-500 ease-in-out px-8 py-4 rounded-full border border-[#3d2b1f]/20 shadow-[0_20px_50px_rgba(0,0,0,0.3)] overflow-hidden" 
      id="mainNav" 
-     style="background: linear-gradient(180deg, #2d1e14 0%, #1a120b 100%); max-height: 76px;">
+     style="background: linear-gradient(180deg, #2d1e14 0%, #1a120b 100%); max-height: 76px;"
+     aria-label="Main navigation">
   
   <!-- Subtle Wood Texture Overlay -->
   <div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: url('https://transparenttextures.com');"></div>
 
   <div class="flex justify-between items-center relative z-10">
     <!-- Logo -->
-<a href="index.html#home" class="inline-flex items-center space-x-3 group/logo cursor-pointer">
+<a href="#home" class="inline-flex items-center space-x-3 group/logo cursor-pointer" aria-label="Africa Scenery Discovery - Home">
   <div class="relative w-10 h-10 bg-transparent rounded-full flex items-center justify-center overflow-hidden transition-transform duration-500 group-hover/logo:rotate-[360deg]">
-    <img src="assets/AFRICA SCENERY LOG2.jpeg" alt="Logo" class="w-full h-full object-cover">
+    <img src="assets/AFRICA SCENERY LOG2.jpeg" alt="Africa Scenery Discovery Logo" class="w-full h-full object-cover">
   </div>
-  <span class="text-sm font-bold tracking-widest text-[#d4a373] uppercase">
+  <span class="text-xs font-bold tracking-widest text-[#d4a373] uppercase">
     AFRICA SCENERY DISCOVERY
   </span>
 </a>
@@ -40,7 +41,7 @@
     </div>
 
     <!-- CTA --><div class="hidden md:block">
-  <a href="https://wa.me/255788296274?text=Hello%2C%20I%27m%20interested%20in%20planning%20a%20safari.%20Could%20you%20share%20available%20packages%2C%20pricing%2C%20and%20the%20best%20travel%20dates%3F" 
+  <a href="https://wa.me/255724196842?text=Hello%2C%20I%27m%20interested%20in%20planning%20a%20safari.%20Could%20you%20share%20available%20packages%2C%20pricing%2C%20and%20the%20best%20travel%20dates%3F" 
      target="_blank" 
      rel="noopener noreferrer"
      class="inline-block">
@@ -52,7 +53,7 @@
 
 
     <!-- Animated Hamburger Button -->
-    <button id="menuBtn" class="md:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1.5 z-50 focus:outline-none">
+    <button id="menuBtn" class="md:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1.5 z-50 focus:outline-none" aria-label="Toggle navigation menu" aria-expanded="false">
        <span id="line1" class="block w-6 h-0.5 bg-[#d4a373] transition-all duration-300 origin-center"></span>
        <span id="line2" class="block w-6 h-0.5 bg-[#d4a373] transition-all duration-300"></span>
        <span id="line3" class="block w-6 h-0.5 bg-[#d4a373] transition-all duration-300 origin-center"></span>
@@ -67,7 +68,7 @@
       <a href="index.html#packages" class="mobile-link hover:text-[#d4a373] transition-colors">Packages</a>
       <a href="index.html#gallery" class="mobile-link hover:text-[#d4a373] transition-colors">Gallery</a>
       <a href="index.html#reviews" class="mobile-link hover:text-[#d4a373] transition-colors">Reviews</a>
-      <a href="https://wa.me/255788296274?text=Hello%2C%20I%27m%20interested%20in%20planning%20a%20safari.%20Could%20you%20share%20available%20packages%2C%20pricing%2C%20and%20the%20best%20travel%20dates%3F" 
+      <a href="https://wa.me/255724196842?text=Hello%2C%20I%27m%20interested%20in%20planning%20a%20safari.%20Could%20you%20share%20available%20packages%2C%20pricing%2C%20and%20the%20best%20travel%20dates%3F" 
    target="_blank" 
    rel="noopener noreferrer"
    class="mobile-link bg-[#d4a373] text-black py-4 uppercase rounded-2xl mx-4">
@@ -77,32 +78,14 @@
 </nav>
 
 
+<!-- Hero Section: The "Elite Safari" Edition --><section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#0d0a07]">
 
-<!-- Hero Section: The "Elite Safari" Edition -->
-<section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#0d0a07]">
-
-  <!-- Background Layer with Sliding/Fading Images -->
+  <!-- Background Layer with a Single Static Image -->
   <div class="absolute inset-0 z-0">
-    
-   <!-- Image 1 -->
-<img 
-  src="pctrs/hero2.jpeg" 
-  class="absolute inset-0 w-full h-full object-cover scale-110 object-[15%_left] md:object-center animate-[safari-slide_15s_infinite] brightness-[0.4] contrast-[1.3]" 
-  alt="African Bush 1"
-/>
-
-    <!-- Image 2 (Delayed by 5 seconds) -->
     <img 
-      src="pctrs/hero3.jpeg" 
-      class="absolute inset-0 w-full h-full object-cover scale-110 opacity-0 animate-[safari-slide_15s_infinite_5s] brightness-[0.4] contrast-[1.3]" 
-      alt="African Bush 2"
-    />
-    
-    <!-- Image 3 (Delayed by 10 seconds) -->
-    <img 
-      src="pctrs/hero1.jpeg" 
-      class="absolute inset-0 w-full h-full object-cover scale-110 opacity-0 animate-[safari-slide_15s_infinite_10s] brightness-[0.4] contrast-[1.3]" 
-      alt="African Bush 3"
+      src="assets/herolion.jpeg" 
+      class="absolute inset-0 w-full h-full object-cover brightness-[0.7] contrast-[1.2] md:object-center" 
+      alt="African Bush"
     />
 
     <!-- Topographic Map Overlay (Senior Dev Flex) -->
@@ -110,28 +93,21 @@
     <div class="absolute inset-0 bg-gradient-to-t from-[#0d0a07] via-transparent to-[#0d0a07]/80"></div>
   </div>
 
-  <!-- Decorative "Field Data" Elements -->
- <div class="absolute top-40 left-10 hidden lg:block z-20 text-[#d4a373]/30 font-mono text-[10px] space-y-2 uppercase tracking-[0.3em] rotate-90 origin-left">
-    <p>Lat: 3.3731° S</p>
-    <p>Long: 36.6860° E</p>
-</div>
-
-
   <!-- Main Content Container -->
   <div class="relative z-10 max-w-6xl px-6 pt-32 pb-40 text-center">
     
     <!-- Adventure Badge: Rugged & Off-Center -->
     <div class="inline-block relative mb-10 transform">
-      <span class="px-6 py-2 text-[11px] font-black uppercase tracking-[0.5em] text-[#0d0a07] bg-[#d4a373] shadow-[8px_8px_0px_#3d2b1f]">
+      <span class="px-4 py-2 text-[11px] font-black uppercase tracking-[0.5em] text-[#0d0a07] bg-[#d4a373] shadow-[8px_8px_0px_#3d2b1f]">
         ACTIVATE YOUR SAFARI!
       </span>
     </div>
 
     <!-- Main Title: Breaking the Grid -->
-    <h1 class="relative text-6xl md:text-[11rem] font-black leading-[0.75] text-stone-100 tracking-[0.02em] uppercase">
-      infiltrate the <br/>
-      <span class="relative inline-block text-[#a68a64] italic font-serif lowercase tracking-normal -mt-4">
-        wild
+    <h1 class="relative text-6xl md:text-[11rem] font-black leading-[1] text-stone-100 tracking-[0.02em] uppercase">
+      navigate the <br/>
+      <span class="relative inline-block text-[#a68a64] italic font-serif lowercase tracking-normal mt-4">
+        UNCHARTED
         <!-- Scribble Underline -->
         <svg class="absolute -bottom-4 left-0 w-full h-4 text-[#d4a373]/40" viewBox="0 0 100 10" preserveAspectRatio="none">
           <path d="M0 5 Q 25 0, 50 5 T 100 5" fill="none" stroke="currentColor" stroke-width="2" />
@@ -139,14 +115,13 @@
       </span>
     </h1>
 
-    <p class="mt-10 mx-auto max-w-lg text-lg text-stone-300 font-medium tracking-wide leading-relaxed border-l-2 border-[#d4a373]/20 pl-6 italic">
+    <p class="mt-10 pt-10 mx-auto max-w-lg text-lg text-stone-300 font-medium tracking-wide leading-relaxed border-l-2 border-[#d4a373]/20 pl-6 italic">
       "The wild doesn't speak, but to those who listen, it tells every secret." 
-      <span class="block mt-2 not-italic text-[10px] uppercase text-[#d4a373] tracking-widest font-black">Paul — Lead Tour Guide</span>
-    </p>
+      </p>
 
     <!-- Action Center: Heavy Duty Buttons -->
     <div class="mt-16 flex flex-col sm:flex-row items-center justify-center gap-8">
-      <a href="#contact"  class="group relative px-14 py-6 bg-[#d4a373] text-[#0d0a07] font-black uppercase text-[11px] tracking-[0.4em] transition-all hover:bg-white hover:shadow-[0_0_30px_rgba(212,163,115,0.4)] overflow-hidden">
+      <a href="#contact" class="group relative px-14 py-6 bg-[#d4a373] text-[#0d0a07] font-black uppercase text-[11px] tracking-[0.4em] transition-all hover:bg-white hover:shadow-[0_0_30px_rgba(212,163,115,0.4)] overflow-hidden">
         <span class="relative z-10">Initiate Journey</span>
         <!-- Button Texture Overlay -->
         <div class="absolute inset-0 bg-[url('https://transparenttextures.com')] opacity-40"></div>
@@ -179,6 +154,7 @@
 </section>
 
 
+
 <!-- Featured Destinations: East Africa Gateways -->
 <section id="destinations" class="py-32 bg-[#0d0a07] relative overflow-hidden">
   
@@ -190,8 +166,8 @@
     <!-- Section Header -->
    <div class="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8 border-l-4 border-[#d4a373] pl-8">
   <div class="max-w-3xl">
-    <span class="text-[#d4a373] font-mono text-[10px] uppercase tracking-[0.5em] font-black">our Current Deployment</span>
-    <h2 class="text-4xl md:text-5xl font-black tracking-tighter text-stone-100 mt-2 uppercase leading-[0.8]">
+    <span class="text-[#d4a373] text-[10px] uppercase tracking-[0.5em] font-black">our Destinations</span>
+    <h2 class="text-6xl md:text-5xl font-black tracking-tighter text-stone-100 mt-2 uppercase leading-[0.8]">
       Discover Our <br/>
       <span class="text-5xl md:text-9xl text-transparent bg-clip-text bg-gradient-to-r from-[#d4a373] to-[#a68a64]">Destinations</span>
     </h2>
@@ -205,7 +181,7 @@
       <!-- Tanzania Sector -->
       <div class="group relative bg-[#1a120b] border border-white/5 overflow-hidden transition-all duration-500 hover:border-[#d4a373]/50">
         <div class="relative h-[550px] overflow-hidden">
-          <img src="assets/kili.webp" class="w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-110 brightness-75 contrast-110" alt="Tanzania">
+          <img src="assets/kili.webp" class="w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-110 brightness-75 contrast-150" alt="Tanzania">
           <div class="absolute inset-0 bg-gradient-to-t from-[#1a120b] via-transparent to-transparent opacity-90"></div>
           
           <!-- Sector Label -->
@@ -230,7 +206,7 @@
       <!-- Kenya Sector -->
       <div class="group relative bg-[#1a120b] border border-white/5 overflow-hidden transition-all duration-500 hover:border-[#d4a373]/50 md:mt-12">
         <div class="relative h-[550px] overflow-hidden">
-          <img src="assets/maasai mara.jpg" class="w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-110 brightness-75 contrast-110" alt="Kenya">
+          <img src="assets/herolion.jpeg" class="w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-110 brightness-75 contrast-125" alt="Kenya">
           <div class="absolute inset-0 bg-gradient-to-t from-[#1a120b] via-transparent to-transparent opacity-90"></div>
           <div class="absolute top-0 right-0 bg-[#d4a373] text-[#0d0a07] px-6 py-2 font-black text-xs tracking-widest origin-top-right mr-4 mt-4 shadow-xl">
             ZONE 02
@@ -250,7 +226,7 @@
        <!-- Uganda Sector -->
       <div class="group relative bg-[#1a120b] border border-white/5 overflow-hidden transition-all duration-500 hover:border-[#d4a373]/50">
         <div class="relative h-[550px] overflow-hidden">
-          <img src="assets/bwindi.jpg" class="w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-110 brightness-75 contrast-110" alt="Uganda">
+          <img src="picha/Gphoto.jpg" class="w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-110 brightness-75 contrast-125" alt="Uganda">
           <div class="absolute inset-0 bg-gradient-to-t from-[#1a120b] via-transparent to-transparent opacity-90"></div>
           <div class="absolute top-0 right-0 bg-[#d4a373] text-[#0d0a07] px-6 py-2 font-black text-xs tracking-widest origin-top-right mr-4 mt-4 shadow-xl">
             ZONE 03
@@ -283,10 +259,10 @@
     <div class="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8 border-l-4 border-[#d4a373] pl-6 md:pl-8">
       <div class="max-w-4xl">
         <span class="text-[#d4a373] font-mono text-[10px] uppercase tracking-[0.5em] font-black block mb-2">
-          Expedition Manifest
+          AFRICA SCENERY PACKAGES
         </span>
         <h2 class="font-black tracking-tighter text-stone-100 uppercase leading-none md:leading-[0.8]">
-          <span class="text-4xl md:text-7xl block">Expedition</span>
+          <span class="text-6xl md:text-7xl block">Expedition</span>
           <span class="text-[12vw] sm:text-7xl md:text-[8rem] lg:text-9xl text-transparent bg-clip-text bg-gradient-to-r from-[#d4a373] to-[#a68a64] block mt-2 md:mt-0">
             Packages
           </span>
@@ -300,7 +276,7 @@
       <!-- Tanzania Package (Span 3 cols, Row 1) -->
       <div class="md:col-span-3 group relative bg-[#1a120b] border border-white/5 overflow-hidden transition-all duration-500 hover:border-[#d4a373]/50">
         <div class="relative h-[400px] md:h-full overflow-hidden">
-          <img src="assets/nc.jpg" class="w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-110 brightness-50 contrast-125" alt="Tanzania">
+          <img src="pctrs/twigs.jpeg" class="w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-110 brightness-75 contrast-150" alt="Tanzania">
           <div class="absolute inset-0 bg-gradient-to-t from-[#1a120b] via-transparent to-transparent opacity-90"></div>
         </div>
         <div class="absolute bottom-0 w-full p-8">
@@ -312,7 +288,7 @@
       <!-- Kenya Package (Span 3 cols, Row 1) -->
       <div class="md:col-span-3 group relative bg-[#1a120b] border border-white/5 overflow-hidden transition-all duration-500 hover:border-[#d4a373]/50">
         <div class="relative h-[400px] md:h-full overflow-hidden">
-          <img src="assets/masai lion.avif" class="w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-110 brightness-50 contrast-125" alt="Kenya">
+          <img src="pctrs/scar.jpeg" class="w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-110 brightness-75 contrast-150" alt="Kenya">
           <div class="absolute inset-0 bg-gradient-to-t from-[#1a120b] via-transparent to-transparent opacity-90"></div>
         </div>
         <div class="absolute bottom-0 w-full p-8">
@@ -324,11 +300,11 @@
       <!-- Uganda Package (Span 2 cols, Row 2) -->
       <div class="md:col-span-2 group relative bg-[#1a120b] border border-white/5 overflow-hidden transition-all duration-500 hover:border-[#d4a373]/50">
         <div class="relative h-[400px] md:h-full overflow-hidden">
-          <img src="assets/murchison.jpg" class="w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-110 brightness-50 contrast-125" alt="Uganda">
+          <img src="picha/luxury.avif" class="w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-110 brightness-75 contrast-125" alt="Uganda">
           <div class="absolute inset-0 bg-gradient-to-t from-[#1a120b] via-transparent to-transparent opacity-90"></div>
         </div>
         <div class="absolute bottom-0 w-full p-6">
-          <h3 class="text-2xl font-black text-white tracking-tighter uppercase mb-4">Uganda Packages</h3>
+          <h3 class="text-4xl font-black text-white tracking-tighter uppercase mb-4">Uganda Packages</h3>
           <a href="PackagesUG.html" class="px-8 py-3 border border-[#d4a373]/30 text-[#d4a373] font-black uppercase text-[10px] tracking-[0.4em] transition-all hover:bg-[#d4a373] hover:text-[#0d0a07]">View Packages →</a>
         </div>
       </div>
@@ -337,7 +313,7 @@
       <div class="md:col-span-4 group relative bg-[#1a120b] border-2 border-[#d4a373]/20 overflow-hidden transition-all duration-500 hover:border-[#d4a373]">
         <div class="relative h-[450px] md:h-full overflow-hidden">
           <!-- Suggest using a wide landscape image here -->
-          <img src="assets/balloon.jpg" class="w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-105 brightness-[0.4] saturate-50" alt="East Africa Combo">
+          <img src="pctrs/hero1.jpeg" class="w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-105 brightness-[0.5]" alt="East Africa Combo">
           <div class="absolute inset-0 bg-gradient-to-r from-[#0d0a07] via-transparent to-transparent opacity-80"></div>
         </div>
         
@@ -372,7 +348,7 @@
     <!-- Left: Visual Storytelling -->
     <div class="relative group">
       <div class="aspect-[4/5] overflow-hidden border border-white/10 shadow-2xl">
-        <img src="assets/Screenshot 2026-04-27 030329.png" alt="Safari Experience" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+        <img src="pctrs/hero3.jpeg" alt="Safari Experience" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
       </div>
       <!-- Floating "Est." Badge -->
       <div class="absolute -bottom-6 -right-6 bg-[#d4a373] p-8 text-[#1a120b] shadow-xl">
@@ -385,8 +361,8 @@
     <div class="space-y-8">
       <div class="space-y-4">
         <span class="text-[#d4a373] font-mono text-sm tracking-[0.4em] uppercase font-bold">Our Philosophy</span>
-        <h2 class="text-5xl md:text-6xl font-black text-stone-100 uppercase tracking-tighter leading-tight">
-          Beyond the <br/> <span class="italic font-serif text-[#a68a64] lowercase">Horizon Line</span>
+        <h2 class="text-7xl md:text-8xl font-black text-stone-100 uppercase tracking-tighter leading-tight">
+          Beyond the <br/> <span class="italic font-serif text-[#a68a64] lowercase">Horizon</span>
         </h2>
       </div>
 
@@ -420,7 +396,7 @@
 
 
 <!-- Social Proof Section -->
-<section id="reviews" class="py-32 bg-[#0d0a07] relative overflow-hidden">
+ <section id="reviews" class="py-32 bg-[#0d0a07] relative overflow-hidden">
   
   <!-- Massive Background Watermark (Senior Dev Flex) -->
   <div class="absolute top-10 right-20 text-[25rem] font-black text-white/10 select-none leading-none -z-0 translate-x-20 -translate-y-20 italic">
@@ -433,30 +409,39 @@
     <div class="flex flex-col md:flex-row items-end justify-between mb-24 border-l-8 border-[#d4a373] pl-10 gap-8">
       <div class="max-w-xl">
         <span class="text-[#d4a373] font-mono text-[10px] uppercase tracking-[0.5em] font-black">Client Feedback</span>
-        <h2 class="text-5xl md:text-8xl font-black tracking-tighter text-stone-100 uppercase leading-[0.85] mt-4">
+        <h2 class="text-7xl md:text-8xl font-black tracking-tighter text-stone-100 uppercase leading-[0.85] mt-4">
           Voices of <br/> <span class="italic font-serif text-[#a68a64] lowercase tracking-normal">The Wild</span>
         </h2>
       </div>
-      <div class="flex items-center gap-6 pb-4 bg-white/5 p-6 border border-white/10 rounded-sm skew-x-[-6deg]">
       
-        <div class="font-black">
-          <p class="text-2xl text-stone-100 tracking-tighter italic">4.9 / 5.0</p>
-           </div>
+     
+        
+        <!-- Manual Slider Navigation Buttons -->
+        <div class="flex gap-2">
+          <button onclick="document.getElementById('review-track').scrollBy({left: -360, behavior: 'smooth'})" class="p-5 border border-white/10 bg-[#1a120b] text-[#d4a373] hover:bg-[#d4a373] hover:text-[#0d0a07] transition-all duration-300 active:scale-95">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M15 19l-7-7 7-7" stroke-width="2.5"/></svg>
+          </button>
+          <button onclick="document.getElementById('review-track').scrollBy({left: 360, behavior: 'smooth'})" class="p-5 border border-white/10 bg-[#1a120b] text-[#d4a373] hover:bg-[#d4a373] hover:text-[#0d0a07] transition-all duration-300 active:scale-95">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" stroke-width="2.5"/></svg>
+          </button>
+        </div>
       </div>
     </div>
 
-    <!-- Staggered Grid: The "Obsidian" Reports -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <!-- Sliding Flex Container: Clean Track with Scroll-Snap -->
+    <div id="review-track" class="flex gap-8 overflow-x-auto snap-x snap-mandatory scroll-smooth no-scrollbar pb-12">
 
       <!-- Review 1: Slate Texture -->
-      <div class="relative group">
-        <div class="bg-[#1a120b] p-10 border border-white/10 transition-all duration-500 group-hover:border-[#d4a373]/50 group-hover:-translate-y-4 shadow-2xl">
-          <div class="flex gap-1 text-[#d4a373] mb-8 font-black text-xs">
-            ||||| <span class="ml-2 text-[10px] uppercase tracking-widest text-stone-500 italic">Excellent</span>
+      <div class="w-full sm:w-[450px] md:w-[400px] flex-shrink-0 snap-start relative group">
+        <div class="bg-[#1a120b] p-10 h-full border border-white/10 transition-all duration-500 group-hover:border-[#d4a373]/50 group-hover:-translate-y-4  flex flex-col justify-between">
+          <div>
+            <div class="flex gap-1 text-[#d4a373] mb-8 font-black text-xs">
+              ||||| <span class="ml-2 text-[10px] uppercase tracking-widest text-stone-500 italic">Excellent</span>
+            </div>
+            <p class="text-xl font-medium leading-relaxed text-stone-200 italic font-serif">
+              “Everything was perfectly organized. The Serengeti safari exceeded our expectations in every way imaginable. A true deep-bush experience.”
+            </p>
           </div>
-          <p class="text-xl font-medium leading-relaxed text-stone-200 italic font-serif">
-            “Everything was perfectly organized. The Serengeti safari exceeded our expectations in every way imaginable. A true deep-bush experience.”
-          </p>
           <div class="mt-10 pt-10 border-t border-white/5 flex items-center gap-5">
             <img src="assets/D. Nyangi.jpg" class="w-16 h-16 rounded-full object-cover sepia-[0.4] contrast-125 group-hover:sepia-0 transition-all duration-700" alt="Client" />
             <div>
@@ -467,15 +452,17 @@
         </div>
       </div>
 
-      <!-- Review 2: Dark Staggered Center -->
-      <div class="relative group md:mt-12">
-        <div class="bg-[#d4a373] p-10 border border-black/10 transition-all duration-500 group-hover:-translate-y-4 shadow-[0_30px_60px_rgba(212,163,115,0.2)]">
-          <div class="flex gap-1 text-[#1a120b] mb-8 font-black text-xs">
-            ||||| <span class="ml-2 text-[10px] uppercase tracking-widest text-[#1a120b]/60 italic">Top Tier</span>
+      <!-- Review 2: Dark Staggered Center Layout Accent -->
+      <div class="w-full sm:w-[450px] md:w-[400px] flex-shrink-0 snap-start relative group">
+        <div class="bg-[#d4a373] p-10 h-full border border-black/10 transition-all duration-500 group-hover:-translate-y-4 flex flex-col justify-between">
+          <div>
+            <div class="flex gap-1 text-[#1a120b] mb-8 font-black text-xs">
+              ||||| <span class="ml-2 text-[10px] uppercase tracking-widest text-[#1a120b]/60 italic">Top Tier</span>
+            </div>
+            <p class="text-xl font-black leading-relaxed text-[#1a120b] italic font-serif">
+              “Professional guides and unforgettable views. Worth every dollar. We’ve already booked our return trip for the next migration.”
+            </p>
           </div>
-          <p class="text-xl font-black leading-relaxed text-[#1a120b] italic font-serif">
-            “Professional guides and unforgettable views. Worth every dollar. We’ve already booked our return trip for the next migration.”
-          </p>
           <div class="mt-10 pt-10 border-t border-black/10 flex items-center gap-5">
             <img src="assets/CEO.jpeg" class="w-16 h-16 rounded-full object-cover brightness-75 contrast-125" alt="Client" />
             <div>
@@ -487,14 +474,16 @@
       </div>
 
       <!-- Review 3: Slate Texture -->
-      <div class="relative group">
-        <div class="bg-[#1a120b] p-10 border border-white/10 transition-all duration-500 group-hover:border-[#d4a373]/50 group-hover:-translate-y-4 shadow-2xl">
-          <div class="flex gap-1 text-[#d4a373] mb-8 font-black text-xs">
-            ||||| <span class="ml-2 text-[10px] uppercase tracking-widest text-stone-500 italic">Verified</span>
+      <div class="w-full sm:w-[450px] md:w-[400px] flex-shrink-0 snap-start relative group">
+        <div class="bg-[#1a120b] p-10 h-full border border-white/10 transition-all duration-500 group-hover:border-[#d4a373]/50 group-hover:-translate-y-4 flex flex-col justify-between">
+          <div>
+            <div class="flex gap-1 text-[#d4a373] mb-8 font-black text-xs">
+              ||||| <span class="ml-2 text-[10px] uppercase tracking-widest text-stone-500 italic">Verified</span>
+            </div>
+            <p class="text-xl font-medium leading-relaxed text-stone-200 italic font-serif">
+              “Zanzibar was magical. Smooth planning and excellent support throughout. Highly recommend the tactical precision of Africa Scenery Discovery.”
+            </p>
           </div>
-          <p class="text-xl font-medium leading-relaxed text-stone-200 italic font-serif">
-            “Zanzibar was magical. Smooth planning and excellent support throughout. Highly recommend the tactical precision of SafariLux.”
-          </p>
           <div class="mt-10 pt-10 border-t border-white/5 flex items-center gap-5">
             <img src="assets/nayna.jpg" class="w-16 h-16 rounded-full object-cover sepia-[0.4] contrast-125 group-hover:sepia-0 transition-all duration-700" alt="Client" />
             <div>
@@ -505,9 +494,76 @@
         </div>
       </div>
 
+      <!-- Review 2: Dark Staggered Center Layout Accent -->
+      <div class="w-full sm:w-[450px] md:w-[400px] flex-shrink-0 snap-start relative group">
+        <div class="bg-[#d4a373] p-10 h-full border border-black/10 transition-all duration-500 group-hover:-translate-y-4 flex flex-col justify-between">
+          <div>
+            <div class="flex gap-1 text-[#1a120b] mb-8 font-black text-xs">
+              ||||| <span class="ml-2 text-[10px] uppercase tracking-widest text-[#1a120b]/60 italic">Top Tier</span>
+            </div>
+            <p class="text-xl font-black leading-relaxed text-[#1a120b] italic font-serif">
+              “An absolute masterpiece of an experience. The attention to detail and seamless service exceeded all of our expectations.”
+            </p>
+          </div>
+          <div class="mt-10 pt-10 border-t border-black/10 flex items-center gap-5">
+            <img src="pctrs/georgeandrew.jpg" class="w-16 h-16 rounded-full object-cover brightness-75 contrast-125" alt="Client" />
+            <div>
+              <p class="font-black text-[#1a120b] text-sm tracking-widest uppercase">George Andrew </p>
+              <p class="text-[10px] text-[#1a120b]/70 font-black uppercase tracking-widest italic">Johannesburg. S.A. Mar 2026</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+     <!-- Review 3: Slate Texture -->
+      <div class="w-full sm:w-[450px] md:w-[400px] flex-shrink-0 snap-start relative group">
+        <div class="bg-[#1a120b] p-10 h-full border border-white/10 transition-all duration-500 group-hover:border-[#d4a373]/50 group-hover:-translate-y-4 flex flex-col justify-between">
+          <div>
+            <div class="flex gap-1 text-[#d4a373] mb-8 font-black text-xs">
+              ||||| <span class="ml-2 text-[10px] uppercase tracking-widest text-stone-500 italic">Verified</span>
+            </div>
+            <p class="text-xl font-medium leading-relaxed text-stone-200 italic font-serif">
+              “Every moment felt perfectly curated. The execution was flawless, the coordination was prompt, and the experience left us entirely breathless.”
+            </p>
+          </div>
+          <div class="mt-10 pt-10 border-t border-white/5 flex items-center gap-5">
+            <img src="pctrs/marinafredd.webp" class="w-16 h-16 rounded-full object-cover sepia-[0.4] contrast-125 group-hover:sepia-0 transition-all duration-700" alt="Client" />
+            <div>
+              <p class="font-black text-stone-100 text-sm tracking-widest uppercase">Marina Fredd</p>
+              <p class="text-[10px] text-[#d4a373] font-black uppercase tracking-widest italic">Milan, Italy. Oct 2023</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Review 2: Dark Staggered Center Layout Accent -->
+      <div class="w-full sm:w-[450px] md:w-[400px] flex-shrink-0 snap-start relative group">
+        <div class="bg-[#d4a373] p-10 h-full border border-black/10 transition-all duration-500 group-hover:-translate-y-4 flex flex-col justify-between">
+          <div>
+            <div class="flex gap-1 text-[#1a120b] mb-8 font-black text-xs">
+              ||||| <span class="ml-2 text-[10px] uppercase tracking-widest text-[#1a120b]/60 italic">Top Tier</span>
+            </div>
+            <p class="text-xl font-black leading-relaxed text-[#1a120b] italic font-serif">
+              “An incredibly immersive journey from start to finish. The seamless hospitality and expert guidance transformed this into a truly elite travel experience.”
+            </p>
+          </div>
+          <div class="mt-10 pt-10 border-t border-black/10 flex items-center gap-5">
+            <img src="pctrs/loudicky.avif" class="w-16 h-16 rounded-full object-cover brightness-75 contrast-125" alt="Client" />
+            <div>
+              <p class="font-black text-[#1a120b] text-sm tracking-widest uppercase">Dickson Lou</p>
+              <p class="text-[10px] text-[#1a120b]/70 font-black uppercase tracking-widest italic">Auckland, NZ. Sep 2021</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
     </div>
   </div>
 </section>
+
 
 <!-- How It Works Section -->
 <section id="how-it-works" class="py-32 bg-[#0d0a07] relative overflow-hidden">
@@ -517,7 +573,7 @@
     <!-- Header: The Iron Command -->
     <div class="max-w-2xl mb-24 border-l-8 border-[#d4a373] pl-10">
       <span class="text-[#d4a373] font-mono text-[10px] uppercase tracking-[0.5em] font-black">The Flow</span>
-      <h2 class="text-5xl md:text-8xl font-black tracking-tighter text-stone-100 uppercase leading-[0.85] mt-4">
+      <h2 class="text-6xl md:text-8xl font-black tracking-tighter text-stone-100 uppercase leading-[0.85] mt-4">
         The <span class="italic font-serif text-[#a68a64] lowercase tracking-normal">Explorer's</span> Path
       </h2>
     </div>
@@ -541,7 +597,7 @@
           <div class="w-16 h-16 bg-[#d4a373] text-[#0d0a07] rounded-none flex items-center justify-center mb-8 transform -rotate-3 group-hover:rotate-0 transition-transform">
             <svg xmlns="http://w3.org" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /></svg>
           </div>
-          <h3 class="text-3xl font-black text-white tracking-tighter uppercase leading-none mb-4">Target <br/> Selection</h3>
+          <h3 class="text-3xl font-black text-white tracking-tighter hover:text-[#d4a373] uppercase leading-none mb-4">Target <br/> Selection</h3>
           <p class="mt-4 text-stone-400 text-sm leading-relaxed font-medium">
             Identify your sector. We map out exclusive private reserves and high-density wildlife zones.
           </p>
@@ -559,7 +615,7 @@
           <div class="w-16 h-16 bg-[#d4a373] text-[#0d0a07] rounded-none flex items-center justify-center mb-8 transform rotate-3 group-hover:rotate-0 transition-transform">
             <svg xmlns="http://w3.org" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" /></svg>
           </div>
-          <h3 class="text-3xl font-black text-white tracking-tighter uppercase leading-none mb-4">Expedition <br/> Design</h3>
+          <h3 class="text-3xl font-black text-white tracking-tighter hover:text-[#d4a373] uppercase leading-none mb-4">Expedition <br/> Design</h3>
           <p class="mt-4 text-stone-400 text-sm leading-relaxed font-medium">
             No templates. We calibrate every kilometer to match the pace of your personal ambition.
           </p>
@@ -577,7 +633,7 @@
           <div class="w-16 h-16 bg-[#d4a373] text-[#0d0a07] rounded-none flex items-center justify-center mb-8 transform -rotate-6 group-hover:rotate-0 transition-transform">
             <svg xmlns="http://w3.org" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M5 13l4 4L19 7" /></svg>
           </div>
-          <h3 class="text-3xl font-black text-white tracking-tighter uppercase leading-none mb-4">Live <br/> Extraction</h3>
+          <h3 class="text-3xl font-black text-white tracking-tighter hover:text-[#d4a373] uppercase leading-none mb-4">Live <br/> Extraction</h3>
           <p class="mt-4 text-stone-400 text-sm leading-relaxed font-medium">
             Full-spectrum logistics. You engage the wild while our elite teams manage the friction.
           </p>
@@ -603,15 +659,15 @@
       
       <div class="border-l-8 border-[#d4a373] pl-10">
         <span class="text-[#d4a373] font-mono text-[10px] uppercase tracking-[0.5em] font-black">Bookings & Contact</span>
-        <h2 class="text-5xl md:text-8xl font-black tracking-tighter text-white mt-4 uppercase leading-[0.85]">
+        <h2 class="text-7xl md:text-8xl font-black tracking-tighter text-white mt-4 uppercase leading-[0.85]">
           Initiate <br/> <span class="italic font-serif text-[#a68a64] lowercase tracking-normal">Journey!</span>
         </h2>
         <p class="mt-8 text-stone-400 text-lg max-w-md leading-relaxed font-medium">
-          The tour guides are ready to help. Fill and submit the form below and our team will get back to you within 12 hours.
+          The tour guides are ready to help. Fill and submit the form below and our team will get back to you as soon as possible.
         </p>
 
         <div class="mt-12">
-          <a href="https://wa.me/255724196842" class="inline-flex items-center gap-6 group bg-white/5 border border-white/10 p-6 hover:bg-[#d4a373] transition-all duration-500">
+          <a href="https://wa.me/255724196842" target="_blank" class="inline-flex items-center gap-6 group bg-white/5 border border-white/10 p-6 hover:bg-[#d4a373] transition-all duration-500">
             <div class="w-14 h-14 bg-[#d4a373] text-[#0d0a07] flex items-center justify-center group-hover:bg-[#1a120b] group-hover:text-[#d4a373] transition-colors">
              <i class=" fa fa-whatsapp text-4xl"></i>
             </div>
@@ -669,9 +725,9 @@
     
     <!-- Header ya Map -->
     <div class="mb-12 border-l-4 border-[#d4a373] pl-8">
-      <span class="text-[#d4a373] font-mono text-[10px] uppercase tracking-[0.5em] font-black">our headquaters location</span>
-      <h2 class="text-4xl md:text-6xl font-black text-stone-100 uppercase tracking-tighter mt-2">
-        Arusha 
+      <span class="text-[#d4a373] font-mono text-[10px] uppercase tracking-[0.5em] font-black">our headquaters</span>
+      <h2 class="text-6xl md:text-8xl font-black text-stone-100 uppercase tracking-tighter mt-2">
+        LOCATION
       </h2>
     </div>
 
@@ -731,9 +787,9 @@
     <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 border-l-4 border-[#d4a373] pl-6 md:pl-8 gap-6">
       <div class="max-w-xl">
         <span class="text-[#d4a373] font-mono text-xs uppercase tracking-[0.4em] font-bold block">Our Visual Archive</span>
-        <h2 class="text-4xl md:text-6xl font-black tracking-tight text-stone-100 uppercase leading-[0.9] mt-3">
+        <h2 class="text-7xl md:text-8xl font-black tracking-tight text-stone-100 uppercase leading-[0.9] mt-3">
           Visual <br class="hidden md:block"/> 
-          <span class="italic font-serif text-[#a68a64] lowercase tracking-normal font-normal">Reconnaissance</span>
+          <span class="italic text-7xl font-serif text-[#a68a64] lowercase tracking-normal font-normal">Aesthetics</span>
         </h2>
       </div>
     </div>
@@ -746,7 +802,7 @@
        
         <span class="absolute top-4 left-4 z-30 font-mono text-[9px] tracking-widest text-[#d4a373] bg-black/60 px-2 py-0.5 border border-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">LIONS</span>
 
-        <img src="assets/king.webp" class="w-full h-full object-cover transition-transform duration-[2s] ease-out group-hover:scale-110 filter brightness-[0.8] group-hover:brightness-100" alt="Cheetahs">
+        <img src="pctrs/hero3.jpeg" class="w-full h-full object-cover transition-transform duration-[2s] ease-out group-hover:scale-110 filter brightness-[0.8] group-hover:brightness-100" alt="Cheetahs">
         
         <div class="absolute bottom-4 left-4 right-4 z-30 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
           <div class="flex items-center justify-between mt-1 text-[9px] text-stone-400 font-sans tracking-wide uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-500">
@@ -798,7 +854,7 @@
        
         <span class="absolute top-4 left-4 z-30 font-mono text-[9px] tracking-widest text-[#d4a373] bg-black/60 px-2 py-0.5 border border-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">BUFFALOS</span>
 
-        <img src="img/bufallo.jpg" class="w-full h-full object-cover transition-transform duration-[2s] ease-out group-hover:scale-110 filter brightness-[0.8] group-hover:brightness-100" alt="buffalos">
+        <img src="pctrs/hero2.jpeg" class="w-full h-full object-cover transition-transform duration-[2s] ease-out group-hover:scale-110 filter brightness-[0.8] group-hover:brightness-100" alt="buffalos">
         
         <div class="absolute bottom-4 left-4 right-4 z-30 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
           <div class="flex items-center justify-between mt-1 text-[9px] text-stone-400 font-sans tracking-wide uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-500">
@@ -838,7 +894,7 @@
        
         <span class="absolute top-4 left-4 z-30 font-mono text-[9px] tracking-widest text-[#d4a373] bg-black/60 px-2 py-0.5 border border-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">WILDEBEEST</span>
 
-        <img src="img/insurance.jpg" class="w-full h-full object-cover transition-transform duration-[2s] ease-out group-hover:scale-110 filter brightness-[0.8] group-hover:brightness-100" alt="Wildebeest">
+        <img src="pctrs/hero1.jpeg" class="w-full h-full object-cover transition-transform duration-[2s] ease-out group-hover:scale-110 filter brightness-[0.8] group-hover:brightness-100" alt="Wildebeest">
         
         <div class="absolute bottom-4 left-4 right-4 z-30 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
           <div class="flex items-center justify-between mt-1 text-[9px] text-stone-400 font-sans tracking-wide uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-500">
@@ -882,8 +938,8 @@
       <!-- Left Column: Command Hub (Sticky) -->
       <div class="lg:col-span-4 lg:sticky lg:top-32 h-fit border-l-8 border-[#d4a373] pl-10">
         <span class="text-[#d4a373] font-mono text-[10px] uppercase tracking-[0.5em] font-black">FAQs And Queries</span>
-        <h2 class="text-5xl md:text-5xl font-black tracking-tighter text-white mt-4 uppercase leading-[0.85]">
-         on & off  Field <br/> <span class="italic font-serif text-[#a68a64] lowercase tracking-normal">Intelligence</span>
+        <h2 class="text-7xl md:text-7xl font-black tracking-tighter text-white mt-4 uppercase leading-[0.85]">
+         on & off  Field <br/> <span class="italic font-serif text-[#a68a64] lowercase tracking-normal">Intellect</span>
         </h2>
         <p class="mt-8 text-stone-400 text-sm leading-relaxed font-medium">
           Important Info for those Initiating their Journey First time. If your query isn't listed Kindly reach out to us.
@@ -894,9 +950,15 @@
           <div class="relative z-10">
             <h4 class="font-black text-white uppercase tracking-widest text-xs">Direct Line</h4>
             <p class="text-[#d4a373] text-[10px] uppercase font-black tracking-widest mt-2 ">Response time: 6-12 Hours</p>
-            <button class="mt-8 w-full text-[10px] font-black uppercase tracking-[0.3em] bg-[#d4a373] text-[#0d0a07] px-6 py-4 transition-all hover:bg-white">
-              CHAT WITH US
-            </button>
+           <a 
+  href="https://wa.me/255724196842" 
+  target="_blank" 
+  rel="noopener noreferrer" 
+  class="mt-8 block w-full text-center text-[12px] font-black uppercase tracking-[0.2em] bg-[#d4a373] text-[#0d0a07] px-6 py-4 transition-all hover:bg-white"
+>
+  GOT A QUESTION?<br> CHAT WITH US
+</a>
+
           </div>
           <!-- Scanning Animation -->
           <div class="absolute top-0 left-0 w-full h-1 bg-[#d4a373]/20 animate-bounce"></div>
@@ -997,8 +1059,8 @@
       <!-- Left Column: Command Hub (Sticky) -->
       <div class="lg:col-span-4 lg:sticky lg:top-32 h-fit border-l-8 border-[#d4a373] pl-10">
         <span class="text-[#d4a373] font-mono text-[10px] uppercase tracking-[0.5em] font-black">Insights</span>
-        <h2 class="text-5xl md:text-5xl font-black tracking-tighter text-white mt-4 uppercase leading-[0.85]">
-         Worldwide <br/> <span class="italic font-serif text-[#a68a64] lowercase tracking-normal">intelligence</span>
+        <h2 class="text-7xl md:text-7xl font-black tracking-tighter text-white mt-4 uppercase leading-[0.85]">
+         SAFARI <br/> <span class="italic font-serif text-[#a68a64] lowercase tracking-normal">insights</span>
         </h2>
         <p class="mt-8 text-stone-400 text-sm leading-relaxed font-medium">
           Crucial field intelligence, travel advisories, and tracking reports concerning the world's most legendary geographic wonders and expedition strategies.
@@ -1157,7 +1219,7 @@
   <!-- Background Image with Tactical Sepia Grade -->
   <div class="absolute inset-0 z-0">
     <img 
-      src="img/instructor.jpg" 
+      src="pctrs/hero1.jpeg" 
       class="w-full h-full object-cover opacity-25 brightness-50 contrast-125 grayscale" 
       alt="Safari Recon"
     />
@@ -1172,8 +1234,8 @@
         <!-- Tactical Scarcity Badge -->
        
 
-        <h2 class="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tighter text-white leading-[0.9] uppercase">
-          Your <span class="italic font-serif text-[#d4a373] lowercase tracking-normal font-light">wildest</span> <br/> legend <br/> starts now.
+        <h2 class="text-7xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tighter text-white leading-[0.9] uppercase">
+          Your <span class="italic font-serif text-[#d4a373] lowercase tracking-normal font-light">wildest</span> <br/> legend <br/> starts now!
         </h2>
 
         <p class="mt-8 text-stone-400 text-base md:text-lg max-w-md font-medium leading-relaxed italic">
@@ -1191,7 +1253,7 @@
         </a>
 
         <!-- Secondary Action: Priority WhatsApp Comms -->
-        <a href="https://wa.me/255711936842" target="_blank" rel="noopener noreferrer" class="group/btn h-16 border border-white/10 text-white font-black uppercase text-[10px] tracking-[0.3em] hover:bg-white/5 hover:border-[#d4a373] transition-all flex items-center justify-center gap-3 rounded-sm">
+        <a href="https://wa.me/255724196842" target="_blank" rel="noopener noreferrer" class="group/btn h-16 border border-white/10 text-white font-black uppercase text-[10px] tracking-[0.3em] hover:bg-white/5 hover:border-[#d4a373] transition-all flex items-center justify-center gap-3 rounded-sm">
          
           CHAT WITH US
         </a>  
@@ -1206,9 +1268,8 @@
 </section>
 
 
-
 <!-- Footer -->
-  <footer class="bg-[#0d0a07] text-stone-500 py-24 relative overflow-hidden border-t border-white/5">
+   <footer class="bg-[#0d0a07] text-stone-500 py-24 relative overflow-hidden border-t border-white/5">
   
   <!-- Massive Background Wordmark (Full Width & Height) -->
   <div class="absolute inset-0 z-0">
@@ -1220,41 +1281,61 @@
   </div>
 
   <div class="max-w-7xl mx-auto px-6 relative z-10">
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 pb-20">
+    <!-- Balanced 4-Column Grid Layout (3-3-3-3 structure) -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 lg:gap-12 pb-20">
 
       <!-- Column 1: Brand Essence -->
-      <div class="lg:col-span-4">
+      <div>
         <div class="flex items-center space-x-3 mb-8">
           <div class="w-12 h-12 bg-transparent flex items-center justify-center shadow-2xl rounded-full overflow-hidden">
             <img src="assets/AFRICA SCENERY LOG2.jpeg" alt="Logo" class="w-full h-full object-cover">
           </div>
           <span class="text-xl font-black tracking-tighter text-[#d4a373] uppercase">
-            AFRICA SCENERY</span>
+            AFRICA SCENERY
           </span>
         </div>
 
         <p class="text-sm leading-relaxed max-w-xs mb-8 font-medium italic">
-          "The pinnacle of bespoke African expeditions. Bridging the gap between raw wilderness and tactical luxury."
+          "The pinnacle of bespoke African expeditions. Bridging the gap between the wilderness and luxury."
         </p>
-        <div class="flex gap-7">
-          <!-- Facebook -->
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
-            <i class="fa fa-facebook" style="font-size:36px; color:#d4a373;"></i>
-          </a>
-          <!-- Instagram -->
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
-            <i class="fa fa-instagram" style="font-size:36px; color:#d4a373;"></i>
-          </a>
-          <!-- TripAdvisor -->
-          <a href="https://tripadvisor.com" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
-            <i class="fa fa-tripadvisor" style="font-size:36px; color:#d4a373;"></i>
-          </a>
-        </div>
-      </div>
+        
+        <!-- Social Channels -->
+        <!-- Social Channels Block Section -->
+<div class="block">
+  
+  <!-- Heading Element on Top Layer -->
+  <h4 class="text-[#d4a373] font-black uppercase tracking-[0.3em] text-[10px] mb-6">
+    VISIT OUR SOCIALS
+  </h4>
 
-      <!-- Column 2: The Navigation -->
-      <div class="lg:col-span-2">
-        <h4 class="text-[#d4a373] font-black uppercase tracking-[0.3em] text-[10px] mb-8 italic"> Discovery</h4>
+  <!-- Icons Row Layer Below -->
+  <div class="flex gap-7 items-center">
+    
+    <!-- Instagram -->
+    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="transition-transform hover:scale-110" style="text-decoration: none;">
+      <i class="fa fa-instagram bg-gradient-to-tr from-[#f9ce71] via-[#ee2a7b] to-[#6228d7] bg-clip-text text-transparent inline-block" style="font-size:36px;"></i>
+    </a>
+
+    <!-- TripAdvisor -->
+    <a href="https://tripadvisor.com" target="_blank" rel="noopener noreferrer" class="transition-transform hover:scale-110 inline-block" style="text-decoration: none;">
+      <i class="fa fa-tripadvisor" style="font-size:36px; color:#00aa6c;"></i>
+    </a>
+
+    <!-- TikTok -->
+    <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="transition-transform hover:scale-110 inline-block" style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#FFFFFF" viewBox="0 0 16 16">
+        <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+      </svg>
+    </a>
+    
+  </div>
+</div>
+</div>
+
+
+      <!-- Column 2 (Middle Right): The Navigation -->
+      <div>
+        <h4 class="text-[#d4a373] font-black uppercase tracking-[0.3em] text-[10px] mb-8">NAVIGATION</h4>
         <ul class="space-y-4 text-sm font-bold uppercase tracking-tighter">
           <li><a href="#home" class="text-stone-300 hover:text-[#d4a373] transition-all hover:translate-x-1 inline-block">Home</a></li>
           <li><a href="#packages" class="text-stone-300 hover:text-[#d4a373] transition-all hover:translate-x-1 inline-block">About Us</a></li>
@@ -1263,50 +1344,113 @@
         </ul>
       </div>
 
-      <!-- Column 3: Global Access -->
-      <div class="lg:col-span-3">
-        <h4 class="text-[#d4a373] font-black uppercase tracking-[0.3em] text-[10px] mb-8 italic"> Access</h4>
-        <ul class="space-y-6 text-sm">
-          <li class="flex flex-col">
-            <span class="text-[9px] uppercase text-stone-600 font-black tracking-widest mb-1">Headquaters Location</span>
-            <span class="text-white font-bold tracking-tighter uppercase">arusha, Tanzania. GMT +3</span>
-          </li>
-          <li class="flex flex-col">
-            <span class="text-[9px] uppercase text-stone-600 font-black tracking-widest mb-1">Email</span>
-            <span class="text-white font-bold tracking-tighter">concierge@safarilux.com</span>
-          </li>
-        </ul>
-      </div>
+<!-- Added md:-ml-4 to shift the entire block to the left on larger screens -->
+<div class="flex flex-col justify-start md:-ml-4">
+  <h4 class="text-[#d4a373] font-black uppercase tracking-[0.3em] text-[10px] mb-8">PROUD MEMBER OF</h4>
+  <div class="flex flex-wrap md:flex-nowrap items-center gap-6">
+    <!-- Organization Logo 1 -->
+    <div class="transition-all duration-300">
+      <img 
+        src="img/ATTA.jpg" 
+        alt="Organization Membership Badge 1" 
+        class="h-14 w-auto object-contain rounded-full"
+      >
+    </div>
+    <!-- Organization Logo 2 -->
+    <div class="transition-all duration-300">
+      <img 
+        src="img/TATO.png" 
+        alt="Organization Membership Badge 2" 
+        class="h-14 w-auto object-contain rounded-full"
+      >
+    </div>
+    <!-- Organization Logo 3 -->
+    <div class="transition-all duration-300">
+      <img 
+        src="img/partner.jpeg" 
+        alt="Organization Membership Badge 3" 
+        class="h-14 w-auto object-contain rounded-full"
+      >
+    </div>
+  </div>
+</div>
 
-      <!-- Column 4: Newsletter -->
-      <div class="lg:col-span-3">
-        <h4 class="text-[#d4a373] font-black uppercase tracking-[0.3em] text-[10px] mb-8 italic"> Stay Briefed</h4>
-        <p class="text-xs mb-6 text-stone-500 leading-relaxed font-medium italic">Join the inner circle for exclusive migration forecasts and target updates.</p>
-        <form class="relative group">
-          <input type="email" placeholder="AGENT EMAIL" class="w-full bg-white/5 border border-white/10 p-4 pr-12 text-[10px] font-black text-white focus:outline-none focus:border-[#d4a373] transition-all placeholder:text-stone-700" />
+
+
+
+
+      <!-- Column 4: Newsletter & Access Combined -->
+      <div>
+        <h4 class="text-[#d4a373] font-black uppercase tracking-[0.3em] text-[10px] mb-8">SUBSCRIBE TO OUR NEWSLETTER</h4>
+        <p class="text-xs mb-6 text-stone-500 leading-relaxed font-medium italic">Join the inner circle for exclusive migration forecasts and updates.</p>
+        <form class="relative group mb-8">
+          <input type="email" placeholder="EMAIL" class="w-full bg-white/5 border border-white/10 p-4 pr-12 text-[10px] font-black text-white focus:outline-none focus:border-[#d4a373] transition-all placeholder:text-stone-700" />
           <button class="absolute right-2 top-2 bottom-2 px-4 bg-[#d4a373] text-[#0d0a07] font-black hover:bg-white transition-colors">→</button>
         </form>
+        
+        <!-- Access Coordinates Sub-links -->
+        <div class="grid grid-cols-2 gap-4 text-xs">
+          <div class="flex flex-col">
+            <span class="text-[8px] uppercase text-stone-600 font-black tracking-widest mb-0.5">HEADQUATERS </span>
+            <span class="text-white font-bold tracking-tighter text-[11px]">SINONI, ARUSHA, TANZANIA</span>
+          </div>
+          <div class="flex flex-col">
+            <span class="text-[8px] uppercase text-stone-600 font-black tracking-widest mb-0.5">Email Contact</span>
+            <span class="text-white font-bold tracking-tighter text-[11px] truncate">concierge@safarilux.com</span>
+          </div>
+        </div>
       </div>
 
     </div>
 
-    <!-- Bottom Bar: The Synlotech Signature -->
-    <div class="pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8">
-      <div class="flex flex-col md:flex-row items-center gap-4 md:gap-8">
-        <p class="text-[9px] font-black uppercase tracking-[0.3em] text-stone-600 italic">
-          © 2026 AFRICA SCENERY
-        </p>
+     <!-- Combined Payment Options & Developer Credit Row -->
+     <div class="flex flex-col items-center sm:items-start gap-3">
+  <!-- Heading -->
+  <span class="text-xs font-semibold uppercase tracking-wider text-white/60 select-none">
+    We Accept
+  </span>
 
-        <div class="flex gap-8 text-[9px] font-black uppercase tracking-[0.3em] text-stone-600">
+  <div class="flex flex-col sm:flex-row items-center gap-6 md:gap-8">
+    <!-- Payment Gateways Container -->
+    <div class="flex items-center gap-5 text-4xl select-none">
+      <!-- Visa -->
+      <i class="fa fa-cc-visa transition-transform hover:scale-115" style="color: white;" title="Visa"></i>
+      
+      <!-- Mastercard -->
+      <i class="fa fa-cc-mastercard transition-transform hover:scale-115 bg-gradient-to-r from-[#eb001b] via-[#ff5f00] to-[#f79e1b] bg-clip-text text-transparent" title="Mastercard"></i>
+
+      <!-- American Express -->
+      <i class="fa fa-cc-amex transition-transform hover:scale-115" style="color: white;" title="American Express"></i>
+      
+      <!-- Custom High-Fidelity Pesapal Logo Badge -->
+      <div class="flex items-center h-8 px-3 bg-white border border-white/20 rounded-[4px] transition-transform hover:scale-115 shadow-md" title="Pesapal">
+        <span class="text-[12px] font-black uppercase tracking-tighter" style="color: #00a79d;">pesa</span>
+        <span class="text-[12px] font-black uppercase tracking-tighter" style="color: #f7941d;">pal</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Bottom Bar: The Synlotech Signature & Payment Options -->
+    <div class="pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8">
+      <div class="flex gap-8 text-[9px] font-black uppercase tracking-[0.3em] text-stone-600">
           <a href="Privacy.html" class="hover:text-white transition-colors">Privacy Policy</a>
           <a href="TermsOfService.html" class="hover:text-white transition-colors">Terms of Service</a>
         </div>
+         <div class="flex flex-col md:flex-row items-center gap-4 md:gap-8">
+        <p class="text-[9px] font-black uppercase tracking-[0.3em] text-stone-600">
+          © 2026 AFRICA SCENERY DISCOVERY
+        </p>
+
+      </div>=
 
         <!-- SYNLOTECH CREDIT -->
         <div class="flex items-center gap-3 px-4 py-2 bg-white/5 border border-white/10 skew-x-[-10deg] group cursor-pointer hover:border-[#d4a373] transition-all">
           <a href="https://synlotech.com" target="_blank" class="text-[8px] font-black text-stone-500 uppercase tracking-widest leading-none">Designed and Developed By 
-          <span class="text-[10px] font-black text-white uppercase tracking-tighter leading-none group-hover:text-[#d4a373] transition-colors">Synlotech Technologies</span></a>
+            <span class="text-[10px] font-black text-white uppercase tracking-tighter leading-none group-hover:text-[#d4a373] transition-colors">Synlotech Technologies</span>
+          </a>
         </div>
+
       </div>
     </div>
   </div>
@@ -1457,4 +1601,3 @@ s0.parentNode.insertBefore(s1,s0);
 
 </body>
 </html>
-

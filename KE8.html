@@ -9,22 +9,25 @@
 
 </head>
 <body class="bg-[#0d0a07] text-stone-200 antialiased font-sans selection:bg-[#d4a373] selection:text-[#0d0a07]">
- <!-- Navbar -->
+ 
+  
+  <!-- Navbar -->
    <nav class="fixed top-6 left-1/2 -translate-x-1/2 w-[92%] max-w-6xl z-[100] transition-[max-height,border-radius] duration-500 ease-in-out px-8 py-4 rounded-full border border-[#3d2b1f]/20 shadow-[0_20px_50px_rgba(0,0,0,0.3)] overflow-hidden" 
      id="mainNav" 
-     style="background: linear-gradient(180deg, #2d1e14 0%, #1a120b 100%); max-height: 76px;">
+     style="background: linear-gradient(180deg, #2d1e14 0%, #1a120b 100%); max-height: 76px;"
+     aria-label="Main navigation">
   
   <!-- Subtle Wood Texture Overlay -->
   <div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: url('https://transparenttextures.com');"></div>
 
   <div class="flex justify-between items-center relative z-10">
     <!-- Logo -->
-<a href="index.html#home" class="inline-flex items-center space-x-3 group/logo cursor-pointer">
+<a href="#home" class="inline-flex items-center space-x-3 group/logo cursor-pointer" aria-label="Africa Scenery Discovery - Home">
   <div class="relative w-10 h-10 bg-transparent rounded-full flex items-center justify-center overflow-hidden transition-transform duration-500 group-hover/logo:rotate-[360deg]">
-    <img src="assets/AFRICA SCENERY LOG2.jpeg" alt="Logo" class="w-full h-full object-cover">
+    <img src="assets/AFRICA SCENERY LOG2.jpeg" alt="Africa Scenery Discovery Logo" class="w-full h-full object-cover">
   </div>
-  <span class="text-l font-bold tracking-widest text-[#d4a373] uppercase">
-    AFRICA SCENERY
+  <span class="text-xs font-bold tracking-widest text-[#d4a373] uppercase">
+    AFRICA SCENERY DISCOVERY
   </span>
 </a>
 
@@ -41,7 +44,7 @@
     </div>
 
     <!-- CTA --><div class="hidden md:block">
-  <a href="https://wa.me/255788296274?text=Hello%2C%20I%27m%20interested%20in%20planning%20a%20safari.%20Could%20you%20share%20available%20packages%2C%20pricing%2C%20and%20the%20best%20travel%20dates%3F" 
+  <a href="https://wa.me/255724196842?text=Hello%2C%20I%27m%20interested%20in%20planning%20a%20safari.%20Could%20you%20share%20available%20packages%2C%20pricing%2C%20and%20the%20best%20travel%20dates%3F" 
      target="_blank" 
      rel="noopener noreferrer"
      class="inline-block">
@@ -53,7 +56,7 @@
 
 
     <!-- Animated Hamburger Button -->
-    <button id="menuBtn" class="md:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1.5 z-50 focus:outline-none">
+    <button id="menuBtn" class="md:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1.5 z-50 focus:outline-none" aria-label="Toggle navigation menu" aria-expanded="false">
        <span id="line1" class="block w-6 h-0.5 bg-[#d4a373] transition-all duration-300 origin-center"></span>
        <span id="line2" class="block w-6 h-0.5 bg-[#d4a373] transition-all duration-300"></span>
        <span id="line3" class="block w-6 h-0.5 bg-[#d4a373] transition-all duration-300 origin-center"></span>
@@ -68,7 +71,7 @@
       <a href="index.html#packages" class="mobile-link hover:text-[#d4a373] transition-colors">Packages</a>
       <a href="index.html#gallery" class="mobile-link hover:text-[#d4a373] transition-colors">Gallery</a>
       <a href="index.html#reviews" class="mobile-link hover:text-[#d4a373] transition-colors">Reviews</a>
-      <a href="https://wa.me/255788296274?text=Hello%2C%20I%27m%20interested%20in%20planning%20a%20safari.%20Could%20you%20share%20available%20packages%2C%20pricing%2C%20and%20the%20best%20travel%20dates%3F" 
+      <a href="https://wa.me/255724196842?text=Hello%2C%20I%27m%20interested%20in%20planning%20a%20safari.%20Could%20you%20share%20available%20packages%2C%20pricing%2C%20and%20the%20best%20travel%20dates%3F" 
    target="_blank" 
    rel="noopener noreferrer"
    class="mobile-link bg-[#d4a373] text-black py-4 uppercase rounded-2xl mx-4">
@@ -87,7 +90,7 @@
       <p class="text-stone-400 text-sm tracking-wide mb-6">8 Days / 7 Nights • Private 4x4 Overland Land Cruiser Profile</p>
       
       <!-- Quick Route Tags -->
-      <div class="flex flex-wrap gap-2 text-xs font-mono text-stone-300">
+      <div class="flex flex-wrap gap-2 text-xs text-stone-300">
         <span class="bg-stone-900 px-3 py-1.5 border border-stone-800">Route: Nairobi (JRO Connection) - Amboseli - Lake Nakuru - Maasai Mara</span>
         <span class="bg-stone-900 px-3 py-1.5 border border-stone-800">Lodges: Elewana Tortilis, Sarova Lion Hill, Mahali Mzuri / Angama Mara</span>
       </div>

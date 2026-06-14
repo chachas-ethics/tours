@@ -11,22 +11,24 @@
 </head>
 <body class="antialiased">
 
+  
   <!-- Navbar -->
    <nav class="fixed top-6 left-1/2 -translate-x-1/2 w-[92%] max-w-6xl z-[100] transition-[max-height,border-radius] duration-500 ease-in-out px-8 py-4 rounded-full border border-[#3d2b1f]/20 shadow-[0_20px_50px_rgba(0,0,0,0.3)] overflow-hidden" 
      id="mainNav" 
-     style="background: linear-gradient(180deg, #2d1e14 0%, #1a120b 100%); max-height: 76px;">
+     style="background: linear-gradient(180deg, #2d1e14 0%, #1a120b 100%); max-height: 76px;"
+     aria-label="Main navigation">
   
   <!-- Subtle Wood Texture Overlay -->
   <div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: url('https://transparenttextures.com');"></div>
 
   <div class="flex justify-between items-center relative z-10">
     <!-- Logo -->
-<a href="index.html#home" class="inline-flex items-center space-x-3 group/logo cursor-pointer">
+<a href="#home" class="inline-flex items-center space-x-3 group/logo cursor-pointer" aria-label="Africa Scenery Discovery - Home">
   <div class="relative w-10 h-10 bg-transparent rounded-full flex items-center justify-center overflow-hidden transition-transform duration-500 group-hover/logo:rotate-[360deg]">
-    <img src="assets/AFRICA SCENERY LOG2.jpeg" alt="Logo" class="w-full h-full object-cover">
+    <img src="assets/AFRICA SCENERY LOG2.jpeg" alt="Africa Scenery Discovery Logo" class="w-full h-full object-cover">
   </div>
-  <span class="text-l font-bold tracking-widest text-[#d4a373] uppercase">
-    AFRICA SCENERY
+  <span class="text-xs font-bold tracking-widest text-[#d4a373] uppercase">
+    AFRICA SCENERY DISCOVERY
   </span>
 </a>
 
@@ -37,13 +39,13 @@
         <path d="M0,20 Q50,0 100,20 T200,20 T300,20 T400,20" fill="none" stroke="#d4a373" stroke-width="5" stroke-dasharray="10 5" class="animate-[snake-crawl_20s_linear_infinite]" />
       </svg>
       <a href="index.html#home" class="relative z-10 hover:text-[#d4a373] transition-colors">Home</a>
-      <a href="About.html" class="relative z-10 hover:text-[#d4a373] transition-colors">About</a>
+      <a href="About.html" class="relative z-10 hover:text-[#d4a373] transition-colors">About us</a>
       <a href="index.html#destinations" class="relative z-10 hover:text-[#d4a373] transition-colors">Destinations</a>
       <a href="index.html#packages" class="relative z-10 hover:text-[#d4a373] transition-colors">Packages</a>
     </div>
 
     <!-- CTA --><div class="hidden md:block">
-  <a href="https://wa.me/255788296274?text=Hello%2C%20I%27m%20interested%20in%20planning%20a%20safari.%20Could%20you%20share%20available%20packages%2C%20pricing%2C%20and%20the%20best%20travel%20dates%3F" 
+  <a href="https://wa.me/255724196842?text=Hello%2C%20I%27m%20interested%20in%20planning%20a%20safari.%20Could%20you%20share%20available%20packages%2C%20pricing%2C%20and%20the%20best%20travel%20dates%3F" 
      target="_blank" 
      rel="noopener noreferrer"
      class="inline-block">
@@ -55,7 +57,7 @@
 
 
     <!-- Animated Hamburger Button -->
-    <button id="menuBtn" class="md:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1.5 z-50 focus:outline-none">
+    <button id="menuBtn" class="md:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1.5 z-50 focus:outline-none" aria-label="Toggle navigation menu" aria-expanded="false">
        <span id="line1" class="block w-6 h-0.5 bg-[#d4a373] transition-all duration-300 origin-center"></span>
        <span id="line2" class="block w-6 h-0.5 bg-[#d4a373] transition-all duration-300"></span>
        <span id="line3" class="block w-6 h-0.5 bg-[#d4a373] transition-all duration-300 origin-center"></span>
@@ -65,12 +67,12 @@
   <!-- Mobile Dropdown -->
   <div id="mobileMenu" class="md:hidden flex flex-col space-y-6 pt-10 pb-8 text-center text-[11px] font-black uppercase tracking-[0.3em] text-stone-400 border-t border-[#d4a373]/10 mt-6 relative z-10">
       <a href="index.html#home" class="mobile-link hover:text-[#d4a373] transition-colors">Home</a>
-      <a href="About.html" class="mobile-link hover:text-[#d4a373] transition-colors">About</a>
+      <a href="About.html" class="mobile-link hover:text-[#d4a373] transition-colors">About us</a>
       <a href="index.html#destinations" class="mobile-link hover:text-[#d4a373] transition-colors">Destinations</a>
       <a href="index.html#packages" class="mobile-link hover:text-[#d4a373] transition-colors">Packages</a>
       <a href="index.html#gallery" class="mobile-link hover:text-[#d4a373] transition-colors">Gallery</a>
       <a href="index.html#reviews" class="mobile-link hover:text-[#d4a373] transition-colors">Reviews</a>
-      <a href="https://wa.me/255788296274?text=Hello%2C%20I%27m%20interested%20in%20planning%20a%20safari.%20Could%20you%20share%20available%20packages%2C%20pricing%2C%20and%20the%20best%20travel%20dates%3F" 
+      <a href="https://wa.me/255724196842?text=Hello%2C%20I%27m%20interested%20in%20planning%20a%20safari.%20Could%20you%20share%20available%20packages%2C%20pricing%2C%20and%20the%20best%20travel%20dates%3F" 
    target="_blank" 
    rel="noopener noreferrer"
    class="mobile-link bg-[#d4a373] text-black py-4 uppercase rounded-2xl mx-4">
@@ -88,9 +90,9 @@
     </div>
 
     <div class="relative z-10 mt-10 max-w-7xl mx-auto px-6 w-full">
-      <div class="inline-block bg-[#d4a373] text-[#0d0a07] px-4 py-5 font-black text-[10px] tracking-[0.4em] uppercase mb-6">
-        Location Briefing: Lake Duluti
-      </div>
+       <div class="inline-block bg-[#d4a373] text-[#0d0a07] px-6 py-4 font-black text-[10px] tracking-[0.4em] uppercase mb-6">
+      Location: Lake Duluti
+    </div>
       <h1 class="text-7xl md:text-9xl text-white font-black uppercase tracking-tighter leading-[0.85] mb-6">
         Volcanic <br><span class="text-[#d4a373]">Mirror.</span>
       </h1>

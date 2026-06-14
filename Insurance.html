@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tours & Safaris</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></head>
+
+<body class="bg-[#0d0a07] text-white bg-[linear-gradient(rgba(13,10,7,1),rgba(13,10,7,0.9)),url('pctrs/hero2.jpeg')] bg-cover bg-center bg-no-repeat bg-fixed font-sans antialiased selection:bg-[#d4a373] selection:text-black">
+
+  
+   <nav class="fixed top-6 left-1/2 -translate-x-1/2 w-[92%] max-w-6xl z-[100] transition-[max-height,border-radius] duration-500 ease-in-out px-8 py-4 rounded-full border border-[#3d2b1f]/20 shadow-[0_20px_50px_rgba(0,0,0,0.3)] overflow-hidden" 
+     id="mainNav" 
+     style="background: linear-gradient(180deg, #2d1e14 0%, #1a120b 100%); max-height: 76px;"
+     aria-label="Main navigation">
+  
+  <!-- Subtle Wood Texture Overlay -->
+  <div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: url('https://transparenttextures.com');"></div>
+
+  <div class="flex justify-between items-center relative z-10">
+    <!-- Logo -->
+<a href="index.html#home" class="inline-flex items-center space-x-3 group/logo cursor-pointer" aria-label="Africa Scenery Discovery - Home">
+  <div class="relative w-10 h-10 bg-transparent rounded-full flex items-center justify-center overflow-hidden transition-transform duration-500 group-hover/logo:rotate-[360deg]">
+    <img src="assets/AFRICA SCENERY LOG2.jpeg" alt="Africa Scenery Discovery Logo" class="w-full h-full object-cover">
+  </div>
+  <span class="text-xs font-bold tracking-widest text-[#d4a373] uppercase">
+    AFRICA SCENERY DISCOVERY
+  </span>
+</a>
+
+
+    <!-- Desktop Menu -->
+    <div class="hidden md:flex items-center space-x-12 relative text-[11px] font-black uppercase tracking-[0.2em] text-stone-400">
+      <svg class="absolute top-1/2 left-0 w-full h-12 -translate-y-1/2 pointer-events-none z-0 opacity-40" viewBox="0 0 400 40">
+        <path d="M0,20 Q50,0 100,20 T200,20 T300,20 T400,20" fill="none" stroke="#d4a373" stroke-width="5" stroke-dasharray="10 5" class="animate-[snake-crawl_20s_linear_infinite]" />
+      </svg>
+      <a href="index.html#home" class="relative z-10 hover:text-[#d4a373] transition-colors">Home</a>
+      <a href="About.html" class="relative z-10 hover:text-[#d4a373] transition-colors">About us</a>
+      <a href="index.html#destinations" class="relative z-10 hover:text-[#d4a373] transition-colors">Destinations</a>
+      <a href="index.html#packages" class="relative z-10 hover:text-[#d4a373] transition-colors">Packages</a>
+    </div>
+
+    <!-- CTA --><div class="hidden md:block">
+  <a href="https://wa.me/255724196842?text=Hello%2C%20I%27m%20interested%20in%20planning%20a%20safari.%20Could%20you%20share%20available%20packages%2C%20pricing%2C%20and%20the%20best%20travel%20dates%3F" 
+     target="_blank" 
+     rel="noopener noreferrer"
+     class="inline-block">
+    <button class="relative overflow-hidden group/btn px-8 py-3 rounded-full bg-[#d4a373] text-[10px] font-black uppercase tracking-[0.3em]  shadow-2xl transition-all hover:scale-105 active:scale-95">
+      <span class="relative z-10">Plan Safari</span>
+    </button>
+  </a>
+</div>
+
+
+    <!-- Animated Hamburger Button -->
+    <button id="menuBtn" class="md:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1.5 z-50 focus:outline-none" aria-label="Toggle navigation menu" aria-expanded="false">
+       <span id="line1" class="block w-6 h-0.5 bg-[#d4a373] transition-all duration-300 origin-center"></span>
+       <span id="line2" class="block w-6 h-0.5 bg-[#d4a373] transition-all duration-300"></span>
+       <span id="line3" class="block w-6 h-0.5 bg-[#d4a373] transition-all duration-300 origin-center"></span>
+    </button>
+  </div>
+
+  <!-- Mobile Dropdown -->
+  <div id="mobileMenu" class="md:hidden flex flex-col space-y-6 pt-10 pb-8 text-center text-[11px] font-black uppercase tracking-[0.3em] text-stone-400 border-t border-[#d4a373]/10 mt-6 relative z-10">
+      <a href="index.html#home" class="mobile-link hover:text-[#d4a373] transition-colors">Home</a>
+      <a href="About.html" class="mobile-link hover:text-[#d4a373] transition-colors">About us</a>
+      <a href="index.html#destinations" class="mobile-link hover:text-[#d4a373] transition-colors">Destinations</a>
+      <a href="index.html#packages" class="mobile-link hover:text-[#d4a373] transition-colors">Packages</a>
+      <a href="index.html#gallery" class="mobile-link hover:text-[#d4a373] transition-colors">Gallery</a>
+      <a href="index.html#reviews" class="mobile-link hover:text-[#d4a373] transition-colors">Reviews</a>
+      <a href="https://wa.me/255724196842?text=Hello%2C%20I%27m%20interested%20in%20planning%20a%20safari.%20Could%20you%20share%20available%20packages%2C%20pricing%2C%20and%20the%20best%20travel%20dates%3F" 
+   target="_blank" 
+   rel="noopener noreferrer"
+   class="mobile-link bg-[#d4a373] text-black py-4 uppercase rounded-2xl mx-4">
+   Plan Safari
+</a>
+  </div>
+</nav>
+
+  <!-- Expanded Workspace Container -->
+  <main class="pt-40 pb-24 max-w-6xl mx-auto px-6 md:px-8 relative z-10">
+    
+
+    <!-- Responsive Layout Grid: Content vs Sticky Sidebar -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+      
+      <!-- Expanded Main Article Content Panel -->
+       <!-- Expanded Main Article Content Panel -->
+<article class="lg:col-span-2 bg-black/70 border border-white/5 p-8 md:p-12 shadow-2xl backdrop-blur-md">
+  
+  <!-- Premium SEO Header Group -->
+  <header class="border-b border-white/10 pb-8 mb-8">
+    <div class="flex items-center gap-3 mb-4 text-[11px] font-bold uppercase tracking-[0.15em] text-[#d4a373]">
+      <span>10. Risk Mitigation</span>
+    </div>
+    
+    <!-- SEO Targeted Title -->
+    <h1 class="text-3xl md:text-5xl font-black text-stone-100 uppercase tracking-tight leading-tight mb-6">
+      Safari Insurance Guide: Medical Evacuation and Trip Cancellation Policies
+    </h1>
+
+    <!-- Meta Data Grid -->
+    <div class="flex flex-wrap items-center gap-y-2 gap-x-6 text-xs text-stone-400">
+      <div class="flex items-center gap-2">
+        <i class="fa fa-calendar text-[#d4a373]"></i>
+        <time datetime="2026-06-10">June 10, 2026</time>
+      </div>
+      <span class="text-stone-600 hidden sm:inline">|</span>
+      <div class="flex items-center gap-2">
+        <i class="fa fa-clock-o text-[#d4a373]"></i>
+        <span>7 Min Read</span>
+      </div>
+      <span class="text-stone-600 hidden sm:inline">|</span>
+      <div class="flex items-center gap-2">
+        <i class="fa fa-shield text-[#d4a373]"></i>
+        <span>Coverage Transparency</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Featured High-Fidelity Cover Media Container -->
+  <div class="w-full aspect-[16/9] overflow-hidden mb-10 border border-white/5 relative group">
+    <img src="img/insurance.jpg" alt="African safari travel insurance requirements medical evacuation flying doctors emergency protection" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" />
+    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+  </div>
+
+  <!-- High-Converting Editorial Serif Content Layer -->
+  <div class="space-y-6 text-stone-200 text-lg leading-relaxed font-serif">
+    <p class="font-sans text-xl font-light text-stone-300 leading-relaxed mb-8 border-l-4 border-[#d4a373] pl-6 italic">
+      Securing robust financial and medical protection is a non-negotiable parameter when booking premium wilderness expeditions. This structural breakdown clarifies emergency air rescue coverage, trip interruption safeties, and high-value equipment riders.
+    </p>
+    
+    <p>
+      Planning a luxury safari journey through remote concessions involves substantial upfront capital commitments, from non-refundable wildlife tracking permits to exclusive bush plane lodge charters. Because these remote environments sit far away from major regional trauma networks, standard international credit card insurances rarely cover the specialized field protections required.
+    </p>
+    
+    <p>
+      Reviewing specific policy parameters before leaving your home country guarantees absolute peace of mind, allowing you to enjoy your wildlife encounters knowing your investment is fully protected.
+    </p>
+
+    <h2 class="font-sans text-2xl font-black text-stone-100 uppercase tracking-tight pt-6 pb-2 text-left">
+      Critical Field Safety: Emergency Medical Evacuation (AMREF)
+    </h2>
+    <p>
+      The single most crucial component of safari travel protection is an emergency medical evacuation rider. If a medical emergency happens in isolated sectors of the Serengeti or Selous, ground ambulance transfers are functionally impossible due to terrain limitations. 
+    </p>
+    
+    <p>
+      A proper policy must guarantee direct dispatch rights for emergency air ambulance teams, such as the AMREF Flying Doctors service. These airborne medical units can land directly on localized bush strips, stabilize patients instantly, and provide rapid transport to international-grade medical hubs in Nairobi or Dar es Salaam.
+    </p>
+
+    <h2 class="font-sans text-2xl font-black text-stone-100 uppercase tracking-tight pt-6 pb-2 text-left">
+      Trip Interruption & "Cancel For Any Reason" Coverages
+    </h2>
+    <p>
+      Because safari operators work alongside strict government conservation fee allocations, booking deposits turn non-refundable close to departure dates. To insulate against unexpected flight failures, severe weather disruptions, or sudden health issues, travelers should purchase comprehensive trip cancellation protection. 
+    </p>
+    <p>
+      Opting for a "Cancel For Any Reason" (CFAR) upgrade provides an additional layer of security, letting you recover up to 75% of your total non-refundable tour costs regardless of why your plans change.
+    </p>
+  </div>
+
+</article>
+
+      <!-- Sticky Sidebar Booking Panel Layer -->
+   <aside class="lg:sticky lg:top-28 space-y-6">
+        
+  <!-- High-Conversion Booking Tool Widget -->
+  <div class="bg-gradient-to-b from-[#2d1e14] via-[#1a120b] to-[#0d0a07] border-2 border-[#d4a373] p-8 shadow-[0_0_50px_rgba(212,163,115,0.15)] relative overflow-hidden rounded-sm">
+    
+    <!-- Premium Accent Corner Ribbon / Price Anchor Badge -->
+    <div class="absolute top-0 right-0 bg-[#d4a373] text-black text-[9px] font-black uppercase tracking-widest px-4 py-1.5 shadow-md">
+      Slots Open
+    </div>
+
+    <!-- Subtle Glow Overlay -->
+    <div class="absolute -top-12 -right-12 w-32 h-32 bg-[#d4a373]/20 rounded-full blur-2xl pointer-events-none"></div>
+    <div class="absolute -bottom-12 -left-12 w-32 h-32 bg-[#00a79d]/10 rounded-full blur-2xl pointer-events-none"></div>
+    
+    <h3 class="text-2xl font-black text-stone-100 uppercase tracking-tighter mb-1">
+      Secure Your Expedition
+    </h3>
+    
+    <!-- Scarcity Trigger Subtitle -->
+    <p class="text-[11px] text-[#d4a373] font-bold uppercase tracking-wider mb-6">
+      <i class="fa fa-exclamation-triangle mr-1"></i> Peak 2026/2027 Permit Windows Closing Fast
+    </p>
+    
+    <!-- Strong Value Proposition Checklist Tailored for Insurance Protocols -->
+    <div class="space-y-4 font-sans mb-8">
+      <div class="flex items-start gap-3 text-sm text-stone-200">
+        <i class="fa fa-shield text-[#d4a373] mt-1 shrink-0"></i>
+        <div>
+          <strong class="block text-stone-100 uppercase text-xs tracking-wide font-bold">Comprehensive Cover Advice</strong>
+          <span class="text-stone-400 text-xs">Verify your trip investment policy requirements with our dedicated insurance alignment team.</span>
+        </div>
+      </div>
+      
+      <div class="flex items-start gap-3 text-sm text-stone-200">
+        <i class="fa fa-plane text-[#d4a373] mt-1 shrink-0"></i>
+        <div>
+          <strong class="block text-stone-100 uppercase text-xs tracking-wide font-bold">Evacuation Integration</strong>
+          <span class="text-stone-400 text-xs">All our curated custom itineraries include emergency regional air ambulance (AMREF) dispatch options.</span>
+        </div>
+      </div>
+      
+      <div class="flex items-start gap-3 text-sm text-stone-200">
+        <i class="fa fa-lock text-[#d4a373] mt-1 shrink-0"></i>
+        <div>
+          <strong class="block text-stone-100 uppercase text-xs tracking-wide font-bold">Asset Protection Support</strong>
+          <span class="text-stone-400 text-xs">Learn how specialized high-value equipment riders protect expensive camera tracking gear in transit.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Direct WhatsApp High-Converting Anchor Button -->
+ <a href="https://wa.me/255724196842?text=Hello%2C%20I%27m%20interested%20in%20planning%20a%20safari.%20Could%20you%20share%20available%20packages%2C%20pricing%2C%20and%20the%20best%20travel%20dates%3F" 
+   target="_blank" 
+   rel="noopener noreferrer" 
+   class="group/btn w-full h-16 bg-[#d4a373] text-black flex items-center justify-center gap-3 px-6 transition-all duration-300 hover:bg-white hover:scale-[1.02] shadow-[0_10px_30px_rgba(212,163,115,0.3)] rounded-sm">
+  <span class="text-sm font-black text-center uppercase tracking-[0.2em] group-hover/btn:tracking-[0.22em] transition-all">
+    Book Now
+  </span>
+</a>
+    
+    <!-- Trust & Friction Removal Metrics -->
+    <div class="mt-6 pt-4 border-t border-white/5 flex items-center justify-between text-[10px] uppercase tracking-widest text-stone-500 font-sans">
+      <span><i class="fa fa-bolt text-[#d4a373]"></i> Reply Time: &lt; 12H</span>
+    </div>
+  </div>
+
+  <!-- Quick Info Box Tailored for Insurance Requirements -->
+  <div class="bg-black/50 border border-white/5 p-6 text-stone-400 text-xs uppercase tracking-wider space-y-3 font-sans">
+    <div class="flex justify-between">
+      <span>Medical Rescue:</span>
+      <span class="text-stone-200 font-bold">Air Ambulance Included</span>
+    </div>
+    <div class="flex justify-between">
+      <span>Recommended Cover:</span>
+      <span class="text-stone-200 font-bold">CFAR (Cancel For Any Reason)</span>
+    </div>
+  </div>
+
+</aside>
+
+
+
+    </div>
+  </main>
+
+  
+<style>
+  @keyframes snake-crawl {
+    from { stroke-dashoffset: 100; }
+    to { stroke-dashoffset: 0; }
+  }
+</style>
+
+ <script>
+  
+    const menuBtn = document.getElementById('menuBtn');
+    const nav = document.getElementById('mainNav');
+    const line1 = document.getElementById('line1');
+    const line2 = document.getElementById('line2');
+    const line3 = document.getElementById('line3');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+
+    function toggleMenu() {
+      // Check if it's currently at the base height
+      const isClosed = nav.style.maxHeight === '76px' || nav.style.maxHeight === '';
+      
+      if (isClosed) {
+        // OPENING: Switch to boxy corners immediately, then expand height
+        nav.classList.remove('rounded-full');
+        nav.classList.add('rounded-[2rem]');
+        nav.style.maxHeight = '600px'; 
+
+        // Hamburger -> X
+        line1.style.transform = 'translateY(7px) rotate(45deg)';
+        line3.style.transform = 'translateY(-7px) rotate(-45deg)';
+        line2.style.opacity = '0';
+      } else {
+        // CLOSING: Shrink height first
+        nav.style.maxHeight = '76px';
+        
+        // Wait for the height transition to finish before turning back into a pill
+        setTimeout(() => {
+          if(nav.style.maxHeight === '76px') {
+            nav.classList.remove('rounded-[2rem]');
+            nav.classList.add('rounded-full');
+          }
+        }, 400);
+
+        // X -> Hamburger
+        line1.style.transform = 'none';
+        line3.style.transform = 'none';
+        line2.style.opacity = '1';
+      }
+    }
+
+    menuBtn.addEventListener('click', toggleMenu);
+
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        if (nav.style.maxHeight !== '76px') toggleMenu();
+      });
+    });
+
+
+    // Logic for smooth heavy-mechanical transition
+    document.querySelectorAll('.faq-trigger').forEach(trigger => {
+      trigger.addEventListener('click', () => {
+        const content = trigger.nextElementSibling;
+        const icon = trigger.querySelector('svg');
+        const isOpen = content.style.maxHeight && content.style.maxHeight !== '0px';
+
+        // Close all other items first (Accordion behavior)
+        document.querySelectorAll('.faq-content').forEach(c => c.style.maxHeight = '0px');
+        document.querySelectorAll('.faq-trigger svg').forEach(s => s.style.transform = 'rotate(0deg)');
+
+        if (!isOpen) {
+          content.style.maxHeight = content.scrollHeight + 'px';
+          icon.style.transform = 'rotate(45deg)';
+        } else {
+          content.style.maxHeight = '0px';
+          icon.style.transform = 'rotate(0deg)';
+        }
+      });
+    });
+
+    
+const form = document.getElementById('safariForm');
+const budgetBtns = document.querySelectorAll('.budget-btn');
+let selectedBudget = '';
+
+budgetBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    selectedBudget = btn.dataset.budget;
+  });
+});
+
+form.addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  const name = document.getElementById('name').value || '';
+  const month = document.getElementById('month').value || '';
+  const location = document.getElementById('location').value || '';
+
+  const message = `Hello, I want to plan a safari.%0AName: ${name}%0AMonth: ${month}%0ALocation: ${location}`;
+  
+  window.open(`https://wa.me/255788296274?text=${message}`, '_blank');
+});
+
+    
+/* ios hover */
+ document.addEventListener("touchstart", function() {}, true);
+  </script>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://tawk.to';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+
+</body>
+</html>
+

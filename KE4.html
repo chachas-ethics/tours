@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Soroi Mara Bush Camp Safari</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="bg-[#0d0a07] text-stone-200 antialiased font-sans selection:bg-[#d4a373] selection:text-[#0d0a07]">
+
+  
+  <!-- Navbar -->
+   <nav class="fixed top-6 left-1/2 -translate-x-1/2 w-[92%] max-w-6xl z-[100] transition-[max-height,border-radius] duration-500 ease-in-out px-8 py-4 rounded-full border border-[#3d2b1f]/20 shadow-[0_20px_50px_rgba(0,0,0,0.3)] overflow-hidden" 
+     id="mainNav" 
+     style="background: linear-gradient(180deg, #2d1e14 0%, #1a120b 100%); max-height: 76px;"
+     aria-label="Main navigation">
+  
+  <!-- Subtle Wood Texture Overlay -->
+  <div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: url('https://transparenttextures.com');"></div>
+
+  <div class="flex justify-between items-center relative z-10">
+    <!-- Logo -->
+<a href="#home" class="inline-flex items-center space-x-3 group/logo cursor-pointer" aria-label="Africa Scenery Discovery - Home">
+  <div class="relative w-10 h-10 bg-transparent rounded-full flex items-center justify-center overflow-hidden transition-transform duration-500 group-hover/logo:rotate-[360deg]">
+    <img src="assets/AFRICA SCENERY LOG2.jpeg" alt="Africa Scenery Discovery Logo" class="w-full h-full object-cover">
+  </div>
+  <span class="text-xs font-bold tracking-widest text-[#d4a373] uppercase">
+    AFRICA SCENERY DISCOVERY
+  </span>
+</a>
+
+
+    <!-- Desktop Menu -->
+    <div class="hidden md:flex items-center space-x-12 relative text-[11px] font-black uppercase tracking-[0.2em] text-stone-400">
+      <svg class="absolute top-1/2 left-0 w-full h-12 -translate-y-1/2 pointer-events-none z-0 opacity-40" viewBox="0 0 400 40">
+        <path d="M0,20 Q50,0 100,20 T200,20 T300,20 T400,20" fill="none" stroke="#d4a373" stroke-width="5" stroke-dasharray="10 5" class="animate-[snake-crawl_20s_linear_infinite]" />
+      </svg>
+      <a href="index.html#home" class="relative z-10 hover:text-[#d4a373] transition-colors">Home</a>
+      <a href="About.html" class="relative z-10 hover:text-[#d4a373] transition-colors">About us</a>
+      <a href="index.html#destinations" class="relative z-10 hover:text-[#d4a373] transition-colors">Destinations</a>
+      <a href="index.html#packages" class="relative z-10 hover:text-[#d4a373] transition-colors">Packages</a>
+    </div>
+
+    <!-- CTA --><div class="hidden md:block">
+  <a href="https://wa.me/255724196842?text=Hello%2C%20I%27m%20interested%20in%20planning%20a%20safari.%20Could%20you%20share%20available%20packages%2C%20pricing%2C%20and%20the%20best%20travel%20dates%3F" 
+     target="_blank" 
+     rel="noopener noreferrer"
+     class="inline-block">
+    <button class="relative overflow-hidden group/btn px-8 py-3 rounded-full bg-[#d4a373] text-[10px] font-black uppercase tracking-[0.3em]  shadow-2xl transition-all hover:scale-105 active:scale-95">
+      <span class="relative z-10">Plan Safari</span>
+    </button>
+  </a>
+</div>
+
+
+    <!-- Animated Hamburger Button -->
+    <button id="menuBtn" class="md:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1.5 z-50 focus:outline-none" aria-label="Toggle navigation menu" aria-expanded="false">
+       <span id="line1" class="block w-6 h-0.5 bg-[#d4a373] transition-all duration-300 origin-center"></span>
+       <span id="line2" class="block w-6 h-0.5 bg-[#d4a373] transition-all duration-300"></span>
+       <span id="line3" class="block w-6 h-0.5 bg-[#d4a373] transition-all duration-300 origin-center"></span>
+    </button>
+  </div>
+
+  <!-- Mobile Dropdown -->
+  <div id="mobileMenu" class="md:hidden flex flex-col space-y-6 pt-10 pb-8 text-center text-[11px] font-black uppercase tracking-[0.3em] text-stone-400 border-t border-[#d4a373]/10 mt-6 relative z-10">
+      <a href="index.html#home" class="mobile-link hover:text-[#d4a373] transition-colors">Home</a>
+      <a href="About.html" class="mobile-link hover:text-[#d4a373] transition-colors">About us</a>
+      <a href="index.html#destinations" class="mobile-link hover:text-[#d4a373] transition-colors">Destinations</a>
+      <a href="index.html#packages" class="mobile-link hover:text-[#d4a373] transition-colors">Packages</a>
+      <a href="index.html#gallery" class="mobile-link hover:text-[#d4a373] transition-colors">Gallery</a>
+      <a href="index.html#reviews" class="mobile-link hover:text-[#d4a373] transition-colors">Reviews</a>
+      <a href="https://wa.me/255724196842?text=Hello%2C%20I%27m%20interested%20in%20planning%20a%20safari.%20Could%20you%20share%20available%20packages%2C%20pricing%2C%20and%20the%20best%20travel%20dates%3F" 
+   target="_blank" 
+   rel="noopener noreferrer"
+   class="mobile-link bg-[#d4a373] text-black py-4 uppercase rounded-2xl mx-4">
+   Plan Safari
+</a>
+  </div>
+</nav>
+
+  <!-- Header -->
+  <header class="py-16 border-b mt-20 border-stone-900">
+    <div class="max-w-4xl mx-auto px-6">
+      <span class="text-[#d4a373] text-xs uppercase font-bold tracking-widest block mb-2">Intimate Mara Safari</span>
+      <h1 class="text-3xl sm:text-5xl font-black text-white uppercase tracking-tight mb-4">Soroi Mara Bush Camp Safari</h1>
+      <p class="text-stone-400 text-sm tracking-wide mb-6">4 Days / 3 Nights • Intimate Tented Luxury Experience</p>
+      <div class="flex flex-wrap gap-2 text-xs text-stone-300"><span class="bg-stone-900 px-3 py-1.5 border border-stone-800">Route: Nairobi - Maasai Mara National Reserve - Nairobi</span><span class="bg-stone-900 px-3 py-1.5 border border-stone-800">Soroi Mara Bush Camp • Fly-In Safari</span></div>
+    </div>
+  </header>
+
+  <!-- Main Itinerary -->
+  <main class="max-w-4xl mx-auto px-6 py-12">
+    <p class="text-stone-400 text-sm sm:text-base leading-relaxed mb-12 max-w-3xl italic">This focused 4-day safari centers on delivering an authentic and immersive wildlife experience. Nestled in the heart of the Maasai Mara, enjoy premium tented luxury at Soroi Mara Bush Camp alongside unparalleled access to prime predator territories and winding river bends.</p>
+
+    <div class="space-y-16">
+
+      <!-- D1 Fly-In & Sunset Safari -->
+      <div class="space-y-6">
+        <div class="w-full h-64 sm:h-96 overflow-hidden bg-stone-900 border border-stone-800/60"><img src="picha/flyin.webp" class="w-full h-full object-cover transition-transform duration-[2s] hover:scale-105" alt="Fly-in experience"></div>
+        <div class="border-l-2 border-[#d4a373] pl-6 py-1">
+          <div class="flex flex-wrap items-baseline justify-between gap-2 mb-3"><h2 class="text-xl sm:text-2xl font-black uppercase text-white tracking-tight">D1: Nairobi to Maasai Mara — The Fly-In Experience & Sunset Safari</h2><span class="text-xs bg-stone-900 text-[#a68a64] px-2.5 py-1 border border-stone-800">3 Nights</span></div>
+          <p class="text-stone-300 text-sm sm:text-base leading-relaxed tracking-wide">Depart Nairobi by domestic flight to the Mara airstrip, arriving mid-morning. Transfer to Soroi Mara Bush Camp nestled in an exclusive concession. After lunch and camp orientation, enjoy your first game drive at sunset, witnessing the golden light reveal the Mara's predator territories.</p>
+        </div>
+      </div>
+
+      <!-- D2 Dedicated Big Five Tracking -->
+      <div class="space-y-6">
+        <div class="w-full h-64 sm:h-96 overflow-hidden bg-stone-900 border border-stone-800/60"><img src="picha/big5.jpg" class="w-full h-full object-cover transition-transform duration-[2s] hover:scale-105" alt="Big Five tracking"></div>
+        <div class="border-l-2 border-[#d4a373] pl-6 py-1">
+          <div class="flex flex-wrap items-baseline justify-between gap-2 mb-3"><h2 class="text-xl sm:text-2xl font-black uppercase text-white tracking-tight">D2: Exploring the Maasai Mara — Dedicated Big Five Tracking</h2><span class="text-xs bg-stone-900 text-[#a68a64] px-2.5 py-1 border border-stone-800">Full Day</span></div>
+          <p class="text-stone-300 text-sm sm:text-base leading-relaxed tracking-wide">Full day of guided safaris with an expert tracker focusing on locating and observing the Big Five. Morning and afternoon drives explore river bends and pride territories, with lunch back at camp or at scenic vantage points in the reserve.</p>
+        </div>
+      </div>
+
+      <!-- D3 Full Day Intimacy & Tracking -->
+      <div class="space-y-6">
+        <div class="w-full h-64 sm:h-96 overflow-hidden bg-stone-900 border border-stone-800/60"><img src="picha/soroi.jpg" class="w-full h-full object-cover transition-transform duration-[2s] hover:scale-105" alt="Mara tracking"></div>
+        <div class="border-l-2 border-[#d4a373] pl-6 py-1">
+          <div class="flex flex-wrap items-baseline justify-between gap-2 mb-3"><h2 class="text-xl sm:text-2xl font-black uppercase text-white tracking-tight">D3: Full Day in the Mara — Intimacy, Exclusivity & Savannah Tracking</h2><span class="text-xs bg-stone-900 text-[#a68a64] px-2.5 py-1 border border-stone-800">Full Day</span></div>
+          <p class="text-stone-300 text-sm sm:text-base leading-relaxed tracking-wide">Another full immersion day in the Mara. Lengthen your drives, explore quieter corners of the concession and enjoy unrushed wildlife encounters. Optional activities include walking safaris or photography sessions with expert guides.</p>
+        </div>
+      </div>
+
+      <!-- D4 Final Morning & Departure -->
+      <div class="space-y-6">
+        <div class="w-full h-64 sm:h-96 overflow-hidden bg-stone-900 border border-stone-800/60"><img src="picha/hotballoon.jpg" class="w-full h-full object-cover transition-transform duration-[2s] hover:scale-105" alt="Sunrise Mara"></div>
+        <div class="border-l-2 border-[#d4a373] pl-6 py-1">
+          <div class="flex flex-wrap items-baseline justify-between gap-2 mb-3"><h2 class="text-xl sm:text-2xl font-black uppercase text-white tracking-tight">D4: Maasai Mara to Nairobi — Final Morning Flight & Goodbye</h2><span class="text-xs bg-stone-900 text-[#a68a64] px-2.5 py-1 border border-stone-800">Departure</span></div>
+          <p class="text-stone-300 text-sm sm:text-base leading-relaxed tracking-wide">Early morning game drive searching for last-minute wildlife sightings. Return to camp for breakfast and pack. Transfer to the airstrip for your mid-morning flight back to Nairobi, arriving in the afternoon.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="mt-20 pt-8 border-t border-stone-900 text-center"><p class="font-serif italic text-stone-400 text-sm mb-6">"Thanks for choosing our company"</p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4 max-w-md mx-auto"><a href="mailto:info@arenaafricasafaris.com" class="flex-1 py-3.5 bg-[#d4a373] hover:bg-white text-[#0d0a07] text-xs uppercase font-bold tracking-widest transition-colors duration-300 text-center">Inquire via Email</a><a href="https://wa.me/255788296274" target="_blank" class="flex-1 py-3.5 bg-transparent border border-stone-800 hover:border-[#d4a373] text-stone-300 hover:text-white text-xs uppercase font-bold tracking-widest transition-colors duration-300 text-center">Chat on WhatsApp</a></div>
+    </div>
+  </main>
+
+  <footer class="py-12 bg-stone-950/40 border-t border-stone-900/60 font-mono text-[10px] text-stone-500 tracking-widest text-center"><div>ARENA AFRICA SAFARIS LTD</div><div class="mt-1 flex justify-center gap-4 text-stone-600 text-[9px]"><a href="mailto:info@arenaafricasafaris.com" class="hover:text-stone-400">INFO@ARENAAFRICASAFARIS.COM</a><span>•</span><a href="https://arenaafricasafaris.com" target="_blank" class="hover:text-stone-400">://arenaafricasafaris.com</a></div></footer>
+
+  <style>@keyframes snake-crawl { from { stroke-dashoffset: 100; } to { stroke-dashoffset: 0; } }</style>
+
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const nav = document.getElementById('mainNav');
+    const line1 = document.getElementById('line1');
+    const line2 = document.getElementById('line2');
+    const line3 = document.getElementById('line3');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+    function toggleMenu() { const isClosed = nav.style.maxHeight === '76px' || nav.style.maxHeight === ''; if (isClosed) { nav.classList.remove('rounded-full'); nav.classList.add('rounded-[2rem]'); nav.style.maxHeight = '600px'; line1.style.transform = 'translateY(7px) rotate(45deg)'; line3.style.transform = 'translateY(-7px) rotate(-45deg)'; line2.style.opacity = '0'; } else { nav.style.maxHeight = '76px'; setTimeout(() => { if (nav.style.maxHeight === '76px') { nav.classList.remove('rounded-[2rem]'); nav.classList.add('rounded-full'); } }, 400); line1.style.transform = 'none'; line3.style.transform = 'none'; line2.style.opacity = '1'; } }
+    menuBtn.addEventListener('click', toggleMenu); mobileLinks.forEach(link => { link.addEventListener('click', () => { if (nav.style.maxHeight !== '76px') toggleMenu(); }); }); document.addEventListener('touchstart', function() {}, true);
+  </script>
+
+</body>
+</html>

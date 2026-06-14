@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tours & Safaris Gallery</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="bg-[#0d0a07] text-stone-100 font-sans selection:bg-[#d4a373] selection:text-[#0d0a07]">
+
+    <!-- Global Layout Wrapper with Background Grid -->
+    <div class="min-h-screen relative overflow-hidden bg-cover bg-center bg-no-repeat bg-blend-multiply bg-black/90" style="background-image: url('img/bgzeb.jpg');">
+        
+        <!-- Thin ambient digital grid overlay -->
+        <div class="absolute inset-0 bg-[linear-gradient(to_right,#ffffff02_1px,transparent_1px),linear-gradient(to_bottom,#ffffff02_1px,transparent_1px)] bg-[size:3rem_3rem] pointer-events-none z-0"></div>
+
+        <!-- Navigation Context Return -->
+        <!-- Navbar -->
+   <nav class="fixed top-6 left-1/2 -translate-x-1/2 w-[92%] max-w-6xl z-[100] transition-[max-height,border-radius] duration-500 ease-in-out px-8 py-4 rounded-full border border-[#3d2b1f]/20 shadow-[0_20px_50px_rgba(0,0,0,0.3)] overflow-hidden" 
+     id="mainNav" 
+     style="background: linear-gradient(180deg, #2d1e14 0%, #1a120b 100%); max-height: 76px;">
+  
+  <!-- Subtle Wood Texture Overlay -->
+  <div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: url('https://transparenttextures.com');"></div>
+
+  <div class="flex justify-between items-center relative z-10">
+    <!-- Logo -->
+<a href="index.html#home" class="inline-flex items-center space-x-3 group/logo cursor-pointer">
+  <div class="relative w-10 h-10 bg-transparent rounded-full flex items-center justify-center overflow-hidden transition-transform duration-500 group-hover/logo:rotate-[360deg]">
+    <img src="assets/AFRICA SCENERY LOG2.jpeg" alt="Logo" class="w-full h-full object-cover">
+  </div>
+  <span class="text-l font-bold tracking-widest text-[#d4a373] uppercase">
+    AFRICA SCENERY
+  </span>
+</a>
+
+
+    <!-- Desktop Menu -->
+    <div class="hidden md:flex items-center space-x-12 relative text-[11px] font-black uppercase tracking-[0.2em] text-stone-400">
+      <svg class="absolute top-1/2 left-0 w-full h-12 -translate-y-1/2 pointer-events-none z-0 opacity-40" viewBox="0 0 400 40">
+        <path d="M0,20 Q50,0 100,20 T200,20 T300,20 T400,20" fill="none" stroke="#d4a373" stroke-width="5" stroke-dasharray="10 5" class="animate-[snake-crawl_20s_linear_infinite]" />
+      </svg>
+      <a href="index.html#home" class="relative z-10 hover:text-[#d4a373] transition-colors">Home</a>
+      <a href="About.html" class="relative z-10 hover:text-[#d4a373] transition-colors">About us</a>
+      <a href="index.html#destinations" class="relative z-10 hover:text-[#d4a373] transition-colors">Destinations</a>
+      <a href="index.html#packages" class="relative z-10 hover:text-[#d4a373] transition-colors">Packages</a>
+    </div>
+
+    <!-- CTA --><div class="hidden md:block">
+  <a href="https://wa.me/255788296274?text=Hello%2C%20I%27m%20interested%20in%20planning%20a%20safari.%20Could%20you%20share%20available%20packages%2C%20pricing%2C%20and%20the%20best%20travel%20dates%3F" 
+     target="_blank" 
+     rel="noopener noreferrer"
+     class="inline-block">
+    <button class="relative overflow-hidden group/btn px-8 py-3 rounded-full bg-[#d4a373] text-[10px] font-black uppercase tracking-[0.3em]  shadow-2xl transition-all hover:scale-105 active:scale-95">
+      <span class="relative z-10">Plan Safari</span>
+    </button>
+  </a>
+</div>
+
+
+    <!-- Animated Hamburger Button -->
+    <button id="menuBtn" class="md:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1.5 z-50 focus:outline-none">
+       <span id="line1" class="block w-6 h-0.5 bg-[#d4a373] transition-all duration-300 origin-center"></span>
+       <span id="line2" class="block w-6 h-0.5 bg-[#d4a373] transition-all duration-300"></span>
+       <span id="line3" class="block w-6 h-0.5 bg-[#d4a373] transition-all duration-300 origin-center"></span>
+    </button>
+  </div>
+
+  <!-- Mobile Dropdown -->
+  <div id="mobileMenu" class="md:hidden flex flex-col space-y-6 pt-10 pb-8 text-center text-[11px] font-black uppercase tracking-[0.3em] text-stone-400 border-t border-[#d4a373]/10 mt-6 relative z-10">
+      <a href="index.html#home" class="mobile-link hover:text-[#d4a373] transition-colors">Home</a>
+      <a href="About.html" class="mobile-link hover:text-[#d4a373] transition-colors">About us</a>
+      <a href="index.html#destinations" class="mobile-link hover:text-[#d4a373] transition-colors">Destinations</a>
+      <a href="index.html#packages" class="mobile-link hover:text-[#d4a373] transition-colors">Packages</a>
+      <a href="index.html#gallery" class="mobile-link hover:text-[#d4a373] transition-colors">Gallery</a>
+      <a href="index.html#reviews" class="mobile-link hover:text-[#d4a373] transition-colors">Reviews</a>
+      <a href="https://wa.me/255788296274?text=Hello%2C%20I%27m%20interested%20in%20planning%20a%20safari.%20Could%20you%20share%20available%20packages%2C%20pricing%2C%20and%20the%20best%20travel%20dates%3F" 
+   target="_blank" 
+   rel="noopener noreferrer"
+   class="mobile-link bg-[#d4a373] text-black py-4 uppercase rounded-2xl mx-4">
+   Plan Safari
+</a>
+  </div>
+</nav>
+
+        <!-- Main Content Area -->
+        <main class="max-w-7xl mx-auto px-4 mt-20 sm:px-6 lg:px-8 relative z-10 py-16">
+            
+            <!-- Header Section -->
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 border-l-4 border-[#d4a373] pl-6 md:pl-8 gap-6">
+                <div class="max-w-xl">
+                    <span class="text-[#d4a373] font-mono text-xs uppercase tracking-[0.4em] font-bold block">our visual archive</span>
+                    <h1 class="text-4xl md:text-7xl font-black tracking-tight text-stone-100 uppercase leading-[0.9] mt-3">
+                        visual <br class="hidden md:block"/> 
+                        <span class="italic font-serif text-[#a68a64] lowercase tracking-normal font-normal">reconnaissance</span>
+                    </h1>
+                </div>
+               
+            </div>
+
+
+            <!-- Redesigned Grid Array with High-Fidelity Overlays -->
+            <div class="grid grid-cols-3 lg:grid-cols-4 gap-4" id="gallery-grid">
+                
+                <!-- Item 01: Lions -->
+                <div class="gallery-item aspect-square relative border border-stone-800/80 bg-stone-900/20 overflow-hidden group transition-all duration-500 hover:border-[#d4a373]/40 shadow-2xl cursor-pointer" data-category="wildlife" onclick="openLightbox('img/lodge.jpeg', 'ACCOMODATION')">
+                    <span class="absolute top-4 left-4 z-30 font-mono text-[9px] tracking-widest text-[#d4a373] bg-black/60 px-2 py-0.5 border border-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">ACCOMODATION</span>
+                    <img src="img/lodge.jpeg" alt="Lions" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter group-hover:grayscale-0">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+
+                <!-- Item 01: Lions -->
+                <div class="gallery-item aspect-square relative border border-stone-800/80 bg-stone-900/20 overflow-hidden group transition-all duration-500 hover:border-[#d4a373]/40 shadow-2xl cursor-pointer" data-category="wild" onclick="openLightbox('img/leopard.jpeg', 'LEOPARDS')">
+                    <span class="absolute top-4 left-4 z-30 font-mono text-[9px] tracking-widest text-[#d4a373] bg-black/60 px-2 py-0.5 border border-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">LEOPARDS</span>
+                    <img src="img/leopard.jpeg" alt="Lions" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter group-hover:grayscale-0">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+
+                <!-- Item 01: Lions -->
+                <div class="gallery-item aspect-square relative border border-stone-800/80 bg-stone-900/20 overflow-hidden group transition-all duration-500 hover:border-[#d4a373]/40 shadow-2xl cursor-pointer" data-category="wildlife" onclick="openLightbox('img/lioness.jpeg', 'PRIDE')">
+                    <span class="absolute top-4 left-4 z-30 font-mono text-[9px] tracking-widest text-[#d4a373] bg-black/60 px-2 py-0.5 border border-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">PRIDE</span>
+                    <img src="img/lioness.jpeg" alt="Lions" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter group-hover:grayscale-0">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+
+                <!-- Item 01: Lions -->
+                <div class="gallery-item aspect-square relative border border-stone-800/80 bg-stone-900/20 overflow-hidden group transition-all duration-500 hover:border-[#d4a373]/40 shadow-2xl cursor-pointer" data-category="wildlife" onclick="openLightbox('img/gate.jpeg', 'LAND CRUISERS')">
+                    <span class="absolute top-4 left-4 z-30 font-mono text-[9px] tracking-widest text-[#d4a373] bg-black/60 px-2 py-0.5 border border-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">LAND CRUISERS</span>
+                    <img src="img/gate.jpeg" alt="Lions" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter group-hover:grayscale-0">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+
+                <!-- Item 01: Lions -->
+                <div class="gallery-item aspect-square relative border border-stone-800/80 bg-stone-900/20 overflow-hidden group transition-all duration-500 hover:border-[#d4a373]/40 shadow-2xl cursor-pointer" data-category="wildlife" onclick="openLightbox('img/accomodation.jpg', 'ACCOMODATION')">
+                    <span class="absolute top-4 left-4 z-30 font-mono text-[9px] tracking-widest text-[#d4a373] bg-black/60 px-2 py-0.5 border border-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">ACCOMODATION</span>
+                    <img src="img/accomodation.jpg" alt="Lions" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter group-hover:grayscale-0">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+
+                <!-- Item 01: Lions -->
+                <div class="gallery-item aspect-square relative border border-stone-800/80 bg-stone-900/20 overflow-hidden group transition-all duration-500 hover:border-[#d4a373]/40 shadow-2xl cursor-pointer" data-category="wildlife" onclick="openLightbox('img/fleet2.jpeg', 'LAND CRUISERS')">
+                    <span class="absolute top-4 left-4 z-30 font-mono text-[9px] tracking-widest text-[#d4a373] bg-black/60 px-2 py-0.5 border border-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">LAND CRUISERS</span>
+                    <img src="img/fleet2.jpeg" alt="Lions" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter group-hover:grayscale-0">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+
+                <!-- Item 01: Lions -->
+                <div class="gallery-item aspect-square relative border border-stone-800/80 bg-stone-900/20 overflow-hidden group transition-all duration-500 hover:border-[#d4a373]/40 shadow-2xl cursor-pointer" data-category="wildlife" onclick="openLightbox('img/palms.jpeg', 'SUNSETS')">
+                    <span class="absolute top-4 left-4 z-30 font-mono text-[9px] tracking-widest text-[#d4a373] bg-black/60 px-2 py-0.5 border border-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">SUNSETS</span>
+                    <img src="img/palms.jpeg" alt="Lions" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter group-hover:grayscale-0">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+
+                <!-- Item 01: Lions -->
+                <div class="gallery-item aspect-square relative border border-stone-800/80 bg-stone-900/20 overflow-hidden group transition-all duration-500 hover:border-[#d4a373]/40 shadow-2xl cursor-pointer" data-category="wildlife" onclick="openLightbox('img/hippo.jpg', 'HIPPOS')">
+                    <span class="absolute top-4 left-4 z-30 font-mono text-[9px] tracking-widest text-[#d4a373] bg-black/60 px-2 py-0.5 border border-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">HIPPOS</span>
+                    <img src="img/hippo.jpg" alt="Lions" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter group-hover:grayscale-0">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+
+                <!-- Item 01: Lions -->
+                <div class="gallery-item aspect-square relative border border-stone-800/80 bg-stone-900/20 overflow-hidden group transition-all duration-500 hover:border-[#d4a373]/40 shadow-2xl cursor-pointer" data-category="wildlife" onclick="openLightbox('img/sheets.jpeg', 'ACCOMODATION')">
+                    <span class="absolute top-4 left-4 z-30 font-mono text-[9px] tracking-widest text-[#d4a373] bg-black/60 px-2 py-0.5 border border-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">ACCOMODATION</span>
+                    <img src="img/sheets.jpeg" alt="Lions" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter group-hover:grayscale-0">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+
+                <!-- Item 01: Lions -->
+                <div class="gallery-item aspect-square relative border border-stone-800/80 bg-stone-900/20 overflow-hidden group transition-all duration-500 hover:border-[#d4a373]/40 shadow-2xl cursor-pointer" data-category="wildlife" onclick="openLightbox('img/room.jpeg', 'ACCOMODATION')">
+                    <span class="absolute top-4 left-4 z-30 font-mono text-[9px] tracking-widest text-[#d4a373] bg-black/60 px-2 py-0.5 border border-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">ACCOMODATION</span>
+                    <img src="img/room.jpeg" alt="Lions" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter group-hover:grayscale-0">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+
+                <!-- Item 01: Lions -->
+                <div class="gallery-item aspect-square relative border border-stone-800/80 bg-stone-900/20 overflow-hidden group transition-all duration-500 hover:border-[#d4a373]/40 shadow-2xl cursor-pointer" data-category="wildlife" onclick="openLightbox('img/baaah.jpeg', 'LIONS')">
+                    <span class="absolute top-4 left-4 z-30 font-mono text-[9px] tracking-widest text-[#d4a373] bg-black/60 px-2 py-0.5 border border-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">LIONS</span>
+                    <img src="img/baaah.jpeg" alt="Lions" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter group-hover:grayscale-0">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+
+                <!-- Item 01: Lions -->
+                <div class="gallery-item aspect-square relative border border-stone-800/80 bg-stone-900/20 overflow-hidden group transition-all duration-500 hover:border-[#d4a373]/40 shadow-2xl cursor-pointer" data-category="wildlife" onclick="openLightbox('img/raffe.jpeg', 'GIRAFFE')">
+                    <span class="absolute top-4 left-4 z-30 font-mono text-[9px] tracking-widest text-[#d4a373] bg-black/60 px-2 py-0.5 border border-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">GIRAFFE</span>
+                    <img src="img/raffe.jpeg" alt="Lions" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter group-hover:grayscale-0">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+
+                <!-- Item 01: Lions -->
+                <div class="gallery-item aspect-square relative border border-stone-800/80 bg-stone-900/20 overflow-hidden group transition-all duration-500 hover:border-[#d4a373]/40 shadow-2xl cursor-pointer" data-category="wildlife" onclick="openLightbox('img/pee.jpeg', 'LIONS')">
+                    <span class="absolute top-4 left-4 z-30 font-mono text-[9px] tracking-widest text-[#d4a373] bg-black/60 px-2 py-0.5 border border-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">LIONS</span>
+                    <img src="img/pee.jpeg" alt="Lions" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter group-hover:grayscale-0">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+
+                <!-- Item 01: Lions -->
+                <div class="gallery-item aspect-square relative border border-stone-800/80 bg-stone-900/20 overflow-hidden group transition-all duration-500 hover:border-[#d4a373]/40 shadow-2xl cursor-pointer" data-category="wildlife" onclick="openLightbox('img/guide.jpeg', 'TOUR GUIDE')">
+                    <span class="absolute top-4 left-4 z-30 font-mono text-[9px] tracking-widest text-[#d4a373] bg-black/60 px-2 py-0.5 border border-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">TOUR GUIDE</span>
+                    <img src="img/guide.jpeg" alt="Lions" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter group-hover:grayscale-0">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+
+                <!-- Item 01: Lions -->
+                <div class="gallery-item aspect-square relative border border-stone-800/80 bg-stone-900/20 overflow-hidden group transition-all duration-500 hover:border-[#d4a373]/40 shadow-2xl cursor-pointer" data-category="wildlife" onclick="openLightbox('img/swing2.jpeg', 'ACCOMODATION')">
+                    <span class="absolute top-4 left-4 z-30 font-mono text-[9px] tracking-widest text-[#d4a373] bg-black/60 px-2 py-0.5 border border-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">ACCOMODATION</span>
+                    <img src="img/swing2.jpeg" alt="Lions" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter group-hover:grayscale-0">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+
+                <!-- Item 01: Lions -->
+                <div class="gallery-item aspect-square relative border border-stone-800/80 bg-stone-900/20 overflow-hidden group transition-all duration-500 hover:border-[#d4a373]/40 shadow-2xl cursor-pointer" data-category="wildlife" onclick="openLightbox('img/indian.jpeg', 'MAASAI')">
+                    <span class="absolute top-4 left-4 z-30 font-mono text-[9px] tracking-widest text-[#d4a373] bg-black/60 px-2 py-0.5 border border-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">MAASAI</span>
+                    <img src="img/indian.jpeg" alt="Lions" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter group-hover:grayscale-0">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+
+                <!-- Item 01: Lions -->
+                <div class="gallery-item aspect-square relative border border-stone-800/80 bg-stone-900/20 overflow-hidden group transition-all duration-500 hover:border-[#d4a373]/40 shadow-2xl cursor-pointer" data-category="wildlife" onclick="openLightbox('img/masaiwomen.jpeg', 'MAASAI')">
+                    <span class="absolute top-4 left-4 z-30 font-mono text-[9px] tracking-widest text-[#d4a373] bg-black/60 px-2 py-0.5 border border-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">MAASAI</span>
+                    <img src="img/masaiwomen.jpeg" alt="Lions" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter group-hover:grayscale-0">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+
+                <!-- Item 01: Lions -->
+                <div class="gallery-item aspect-square relative border border-stone-800/80 bg-stone-900/20 overflow-hidden group transition-all duration-500 hover:border-[#d4a373]/40 shadow-2xl cursor-pointer" data-category="wildlife" onclick="openLightbox('img/fleet.jpeg', 'LAND CRUISERS')">
+                    <span class="absolute top-4 left-4 z-30 font-mono text-[9px] tracking-widest text-[#d4a373] bg-black/60 px-2 py-0.5 border border-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">LAND CRUISERS</span>
+                    <img src="img/fleet.jpeg" alt="Lions" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter group-hover:grayscale-0">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+
+                <!-- Item 01: Lions -->
+                <div class="gallery-item aspect-square relative border border-stone-800/80 bg-stone-900/20 overflow-hidden group transition-all duration-500 hover:border-[#d4a373]/40 shadow-2xl cursor-pointer" data-category="wildlife" onclick="openLightbox('img/leo.jpeg', 'CHEETAHS')">
+                    <span class="absolute top-4 left-4 z-30 font-mono text-[9px] tracking-widest text-[#d4a373] bg-black/60 px-2 py-0.5 border border-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">CHEETAHS</span>
+                    <img src="img/leo.jpeg" alt="Lions" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter group-hover:grayscale-0">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+
+                <!-- Item 01: Lions -->
+                <div class="gallery-item aspect-square relative border border-stone-800/80 bg-stone-900/20 overflow-hidden group transition-all duration-500 hover:border-[#d4a373]/40 shadow-2xl cursor-pointer" data-category="wildlife" onclick="openLightbox('img/lion.jpeg', 'LIONS')">
+                    <span class="absolute top-4 left-4 z-30 font-mono text-[9px] tracking-widest text-[#d4a373] bg-black/60 px-2 py-0.5 border border-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">LIONS</span>
+                    <img src="img/lion.jpeg" alt="Lions" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter group-hover:grayscale-0">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+
+                 <!-- Item 01: Lions -->
+                <div class="gallery-item aspect-square relative border border-stone-800/80 bg-stone-900/20 overflow-hidden group transition-all duration-500 hover:border-[#d4a373]/40 shadow-2xl cursor-pointer" data-category="wildlife" onclick="openLightbox('img/yawn.jpeg', 'LIONS')">
+                    <span class="absolute top-4 left-4 z-30 font-mono text-[9px] tracking-widest text-[#d4a373] bg-black/60 px-2 py-0.5 border border-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">LIONS</span>
+                    <img src="img/yawn.jpeg" alt="Lions" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter group-hover:grayscale-0">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+
+                 <!-- Item 01: Lions -->
+                <div class="gallery-item aspect-square relative border border-stone-800/80 bg-stone-900/20 overflow-hidden group transition-all duration-500 hover:border-[#d4a373]/40 shadow-2xl cursor-pointer" data-category="wildlife" onclick="openLightbox('img/acc.jpeg', 'ACCOMODATION')">
+                    <span class="absolute top-4 left-4 z-30 font-mono text-[9px] tracking-widest text-[#d4a373] bg-black/60 px-2 py-0.5 border border-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">ACCOMODATION</span>
+                    <img src="img/acc.jpeg" alt="Lions" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter group-hover:grayscale-0">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+
+                <!-- Item 01: Lions -->
+                <div class="gallery-item aspect-square relative border border-stone-800/80 bg-stone-900/20 overflow-hidden group transition-all duration-500 hover:border-[#d4a373]/40 shadow-2xl cursor-pointer" data-category="wildlife" onclick="openLightbox('img/roar.jpeg', 'LIONS')">
+                    <span class="absolute top-4 left-4 z-30 font-mono text-[9px] tracking-widest text-[#d4a373] bg-black/60 px-2 py-0.5 border border-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">LIONS</span>
+                    <img src="img/roar.jpeg" alt="Lions" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter group-hover:grayscale-0">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+
+                 <!-- Item 01: Lions -->
+                <div class="gallery-item aspect-square relative border border-stone-800/80 bg-stone-900/20 overflow-hidden group transition-all duration-500 hover:border-[#d4a373]/40 shadow-2xl cursor-pointer" data-category="wildlife" onclick="openLightbox('img/zee.jpeg', 'ZEBRAS')">
+                    <span class="absolute top-4 left-4 z-30 font-mono text-[9px] tracking-widest text-[#d4a373] bg-black/60 px-2 py-0.5 border border-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">ZEBRAS</span>
+                    <img src="img/zee.jpeg" alt="Lions" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter group-hover:grayscale-0">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+
+                 <!-- Item 01: Lions -->
+                <div class="gallery-item aspect-square relative border border-stone-800/80 bg-stone-900/20 overflow-hidden group transition-all duration-500 hover:border-[#d4a373]/40 shadow-2xl cursor-pointer" data-category="wildlife" onclick="openLightbox('img/cat.jpeg', 'LEOPARDS')">
+                    <span class="absolute top-4 left-4 z-30 font-mono text-[9px] tracking-widest text-[#d4a373] bg-black/60 px-2 py-0.5 border border-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">LEOPARDS</span>
+                    <img src="img/cat.jpeg" alt="Lions" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter group-hover:grayscale-0">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+
+                <!-- Item 01: Lions -->
+                <div class="gallery-item aspect-square relative border border-stone-800/80 bg-stone-900/20 overflow-hidden group transition-all duration-500 hover:border-[#d4a373]/40 shadow-2xl cursor-pointer" data-category="wildlife" onclick="openLightbox('img/aerial2.jpeg', 'ACCOMODATION')">
+                    <span class="absolute top-4 left-4 z-30 font-mono text-[9px] tracking-widest text-[#d4a373] bg-black/60 px-2 py-0.5 border border-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">ACCOMODATION</span>
+                    <img src="img/aerial2.jpeg" alt="Lions" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter group-hover:grayscale-0">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+
+                 <!-- Item 01: Lions -->
+                <div class="gallery-item aspect-square relative border border-stone-800/80 bg-stone-900/20 overflow-hidden group transition-all duration-500 hover:border-[#d4a373]/40 shadow-2xl cursor-pointer" data-category="wildlife" onclick="openLightbox('img/kings.jpeg', 'LIONS')">
+                    <span class="absolute top-4 left-4 z-30 font-mono text-[9px] tracking-widest text-[#d4a373] bg-black/60 px-2 py-0.5 border border-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">LIONS</span>
+                    <img src="img/kings.jpeg" alt="Lions" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter group-hover:grayscale-0">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+
+                 <!-- Item 01: Lions -->
+                <div class="gallery-item aspect-square relative border border-stone-800/80 bg-stone-900/20 overflow-hidden group transition-all duration-500 hover:border-[#d4a373]/40 shadow-2xl cursor-pointer" data-category="wildlife" onclick="openLightbox('img/crane.jpeg', 'CRANES')">
+                    <span class="absolute top-4 left-4 z-30 font-mono text-[9px] tracking-widest text-[#d4a373] bg-black/60 px-2 py-0.5 border border-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">CRANES</span>
+                    <img src="img/crane.jpeg" alt="Lions" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter group-hover:grayscale-0">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+
+                <!-- Item 01: Lions -->
+                <div class="gallery-item aspect-square relative border border-stone-800/80 bg-stone-900/20 overflow-hidden group transition-all duration-500 hover:border-[#d4a373]/40 shadow-2xl cursor-pointer" data-category="wildlife" onclick="openLightbox('img/hipo.jpeg', 'HIPPOS')">
+                    <span class="absolute top-4 left-4 z-30 font-mono text-[9px] tracking-widest text-[#d4a373] bg-black/60 px-2 py-0.5 border border-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">HIPPOS</span>
+                    <img src="img/hipo.jpeg" alt="Lions" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter group-hover:grayscale-0">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+
+                 <!-- Item 01: Lions -->
+                <div class="gallery-item aspect-square relative border border-stone-800/80 bg-stone-900/20 overflow-hidden group transition-all duration-500 hover:border-[#d4a373]/40 shadow-2xl cursor-pointer" data-category="wildlife" onclick="openLightbox('assets/masai lion.avif', 'LIONS')">
+                    <span class="absolute top-4 left-4 z-30 font-mono text-[9px] tracking-widest text-[#d4a373] bg-black/60 px-2 py-0.5 border border-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">LIONS</span>
+                    <img src="assets/masai lion.avif" alt="Lions" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter group-hover:grayscale-0">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+
+               
+
+            </div>
+        </main>
+
+        <!-- High-Fidelity Tactical Lightbox Overlay -->
+        <div id="lightbox" class="fixed inset-0 bg-black/95 z-50 flex flex-col items-center justify-center hidden opacity-0 transition-opacity duration-300 backdrop-blur-sm">
+            <!-- Close Tactical Trigger -->
+            <button onclick="closeLightbox()" class="absolute bottom-10 right-6 text-stone-400 hover:text-[#d4a373] transition-colors z-50 p-2 border border-stone-800/80 bg-stone-900/40">
+                <span class="font-black text-xs uppercase p-12 tracking-widest">close</span>
+            </button>
+            
+            <!-- Lightbox Frame Structure -->
+            <div class="relative max-w-5xl max-h-[75vh] mx-4 border border-stone-800 p-2 bg-stone-950/40 shadow-2xl">
+                <!-- Outer crosshair structural corners for sci-fi tracking look -->
+                <div class="absolute -top-1 -left-1 w-3 h-3 border-t-2 border-l-2 border-[#d4a373]"></div>
+                <div class="absolute -top-1 -right-1 w-3 h-3 border-t-2 border-r-2 border-[#d4a373]"></div>
+                <div class="absolute -bottom-1 -left-1 w-3 h-3 border-b-2 border-l-2 border-[#d4a373]"></div>
+                <div class="absolute -bottom-1 -right-1 w-3 h-3 border-b-2 border-r-2 border-[#d4a373]"></div>
+                
+                <img id="lightbox-img" src="" alt="High resolution preview" class="max-w-full max-h-[70vh] object-contain block mx-auto">
+            </div>
+
+            <!-- Lightbox Meta Telemetry -->
+            <div class="mt-4 text-center">
+                <p id="lightbox-caption" class=" text-xs uppercase tracking-[0.2em] text-[#d4a373]"></p>
+                </div>
+        </div>
+
+    </div>
+
+         
+<style>
+  @keyframes snake-crawl {
+    from { stroke-dashoffset: 100; }
+    to { stroke-dashoffset: 0; }
+  }
+</style>
+    
+    <!-- Gallery & Lightbox Controller Engine -->
+    <script>
+        function filterGallery(category) {
+            const items = document.querySelectorAll('.gallery-item');
+            let matchedCount = 0;
+
+            // Handle Item Animations & Visibilities 
+            items.forEach(item => {
+                if (category === 'all' || item.getAttribute('data-category') === category) {
+                    item.style.display = 'block';
+                    matchedCount++;
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+
+            // Update Counter Text Asset UI
+            document.getElementById('asset-count').innerText = `${matchedCount} Active Files`;
+
+            // Active State Styling Update
+            const buttons = document.querySelectorAll('.gallery-filter-btn');
+            buttons.forEach(btn => {
+                btn.classList.remove('text-[#0d0a07]', 'bg-[#d4a373]', 'border-[#d4a373]');
+                btn.classList.add('text-stone-400', 'border-stone-800');
+            });
+
+            // Set current trigger design context
+            const activeBtn = event.currentTarget;
+            activeBtn.classList.remove('text-stone-400', 'border-stone-800');
+            activeBtn.classList.add('text-[#0d0a07]', 'bg-[#d4a373]', 'border-[#d4a373]');
+        }
+
+        // Lightbox Runtime States
+        function openLightbox(src, caption) {
+            const lightbox = document.getElementById('lightbox');
+            const img = document.getElementById('lightbox-img');
+            const cap = document.getElementById('lightbox-caption');
+
+            img.src = src;
+            cap.innerText = ` ${caption}`;
+            
+            lightbox.classList.remove('hidden');
+            setTimeout(() => {
+                lightbox.classList.remove('opacity-0');
+            }, 10);
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.classList.add('opacity-0');
+            setTimeout(() => {
+                lightbox.classList.add('hidden');
+            }, 300);
+        }
+
+        // Close lightbox on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeLightbox();
+        });
+
+
+  
+    const menuBtn = document.getElementById('menuBtn');
+    const nav = document.getElementById('mainNav');
+    const line1 = document.getElementById('line1');
+    const line2 = document.getElementById('line2');
+    const line3 = document.getElementById('line3');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+
+    function toggleMenu() {
+      // Check if it's currently at the base height
+      const isClosed = nav.style.maxHeight === '76px' || nav.style.maxHeight === '';
+      
+      if (isClosed) {
+        // OPENING: Switch to boxy corners immediately, then expand height
+        nav.classList.remove('rounded-full');
+        nav.classList.add('rounded-[2rem]');
+        nav.style.maxHeight = '600px'; 
+
+        // Hamburger -> X
+        line1.style.transform = 'translateY(7px) rotate(45deg)';
+        line3.style.transform = 'translateY(-7px) rotate(-45deg)';
+        line2.style.opacity = '0';
+      } else {
+        // CLOSING: Shrink height first
+        nav.style.maxHeight = '76px';
+        
+        // Wait for the height transition to finish before turning back into a pill
+        setTimeout(() => {
+          if(nav.style.maxHeight === '76px') {
+            nav.classList.remove('rounded-[2rem]');
+            nav.classList.add('rounded-full');
+          }
+        }, 400);
+
+        // X -> Hamburger
+        line1.style.transform = 'none';
+        line3.style.transform = 'none';
+        line2.style.opacity = '1';
+      }
+    }
+
+    menuBtn.addEventListener('click', toggleMenu);
+
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        if (nav.style.maxHeight !== '76px') toggleMenu();
+      });
+    });
+
+
+    // Logic for smooth heavy-mechanical transition
+    document.querySelectorAll('.faq-trigger').forEach(trigger => {
+      trigger.addEventListener('click', () => {
+        const content = trigger.nextElementSibling;
+        const icon = trigger.querySelector('svg');
+        const isOpen = content.style.maxHeight && content.style.maxHeight !== '0px';
+
+        // Close all other items first (Accordion behavior)
+        document.querySelectorAll('.faq-content').forEach(c => c.style.maxHeight = '0px');
+        document.querySelectorAll('.faq-trigger svg').forEach(s => s.style.transform = 'rotate(0deg)');
+
+        if (!isOpen) {
+          content.style.maxHeight = content.scrollHeight + 'px';
+          icon.style.transform = 'rotate(45deg)';
+        } else {
+          content.style.maxHeight = '0px';
+          icon.style.transform = 'rotate(0deg)';
+        }
+      });
+    });
+
+    
+const form = document.getElementById('safariForm');
+const budgetBtns = document.querySelectorAll('.budget-btn');
+let selectedBudget = '';
+
+budgetBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    selectedBudget = btn.dataset.budget;
+  });
+});
+
+form.addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  const name = document.getElementById('name').value || '';
+  const month = document.getElementById('month').value || '';
+  const location = document.getElementById('location').value || '';
+
+  const message = `Hello, I want to plan a safari.%0AName: ${name}%0AMonth: ${month}%0ALocation: ${location}`;
+  
+  window.open(`https://wa.me/255724196842?text=${message}`, '_blank');
+});
+
+    
+/* ios hover */
+ document.addEventListener("touchstart", function() {}, true);
+  </script>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://tawk.to';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+    </script>
+
+
+</body>
+</html>

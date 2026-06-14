@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iconic Kenya Safari Experience</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="bg-[#0d0a07] text-stone-200 antialiased font-sans selection:bg-[#d4a373] selection:text-[#0d0a07]">
+  
+  
+  <!-- Navbar -->
+   <nav class="fixed top-6 left-1/2 -translate-x-1/2 w-[92%] max-w-6xl z-[100] transition-[max-height,border-radius] duration-500 ease-in-out px-8 py-4 rounded-full border border-[#3d2b1f]/20 shadow-[0_20px_50px_rgba(0,0,0,0.3)] overflow-hidden" 
+     id="mainNav" 
+     style="background: linear-gradient(180deg, #2d1e14 0%, #1a120b 100%); max-height: 76px;"
+     aria-label="Main navigation">
+  
+  <!-- Subtle Wood Texture Overlay -->
+  <div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: url('https://transparenttextures.com');"></div>
+
+  <div class="flex justify-between items-center relative z-10">
+    <!-- Logo -->
+<a href="#home" class="inline-flex items-center space-x-3 group/logo cursor-pointer" aria-label="Africa Scenery Discovery - Home">
+  <div class="relative w-10 h-10 bg-transparent rounded-full flex items-center justify-center overflow-hidden transition-transform duration-500 group-hover/logo:rotate-[360deg]">
+    <img src="assets/AFRICA SCENERY LOG2.jpeg" alt="Africa Scenery Discovery Logo" class="w-full h-full object-cover">
+  </div>
+  <span class="text-xs font-bold tracking-widest text-[#d4a373] uppercase">
+    AFRICA SCENERY DISCOVERY
+  </span>
+</a>
+
+
+    <!-- Desktop Menu -->
+    <div class="hidden md:flex items-center space-x-12 relative text-[11px] font-black uppercase tracking-[0.2em] text-stone-400">
+      <svg class="absolute top-1/2 left-0 w-full h-12 -translate-y-1/2 pointer-events-none z-0 opacity-40" viewBox="0 0 400 40">
+        <path d="M0,20 Q50,0 100,20 T200,20 T300,20 T400,20" fill="none" stroke="#d4a373" stroke-width="5" stroke-dasharray="10 5" class="animate-[snake-crawl_20s_linear_infinite]" />
+      </svg>
+      <a href="index.html#home" class="relative z-10 hover:text-[#d4a373] transition-colors">Home</a>
+      <a href="About.html" class="relative z-10 hover:text-[#d4a373] transition-colors">About us</a>
+      <a href="index.html#destinations" class="relative z-10 hover:text-[#d4a373] transition-colors">Destinations</a>
+      <a href="index.html#packages" class="relative z-10 hover:text-[#d4a373] transition-colors">Packages</a>
+    </div>
+
+    <!-- CTA --><div class="hidden md:block">
+  <a href="https://wa.me/255724196842?text=Hello%2C%20I%27m%20interested%20in%20planning%20a%20safari.%20Could%20you%20share%20available%20packages%2C%20pricing%2C%20and%20the%20best%20travel%20dates%3F" 
+     target="_blank" 
+     rel="noopener noreferrer"
+     class="inline-block">
+    <button class="relative overflow-hidden group/btn px-8 py-3 rounded-full bg-[#d4a373] text-[10px] font-black uppercase tracking-[0.3em]  shadow-2xl transition-all hover:scale-105 active:scale-95">
+      <span class="relative z-10">Plan Safari</span>
+    </button>
+  </a>
+</div>
+
+
+    <!-- Animated Hamburger Button -->
+    <button id="menuBtn" class="md:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1.5 z-50 focus:outline-none" aria-label="Toggle navigation menu" aria-expanded="false">
+       <span id="line1" class="block w-6 h-0.5 bg-[#d4a373] transition-all duration-300 origin-center"></span>
+       <span id="line2" class="block w-6 h-0.5 bg-[#d4a373] transition-all duration-300"></span>
+       <span id="line3" class="block w-6 h-0.5 bg-[#d4a373] transition-all duration-300 origin-center"></span>
+    </button>
+  </div>
+
+  <!-- Mobile Dropdown -->
+  <div id="mobileMenu" class="md:hidden flex flex-col space-y-6 pt-10 pb-8 text-center text-[11px] font-black uppercase tracking-[0.3em] text-stone-400 border-t border-[#d4a373]/10 mt-6 relative z-10">
+      <a href="index.html#home" class="mobile-link hover:text-[#d4a373] transition-colors">Home</a>
+      <a href="About.html" class="mobile-link hover:text-[#d4a373] transition-colors">About us</a>
+      <a href="index.html#destinations" class="mobile-link hover:text-[#d4a373] transition-colors">Destinations</a>
+      <a href="index.html#packages" class="mobile-link hover:text-[#d4a373] transition-colors">Packages</a>
+      <a href="index.html#gallery" class="mobile-link hover:text-[#d4a373] transition-colors">Gallery</a>
+      <a href="index.html#reviews" class="mobile-link hover:text-[#d4a373] transition-colors">Reviews</a>
+      <a href="https://wa.me/255724196842?text=Hello%2C%20I%27m%20interested%20in%20planning%20a%20safari.%20Could%20you%20share%20available%20packages%2C%20pricing%2C%20and%20the%20best%20travel%20dates%3F" 
+   target="_blank" 
+   rel="noopener noreferrer"
+   class="mobile-link bg-[#d4a373] text-black py-4 uppercase rounded-2xl mx-4">
+   Plan Safari
+</a>
+  </div>
+</nav>
+  <header class="py-16 border-b mt-20 border-stone-900">
+    <div class="max-w-4xl mx-auto px-6">
+      <span class="text-[#d4a373] text-xs uppercase font-bold tracking-widest block mb-2">Iconic Kenya Safari Experience</span>
+      <h1 class="text-3xl sm:text-5xl font-black text-white uppercase tracking-tight mb-4">Iconic Kenya Safari Experience</h1>
+      <p class="text-stone-400 text-sm tracking-wide mb-6">12 Days / 11 Nights • Private 4x4 Overland Land Cruiser Profile</p>
+      <div class="flex flex-wrap gap-2 text-xs text-stone-300"><span class="bg-stone-900 px-3 py-1.5 border border-stone-800">Route: Nairobi - Amboseli - Lewa - Nakuru - Maasai Mara</span><span class="bg-stone-900 px-3 py-1.5 border border-stone-800">Flagship Expedition • Private 4×4</span></div>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-6 py-12">
+    <p class="text-stone-400 text-sm sm:text-base leading-relaxed mb-12 max-w-3xl italic">This comprehensive 12-day flagship expedition offers deep immersion into Kenya's ultimate wildlife sanctuaries. Travel by custom 4×4 Landcruiser to witness Amboseli's giant tuskers, private conservancy conservation breakthroughs, and the legendary drama of the Maasai Mara plains.</p>
+
+    <div class="space-y-16">
+
+      <div class="space-y-6">
+        <div class="w-full h-64 sm:h-96 overflow-hidden bg-stone-900 border border-stone-800/60"><img src="picha/terminal.webp" class="w-full h-full object-cover transition-transform duration-[2s] hover:scale-105" alt="Arrival Nairobi"></div>
+        <div class="border-l-2 border-[#d4a373] pl-6 py-1"><div class="flex flex-wrap items-baseline justify-between gap-2 mb-3"><h2 class="text-xl sm:text-2xl font-black uppercase text-white tracking-tight">Day 1: Arrival in Nairobi</h2><span class="text-xs bg-stone-900 text-[#a68a64] px-2.5 py-1 border border-stone-800">Duration: 1 Night</span></div><p class="text-stone-300 text-sm sm:text-base leading-relaxed tracking-wide">Arrive at Jomo Kenyatta International Airport (NBO) where a representative will welcome you and transfer you to your hotel for an evening briefing ahead of the expedition.</p></div>
+      </div>
+
+      <div class="space-y-6">
+        <div class="w-full h-64 sm:h-96 overflow-hidden bg-stone-900 border border-stone-800/60"><img src="pictures/chogoria.jpg" class="w-full h-full object-cover transition-transform duration-[2s] hover:scale-105" alt="Meru landscapes"></div>
+        <div class="border-l-2 border-[#d4a373] pl-6 py-1"><div class="flex flex-wrap items-baseline justify-between gap-2 mb-3"><h2 class="text-xl sm:text-2xl font-black uppercase text-white tracking-tight">Day 2 & 3: Meru — Birthplace of Elsa & Rare Wildlife</h2><span class="text-xs bg-stone-900 text-[#a68a64] px-2.5 py-1 border border-stone-800">Duration: 2 Nights</span></div><p class="text-stone-300 text-sm sm:text-base leading-relaxed tracking-wide">Explore Meru National Park, its conservation history and diverse habitats. Two days of guided drives and walks focus on wildlife recovery, rare species viewing and conservation narratives.</p></div>
+      </div>
+
+      <div class="space-y-6">
+        <div class="w-full h-64 sm:h-96 overflow-hidden bg-stone-900 border border-stone-800/60"><img src="picha/samburunr.jpg" class="w-full h-full object-cover transition-transform duration-[2s] hover:scale-105" alt="Samburu and Shaba"></div>
+        <div class="border-l-2 border-[#d4a373] pl-6 py-1"><div class="flex flex-wrap items-baseline justify-between gap-2 mb-3"><h2 class="text-xl sm:text-2xl font-black uppercase text-white tracking-tight">Day 4 & 5: Shaba National Reserve & Samburu Special Five</h2><span class="text-xs bg-stone-900 text-[#a68a64] px-2.5 py-1 border border-stone-800">Duration: 2 Nights</span></div><p class="text-stone-300 text-sm sm:text-base leading-relaxed tracking-wide">Visit the arid northern reserves to seek the Samburu Special Five and enjoy remote, characterful landscapes. Includes game drives and optional cultural visits.</p></div>
+      </div>
+
+      <div class="space-y-6">
+        <div class="w-full h-64 sm:h-96 overflow-hidden bg-stone-900 border border-stone-800/60"><img src="assets/OPC.jpg" class="w-full h-full object-cover transition-transform duration-[2s] hover:scale-105" alt="Ol Pejeta Conservancy"></div>
+        <div class="border-l-2 border-[#d4a373] pl-6 py-1"><div class="flex flex-wrap items-baseline justify-between gap-2 mb-3"><h2 class="text-xl sm:text-2xl font-black uppercase text-white tracking-tight">Day 6 & 7: Ol Pejeta Conservancy — Rhinos & Rangers</h2><span class="text-xs bg-stone-900 text-[#a68a64] px-2.5 py-1 border border-stone-800">Duration: 2 Nights</span></div><p class="text-stone-300 text-sm sm:text-base leading-relaxed tracking-wide">Two days inside Ol Pejeta focusing on rhino conservation, chimpanzee sanctuary visits and ranger-led conservation briefings, with guided safaris across the conservancy.</p></div>
+      </div>
+
+      <div class="space-y-6">
+        <div class="w-full h-64 sm:h-96 overflow-hidden bg-stone-900 border border-stone-800/60"><img src="assets/nakuru.jpg" class="w-full h-full object-cover transition-transform duration-[2s] hover:scale-105" alt="Lake Nakuru"></div>
+        <div class="border-l-2 border-[#d4a373] pl-6 py-1"><div class="flex flex-wrap items-baseline justify-between gap-2 mb-3"><h2 class="text-xl sm:text-2xl font-black uppercase text-white tracking-tight">Day 8 & 9: Great Rift Valley — Lake Nakuru & Naivasha Adventure</h2><span class="text-xs bg-stone-900 text-[#a68a64] px-2.5 py-1 border border-stone-800">Duration: 2 Nights</span></div><p class="text-stone-300 text-sm sm:text-base leading-relaxed tracking-wide">Experience Rift Valley highlights — birding at Lake Nakuru, rhino sanctuary visits and optional boat excursions or lakeside walks around Naivasha.</p></div>
+      </div>
+
+      <div class="space-y-6">
+        <div class="w-full h-64 sm:h-96 overflow-hidden bg-stone-900 border border-stone-800/60"><img src="assets/maasai mara.jpg" class="w-full h-full object-cover transition-transform duration-[2s] hover:scale-105" alt="Maasai Mara"></div>
+        <div class="border-l-2 border-[#d4a373] pl-6 py-1"><div class="flex flex-wrap items-baseline justify-between gap-2 mb-3"><h2 class="text-xl sm:text-2xl font-black uppercase text-white tracking-tight">Day 10 & 11: Maasai Mara — Epic Wildlife & Sunrise Safari</h2><span class="text-xs bg-stone-900 text-[#a68a64] px-2.5 py-1 border border-stone-800">Duration: 2 Nights</span></div><p class="text-stone-300 text-sm sm:text-base leading-relaxed tracking-wide">Two full days exploring the Mara with morning and afternoon game drives. Optional balloon safari and cultural visits available.</p></div>
+      </div>
+
+      <div class="space-y-6">
+        <div class="w-full h-64 sm:h-96 overflow-hidden bg-stone-900 border border-stone-800/60"><img src="pictures/sunset.jpg" class="w-full h-full object-cover transition-transform duration-[2s] hover:scale-105" alt="Departure"></div>
+        <div class="border-l-2 border-[#d4a373] pl-6 py-1"><div class="flex flex-wrap items-baseline justify-between gap-2 mb-3"><h2 class="text-xl sm:text-2xl font-black uppercase text-white tracking-tight">Day 12: Return Transfer to Nairobi & Departure</h2><span class="text-xs bg-stone-900 text-[#a68a64] px-2.5 py-1 border border-stone-800">End of Program</span></div><p class="text-stone-300 text-sm sm:text-base leading-relaxed tracking-wide">After a final activity, transfer back to Nairobi for your international departure, carrying memories of an iconic Kenyan safari.</p></div>
+      </div>
+
+    </div>
+
+    <div class="mt-20 pt-8 border-t border-stone-900 text-center"><p class="font-serif italic text-stone-400 text-sm mb-6">"Thanks for choosing our company"</p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4 max-w-md mx-auto"><a href="mailto:info@arenaafricasafaris.com" class="flex-1 py-3.5 bg-[#d4a373] hover:bg-white text-[#0d0a07] text-xs uppercase font-bold tracking-widest transition-colors duration-300 text-center">Inquire via Email</a><a href="https://wa.me/255788296274" target="_blank" class="flex-1 py-3.5 bg-transparent border border-stone-800 hover:border-[#d4a373] text-stone-300 hover:text-white text-xs uppercase font-bold tracking-widest transition-colors duration-300 text-center">Chat on WhatsApp</a></div>
+    </div>
+  </main>
+
+  <footer class="py-12 bg-stone-950/40 border-t border-stone-900/60 font-mono text-[10px] text-stone-500 tracking-widest text-center"><div>ARENA AFRICA SAFARIS LTD</div><div class="mt-1 flex justify-center gap-4 text-stone-600 text-[9px]"><a href="mailto:info@arenaafricasafaris.com" class="hover:text-stone-400">INFO@ARENAAFRICASAFARIS.COM</a><span>•</span><a href="https://arenaafricasafaris.com" target="_blank" class="hover:text-stone-400">://arenaafricasafaris.com</a></div></footer>
+
+<style>@keyframes snake-crawl {from { stroke-dashoffset: 100; } to { stroke-dashoffset: 0; }}</style>
+
+<script>
+    const menuBtn = document.getElementById('menuBtn');
+    const nav = document.getElementById('mainNav');
+    const line1 = document.getElementById('line1');
+    const line2 = document.getElementById('line2');
+    const line3 = document.getElementById('line3');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+
+    function toggleMenu() {
+      const isClosed = nav.style.maxHeight === '76px' || nav.style.maxHeight === '';
+      if (isClosed) {
+        nav.classList.remove('rounded-full');
+        nav.classList.add('rounded-[2rem]');
+        nav.style.maxHeight = '600px';
+        line1.style.transform = 'translateY(7px) rotate(45deg)';
+        line3.style.transform = 'translateY(-7px) rotate(-45deg)';
+        line2.style.opacity = '0';
+      } else {
+        nav.style.maxHeight = '76px';
+        setTimeout(() => { if(nav.style.maxHeight === '76px') { nav.classList.remove('rounded-[2rem]'); nav.classList.add('rounded-full'); } }, 400);
+        line1.style.transform = 'none'; line3.style.transform = 'none'; line2.style.opacity = '1';
+      }
+    }
+    menuBtn.addEventListener('click', toggleMenu);
+    mobileLinks.forEach(link => { link.addEventListener('click', () => { if (nav.style.maxHeight !== '76px') toggleMenu(); }); });
+    document.addEventListener("touchstart", function() {}, true);
+</script>
+
+</body>
+</html>
